@@ -1,7 +1,7 @@
 export default function HomeHero() {
   return (
     <div>
-      <div className="relative lg:h-[80vh]">
+      <div className="relative lg:h-[80vh] antialiased">
         <div>
           <picture>
             <img

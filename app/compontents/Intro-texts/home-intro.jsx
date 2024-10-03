@@ -1,7 +1,7 @@
 export default function HomeIntroText() {
   return (
     <div>
-      <div className="bg-secondary pt-60 pb-60 px-24">
+      <div className="bg-secondary pt-60 pb-60 px-24 antialiased">
         <h1 className="text-white font-light lg:text-3xl">
           Solar Gard Ireland Providing Innovative Glass Film Solutions for
           Industrial&#x2C; Commercial&#x2C; and Domestic Applications&#x2C;
