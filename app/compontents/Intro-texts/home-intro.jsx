@@ -5,13 +5,23 @@ export default function HomeIntroText() {
         <h1 className="text-white font-light lg:text-3xl">
           Solar Gard Ireland Providing Innovative Glass Film Solutions for
           Industrial&#x2C; Commercial&#x2C; and Domestic Applications&#x2C;
-          Solar Guard is a leading provider of glass film solutions&#x2C; lity
-          offering a wide range of products including solar films&#x2C;
-          privacy&#x2C; anti-heat&#x2C; anti-glare&#x2C; UV films&#x2C;
-          reflective films&#x2C; safety films&#x2C; frosted films&#x2C; vehicle
-          tinting&#x2C; and manifestations & graphics. We also specialise in
-          vehicle wrapping with custom graphics&#x2C; and CoverStyl&apos;&#x2C;
-          a self-adhesive vinyl that offers solution to enhance walls&#x2C;
+          Solar Guard is a leading provider of glass film and surfaces
+          solutions&#x2C; offering a wide range of products including solar
+          films&#x2C;
+          <span className="text-primary"> privacy films&#x2C;</span>
+          <span className="text-primary"> anti-heat&#x2C;</span>
+          <span className="text-primary"> anti-glare&#x2C;</span>
+          <span className="text-primary">UV films&#x2C;</span>
+          <span className="text-primary"> reflective films&#x2C;</span>
+          <span className="text-primary"> safety films&#x2C;</span>
+          <span className="text-primary"> frosted films&#x2C;</span>{" "}
+          <span className="text-primary">vehicle tinting&#x2C;</span> and
+          <span className="text-primary"> manifestations & graphics</span>. We
+          also specialise in
+          <span className="text-primary"> vehicle wrapping</span> with custom
+          graphics&#x2C; and
+          <span className="text-primary"> CoverStyl&apos;&#x2C;</span> a
+          self-adhesive vinyl that offers solution to enhance walls&#x2C;
           furniture&#x2C; and other surfaces.
         </h1>
       </div>
