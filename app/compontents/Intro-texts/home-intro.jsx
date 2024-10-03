@@ -9,7 +9,7 @@ export default function HomeIntroText() {
           offering a wide range of products including solar films&#x2C;
           privacy&#x2C; anti-heat&#x2C; anti-glare&#x2C; UV films&#x2C;
           reflective films&#x2C; safety films&#x2C; frosted films&#x2C; vehicle
-          tinting&#x2C; and manifestations & graphics. We also specialise in
+          tinting&#x2C; and manifestations and graphics. We also specialise in
           vehicle wrapping with custom graphics&#x2C; and CoverStyl'&#x2C; a
           self-adhesive vinyl that offers solution to enhance walls&#x2C;
           furniture&#x2C; and other surfaces.
