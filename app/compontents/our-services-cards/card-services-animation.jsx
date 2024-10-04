@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-secondary">
       <div>
-        <h1 className="text-3xl font-bold text-center text-white">
+        <h1 className="lg:text-3xl font-bold text-center text-white">
           Explore Our Comprehensive Range of Services
         </h1>
       </div>
@@ -58,8 +58,14 @@ export default function Home() {
         <Card bgColor="#212332">
           <div className="w-9/12 relative">
             <img
-              className="w-full h-full object-cover lg:rounded-xl"
+              className="w-full h-full object-cover lg:rounded-xl lg:visible md:visible sm:invisible"
               src="/images/card-service-imgs/solar-films-card-service-img-min.jpg"
+              alt="Card 1"
+            />
+            {/* Mobile Card image */}
+            <img
+              className="w-full h-full object-cover lg:rounded-xl lg:invisible md:invisible sm:visible"
+              src="/images/card-service-imgs/solar-film-card-service-mobile.jpg"
               alt="Card 1"
             />
             <div className="absolute bottom-0 flex items-center justify-center">
@@ -72,8 +78,14 @@ export default function Home() {
         <Card>
           <div className="w-9/12 relative">
             <img
-              className="w-full h-full object-cover lg:rounded-xl"
+              className="w-full h-full object-cover lg:rounded-xl lg:visible md:visible sm:invisible"
               src="/images/card-service-imgs/car-tint.jpg"
+              alt="Card 2"
+            />
+            {/* Mobile Card image */}
+            <img
+              className="w-full h-full object-cover lg:rounded-xl lg:invisible md:invisible sm:visible"
+              src="/images/card-service-imgs/solar-film-card-service-mobile.jpg"
               alt="Card 2"
             />
             <div className="absolute inset-0 flex items-center justify-center">
@@ -86,9 +98,15 @@ export default function Home() {
         <Card>
           <div className="w-9/12 relative">
             <img
-              className="w-full h-full object-cover lg:rounded-xl"
+              className="w-full h-full object-cover lg:rounded-xl lg:visible md:visible sm:invisible"
               src="/images/card-service-imgs/solar-films-card-service-img-min.jpg"
               alt="Card 3"
+            />
+            {/* Mobile Card image */}
+            <img
+              className="w-full h-full object-cover lg:rounded-xl lg:invisible md:invisible sm:visible"
+              src="/images/card-service-imgs/solar-film-card-service-mobile.jpg"
+              alt="Card 2"
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <h2 className="text-4xl font-bold text-white bg-black bg-opacity-50 p-4 rounded">
@@ -100,9 +118,15 @@ export default function Home() {
         <Card>
           <div className="w-9/12 relative">
             <img
-              className="w-full h-full object-cover lg:rounded-xl"
+              className="w-full h-full object-cover lg:rounded-xl lg:visible md:visible sm:invisible"
               src="/images/card-service-imgs/solar-films-card-service-img-min.jpg"
               alt="Card 4"
+            />
+            {/* Mobile Card image */}
+            <img
+              className="w-full h-full object-cover lg:rounded-xl lg:invisible md:invisible sm:visible"
+              src="/images/card-service-imgs/solar-film-card-service-mobile.jpg"
+              alt="Card 2"
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <h2 className="text-4xl font-bold text-white bg-black bg-opacity-50 p-4 rounded">
@@ -114,9 +138,15 @@ export default function Home() {
         <Card>
           <div className="w-9/12 relative">
             <img
-              className="w-full h-full object-cover lg:rounded-xl"
+              className="w-full h-full object-cover lg:rounded-xl lg:visible md:visible sm:invisible"
               src="/images/card-service-imgs/solar-films-card-service-img-min.jpg"
               alt="Card 5"
+            />
+            {/* Mobile Card image */}
+            <img
+              className="w-full h-full object-cover lg:rounded-xl lg:invisible md:invisible sm:visible"
+              src="/images/card-service-imgs/solar-film-card-service-mobile.jpg"
+              alt="Card 2"
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <h2 className="text-4xl font-bold text-white bg-black bg-opacity-50 p-4 rounded">
@@ -128,9 +158,15 @@ export default function Home() {
         <Card>
           <div className="w-9/12 relative">
             <img
-              className="w-full h-full object-cover lg:rounded-xl"
+              className="w-full h-full object-cover lg:rounded-xl lg:visible md:visible sm:invisible"
               src="/images/card-service-imgs/solar-films-card-service-img-min.jpg"
               alt="Card 6"
+            />
+            {/* Mobile Card image */}
+            <img
+              className="w-full h-full object-cover lg:rounded-xl lg:invisible md:invisible sm:visible"
+              src="/images/card-service-imgs/solar-film-card-service-mobile.jpg"
+              alt="Card 2"
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <h2 className="text-4xl font-bold text-white bg-black bg-opacity-50 p-4 rounded">
