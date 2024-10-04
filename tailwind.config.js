@@ -15,7 +15,9 @@ module.exports = {
         gray: "#efefef",
         accent: "",
       },
-      fontFamily: {},
+      screens: {
+        sm: "360px",
+      },
     },
   },
   plugins: [],

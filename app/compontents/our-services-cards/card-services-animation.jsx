@@ -25,7 +25,7 @@ export default function Home() {
         pin: true,
         anticipatePin: 1,
         scrub: 1,
-        markers: true, // Remove this in production
+        markers: false, // Remove this in production
       },
     });
 
@@ -47,8 +47,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-secondary">
       <div>
-        <h1 className="text-3xl font-bold text-center">
-          Scroll down for cards
+        <h1 className="text-3xl font-bold text-center text-white">
+          Explore Our Comprehensive Range of Services
         </h1>
       </div>
       <div ref={containerRef} className="relative h-screen overflow-hidden">
@@ -59,7 +59,7 @@ export default function Home() {
               src="/images/card-service-imgs/solar-films-card-service-img-min.jpg"
               alt="Card 1"
             />
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute bottom-0 flex items-center justify-center">
               <h2 className="text-4xl font-bold text-white bg-black bg-opacity-50 p-4 rounded">
                 Card 1
               </h2>
