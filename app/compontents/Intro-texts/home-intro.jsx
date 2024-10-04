@@ -1,8 +1,8 @@
 export default function HomeIntroText() {
   return (
     <div>
-      <div className="bg-secondary pt-60 pb-60 px-24 antialiased">
-        <h1 className="text-white font-light lg:text-3xl">
+      <div className="bg-secondary lg:py-60 lg:px-24 md:py-48 md:px-16 sm:py-24 sm:px-8 antialiased">
+        <h1 className="text-white font-light lg:text-3xl md:text-3xl sm:text-sm">
           Solar Gard Ireland Providing Innovative Glass Film Solutions for
           Industrial&#x2C; Commercial&#x2C; and Domestic Applications&#x2C;
           Solar Guard is a leading provider of glass film and surfaces
