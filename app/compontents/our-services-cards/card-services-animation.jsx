@@ -56,7 +56,7 @@ export default function Home() {
         className="relative lg:h-screen sm:h-dvh overflow-hidden"
       >
         <Card bgColor="#212332">
-          <div className="w-9/12 relative">
+          <div className="lg:w-9/12 md:w-11/12 sm:w-11/12 relative">
             <img
               className="w-full h-full object-cover lg:rounded-xl lg:visible md:visible sm:invisible"
               src="/images/card-service-imgs/solar-films-card-service-img-min.jpg"
@@ -64,7 +64,7 @@ export default function Home() {
             />
             {/* Mobile Card image */}
             <img
-              className="w-full h-full object-cover lg:rounded-xl lg:invisible md:invisible sm:visible"
+              className="w-full h-full object-cover lg:rounded-xl md:rounded-xl sm:rounded-lg lg:invisible md:invisible sm:visible"
               src="/images/card-service-imgs/solar-film-card-service-mobile.jpg"
               alt="Card 1"
             />
@@ -76,7 +76,7 @@ export default function Home() {
           </div>
         </Card>
         <Card>
-          <div className="w-9/12 relative">
+          <div className="lg:w-9/12 md:w-11/12 sm:w-11/12 relative">
             <img
               className="w-full h-full object-cover lg:rounded-xl lg:visible md:visible sm:invisible"
               src="/images/card-service-imgs/car-tint.jpg"
@@ -84,7 +84,7 @@ export default function Home() {
             />
             {/* Mobile Card image */}
             <img
-              className="w-full h-full object-cover lg:rounded-xl lg:invisible md:invisible sm:visible"
+              className="w-full h-full object-cover lg:rounded-xl md:rounded-xl sm:rounded-lg lg:invisible md:invisible sm:visible"
               src="/images/card-service-imgs/solar-film-card-service-mobile.jpg"
               alt="Card 2"
             />
@@ -96,7 +96,7 @@ export default function Home() {
           </div>
         </Card>
         <Card>
-          <div className="w-9/12 relative">
+          <div className="lg:w-9/12 md:w-11/12 sm:w-11/12 relative">
             <img
               className="w-full h-full object-cover lg:rounded-xl lg:visible md:visible sm:invisible"
               src="/images/card-service-imgs/solar-films-card-service-img-min.jpg"
@@ -104,7 +104,7 @@ export default function Home() {
             />
             {/* Mobile Card image */}
             <img
-              className="w-full h-full object-cover lg:rounded-xl lg:invisible md:invisible sm:visible"
+              className="w-full h-full object-cover lg:rounded-xl md:rounded-xl sm:rounded-lg lg:invisible md:invisible sm:visible"
               src="/images/card-service-imgs/solar-film-card-service-mobile.jpg"
               alt="Card 2"
             />
@@ -116,7 +116,7 @@ export default function Home() {
           </div>
         </Card>
         <Card>
-          <div className="w-9/12 relative">
+          <div className="lg:w-9/12 md:w-11/12 sm:w-11/12 relative">
             <img
               className="w-full h-full object-cover lg:rounded-xl lg:visible md:visible sm:invisible"
               src="/images/card-service-imgs/solar-films-card-service-img-min.jpg"
@@ -124,7 +124,7 @@ export default function Home() {
             />
             {/* Mobile Card image */}
             <img
-              className="w-full h-full object-cover lg:rounded-xl lg:invisible md:invisible sm:visible"
+              className="w-full h-full object-cover llg:rounded-xl md:rounded-xl sm:rounded-lg lg:invisible md:invisible sm:visible"
               src="/images/card-service-imgs/solar-film-card-service-mobile.jpg"
               alt="Card 2"
             />
@@ -136,7 +136,7 @@ export default function Home() {
           </div>
         </Card>
         <Card>
-          <div className="w-9/12 relative">
+          <div className="lg:w-9/12 md:w-11/12 sm:w-11/12 relative">
             <img
               className="w-full h-full object-cover lg:rounded-xl lg:visible md:visible sm:invisible"
               src="/images/card-service-imgs/solar-films-card-service-img-min.jpg"
@@ -144,7 +144,7 @@ export default function Home() {
             />
             {/* Mobile Card image */}
             <img
-              className="w-full h-full object-cover lg:rounded-xl lg:invisible md:invisible sm:visible"
+              className="w-full h-full object-cover lg:rounded-xl md:rounded-xl sm:rounded-lg lg:invisible md:invisible sm:visible"
               src="/images/card-service-imgs/solar-film-card-service-mobile.jpg"
               alt="Card 2"
             />
@@ -156,15 +156,15 @@ export default function Home() {
           </div>
         </Card>
         <Card>
-          <div className="w-9/12 relative">
+          <div className="lg:w-9/12 md:w-11/12 sm:w-11/12 relative">
             <img
-              className="w-full h-full object-cover lg:rounded-xl lg:visible md:visible sm:invisible"
+              className="w-full h-full object-cover lg:rounded-xl md:rounded-xl sm:rounded-lg lg:visible md:visible sm:invisible"
               src="/images/card-service-imgs/solar-films-card-service-img-min.jpg"
               alt="Card 6"
             />
             {/* Mobile Card image */}
             <img
-              className="w-full h-full object-cover lg:rounded-xl lg:invisible md:invisible sm:visible"
+              className="w-full h-full object-cover lg:rounded-xl md:rounded-xl sm:rounded-lg lg:invisible md:invisible sm:visible"
               src="/images/card-service-imgs/solar-film-card-service-mobile.jpg"
               alt="Card 2"
             />
