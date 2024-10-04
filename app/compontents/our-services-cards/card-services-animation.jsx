@@ -51,11 +51,14 @@ export default function Home() {
           Explore Our Comprehensive Range of Services
         </h1>
       </div>
-      <div ref={containerRef} className="relative h-screen overflow-hidden">
+      <div
+        ref={containerRef}
+        className="relative lg:h-screen sm:h-dvh overflow-hidden"
+      >
         <Card bgColor="#212332">
           <div className="w-9/12 relative">
             <img
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full object-cover lg:rounded-xl"
               src="/images/card-service-imgs/solar-films-card-service-img-min.jpg"
               alt="Card 1"
             />
@@ -69,8 +72,8 @@ export default function Home() {
         <Card>
           <div className="w-9/12 relative">
             <img
-              className="w-full h-full object-cover rounded-lg"
-              src="/images/card-service-imgs/solar-films-card-service-img-min.jpg"
+              className="w-full h-full object-cover lg:rounded-xl"
+              src="/images/card-service-imgs/car-tint.jpg"
               alt="Card 2"
             />
             <div className="absolute inset-0 flex items-center justify-center">
@@ -83,7 +86,7 @@ export default function Home() {
         <Card>
           <div className="w-9/12 relative">
             <img
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full object-cover lg:rounded-xl"
               src="/images/card-service-imgs/solar-films-card-service-img-min.jpg"
               alt="Card 3"
             />
@@ -97,7 +100,7 @@ export default function Home() {
         <Card>
           <div className="w-9/12 relative">
             <img
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full object-cover lg:rounded-xl"
               src="/images/card-service-imgs/solar-films-card-service-img-min.jpg"
               alt="Card 4"
             />
@@ -111,7 +114,7 @@ export default function Home() {
         <Card>
           <div className="w-9/12 relative">
             <img
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full object-cover lg:rounded-xl"
               src="/images/card-service-imgs/solar-films-card-service-img-min.jpg"
               alt="Card 5"
             />
@@ -125,7 +128,7 @@ export default function Home() {
         <Card>
           <div className="w-9/12 relative">
             <img
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full object-cover lg:rounded-xl"
               src="/images/card-service-imgs/solar-films-card-service-img-min.jpg"
               alt="Card 6"
             />

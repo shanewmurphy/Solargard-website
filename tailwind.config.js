@@ -18,6 +18,9 @@ module.exports = {
       screens: {
         sm: "360px",
       },
+      borderRadius: {
+        xl: "60px",
+      },
     },
   },
   plugins: [],
