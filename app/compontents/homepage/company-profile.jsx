@@ -1,15 +1,15 @@
 export default function CompanyProfile() {
   return (
-    <div className="w-full lg:bg-[url('/images/company-profile/background-gradient-img-min.png')] md:bg-[url('/images/company-profile/background-gradient-img-min.png')] sm:bg-[url('/images/company-profile/background-gradient-img-mobile.jpg')] bg-no-repeat">
+    <div className="w-full object-cover lg:bg-[url('/images/company-profile/background-gradient-img-min.png')] md:bg-[url('/images/company-profile/background-gradient-img-min.png')] sm:bg-[url('/images/company-profile/background-gradient-img-mobile.jpg')] bg-no-repeat">
       <div className="antialiased">
-        <div className="w-10/12 mx-auto pt-36 pb-56">
-          <div className="flex flex-row gap-24 text-white">
+        <div className="lg:w-10/12 md:w-10/11 sm:w-10/12 mx-auto lg:pt-36 lg:pb-56 md:pt-36 md:pb-0 sm:pt-28 sm:pb-0">
+          <div className="flex lg:flex-row md:flex-col sm:flex-col lg:gap-24 md:gap-16 sm:gap-4 text-white">
             <div className="basis-9/12">
-              <h2 className="text-white lg:text-4xl font-bold">
+              <h2 className="text-white lg:text-4xl md:text-3xl sm:text-2xl font-bold">
                 Your Trusted Partner for Innovative Glass Films, Car
                 Customisations, and Surface Enhancement Solutions
               </h2>
-              <p className="text-white font-normal lg:mt-8 lg:text-base">
+              <p className="text-white font-normal lg:mt-8 md:mt-8 sm:mt-4 lg:text-base md:text-base sm:text-sm">
                 Solar Gard Ireland is a leading provider of cutting-edge
                 solutions for industrial, commercial, and domestic applications.
                 Our extensive product range includes solar, privacy, anti-heat,

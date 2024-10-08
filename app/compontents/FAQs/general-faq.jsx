@@ -55,9 +55,9 @@ const FAQ = [
 export default function GeneralFaqs() {
   return (
     <div>
-      <div className="w-full bg-gray lg:py-40 antialiased">
-        <div className="lg:w-8/12 mx-auto">
-          <h4 className="text-secondary font-bold text-center lg:text-3xl mb-8">
+      <div className="w-full bg-gray lg:py-40 md:py-36 sm:py-24 antialiased">
+        <div className="lg:w-8/12 md:w-10/12 sm:w-11/12 mx-auto">
+          <h4 className="text-secondary font-bold text-center lg:text-3xl md:text-3xl sm:text-xl lg:mb-8 md:mb-6 sm:mb-4">
             Common Questions & Answers
           </h4>
           <div className="space-y-4">
@@ -65,18 +65,20 @@ export default function GeneralFaqs() {
               <Disclosure key={item.id}>
                 {({ open }) => (
                   <div className="border-b-2 border-secondary">
-                    <Disclosure.Button className="flex justify-between w-full px-4 py-4 text-left text-sm font-medium text-secondary focus:outline-none focus-visible:ring focus-visible:ring-opacity-75">
-                      <h5 className="text-secondary font-semibold lg:text-lg">
+                    <Disclosure.Button className="flex justify-between w-full lg:px-4 lg:py-4 md:px-4 md:py-4 sm:px-3 sm:py-4 text-left text-sm font-medium text-secondary focus:outline-none focus-visible:ring focus-visible:ring-opacity-75">
+                      <h5 className="text-secondary font-semibold lg:text-lg md:text-base sm:text-sm">
                         {item.Question}
                       </h5>
-                      <ArrowUpIcon
-                        className={`${
-                          open ? "transform rotate-180" : ""
-                        } w-5 h-5 text-secondary`}
-                      />
+                      <div>
+                        <ArrowUpIcon
+                          className={`${
+                            open ? "transform rotate-180" : ""
+                          } w-5 h-5 text-secondary`}
+                        />
+                      </div>
                     </Disclosure.Button>
                     <Disclosure.Panel className="px-4 pt-4 pb-2 text-gray-600">
-                      <p className="text-secondary font-medium text-sm pb-4">
+                      <p className="text-secondary font-medium lg:text-sm md:text-sm sm:text-xs pb-4">
                         {item.Answer}
                       </p>
                     </Disclosure.Panel>
