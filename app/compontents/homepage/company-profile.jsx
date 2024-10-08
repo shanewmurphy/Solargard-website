@@ -16,7 +16,7 @@ export default function CompanyProfile() {
                 anti-glare, UV films, reflective, safety films, frosted films,
                 vehicle tinting, and manifestations & graphics. We also
                 specialise in car tinting, car wrapping with custom graphics,
-                and CoverStyl', a self-adhesive vinyl that offers the most
+                and CoverStyl&apos;, a self-adhesive vinyl that offers the most
                 ecological and economical solution to enhance walls, furniture,
                 and other surfaces. Committed to customer satisfaction, we are
                 renowned for delivering high-quality installations and
