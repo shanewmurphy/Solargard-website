@@ -5,6 +5,7 @@ import HomeHero from "./compontents/heros/home-hero";
 import HomeIntroText from "./compontents/Intro-texts/home-intro";
 import OurServices from "./compontents/our-services-cards/card-services-animation";
 import CompanyProfile from "./compontents/homepage/company-profile";
+import GeneralFaqs from "./compontents/FAQs/general-faq";
 export default function Home() {
   useEffect(() => {
     (async () => {
@@ -25,6 +26,9 @@ export default function Home() {
       </div>
       <div>
         <CompanyProfile />
+      </div>
+      <div>
+        <GeneralFaqs />
       </div>
     </div>
   );

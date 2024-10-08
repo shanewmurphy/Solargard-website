@@ -21,6 +21,15 @@ module.exports = {
       borderRadius: {
         xl: "60px",
       },
+      backgroundImage: {
+        "gradient-img":
+          "url('/images/company-profile/background-gradient-img-min.png')",
+        "gradient-img-mobile":
+          "url('/images/company-profile/background-gradient-img-mobile.jpg')",
+      },
+      borderWidth: {
+        2: "1px",
+      },
     },
   },
   plugins: [],
