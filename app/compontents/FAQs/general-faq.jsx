@@ -78,7 +78,7 @@ export default function GeneralFaqs() {
                       </div>
                     </Disclosure.Button>
                     <Disclosure.Panel className="px-4 pt-4 pb-2 text-gray-600">
-                      <p className="text-secondary font-medium lg:text-sm md:text-sm sm:text-xs pb-4">
+                      <p className="text-secondary font-medium lg:text-sm md:text-sm sm:text-sm pb-4">
                         {item.Answer}
                       </p>
                     </Disclosure.Panel>
@@ -86,6 +86,17 @@ export default function GeneralFaqs() {
                 )}
               </Disclosure>
             ))}
+          </div>
+          <div>
+            <h6 className="text-center font-bold text-secondary lg:text-2xl lg:mt-8 md:mt-6 sm:mt-8">
+              Still have a question?
+            </h6>
+            <p className="text-center font-semibold text-secondary lg:text-lg md:text-lg sm:text-sm lg:mt-1 md:mt-2 sm:mt-1">
+              Contact us for further assistance
+            </p>
+            <p className="text-center font-extrabold text-secondary lg:text-3xl md:text-2xl sm:text-xl mt-2">
+              021 454 5606
+            </p>
           </div>
         </div>
       </div>
