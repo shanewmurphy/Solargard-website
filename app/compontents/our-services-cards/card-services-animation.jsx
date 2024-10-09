@@ -46,15 +46,15 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-secondary">
-      <div>
-        <h1 className="lg:text-4xl font-bold text-center text-white">
-          Explore Our Comprehensive Range of Services
-        </h1>
-      </div>
       <div
         ref={containerRef}
         className="relative lg:h-screen sm:h-dvh overflow-hidden"
       >
+        <div>
+          <h1 className="lg:text-4xl font-bold text-center text-white">
+            Explore Our Comprehensive Range of Services
+          </h1>
+        </div>
         <Card bgColor="#212332">
           <div className="lg:w-9/12 md:w-11/12 sm:w-11/12 relative">
             <img
@@ -68,7 +68,7 @@ export default function Home() {
               src="/images/card-service-imgs/solar-film-card-service-mobile.jpg"
             />
             <div className="absolute bottom-0 flex items-center justify-center">
-              <h2 className="text-4xl font-bold text-white bg-black bg-opacity-50 p-4 rounded">
+              <h2 className="text-4xl font-bold text-white  p-4 rounded">
                 Card 1
               </h2>
             </div>

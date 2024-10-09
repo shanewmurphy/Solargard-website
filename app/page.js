@@ -7,6 +7,7 @@ import OurServices from "./compontents/our-services-cards/card-services-animatio
 import CompanyProfile from "./compontents/homepage/company-profile";
 import GeneralFaqs from "./compontents/FAQs/general-faq";
 import Testimonials from "./compontents/shared-compontents/testimonials";
+import ContactUs from "./compontents/shared-compontents/Contact-Us";
 export default function Home() {
   useEffect(() => {
     (async () => {
@@ -33,6 +34,9 @@ export default function Home() {
       </div>
       <div>
         <Testimonials />
+      </div>
+      <div>
+        <ContactUs />
       </div>
     </div>
   );

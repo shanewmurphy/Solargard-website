@@ -13,6 +13,8 @@ module.exports = {
         primary: "#3872e5",
         secondary: "#212332",
         gray: "#efefef",
+        textGray: "#5C5C5C",
+        textLightGray: "#888787",
         accent: "",
       },
       screens: {
