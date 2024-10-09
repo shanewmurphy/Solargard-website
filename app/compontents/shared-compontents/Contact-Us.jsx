@@ -28,11 +28,11 @@ export default function ContactUs() {
             </div>
           </div>
         </div>
-        <div className="w-full lg:mt-36">
-          <div className="grid lg:grid-cols-6 justify-items-center items-center gap-4 lg:flex md:hidden sm:hidden">
+        <div className="w-full mx-auto lg:mt-36">
+          <div className="grid grid-cols-6 justify-items-center items-center gap-12 justify-between lg:flex md:hidden sm:hidden">
             <div>
-              <span className="lg:text-xl font-semibold text-textGray">
-                Some Brands We Do Work For
+              <span className="text-2xl font-semibold text-textGray">
+                Some Brands We <br /> Do Work For
               </span>
             </div>
             <div>
@@ -52,7 +52,7 @@ export default function ContactUs() {
             </div>
           </div>
         </div>
-        <div className="w-full mt-8">
+        <div className="w-full mt-8 lg:hidden md:hidden sm:block">
           <div>
             <span className="text-lg font-semibold text-textGray">
               Some Brands We Do Work For
