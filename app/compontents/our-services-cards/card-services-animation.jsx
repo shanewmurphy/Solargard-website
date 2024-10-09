@@ -50,11 +50,6 @@ export default function Home() {
         ref={containerRef}
         className="relative lg:h-screen sm:h-dvh overflow-hidden"
       >
-        <div>
-          <h1 className="lg:text-4xl font-bold text-center text-white">
-            Explore Our Comprehensive Range of Services
-          </h1>
-        </div>
         <Card bgColor="#212332">
           <div className="lg:w-9/12 md:w-11/12 sm:w-11/12 relative">
             <img
