@@ -1,11 +1,11 @@
 export default function CompanyProfile() {
   return (
-    <div className="w-full object-cover lg:bg-[url('/images/company-profile/background-gradient-img-min.png')] md:bg-[url('/images/company-profile/background-gradient-img-min.png')] sm:bg-[url('/images/company-profile/background-gradient-img-mobile.jpg')] bg-no-repeat">
+    <div className="w-full object-cover lg:bg-[url('/images/company-profile/background-gradient-img-min.png')] md:bg-[url('/images/company-profile/background-gradient-img-min.png')] sm:bg-[url('/images/company-profile/background-gradient-img-mobile-b.jpg')] bg-no-repeat">
       <div className="antialiased">
-        <div className="lg:w-10/12 md:w-10/11 sm:w-10/12 mx-auto lg:pt-36 lg:pb-56 md:pt-36 md:pb-0 sm:pt-28 sm:pb-0">
+        <div className="lg:w-10/12 md:w-10/11 sm:w-11/12 mx-auto lg:pt-36 lg:pb-56 md:pt-36 md:pb-0 sm:pt-28 sm:pb-0">
           <div className="flex lg:flex-row md:flex-col sm:flex-col lg:gap-24 md:gap-16 sm:gap-4 text-white">
             <div className="basis-3/5">
-              <h2 className="text-white lg:text-4xl md:text-3xl sm:text-2xl font-bold">
+              <h2 className="text-white lg:text-5xl md:text-3xl sm:text-3xl font-bold">
                 Innovative Glass & Surface Solutions Tailored for You
               </h2>
               <p className="text-white font-normal lg:mt-8 md:mt-8 sm:mt-4 lg:text-base md:text-base sm:text-base">
@@ -16,7 +16,7 @@ export default function CompanyProfile() {
                 offer a wide range of innovative products designed to enhance
                 comfort, privacy, and aesthetics.
               </p>
-              <p className="text-white font-normal lg:mt-8 md:mt-8 sm:mt-4 lg:text-base md:text-base sm:text-sm">
+              <p className="text-white font-normal lg:mt-8 md:mt-8 sm:mt-4 lg:text-base md:text-base sm:text-base">
                 From energy-saving solar films that reduce heat and glare to
                 stylish privacy films, safety films, and the versatile
                 CoverStyl&apos; self-adhesive vinyl, our offerings are ideal for
@@ -59,7 +59,7 @@ export default function CompanyProfile() {
               </div>
             </div>
           </div>
-          <div className="mt-24 w-full h-auto max-w-full">
+          <div className="lg:mt-24 md:mt-16 sm:mt-8 sm:pb-16 w-full h-auto max-w-full">
             <YearsBannerText />
           </div>
         </div>

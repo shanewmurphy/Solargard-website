@@ -28,6 +28,8 @@ module.exports = {
           "url('/images/company-profile/background-gradient-img-min.png')",
         "gradient-img-mobile":
           "url('/images/company-profile/background-gradient-img-mobile.jpg')",
+        "gradient-img-mobile-large":
+          "url('/images/company-profile/background-gradient-img-mobile-b.jpg')",
       },
       borderWidth: {
         2: "1px",
