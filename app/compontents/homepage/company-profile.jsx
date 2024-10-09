@@ -19,7 +19,7 @@ export default function CompanyProfile() {
               <p className="text-white font-normal lg:mt-8 md:mt-8 sm:mt-4 lg:text-base md:text-base sm:text-sm">
                 From energy-saving solar films that reduce heat and glare to
                 stylish privacy films, safety films, and the versatile
-                CoverStyl' self-adhesive vinyl, our offerings are ideal for
+                CoverStyl&apos; self-adhesive vinyl, our offerings are ideal for
                 modernising any space. Additionally, we provide professional
                 vehicle tinting and car wrapping services to give your vehicle a
                 sleek, customised look.
@@ -30,7 +30,7 @@ export default function CompanyProfile() {
                 <p className="text-sm border-b-2 pb-3">
                   <b>Expertise & Experience:</b> With years of experience in the
                   industry, we have a proven track record of delivering premium
-                  installations and tailored solutions to meet our clients'
+                  installations and tailored solutions to meet our clients
                   unique needs.
                 </p>
               </div>
@@ -38,7 +38,7 @@ export default function CompanyProfile() {
                 <p className="text-sm border-b-2 pb-3 mt-3">
                   <b>Comprehensive Product Range:</b> Our extensive product
                   range includes solar, privacy, anti-heat, anti-glare, UV
-                  protection, safety films, and CoverStyl', all designed to
+                  protection, safety films, and CoverStyl&apos;, all designed to
                   improve functionality and appearance.
                 </p>
               </div>
