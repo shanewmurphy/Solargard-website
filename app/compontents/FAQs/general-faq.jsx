@@ -42,7 +42,7 @@ const FAQ = [
     id: "07",
     Question: "Do you offer custom designs for glass graphics or wraps?",
     Answer:
-      "Yes! We provide fully customizable solutions for manifestations & graphics, as well as car wraps. Our team will work with you to create a design that matches your vision and brand.",
+      "Yes! We provide fully customisable solutions for manifestations & graphics, as well as car wraps. Our team will work with you to create a design that matches your vision and brand.",
   },
   {
     id: "08",
