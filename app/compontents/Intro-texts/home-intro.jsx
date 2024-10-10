@@ -14,7 +14,7 @@ export default function HomeIntroText() {
           <span className="text-primary">UV films&#x2C;</span>
           <span className="text-primary"> reflective films&#x2C;</span>
           <span className="text-primary"> safety films&#x2C;</span>
-          <span className="text-primary"> frosted films&#x2C;</span>{" "}
+          <span className="text-primary"> frosted films&#x2C;</span>
           <span className="text-primary">vehicle tinting&#x2C;</span> and
           <span className="text-primary"> manifestations & graphics</span>. We
           also specialise in

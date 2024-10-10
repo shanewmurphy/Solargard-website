@@ -1,8 +1,8 @@
 export default function CompanyProfile() {
   return (
-    <div className="w-full object-cover lg:bg-[url('/images/company-profile/background-gradient-img-min.png')] md:bg-[url('/images/company-profile/background-gradient-img-min.png')] sm:bg-[url('/images/company-profile/background-gradient-img-mobile-b.jpg')] bg-no-repeat">
+    <div className="w-full object-cover h-[auto] lg:bg-[url('/images/company-profile/background-gradient-img-min.png')] md:bg-[url('/images/company-profile/background-gradient-img-min.png')] sm:bg-[url('/images/company-profile/background-gradient-img-mobile-b.jpg')] bg-no-repeat">
       <div className="antialiased">
-        <div className="lg:w-10/12 md:w-10/11 sm:w-11/12 mx-auto lg:pt-36 lg:pb-56 md:pt-36 md:pb-0 sm:pt-28 sm:pb-0">
+        <div className="lg:w-10/12 md:w-10/11 sm:w-11/12 mx-auto lg:pt-36 lg:pb-40 md:pt-36 md:pb-0 sm:pt-28 sm:pb-0">
           <div className="flex lg:flex-row md:flex-col sm:flex-col lg:gap-24 md:gap-16 sm:gap-4 text-white">
             <div className="basis-3/5">
               <h2 className="text-white lg:text-5xl md:text-3xl sm:text-3xl font-bold">

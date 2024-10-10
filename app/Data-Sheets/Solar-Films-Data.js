@@ -41,6 +41,8 @@ export const solarFilmsData = [
     id: 7,
     name: "Vista 99 XC",
     price: "€35000",
+    description:
+      "Vista 90 XC films are highly effective at reducing solar heat gain, whilst at the same time continuing to allow some natural light transmission. This film provides effective protection against solar glare, whilst its one-way mirror aspect further guarantees privacy from prying eyes. Its modern design immediately lends a contemporary feel to any building exterior.",
     image: "/images/product7.jpg",
   },
   {
