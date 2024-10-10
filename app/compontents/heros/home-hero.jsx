@@ -19,7 +19,7 @@ export default function HomeHero() {
               }}
             />
           </div>
-          <div className="lg:hidden md:hidden sm:block h-[60vh] bg-no-repeat">
+          <div className="lg:hidden md:hidden sm:block sm:h-[auto] bg-no-repeat">
             <Image
               alt="Solar Gard Solar Films"
               src={HomeHeroImgMobile}
@@ -37,7 +37,7 @@ export default function HomeHero() {
 
           {/* Text content outside of the gradient and with 100% opacity */}
           <div className="absolute bottom-0 flex items-center">
-            <h1 className="text-white lg:font-bold md:font-bold sm:font-semibold lg:text-4xl md:text-3xl sm:text-lg lg:w-[70%] lg:pb-16 lg:pl-24 md:pb-16 md:pl-16 sm:px-8 sm:py-8 z-10 opacity-100">
+            <h1 className="text-white lg:font-bold md:font-bold sm:font-semibold lg:text-4xl md:text-3xl sm:text-xl lg:w-[70%] lg:pb-16 lg:pl-24 md:pb-16 md:pl-16 sm:px-8 sm:py-8 z-10 opacity-100">
               Transform Spaces & Vehicles with Solar Gard Ireland. Experts in
               Glass Films, Surface Enhancements & Custom Wraps
             </h1>
