@@ -1,21 +1,37 @@
 import Image from "next/image";
 import HomeHeroImg from "@/public/images/hero-imgs/home-hero.jpg";
+import HomeHeroImgMobile from "@/public/images/hero-imgs/home-hero-mobile.jpg";
 export default function HomeHero() {
   return (
-    <div>
+    <div className="w-full h-auto">
       <div className="relative antialiased">
         <div>
-          <Image
-            alt="Solar Gard Solar Films"
-            src={HomeHeroImg}
-            placehoolder="blur"
-            quality={100}
-            size="100vw"
-            style={{
-              objectFit: "cover",
-              width: "100%",
-            }}
-          />
+          <div className="lg:block md:block sm:hidden">
+            <Image
+              alt="Solar Gard Solar Films"
+              src={HomeHeroImg}
+              placehoolder="blur"
+              quality={100}
+              size="100vw"
+              style={{
+                objectFit: "cover",
+                width: "100%",
+              }}
+            />
+          </div>
+          <div className="lg:hidden md:hidden sm:block h-[60vh] bg-no-repeat">
+            <Image
+              alt="Solar Gard Solar Films"
+              src={HomeHeroImgMobile}
+              placehoolder="blur"
+              quality={100}
+              size="100vw"
+              style={{
+                objectFit: "cover",
+                width: "100%",
+              }}
+            />
+          </div>
           {/* Gradient Overlay without opacity on the container */}
           <div className="absolute inset-0 bg-gradient-to-t from-slate-800 from-1% to-transparent"></div>
 
