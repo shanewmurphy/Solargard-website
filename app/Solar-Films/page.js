@@ -158,7 +158,8 @@ export default function SolarFilms() {
             <h4 className="lg:text-5xl font-bold mb-2">Environmental Impact</h4>
             <p className="font-medium lg:text-3xl w-[60%]">
               By improving energy efficiency, solar films can contribute to a
-              reduction in a building's carbon footprint by 10-15% over time.
+              reduction in a building&apos;s carbon footprint by 10-15% over
+              time.
             </p>
           </div>
         </div>
