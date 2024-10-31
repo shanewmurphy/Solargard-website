@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { solarFilmsData } from "@/app/Data-Sheets/Solar-Films-Data";
+import { Progress } from "@nextui-org/progress";
 const SolarFilmsData = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 6;
@@ -39,6 +40,9 @@ const SolarFilmsData = () => {
             />
             <h3 className="text-lg font-semibold">{product.name}</h3>
             <p className="text-gray-600">{product.price}</p>
+            <div className="flex h-8 p-8 flex-col gap-6 w-full max-w-md">
+              <Progress size="md" aria-label="Loading..." value={60} />
+            </div>
           </div>
         ))}
       </div>

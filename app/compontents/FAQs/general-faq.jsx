@@ -60,7 +60,7 @@ export default function GeneralFaqs() {
           <h4 className="text-secondary font-bold text-center lg:text-3xl md:text-3xl sm:text-xl lg:mb-8 md:mb-6 sm:mb-4">
             Common Questions & Answers
           </h4>
-          <div className="space-y-4">
+          <div className="lg:space-y-4 md:space-y-4 sm:space-y-2">
             {FAQ.map((item) => (
               <Disclosure key={item.id}>
                 {({ open }) => (

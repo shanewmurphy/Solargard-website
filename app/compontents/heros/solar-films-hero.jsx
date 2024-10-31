@@ -28,7 +28,7 @@ export default function SolarFilmHeroImg() {
           />
         </div>
         <div className="absolute bottom-0 flex items-center">
-          <h1 className="text-white lg:font-bold md:font-bold sm:font-semibold lg:text-4xl md:text-3xl sm:text-xl lg:w-[70%] lg:pb-16 lg:pl-24 md:pb-16 md:pl-16 sm:px-8 sm:py-8 z-10 opacity-100">
+          <h1 className="text-white lg:font-bold md:font-bold sm:font-semibold lg:text-5xl md:text-3xl sm:text-xl lg:w-[60%] lg:pb-16 lg:pl-24 md:pb-16 md:pl-16 sm:px-8 sm:py-8 z-10 opacity-100">
             Experience the Ultimate in Comfort and Efficiency with Solar Films
           </h1>
         </div>

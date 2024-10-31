@@ -24,7 +24,7 @@ export default function Home() {
         end: () => "+=" + (cards.length - 1) * 100 + "%",
         pin: true,
         anticipatePin: 1,
-        scrub: 1,
+        scrub: 2,
         markers: false, // Remove this in production
       },
     });
