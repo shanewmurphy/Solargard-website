@@ -147,14 +147,14 @@ export default function SolarFilms() {
         </div>
       </div>
       <div>
-        <div className="relative w-full h-screen overflow-hidden">
+        <div className="relative w-full h-[70vh] overflow-hidden">
           <Image
             src="/images/solar-films-imgs/Environmental-min.jpg"
             layout="fill"
             alt="Solar Gard"
             objectFit="cover"
           />
-          <div className="absolute bottom-0 pb-40 pl-20 text-white">
+          <div className="absolute bottom-0 pb-28 pl-20 text-white">
             <h4 className="lg:text-5xl font-bold mb-2">Environmental Impact</h4>
             <p className="font-medium lg:text-3xl w-[60%]">
               By improving energy efficiency, solar films can contribute to a
@@ -164,7 +164,7 @@ export default function SolarFilms() {
           </div>
         </div>
       </div>
-      <div className="flex">
+      <div className="flex w-full bg-gray">
         <SolarFilmsData />
       </div>
     </div>
