@@ -4,7 +4,7 @@ import "./globals.css";
 import NavDesktop from "./compontents/shared-compontents/nav-desktop";
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 const geistSans = localFont({

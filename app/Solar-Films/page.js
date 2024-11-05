@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import SolarFilmsData from "../compontents/film-collections/solar-films";
 import Image from "next/image";
 import SolarFilmHeroImg from "../compontents/heros/solar-films-hero";
-
+import EnvironmentalImg from "/public/images/solar-films-imgs/Environmental-min.jpg";
 const BenefitsCardData = [
   {
     id: "01",
@@ -147,11 +147,11 @@ export default function SolarFilms() {
         </div>
       </div>
       <div>
-        <div className="relative w-full h-[70vh] overflow-hidden">
+        <div className="relative w-full h-[75vh] overflow-hidden">
           <Image
-            src="/images/solar-films-imgs/Environmental-min.jpg"
+            src={EnvironmentalImg}
             layout="fill"
-            alt="Solar Gard"
+            alt="Solar Gard Ireland Environmental impact of Solar films"
             objectFit="cover"
           />
           <div className="absolute bottom-0 pb-28 pl-20 text-white">
