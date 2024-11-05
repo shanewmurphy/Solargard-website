@@ -4,40 +4,62 @@ import { useState } from "react";
 import { solarFilmsData } from "@/app/Data-Sheets/Solar-Films-Data";
 import { Progress } from "@nextui-org/progress";
 import Image from "next/image";
+
+const categories = [
+  "All",
+  "Exterior Mirror",
+  "Exterior Innovative",
+  "Interior Mirror",
+  "Exterior Colour",
+  "Multi Alloy",
+  "Thermal Insulation",
+  "Polycarbonate Solar",
+  "Anti UV",
+  "Solar Varnish",
+];
+
 const SolarFilmsData = () => {
   const [currentPage, setCurrentPage] = useState(1);
+  const [filterCategory, setFilterCategory] = useState("All");
   const productsPerPage = 6;
+
+  const filteredProducts =
+    filterCategory === "All"
+      ? solarFilmsData
+      : solarFilmsData.filter((product) => product.category === filterCategory);
 
   // Calculate the products to display for the current page
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-  const currentProducts = solarFilmsData.slice(
+  const currentProducts = filteredProducts.slice(
     indexOfFirstProduct,
     indexOfLastProduct
   );
 
-  // Function to handle page change
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
-
   const pageNumbers = [];
   for (
     let i = 1;
-    i <= Math.ceil(solarFilmsData.length / productsPerPage);
+    i <= Math.ceil(filteredProducts.length / productsPerPage);
     i++
   ) {
     pageNumbers.push(i);
   }
+
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
   function truncateText(text, wordLimit) {
-    if (!text) return ""; // Return an empty string if text is undefined or null
+    if (!text) return "";
     const words = text.split(" ");
     if (words.length > wordLimit) {
       return words.slice(0, wordLimit).join(" ") + "……";
     }
     return text;
   }
+
   return (
     <div className="w-11/12 mx-auto">
-      <div></div>
       <div className="container mx-auto lg:px-4 lg:py-24">
         <div className="w-7/12 mb-14">
           <h2 className="lg:text-5xl lg:mb-4 font-bold">
@@ -48,60 +70,85 @@ const SolarFilmsData = () => {
             for Every Space
           </p>
         </div>
+        {/* Filter Buttons */}
+        <div className="flex items-center flex-wrap gap-2 mb-8">
+          <div className="flex">
+            <span>
+              <FilterIcon />
+            </span>
+            <h6 className="text-sm font-semibold text-secondary pl-2">
+              Filter |
+            </h6>
+          </div>
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => {
+                setFilterCategory(category);
+                setCurrentPage(1); // Reset to first page when filter changes
+              }}
+              className={`px-2 py-1 text-sm font-semibold text-secondary rounded-md ${
+                filterCategory === category
+                  ? "bg-blue-500 text-white"
+                  : "bg-gray-200 text-gray-700"
+              } hover:bg-blue-500 hover:text-white cursor-pointer`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
         {/* Product Cards */}
-        <div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-24">
-            {currentProducts.map((product) => (
-              <div key={product.id} className="">
-                <div className="rounded-2xl py-16 bg-white">
-                  <div className="mx-auto">
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-56 h-56 mx-auto rounded-full bg-center bg-cover"
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 gap-y-24">
+          {currentProducts.map((product) => (
+            <div key={product.id} className="">
+              <div className="rounded-2xl py-16 bg-white">
+                <div className="mx-auto">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-56 h-56 mx-auto rounded-full bg-center bg-cover"
+                  />
+                </div>
+                <h3 className="font-semibold text-secondary text-center lg:text-3xl mt-2">
+                  {product.name}
+                </h3>
+                <div className="w-9/12 mx-auto mt-8">
+                  <div className="inline-flex items-center">
+                    <span>
+                      <SunRejection />
+                    </span>
+                    <h6 className="lg:text-sm text-secondary font-medium pl-2">
+                      Total Solar Energy Rejected
+                    </h6>
+                  </div>
+                  <div className="flex flex-col w-full bg-slate-100 rounded-lg max-w-md">
+                    <Progress size="lg" value={product.EnergyRejectedValue} />
+                  </div>
+                </div>
+                <div className="w-9/12 mx-auto mt-4">
+                  <div className="inline-flex items-center">
+                    <span>
+                      <LightTransmission />
+                    </span>
+                    <h6 className="lg:text-sm text-secondary font-medium pl-2">
+                      Visible Light Transmission
+                    </h6>
+                  </div>
+                  <div className="flex flex-col w-full bg-slate-100 rounded-lg max-w-md">
+                    <Progress
+                      size="lg"
+                      value={product.VisibleLightTransValue}
                     />
                   </div>
-                  <h3 className="font-semibold text-secondary text-center lg:text-3xl mt-2">
-                    {product.name}
-                  </h3>
-                  <div className="w-9/12 mx-auto mt-8">
-                    <div className="inline-flex items-center">
-                      <span>
-                        <SunRejection />
-                      </span>
-                      <h6 className="lg:text-sm text-secondary font-medium pl-2">
-                        Total Solar Energy Rejected
-                      </h6>
-                    </div>
-                    <div className="flex flex-col w-full bg-slate-100 rounded-lg max-w-md">
-                      <Progress size="lg" value={product.EnergyRejectedValue} />
-                    </div>
-                  </div>
-                  <div className="w-9/12 mx-auto mt-4">
-                    <div className="inline-flex items-center">
-                      <span>
-                        <LightTransmission />
-                      </span>
-                      <h6 className="lg:text-sm text-secondary font-medium pl-2">
-                        Visible Light Transmission
-                      </h6>
-                    </div>
-                    <div className="flex flex-col w-full bg-slate-100 rounded-lg max-w-md">
-                      <Progress
-                        size="lg"
-                        value={product.VisibleLightTransValue}
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <p className="text-sm lg:pt-2">
-                    {truncateText(product.filmDescription, 35)}
-                  </p>
                 </div>
               </div>
-            ))}
-          </div>
+              <div>
+                <p className="text-sm lg:pt-2">
+                  {truncateText(product.filmDescription, 35)}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
 
         {/* Pagination */}
@@ -209,6 +256,23 @@ function LightTransmission() {
         clipRule="evenodd"
         d="M20.621 7.34439C20.6325 7.35329 20.6426 7.36346 20.6528 7.37364C24.3729 11.0936 24.3638 17.142 20.6325 20.8733C16.901 24.6046 10.8511 24.6134 7.13228 20.8949C7.11193 20.8746 7.09412 20.8542 7.07886 20.8326C3.46199 17.0951 3.49878 11.1216 7.19078 7.42963C10.893 3.7276 16.8856 3.69956 20.621 7.34439ZM20.2611 8.52457L8.28071 20.5045C11.6013 23.4321 16.6872 23.2998 19.872 20.1153C23.0568 16.9309 23.1889 11.8467 20.2611 8.52457ZM13.6427 0.357376C13.6427 0.160254 13.8029 0 14.0001 0C14.1972 0 14.3575 0.160241 14.3575 0.357376V2.75971C14.3575 2.95683 14.1972 3.11708 14.0001 3.11708C13.803 3.11708 13.6427 2.95684 13.6427 2.75971V0.357376ZM3.19222 4.20689C3.05232 4.067 3.05232 3.84063 3.19222 3.70073C3.33211 3.56084 3.55849 3.56084 3.6984 3.70073L6.37554 6.37777C6.51544 6.51767 6.51544 6.74404 6.37554 6.88393C6.23565 7.02383 6.00927 7.02383 5.86936 6.88393L3.19222 4.20689ZM23.794 3.70073C23.9339 3.56084 24.1602 3.56084 24.3001 3.70073C24.44 3.84062 24.44 4.06699 24.3001 4.20689L21.623 6.88393C21.4831 7.02383 21.2567 7.02383 21.1168 6.88393C20.9769 6.74404 20.9769 6.51767 21.1168 6.37777L23.794 3.70073ZM0.357389 14.3579C0.16026 14.3579 0 14.1976 0 14.0005C0 13.8034 0.160247 13.6431 0.357389 13.6431H2.75981C2.95694 13.6431 3.1172 13.8034 3.1172 14.0005C3.1172 14.1976 2.95696 14.3579 2.75981 14.3579H0.357389ZM13.6427 25.2403C13.6427 25.0432 13.8029 24.8829 14.0001 24.8829C14.1972 24.8829 14.3575 25.0432 14.3575 25.2403V27.6426C14.3575 27.8397 14.1972 28 14.0001 28C13.803 28 13.6427 27.8398 13.6427 27.6426V25.2403ZM21.3817 22.3967C21.2418 22.2568 21.2418 22.0304 21.3817 21.8905C21.5216 21.7506 21.748 21.7506 21.8879 21.8905L24.2992 24.3017C24.4391 24.4416 24.4391 24.668 24.2992 24.8079C24.1593 24.9478 23.9329 24.9478 23.793 24.8079L21.3817 22.3967ZM5.60379 21.8905C5.74369 21.7506 5.97007 21.7506 6.10997 21.8905C6.24987 22.0304 6.24987 22.2568 6.10997 22.3967L3.69866 24.8079C3.55876 24.9478 3.33238 24.9478 3.19248 24.8079C3.05258 24.668 3.05258 24.4416 3.19248 24.3017L5.60379 21.8905ZM25.2402 14.3578C25.0431 14.3578 24.8828 14.1976 24.8828 14.0005C24.8828 13.8033 25.043 13.6431 25.2402 13.6431H27.6426C27.8397 13.6431 28 13.8033 28 14.0005C28 14.1976 27.8398 14.3578 27.6426 14.3578H25.2402Z"
         fill="#505050"
+      />
+    </svg>
+  );
+}
+
+function FilterIcon() {
+  return (
+    <svg
+      width="20"
+      height="21"
+      viewBox="0 0 20 21"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12.6918 17.8874L7.84842 20.8488C7.68995 20.9454 7.51379 20.9964 7.33422 20.9998C7.1567 21.0032 6.97918 20.959 6.81867 20.8686C6.65543 20.7767 6.52416 20.6482 6.43506 20.4951C6.34596 20.3394 6.29699 20.1639 6.29699 19.9789V11.0791C6.29699 11.0226 6.29019 10.973 6.27658 10.9294C6.26298 10.8852 6.24053 10.841 6.20993 10.7982L0.268083 2.29961C0.108926 2.07176 0.019826 1.8167 0.00282214 1.5562C-0.0135016 1.2957 0.0409109 1.03112 0.1681 0.786941C0.295289 0.542765 0.480972 0.346199 0.706104 0.210168C0.931235 0.0734569 1.19105 0 1.46584 0H18.012C18.2868 0 18.5466 0.0734569 18.7717 0.210168C18.9969 0.346199 19.1825 0.542765 19.3097 0.786941C19.4369 1.0318 19.492 1.2957 19.475 1.5562C19.458 1.8167 19.3689 2.07176 19.2098 2.29961L13.2672 10.7968C13.2373 10.8396 13.2155 10.8839 13.2006 10.9301C13.187 10.9743 13.1802 11.024 13.1802 11.0804V17.0182C13.1802 17.1977 13.1353 17.3678 13.0516 17.5174C12.968 17.6657 12.8462 17.7929 12.6911 17.8874H12.6918Z"
+        fill="#4A4949"
       />
     </svg>
   );
