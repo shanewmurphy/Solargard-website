@@ -3,6 +3,14 @@
 import { useState } from "react";
 import { solarFilmsData } from "@/app/Data-Sheets/Solar-Films-Data";
 import { Progress } from "@nextui-org/progress";
+import {
+  Listbox,
+  ListboxButton,
+  ListboxOption,
+  ListboxOptions,
+} from "@headlessui/react";
+import { CheckIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
+import clsx from "clsx";
 import Image from "next/image";
 
 const categories = [
@@ -11,11 +19,11 @@ const categories = [
   "Exterior Innovative",
   "Interior Mirror",
   "Exterior Colour",
+  "Exterior Neutral",
+  "Interior Colour",
+  "Interior Neutral",
   "Multi Alloy",
-  "Thermal Insulation",
-  "Polycarbonate Solar",
   "Anti UV",
-  "Solar Varnish",
 ];
 
 const SolarFilmsData = () => {
@@ -23,6 +31,7 @@ const SolarFilmsData = () => {
   const [filterCategory, setFilterCategory] = useState("All");
   const productsPerPage = 6;
 
+  // Filtered products based on the selected category
   const filteredProducts =
     filterCategory === "All"
       ? solarFilmsData
@@ -36,26 +45,20 @@ const SolarFilmsData = () => {
     indexOfLastProduct
   );
 
-  const pageNumbers = [];
-  for (
-    let i = 1;
-    i <= Math.ceil(filteredProducts.length / productsPerPage);
-    i++
-  ) {
-    pageNumbers.push(i);
-  }
+  // Calculate the number of pages
+  const pageNumbers = Array.from(
+    { length: Math.ceil(filteredProducts.length / productsPerPage) },
+    (_, i) => i + 1
+  );
 
-  const paginate = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  };
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   function truncateText(text, wordLimit) {
     if (!text) return "";
     const words = text.split(" ");
-    if (words.length > wordLimit) {
-      return words.slice(0, wordLimit).join(" ") + "……";
-    }
-    return text;
+    return words.length > wordLimit
+      ? words.slice(0, wordLimit).join(" ") + "……"
+      : text;
   }
 
   return (
@@ -70,43 +73,102 @@ const SolarFilmsData = () => {
             for Every Space
           </p>
         </div>
-        {/* Filter Buttons */}
+
+        {/* Filter Buttons and Listbox for Mobile */}
         <div className="flex items-center flex-wrap gap-2 mb-8">
           <div className="flex">
             <span>
               <FilterIcon />
             </span>
-            <h6 className="text-sm font-semibold text-secondary pl-2">
+            <h6 className="text-sm font-medium text-secondary pl-2">
               Filter |
             </h6>
           </div>
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => {
-                setFilterCategory(category);
-                setCurrentPage(1); // Reset to first page when filter changes
+
+          {/* Desktop Filter Buttons */}
+          <div className="hidden md:flex gap-2">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => {
+                  setFilterCategory(category);
+                  setCurrentPage(1); // Reset to first page when filter changes
+                }}
+                className={`px-2 py-1 text-sm font-medium text-secondary rounded-md ${
+                  filterCategory === category
+                    ? "bg-blue-500 text-white"
+                    : "bg-gray-200 text-gray-700"
+                } hover:bg-blue-500 hover:text-white cursor-pointer`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+
+          {/* Mobile Listbox for Category Selection */}
+          <div className="w-full md:hidden">
+            <Listbox
+              value={filterCategory}
+              onChange={(value) => {
+                setFilterCategory(value);
+                setCurrentPage(1); // Reset to first page on filter change
               }}
-              className={`px-2 py-1 text-sm font-semibold text-secondary rounded-md ${
-                filterCategory === category
-                  ? "bg-blue-500 text-white"
-                  : "bg-gray-200 text-gray-700"
-              } hover:bg-blue-500 hover:text-white cursor-pointer`}
             >
-              {category}
-            </button>
-          ))}
+              <div className="relative">
+                <ListboxButton className="relative w-full py-2 pl-3 pr-10 text-left bg-gray-200 rounded-lg cursor-pointer">
+                  <span className="block truncate">{filterCategory}</span>
+                  <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+                    <ChevronDownIcon className="w-5 h-5 text-gray-400" />
+                  </span>
+                </ListboxButton>
+                <ListboxOptions className="absolute w-full py-1 mt-1 overflow-auto text-base bg-white rounded-md shadow-lg max-h-60 focus:outline-none">
+                  {categories.map((category) => (
+                    <ListboxOption
+                      key={category}
+                      value={category}
+                      className={({ active }) =>
+                        `cursor-pointer select-none relative py-2 pl-10 pr-4 ${
+                          active ? "text-blue-600 bg-blue-100" : "text-gray-900"
+                        }`
+                      }
+                    >
+                      {({ selected }) => (
+                        <>
+                          <span
+                            className={`block truncate ${
+                              selected ? "font-medium" : "font-normal"
+                            }`}
+                          >
+                            {category}
+                          </span>
+                          {selected ? (
+                            <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-blue-600">
+                              <CheckIcon
+                                className="w-5 h-5"
+                                aria-hidden="true"
+                              />
+                            </span>
+                          ) : null}
+                        </>
+                      )}
+                    </ListboxOption>
+                  ))}
+                </ListboxOptions>
+              </div>
+            </Listbox>
+          </div>
         </div>
+
         {/* Product Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 gap-y-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 gap-y-16">
           {currentProducts.map((product) => (
             <div key={product.id} className="">
-              <div className="rounded-2xl py-16 bg-white">
+              <div className="rounded-2xl py-12 bg-white">
                 <div className="mx-auto">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-56 h-56 mx-auto rounded-full bg-center bg-cover"
+                    className="w-48 h-48 mx-auto rounded-full bg-center bg-cover"
                   />
                 </div>
                 <h3 className="font-semibold text-secondary text-center lg:text-3xl mt-2">

@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 
-import SolarFilmsData from "../compontents/Solar-films-collection/solar-films";
+import SolarFilmsData from "../compontents/film-collections/solar-films";
 import Image from "next/image";
 import SolarFilmHeroImg from "../compontents/heros/solar-films-hero";
 
