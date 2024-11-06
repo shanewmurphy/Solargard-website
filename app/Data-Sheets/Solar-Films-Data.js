@@ -4,7 +4,7 @@ export const solarFilmsData = [
   {
     id: 1,
     name: "Alu 50 XC",
-    slug: "Alu 50 XC",
+    slug: "alu-50-xc",
     category: "Exterior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -42,7 +42,7 @@ export const solarFilmsData = [
   {
     id: 2,
     name: "Alu 70 XC",
-    slug: "Alu 70 XC",
+    slug: "alu-70-xc",
     category: "Exterior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-02.jpg",
@@ -80,7 +80,7 @@ export const solarFilmsData = [
   {
     id: 3,
     name: "Alu 80 XC",
-    slug: "Alu 80 XC",
+    slug: "alu-80-xc",
     category: "Exterior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -118,7 +118,7 @@ export const solarFilmsData = [
   {
     id: 4,
     name: "Chrome 245 XC",
-    slug: "Chrome 245 XC",
+    slug: "chrome-245-xc",
     category: "Exterior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -157,7 +157,7 @@ export const solarFilmsData = [
   {
     id: 5,
     name: "Chrome 270 XC",
-    slug: "Chrome 270 XC",
+    slug: "chrome-270-xc",
     category: "Exterior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-02.jpg",
@@ -196,7 +196,7 @@ export const solarFilmsData = [
   {
     id: 6,
     name: "Chrome 285 XC",
-    slug: "Chrome 285 XC",
+    slug: "chrome-285-xc",
     category: "Exterior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-02.jpg",
@@ -235,7 +235,7 @@ export const solarFilmsData = [
   {
     id: 7,
     name: "Silver 44 XC",
-    slug: "Silver 44 XC",
+    slug: "silver-44-xc",
     category: "Exterior Mirror",
     description:
       "Vista 90 XC films are highly effective at reducing solar heat gain, whilst at the same time continuing to allow some natural light transmission. This film provides effective protection against solar glare, whilst its one-way mirror aspect further guarantees privacy from prying eyes. Its modern design immediately lends a contemporary feel to any building exterior.",
@@ -276,7 +276,7 @@ export const solarFilmsData = [
   {
     id: 8,
     name: "Silver 60 XC",
-    slug: "Silver 60 XC",
+    slug: "silver-60-xc",
     category: "Exterior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -315,7 +315,7 @@ export const solarFilmsData = [
   {
     id: 9,
     name: "Silver 80 XC",
-    slug: "Silver 80 XC",
+    slug: "silver-80-xc",
     category: "Exterior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-02.jpg",
@@ -354,7 +354,7 @@ export const solarFilmsData = [
   {
     id: 10,
     name: "Sky Black 99 XC",
-    slug: "Sky Black 99 XC",
+    slug: "sky-black-99-xc",
     category: "Exterior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -393,7 +393,7 @@ export const solarFilmsData = [
   {
     id: 11,
     name: "Vista 90 XC",
-    slug: "Vista 90 XC",
+    slug: "vista-90-xc",
     category: "Exterior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -432,7 +432,7 @@ export const solarFilmsData = [
   {
     id: 12,
     name: "Vista 99 XC",
-    slug: "Vista 99 XCC",
+    slug: "vista-99-xc",
     category: "Exterior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -471,7 +471,7 @@ export const solarFilmsData = [
   {
     id: 13,
     name: "Clarity 245 XC",
-    slug: "Clarity 245 XC",
+    slug: "clarity-245-xc",
     category: "Exterior Innovative",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -510,7 +510,7 @@ export const solarFilmsData = [
   {
     id: 14,
     name: "Clarity 333 XC",
-    slug: "Clarity 333 XC",
+    slug: "clarity-333-xc",
     category: "Exterior Innovative",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-02.jpg",
@@ -549,7 +549,7 @@ export const solarFilmsData = [
   {
     id: 15,
     name: "Spectra 333 XC",
-    slug: "Spectra 333 XC",
+    slug: "spectra-333-xc",
     category: "Exterior Innovative",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-02.jpg",
@@ -588,7 +588,7 @@ export const solarFilmsData = [
   {
     id: 16,
     name: "Azur 80 XC",
-    slug: "Azur 80 XC",
+    slug: "azur-80-xc",
     category: "Exterior Colour",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-03.jpg",
@@ -627,7 +627,7 @@ export const solarFilmsData = [
   {
     id: 17,
     name: "Bronze 80 XC",
-    slug: "Bronze 80 XC",
+    slug: "bronze-80-xc",
     category: "Exterior Colour",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-02.jpg",
@@ -666,7 +666,7 @@ export const solarFilmsData = [
   {
     id: 18,
     name: "Copper 80 XC",
-    slug: "Copper 80 XC",
+    slug: "copper-80-xc",
     category: "Exterior Colour",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -705,7 +705,7 @@ export const solarFilmsData = [
   {
     id: 19,
     name: "Green 80 XC",
-    slug: "Green 80 XC",
+    slug: "green-80-xc",
     category: "Exterior Colour",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-04.jpg",
@@ -744,7 +744,7 @@ export const solarFilmsData = [
   {
     id: 20,
     name: "Charcoal 95 XC",
-    slug: "Charcoal 95 XC",
+    slug: "charcoal-95-xc",
     category: "Exterior Neutral",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -783,7 +783,7 @@ export const solarFilmsData = [
   {
     id: 21,
     name: "Natural 65 XC",
-    slug: "Natural 65 XC",
+    slug: "natural-65-xc",
     category: "Exterior Neutral",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -822,7 +822,7 @@ export const solarFilmsData = [
   {
     id: 22,
     name: "Natural 80 XC",
-    slug: "Natural 80 XC",
+    slug: "natural-80-xc",
     category: "Exterior Neutral",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -861,7 +861,7 @@ export const solarFilmsData = [
   {
     id: 23,
     name: "Nickel 80 XC",
-    slug: "Nickel 80 XC",
+    slug: "nickel-80-xc",
     category: "Exterior Neutral",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -900,7 +900,7 @@ export const solarFilmsData = [
   {
     id: 24,
     name: "Titane 250 XC",
-    slug: "Titane 250 XC",
+    slug: "titane-250-xc",
     category: "Exterior Neutral",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -939,7 +939,7 @@ export const solarFilmsData = [
   {
     id: 25,
     name: "Titane 275 XC",
-    slug: "Titane 275 XC",
+    slug: "titane-275-xc",
     category: "Exterior Neutral",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -978,7 +978,7 @@ export const solarFilmsData = [
   {
     id: 26,
     name: "Alu 50 Static",
-    slug: "Alu 50 Static",
+    slug: "alu-50-static",
     category: "Interior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -1017,7 +1017,7 @@ export const solarFilmsData = [
   {
     id: 27,
     name: "Alu 70 C",
-    slug: "Alu 70 C",
+    slug: "alu-70-c",
     category: "Interior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -1056,7 +1056,7 @@ export const solarFilmsData = [
   {
     id: 28,
     name: "Alu 80 C",
-    slug: "Alu 80 C",
+    slug: "alu-80-c",
     category: "Interior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -1095,7 +1095,7 @@ export const solarFilmsData = [
   {
     id: 29,
     name: "Alu 80 Static",
-    slug: "Alu 80 Static",
+    slug: "alu-80-static",
     category: "Interior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -1134,7 +1134,7 @@ export const solarFilmsData = [
   {
     id: 30,
     name: "Silver 50 C",
-    slug: "Silver 50 C",
+    slug: "silver-50-c",
     category: "Interior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -1173,7 +1173,7 @@ export const solarFilmsData = [
   {
     id: 31,
     name: "Silver 70 C",
-    slug: "Silver 70 C",
+    slug: "silver-70-c",
     category: "Interior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -1212,7 +1212,7 @@ export const solarFilmsData = [
   {
     id: 32,
     name: "Silver 80 C",
-    slug: "Silver 80 C",
+    slug: "silver-80-c",
     category: "Interior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -1251,7 +1251,7 @@ export const solarFilmsData = [
   {
     id: 33,
     name: "Silver 95 C",
-    slug: "Silver 95 C",
+    slug: "silver-95-c",
     category: "Interior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -1290,7 +1290,7 @@ export const solarFilmsData = [
   {
     id: 34,
     name: "Silver 99 C",
-    slug: "Silver 99 C",
+    slug: "silver-99-c",
     category: "Interior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -1329,7 +1329,7 @@ export const solarFilmsData = [
   {
     id: 35,
     name: "Vista 80 C",
-    slug: "Vista 80 C",
+    slug: "vista-80-c",
     category: "Interior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -1368,7 +1368,7 @@ export const solarFilmsData = [
   {
     id: 36,
     name: "Vista 90 C",
-    slug: "Vista 90 C",
+    slug: "vista-90-c",
     category: "Interior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -1407,7 +1407,7 @@ export const solarFilmsData = [
   {
     id: 37,
     name: "Blue 80 C",
-    slug: "Blue 80 C",
+    slug: "blue-80-c",
     category: "Interior Colour",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-03.jpg",
@@ -1446,7 +1446,7 @@ export const solarFilmsData = [
   {
     id: 38,
     name: "Bronze 80 C",
-    slug: "Bronze 80 C",
+    slug: "bronze-80-c",
     category: "Interior Colour",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-05.jpg",
@@ -1485,7 +1485,7 @@ export const solarFilmsData = [
   {
     id: 39,
     name: "Copper 50 C",
-    slug: "Copper 50 C",
+    slug: "copper-50-c",
     category: "Interior Colour",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-05.jpg",
@@ -1524,7 +1524,7 @@ export const solarFilmsData = [
   {
     id: 40,
     name: "Copper 65 C",
-    slug: "Copper 65 C",
+    slug: "copper-65-c",
     category: "Interior Colour",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-05.jpg",
@@ -1563,7 +1563,7 @@ export const solarFilmsData = [
   {
     id: 41,
     name: "Copper 80 C",
-    slug: "Copper 80 C",
+    slug: "copper-80-c",
     category: "Interior Colour",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-05.jpg",
@@ -1602,7 +1602,7 @@ export const solarFilmsData = [
   {
     id: 42,
     name: "Green 80 C",
-    slug: "Green 80 C",
+    slug: "green-80-c",
     category: "Interior Colour",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-06.jpg",
@@ -1641,7 +1641,7 @@ export const solarFilmsData = [
   {
     id: 43,
     name: "Steel 50 C",
-    slug: "Steel 50 C",
+    slug: "steel-50-c",
     category: "Interior Neutral",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-07.jpg",
@@ -1680,7 +1680,7 @@ export const solarFilmsData = [
   {
     id: 44,
     name: "Steel 65 C",
-    slug: "Steel 65 C",
+    slug: "steel-65-c",
     category: "Interior Neutral",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-07.jpg",
@@ -1719,7 +1719,7 @@ export const solarFilmsData = [
   {
     id: 45,
     name: "Steel 75 C",
-    slug: "Steel 75 C",
+    slug: "steel-75-c",
     category: "Interior Neutral",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-07.jpg",
@@ -1758,7 +1758,7 @@ export const solarFilmsData = [
   {
     id: 46,
     name: "Multiglass 66 C",
-    slug: "Multiglass 66 C",
+    slug: "multiglass-66-c",
     category: "Multi Alloy",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -1797,7 +1797,7 @@ export const solarFilmsData = [
   {
     id: 47,
     name: "Spectra 30 C",
-    slug: "Spectra 30 C",
+    slug: "spectra-30-c",
     category: "Multi Alloy",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -1836,7 +1836,7 @@ export const solarFilmsData = [
   {
     id: 48,
     name: "Spectra 33 C",
-    slug: "Spectra 33 C",
+    slug: "spectra-33-c",
     category: "Multi Alloy",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
@@ -1875,7 +1875,7 @@ export const solarFilmsData = [
   {
     id: 49,
     name: "Amber C",
-    slug: "Amber C",
+    slug: "amber-c",
     category: "Anti UV",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-08.jpg",
@@ -1914,7 +1914,7 @@ export const solarFilmsData = [
   {
     id: 50,
     name: "Clear 1 UVC",
-    slug: "Clear 1 UVC",
+    slug: "clear-1-ucv",
     category: "Anti UV",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-08.jpg",
@@ -1953,7 +1953,7 @@ export const solarFilmsData = [
   {
     id: 51,
     name: "Grey 30 UVC",
-    slug: "Grey 30 UVC",
+    slug: "grey-30-uvc",
     category: "Anti UV",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-08.jpg",
@@ -1992,7 +1992,7 @@ export const solarFilmsData = [
   {
     id: 52,
     name: "Neutral 40 UVC",
-    slug: "Neutral 40 UVC",
+    slug: "neutral-40-uvc",
     category: "Anti UV",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-10.jpg",
@@ -2031,7 +2031,7 @@ export const solarFilmsData = [
   {
     id: 53,
     name: "Total UV 400",
-    slug: "Total UV 400",
+    slug: "total-uv-400",
     category: "Anti UV",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-10.jpg",

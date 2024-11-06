@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { solarFilmsData } from "@/app/Data-Sheets/Solar-Films-Data";
+import Link from "next/link";
 import { Progress } from "@nextui-org/progress";
 import {
   Listbox,
@@ -162,61 +163,68 @@ const SolarFilmsData = () => {
         {/* Product Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 gap-y-16">
           {currentProducts.map((product) => (
-            <div key={product.id} className="">
-              <div className="rounded-2xl py-12 bg-white">
-                <div className="mx-auto">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-48 h-48 mx-auto rounded-full bg-center bg-cover"
-                  />
-                </div>
-                <h3 className="font-semibold text-secondary text-center lg:text-3xl mt-2">
-                  {product.name}
-                </h3>
-                <div className="w-9/12 mx-auto mt-8">
-                  <div className="inline-flex items-center">
-                    <span>
-                      <SunRejection />
-                    </span>
-                    <h6 className="lg:text-sm text-secondary font-medium pl-2">
-                      Total Solar Energy Rejected
-                    </h6>
-                  </div>
-                  <div className="flex flex-col w-full bg-slate-100 rounded-lg max-w-md">
-                    <Progress
-                      aria-label="Loading..."
-                      size="lg"
-                      className="h-3"
-                      value={product.EnergyRejectedValue}
+            <Link
+              key={product.id}
+              href={`/Single-Solar-Film-Page/${encodeURIComponent(
+                product.slug
+              )}`}
+            >
+              <div key={product.id} className="">
+                <div className="rounded-2xl py-12 bg-white">
+                  <div className="mx-auto">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-48 h-48 mx-auto rounded-full bg-center bg-cover"
                     />
                   </div>
+                  <h3 className="font-semibold text-secondary text-center lg:text-3xl mt-2">
+                    {product.name}
+                  </h3>
+                  <div className="w-9/12 mx-auto mt-8">
+                    <div className="inline-flex items-center">
+                      <span>
+                        <SunRejection />
+                      </span>
+                      <h6 className="lg:text-sm text-secondary font-medium pl-2">
+                        Total Solar Energy Rejected
+                      </h6>
+                    </div>
+                    <div className="flex flex-col w-full bg-slate-100 rounded-lg max-w-md">
+                      <Progress
+                        aria-label="Loading..."
+                        size="lg"
+                        className="h-3"
+                        value={product.EnergyRejectedValue}
+                      />
+                    </div>
+                  </div>
+                  <div className="w-9/12 mx-auto mt-4">
+                    <div className="inline-flex items-center">
+                      <span>
+                        <LightTransmission />
+                      </span>
+                      <h6 className="lg:text-sm text-secondary font-medium pl-2">
+                        Visible Light Transmission
+                      </h6>
+                    </div>
+                    <div className="flex flex-col w-full bg-slate-100 rounded-lg max-w-md">
+                      <Progress
+                        size="lg"
+                        aria-label="Loading..."
+                        className="h-3"
+                        value={product.VisibleLightTransValue}
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div className="w-9/12 mx-auto mt-4">
-                  <div className="inline-flex items-center">
-                    <span>
-                      <LightTransmission />
-                    </span>
-                    <h6 className="lg:text-sm text-secondary font-medium pl-2">
-                      Visible Light Transmission
-                    </h6>
-                  </div>
-                  <div className="flex flex-col w-full bg-slate-100 rounded-lg max-w-md">
-                    <Progress
-                      size="lg"
-                      aria-label="Loading..."
-                      className="h-3"
-                      value={product.VisibleLightTransValue}
-                    />
-                  </div>
+                <div>
+                  <p className="text-sm lg:pt-2">
+                    {truncateText(product.filmDescription, 35)}
+                  </p>
                 </div>
               </div>
-              <div>
-                <p className="text-sm lg:pt-2">
-                  {truncateText(product.filmDescription, 35)}
-                </p>
-              </div>
-            </div>
+            </Link>
           ))}
         </div>
 
