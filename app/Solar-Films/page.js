@@ -150,9 +150,12 @@ export default function SolarFilms() {
         <div className="relative w-full h-[75vh] overflow-hidden">
           <Image
             src={EnvironmentalImg}
-            layout="fill"
+            fill
             alt="Solar Gard Ireland Environmental impact of Solar films"
-            objectFit="cover"
+            sizes="100vw"
+            style={{
+              objectFit: "cover", // cover, contain, none
+            }}
           />
           <div className="absolute bottom-0 pb-28 pl-20 text-white">
             <h4 className="lg:text-5xl font-bold mb-2">Environmental Impact</h4>

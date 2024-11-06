@@ -1,4 +1,4 @@
-export default function SolarFilmPage() {
+export default function SolarFilmSinglePage() {
   return (
     <div>
       <div>KKKK</div>

@@ -96,9 +96,9 @@ const SolarFilmsData = () => {
                 }}
                 className={`px-2 py-1 text-sm font-medium text-secondary rounded-md ${
                   filterCategory === category
-                    ? "bg-blue-500 text-white"
+                    ? "bg-primary text-white"
                     : "bg-gray-200 text-gray-700"
-                } hover:bg-blue-500 hover:text-white cursor-pointer`}
+                } hover:bg-primary hover:text-white cursor-pointer`}
               >
                 {category}
               </button>
@@ -184,7 +184,12 @@ const SolarFilmsData = () => {
                     </h6>
                   </div>
                   <div className="flex flex-col w-full bg-slate-100 rounded-lg max-w-md">
-                    <Progress size="lg" value={product.EnergyRejectedValue} />
+                    <Progress
+                      aria-label="Loading..."
+                      size="lg"
+                      className="h-3"
+                      value={product.EnergyRejectedValue}
+                    />
                   </div>
                 </div>
                 <div className="w-9/12 mx-auto mt-4">
@@ -199,6 +204,8 @@ const SolarFilmsData = () => {
                   <div className="flex flex-col w-full bg-slate-100 rounded-lg max-w-md">
                     <Progress
                       size="lg"
+                      aria-label="Loading..."
+                      className="h-3"
                       value={product.VisibleLightTransValue}
                     />
                   </div>
