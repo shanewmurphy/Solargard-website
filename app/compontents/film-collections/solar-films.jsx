@@ -4,15 +4,9 @@ import { useState } from "react";
 import { solarFilmsData } from "@/app/Data-Sheets/Solar-Films-Data";
 import Link from "next/link";
 import { Progress } from "@nextui-org/progress";
-import {
-  Listbox,
-  ListboxButton,
-  ListboxOption,
-  ListboxOptions,
-} from "@headlessui/react";
-import { CheckIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
-import clsx from "clsx";
 import Image from "next/image";
+import { Select, SelectItem } from "@nextui-org/select";
+import { Pagination } from "@nextui-org/pagination";
 
 const categories = [
   "All",
@@ -38,6 +32,9 @@ const SolarFilmsData = () => {
       ? solarFilmsData
       : solarFilmsData.filter((product) => product.category === filterCategory);
 
+  // Calculate total pages based on filtered products
+  const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
+
   // Calculate the products to display for the current page
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
@@ -46,14 +43,12 @@ const SolarFilmsData = () => {
     indexOfLastProduct
   );
 
-  // Calculate the number of pages
-  const pageNumbers = Array.from(
-    { length: Math.ceil(filteredProducts.length / productsPerPage) },
-    (_, i) => i + 1
-  );
+  // Pagination change handler
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
 
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
-
+  // Text truncation helper function
   function truncateText(text, wordLimit) {
     if (!text) return "";
     const words = text.split(" ");
@@ -108,55 +103,22 @@ const SolarFilmsData = () => {
 
           {/* Mobile Listbox for Category Selection */}
           <div className="w-full md:hidden">
-            <Listbox
+            <Select
+              label="Filter Category"
+              placeholder="Select Category"
               value={filterCategory}
               onChange={(value) => {
                 setFilterCategory(value);
-                setCurrentPage(1); // Reset to first page on filter change
+                setCurrentPage(1); // Reset to the first page on filter change
               }}
+              className="max-w-xs"
             >
-              <div className="relative">
-                <ListboxButton className="relative w-full py-2 pl-3 pr-10 text-left bg-gray-200 rounded-lg cursor-pointer">
-                  <span className="block truncate">{filterCategory}</span>
-                  <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
-                    <ChevronDownIcon className="w-5 h-5 text-gray-400" />
-                  </span>
-                </ListboxButton>
-                <ListboxOptions className="absolute w-full py-1 mt-1 overflow-auto text-base bg-white rounded-md shadow-lg max-h-60 focus:outline-none">
-                  {categories.map((category) => (
-                    <ListboxOption
-                      key={category}
-                      value={category}
-                      className={({ active }) =>
-                        `cursor-pointer select-none relative py-2 pl-10 pr-4 ${
-                          active ? "text-blue-600 bg-blue-100" : "text-gray-900"
-                        }`
-                      }
-                    >
-                      {({ selected }) => (
-                        <>
-                          <span
-                            className={`block truncate ${
-                              selected ? "font-medium" : "font-normal"
-                            }`}
-                          >
-                            {category}
-                          </span>
-                          {selected ? (
-                            <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-blue-600">
-                              <CheckIcon
-                                className="w-5 h-5"
-                                aria-hidden="true"
-                              />
-                            </span>
-                          ) : null}
-                        </>
-                      )}
-                    </ListboxOption>
-                  ))}
-                </ListboxOptions>
-              </div>
-            </Listbox>
+              {categories.map((category) => (
+                <SelectItem key={category} value={category}>
+                  {category}
+                </SelectItem>
+              ))}
+            </Select>
           </div>
         </div>
 
@@ -229,24 +191,15 @@ const SolarFilmsData = () => {
         </div>
 
         {/* Pagination */}
-        <nav className="mt-16 flex justify-center">
-          <ul className="inline-flex space-x-2">
-            {pageNumbers.map((number) => (
-              <li key={number}>
-                <a
-                  onClick={() => paginate(number)}
-                  className={`px-3 py-1 rounded-md ${
-                    currentPage === number
-                      ? "bg-blue-500 text-white"
-                      : "bg-gray-200 text-gray-700"
-                  } hover:bg-blue-500 hover:text-white cursor-pointer`}
-                >
-                  {number}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <div className="mt-16 flex justify-center">
+          <Pagination
+            color="secondary"
+            total={totalPages}
+            initialPage={1}
+            page={currentPage}
+            onChange={handlePageChange}
+          />
+        </div>
       </div>
     </div>
   );
