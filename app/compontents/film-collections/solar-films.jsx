@@ -186,6 +186,11 @@ const SolarFilmsData = () => {
                   </p>
                 </div>
               </div>
+              <div className="text-center mt-5 antialiased">
+                <button className="outline outline-offset-2 outline-1 outline-slate-900 text-sm text-secondary font-semibold rounded-sm py-1 px-4 hover:bg-slate-900 hover:text-white">
+                  View Specs
+                </button>
+              </div>
             </Link>
           ))}
         </div>
