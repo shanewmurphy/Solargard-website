@@ -3,8 +3,9 @@ import { useEffect } from "react";
 
 import SolarFilmsData from "../compontents/film-collections/solar-films";
 import Image from "next/image";
-import SolarFilmHeroImg from "../compontents/heros/solar-films-hero";
+import SolarFilmHeroImg from "/public/images/hero-imgs/Hero-solar-film-img-min.jpg";
 import EnvironmentalImg from "/public/images/solar-films-imgs/Environmental-min.jpg";
+import GradientBackground from "/public/images/company-profile/background-gradient-img-min.png";
 const BenefitsCardData = [
   {
     id: "01",
@@ -45,12 +46,28 @@ export default function SolarFilms() {
   return (
     <div>
       <div>
-        <div>
-          <SolarFilmHeroImg />
+        <div className="flex flex-col w-full">
+          <div className="relative">
+            <Image
+              src={SolarFilmHeroImg}
+              alt="Solar Gard Solar Films"
+              sizes="100vw"
+              style={{
+                width: "100%",
+                objectFit: "cover",
+              }}
+            />
+            <div className="absolute lg:w-4/5 largeScreens:w-9/12 inset-0 flex items-end justify-start p-24 text-white lg:text-5xl largeScreens:text-6xl font-bold rounded-bl-lg">
+              <h1>
+                Experience the Ultimate in Comfort and Efficiency with Solar
+                Films
+              </h1>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="bg-secondary  lg:py-64 lg:px-24 md:py-48 md:px-16 sm:py-24 sm:px-8 antialiased">
-        <h1 className="text-white font-light lg:text-3xl md:text-2xl sm:text-xl">
+      <div className="bg-secondary lg:py-32 lg:px-24 md:py-32 md:px-16 sm:py-24 sm:px-8 antialiased">
+        <h1 className="text-white font-light lg:text-3xl largeScreens:text-4xl md:text-2xl sm:text-xl largeScreens:w-10/12 xl:mx-auto">
           Discover the power of Solar Gard Ireland’s premium solar films,
           designed to enhance comfort, reduce energy costs, and protect your
           interiors. Our advanced solar films provide a range of benefits,
@@ -60,10 +77,47 @@ export default function SolarFilms() {
         </h1>
       </div>
       <div className="bg-secondary p-32 antialiased">
-        <h2 className="text-white text-center font-bold lg:text-6xl">
+        <h2 className="text-white text-center font-bold lg:text-5xl mb-8">
           Key Benefits of Solar Films
         </h2>
         <div>
+          <div className="lg:w-12/12 largeScreens:w-10/12 mx-auto antialiased">
+            <div className="grid grid-cols-3 gap-12 text-white">
+              {BenefitsCardData.map((benefit) => (
+                <div key={benefit.id}>
+                  <div className="relative" key={benefit.id}>
+                    <Image
+                      className="rounded-2xl h-64"
+                      alt="Solar Gard ireland Solar Films benefits"
+                      src={benefit.imageUrl}
+                      placehoolder="blur"
+                      quality={100}
+                      width={480}
+                      height={430}
+                      style={{
+                        objectFit: "cover",
+                        width: "100%",
+                      }}
+                    />
+                    <div
+                      className="absolute inset-0 flex items-end justify-start p-8 text-white largeScreens:text-4xl text-3xl font-bold rounded-bl-lg"
+                      key={benefit.id}
+                    >
+                      {benefit.title}
+                    </div>
+                  </div>
+                  <div>
+                    <p className="font-medium text-base mt-2">
+                      {benefit.description}
+                    </p>
+                    <h6 className="mt-3 font-semibold text-lg">Benefits</h6>
+                    <p className="text-base font-medium">{benefit.benefit}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          {/*  
           {BenefitsCardData.map((benefit) => (
             <div
               className="bg-white lg:rounded-xl flex flex-row gap-36 lg:py-16 lg:px-16 my-24"
@@ -99,13 +153,14 @@ export default function SolarFilms() {
               </div>
             </div>
           ))}
+             */}
         </div>
       </div>
-      <div className="w-full object-cover h-[auto] lg:bg-[url('/images/company-profile/background-gradient-img-min.png')] md:bg-[url('/images/company-profile/background-gradient-img-min.png' pb-80">
+      <div className="w-full h-[70vh] bg-cover bg-center largeScreens:bg-[url('/images/company-profile/background-gradient-img-min.png')] md:bg-[url('/images/company-profile/background-gradient-img-min.png')]">
         <h4 className="text-white text-center font-bold lg:text-5xl py-16">
           Facts and statistics about Solar Films
         </h4>
-        <div className="w-10/12 mx-auto">
+        <div className="lg:w-10/12 largeScreens:w-9/12 mx-auto">
           <div className="grid grid-cols-3 gap-24 text-white">
             <div>
               <h3 className="lg:text-9xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-white to-transparent">
@@ -158,7 +213,7 @@ export default function SolarFilms() {
             }}
           />
           <div className="absolute bottom-0 pb-28 pl-20 text-white">
-            <h4 className="lg:text-5xl font-bold mb-2">Environmental Impact</h4>
+            <h4 className="lg:text-6xl font-bold mb-2">Environmental Impact</h4>
             <p className="font-medium lg:text-3xl w-[60%]">
               By improving energy efficiency, solar films can contribute to a
               reduction in a building&apos;s carbon footprint by 10-15% over

@@ -7,7 +7,7 @@ export const solarFilmsData = [
     slug: "alu-50-xc",
     category: "Exterior Mirror",
     image:
-      "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
+      "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-02.jpg",
     EnergyRejectedValue: "49",
     VisibleLightTransValue: "52",
     filmDescription:
@@ -83,7 +83,7 @@ export const solarFilmsData = [
     slug: "alu-80-xc",
     category: "Exterior Mirror",
     image:
-      "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
+      "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-02.jpg",
     EnergyRejectedValue: "60",
     VisibleLightTransValue: "24",
     filmDescription:
@@ -160,7 +160,7 @@ export const solarFilmsData = [
     slug: "chrome-270-xc",
     category: "Exterior Mirror",
     image:
-      "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-02.jpg",
+      "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "71",
     VisibleLightTransValue: "30",
     filmDescription:
@@ -199,7 +199,7 @@ export const solarFilmsData = [
     slug: "chrome-285-xc",
     category: "Exterior Mirror",
     image:
-      "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-02.jpg",
+      "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "84",
     VisibleLightTransValue: "16",
     filmDescription:

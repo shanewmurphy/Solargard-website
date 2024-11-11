@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { solarFilmsData } from "@/app/Data-Sheets/Solar-Films-Data";
 import Link from "next/link";
 import { Progress } from "@nextui-org/progress";
@@ -24,7 +24,41 @@ const categories = [
 const SolarFilmsData = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [filterCategory, setFilterCategory] = useState("All");
-  const productsPerPage = 6;
+  const [productsPerPage, setProductsPerPage] = useState(4); // Start with mobile default
+
+  // Function to determine products per page based on screen width
+  function getProductsPerPage(width) {
+    if (width >= 1536) {
+      // 2xl breakpoint
+      return 8; // 2 rows of 4
+    } else if (width >= 1024) {
+      // lg breakpoint
+      return 6; // 2 rows of 3
+    } else if (width >= 768) {
+      // md breakpoint
+      return 4; // 2 rows of 2
+    } else {
+      return 4; // sm and mobile: 2 rows of 2
+    }
+  }
+
+  // Initialize and handle resize in useEffect
+  useEffect(() => {
+    // Set initial value
+    setProductsPerPage(getProductsPerPage(window.innerWidth));
+
+    // Handle resize
+    function handleResize() {
+      const newProductsPerPage = getProductsPerPage(window.innerWidth);
+      if (newProductsPerPage !== productsPerPage) {
+        setProductsPerPage(newProductsPerPage);
+        setCurrentPage(1); // Reset to first page when layout changes
+      }
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [productsPerPage]);
 
   // Filtered products based on the selected category
   const filteredProducts =
@@ -57,6 +91,8 @@ const SolarFilmsData = () => {
       : text;
   }
 
+  // console.log("Number of products:", currentProducts.length);
+
   return (
     <div className="w-11/12 mx-auto">
       <div className="container mx-auto lg:px-4 lg:py-24">
@@ -64,7 +100,7 @@ const SolarFilmsData = () => {
           <h2 className="lg:text-5xl lg:mb-4 font-bold">
             Discover Our Range of High-Performance Solar Films
           </h2>
-          <p className="font-medium text-textGray lg:text-2xl">
+          <p className="font-medium text-textGray lg:text-xl">
             Tailored Solutions to Enhance Comfort, Efficiency, and Protection
             for Every Space
           </p>
@@ -123,7 +159,7 @@ const SolarFilmsData = () => {
         </div>
 
         {/* Product Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 gap-y-16">
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-12">
           {currentProducts.map((product) => (
             <Link
               key={product.id}
@@ -137,10 +173,10 @@ const SolarFilmsData = () => {
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-48 h-48 mx-auto rounded-full bg-center bg-cover"
+                      className="w-36 h-36 mx-auto rounded-full bg-center bg-cover"
                     />
                   </div>
-                  <h3 className="font-semibold text-secondary text-center lg:text-3xl mt-2">
+                  <h3 className="font-semibold text-secondary text-center lg:text-2xl mt-2">
                     {product.name}
                   </h3>
                   <div className="w-9/12 mx-auto mt-8">
@@ -148,7 +184,7 @@ const SolarFilmsData = () => {
                       <span>
                         <SunRejection />
                       </span>
-                      <h6 className="lg:text-sm text-secondary font-medium pl-2">
+                      <h6 className="lg:text-xs text-secondary font-medium pl-2">
                         Total Solar Energy Rejected
                       </h6>
                     </div>
@@ -156,7 +192,7 @@ const SolarFilmsData = () => {
                       <Progress
                         aria-label="Loading..."
                         size="lg"
-                        className="h-3"
+                        className="h-2"
                         value={product.EnergyRejectedValue}
                       />
                     </div>
@@ -166,7 +202,7 @@ const SolarFilmsData = () => {
                       <span>
                         <LightTransmission />
                       </span>
-                      <h6 className="lg:text-sm text-secondary font-medium pl-2">
+                      <h6 className="lg:text-xs text-secondary font-medium pl-2">
                         Visible Light Transmission
                       </h6>
                     </div>
@@ -174,22 +210,24 @@ const SolarFilmsData = () => {
                       <Progress
                         size="lg"
                         aria-label="Loading..."
-                        className="h-3"
+                        className="h-2"
                         value={product.VisibleLightTransValue}
                       />
+                    </div>
+                    <div className="text-center mt-8 antialiased">
+                      <button className="outline outline-offset-2 outline-1 outline-slate-900 text-sm text-secondary font-semibold rounded-sm py-1 px-4 hover:bg-slate-900 hover:text-white">
+                        View Specs
+                      </button>
                     </div>
                   </div>
                 </div>
                 <div>
+                  {/* 
                   <p className="text-sm lg:pt-2">
-                    {truncateText(product.filmDescription, 35)}
+                    {truncateText(product.filmDescription, 25)}
                   </p>
+                  */}
                 </div>
-              </div>
-              <div className="text-center mt-5 antialiased">
-                <button className="outline outline-offset-2 outline-1 outline-slate-900 text-sm text-secondary font-semibold rounded-sm py-1 px-4 hover:bg-slate-900 hover:text-white">
-                  View Specs
-                </button>
               </div>
             </Link>
           ))}
@@ -280,8 +318,8 @@ function SunRejection() {
 function LightTransmission() {
   return (
     <svg
-      width="26"
-      height="26"
+      width="24"
+      height="24"
       viewBox="0 0 28 28"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
