@@ -6,7 +6,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@nextui-org/theme/dist/components/(pagination|progress|select|listbox|divider|popover|button|ripple|spinner|scroll-shadow).js",
+    "./node_modules/@nextui-org/theme/dist/components/(accordion|pagination|progress|select|divider|listbox|popover|button|ripple|spinner|scroll-shadow).js",
   ],
   theme: {
     extend: {
@@ -17,6 +17,7 @@ module.exports = {
         textGray: "#5C5C5C",
         textLightGray: "#888787",
         accent: "",
+        "faq-border": "#26166f",
       },
       screens: {
         sm: "360px",

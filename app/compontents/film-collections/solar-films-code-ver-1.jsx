@@ -24,21 +24,21 @@ const categories = [
 const SolarFilmsData = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [filterCategory, setFilterCategory] = useState("All");
-  const [productsPerPage, setProductsPerPage] = useState(2); // Start with mobile default
+  const [productsPerPage, setProductsPerPage] = useState(4); // Start with mobile default
 
   // Function to determine products per page based on screen width
   function getProductsPerPage(width) {
     if (width >= 1536) {
       // 2xl breakpoint
-      return 4; // 1 row of 4
+      return 8; // 2 rows of 4
     } else if (width >= 1024) {
       // lg breakpoint
-      return 3; // 1 row of 3
+      return 6; // 2 rows of 3
     } else if (width >= 768) {
       // md breakpoint
-      return 2; // 1 row of 2
+      return 4; // 2 rows of 2
     } else {
-      return 2; // sm and mobile: 1 row of 2
+      return 4; // sm and mobile: 2 rows of 2
     }
   }
 
