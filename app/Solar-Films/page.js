@@ -70,7 +70,7 @@ export default function SolarFilms() {
         </div>
       </div>
       <div className="bg-secondary lg:py-32 lg:px-24 md:py-32 md:px-16 sm:py-24 sm:px-6 antialiased">
-        <h1 className="text-white font-light lg:text-3xl largeScreens:text-4xl md:text-2xl sm:text-base largeScreens:w-10/12 xl:mx-auto">
+        <h1 className="text-white font-light lg:text-3xl largeScreens:text-4xl md:text-2xl sm:text-xl largeScreens:w-10/12 xl:mx-auto">
           Discover the power of Solar Gard Ireland’s premium solar films,
           designed to enhance comfort, reduce energy costs, and protect your
           interiors. Our advanced solar films provide a range of benefits,
@@ -79,12 +79,12 @@ export default function SolarFilms() {
           industrial applications.
         </h1>
       </div>
-      <div className="bg-secondary lg:p-32 antialiased">
-        <h2 className="text-white text-center font-bold lg:text-5xl mb-8">
+      <div className="bg-secondary lg:py-40 antialiased">
+        <h2 className="text-white text-center font-bold lg:text-5xl md:text-4xl sm:text-2xl mb-8">
           Key Benefits of Solar Films
         </h2>
         <div>
-          <div className="lg:w-12/12 largeScreens:w-9/12 md:w-10/12 sm:w-11/12 mx-auto antialiased">
+          <div className="lg:w-12/12 largeScreens:w-8/12 md:w-10/12 sm:w-11/12 mx-auto antialiased">
             <div className="grid lg:grid-cols-3 gap-12 largeScreens:gap-20 text-white pb-24">
               {BenefitsCardData.map((benefit) => (
                 <div key={benefit.id}>
@@ -110,10 +110,12 @@ export default function SolarFilms() {
                     </div>
                   </div>
                   <div>
-                    <p className="font-medium text-base mt-2">
+                    <p className="font-medium text-base lg:mt-2 md:mt-3 sm:mt-4">
                       {benefit.description}
                     </p>
-                    <h6 className="mt-3 font-semibold text-lg">Benefits</h6>
+                    <h6 className="mt-3 font-semibold text-lg antialiased">
+                      Benefits
+                    </h6>
                     <p className="text-base font-medium">{benefit.benefit}</p>
                   </div>
                 </div>
@@ -122,18 +124,20 @@ export default function SolarFilms() {
           </div>
         </div>
       </div>
-      <div className="w-full h-[70vh] bg-cover bg-center largeScreens:bg-[url('/images/company-profile/background-gradient-img-min.png')] md:bg-[url('/images/company-profile/background-gradient-img-min.png')]">
-        <h4 className="text-white text-center font-bold lg:text-5xl py-16">
-          Facts and statistics about Solar Films
+      <div className="w-full lg:h-[70vh] sm:h-[100vh] bg-cover bg-center largeScreens:bg-[url('/images/company-profile/background-gradient-img-min.png')] md:bg-[url('/images/company-profile/background-gradient-img-min.png')] sm:bg-[url('/images/company-profile/background-gradient-img-mobile.jpg')]">
+        <h4 className="text-white text-center font-semibold largeScreens:text-6xl lg:text-5xl md:text-4xl sm:text-2xl lg:py-16 md:py-12 sm:py-8">
+          Facts and Statistics about Solar Films
         </h4>
         <div className="lg:w-10/12 largeScreens:w-8/12 mx-auto">
-          <div className="grid grid-cols-3 gap-24 text-white">
+          <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-24 text-white text-center">
             <div>
-              <h3 className="lg:text-9xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-white to-transparent">
+              <h3 className="lg:text-9xl md:text-7xl sm:text-7xl font-extrabold text-center">
                 99
-                <span className="lg:text-6xl">%</span>
+                <span className="lg:text-6xl sm:text-2xl">%</span>
               </h3>
-              <h2 className="font-bold lg:text-3xl">UV Protection</h2>
+              <h2 className="font-bold lg:text-3xl md:text-3xl sm:text-3xl">
+                UV Protection
+              </h2>
               <p className="text-white font-normal text-base mt-3">
                 Solar films block up to 99% of harmful UV rays, protecting your
                 skin and reducing the fading of furnishings, carpets, and
@@ -141,7 +145,7 @@ export default function SolarFilms() {
               </p>
             </div>
             <div>
-              <h3 className="lg:text-9xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-white to-transparent">
+              <h3 className="lg:text-9xl font-extrabold">
                 78
                 <span className="lg:text-6xl">%</span>
               </h3>
