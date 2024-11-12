@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        xxs: "7px",
+      },
       colors: {
         primary: "#3872e5",
         secondary: "#212332",

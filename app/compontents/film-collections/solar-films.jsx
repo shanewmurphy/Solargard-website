@@ -94,10 +94,10 @@ const SolarFilmsData = () => {
   // console.log("Number of products:", currentProducts.length);
 
   return (
-    <div className="w-11/12 mx-auto">
-      <div className="container mx-auto lg:px-4 lg:py-24">
-        <div className="w-7/12 mb-14">
-          <h2 className="lg:text-5xl lg:mb-4 font-bold">
+    <div className="lg:w-11/12 md:w-11/12 sm:w-11/12 mx-auto antialiased">
+      <div className="lg:px-4 lg:py-24 md:px-4 md:py-12 sm:py-6">
+        <div className="lg:w-7/12 mb-14">
+          <h2 className="lg:text-5xl md:text-4xl sm:text-2xl lg:mb-4 font-bold">
             Discover Our Range of High-Performance Solar Films
           </h2>
           <p className="font-medium text-textGray lg:text-xl">
@@ -108,7 +108,7 @@ const SolarFilmsData = () => {
 
         {/* Filter Buttons and Listbox for Mobile */}
         <div className="flex items-center flex-wrap gap-2 mb-8">
-          <div className="flex">
+          <div className="lg:flex md:flex sm:hidden">
             <span>
               <FilterIcon />
             </span>
@@ -118,7 +118,7 @@ const SolarFilmsData = () => {
           </div>
 
           {/* Desktop Filter Buttons */}
-          <div className="hidden md:flex gap-2">
+          <div className="hidden lg:flex gap-2">
             {categories.map((category) => (
               <button
                 key={category}
@@ -136,18 +136,19 @@ const SolarFilmsData = () => {
               </button>
             ))}
           </div>
-
           {/* Mobile Listbox for Category Selection */}
-          <div className="w-full md:hidden">
+          <div className="w-full lg:hidden">
             <Select
               label="Filter Category"
               placeholder="Select Category"
-              value={filterCategory}
-              onChange={(value) => {
-                setFilterCategory(value);
-                setCurrentPage(1); // Reset to the first page on filter change
+              defaultSelectedKeys={["All"]}
+              onSelectionChange={(keys) => {
+                // Changed this
+                const selected = Array.from(keys)[0];
+                setFilterCategory(selected);
+                setCurrentPage(1);
               }}
-              className="max-w-xs"
+              className=""
             >
               {categories.map((category) => (
                 <SelectItem key={category} value={category}>
@@ -159,7 +160,7 @@ const SolarFilmsData = () => {
         </div>
 
         {/* Product Cards */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-12">
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 lg:gap-12 md:gap-6 sm:gap-4">
           {currentProducts.map((product) => (
             <Link
               key={product.id}
@@ -173,7 +174,7 @@ const SolarFilmsData = () => {
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-36 h-36 mx-auto rounded-full bg-center bg-cover"
+                      className="lg:w-36 lg:h-36 md:w-28 md:h-28 sm:w-20 sm:h-20 mx-auto rounded-full bg-center bg-cover"
                     />
                   </div>
                   <h3 className="font-semibold text-secondary text-center lg:text-2xl mt-2">
@@ -184,7 +185,7 @@ const SolarFilmsData = () => {
                       <span>
                         <SunRejection />
                       </span>
-                      <h6 className="lg:text-xs text-secondary font-medium pl-2">
+                      <h6 className="lg:text-xs sm:text-xxs text-secondary font-medium pl-2">
                         Total Solar Energy Rejected
                       </h6>
                     </div>

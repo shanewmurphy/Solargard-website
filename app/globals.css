@@ -54,3 +54,21 @@ body {
     text-wrap: balance;
   }
 }
+
+.back-gradient {
+  background-image: linear-gradient(
+    to right top,
+    #232d4c,
+    #28355a,
+    #2c3d69,
+    #314578,
+    #354e87,
+    #445c94,
+    #536aa1,
+    #6278ae,
+    #7e90bb,
+    #9ba8c9,
+    #b8c1d6,
+    #d6dae3
+  );
+}
