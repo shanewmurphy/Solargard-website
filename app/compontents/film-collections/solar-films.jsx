@@ -24,7 +24,7 @@ const categories = [
 const SolarFilmsData = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [filterCategory, setFilterCategory] = useState("All");
-  const [productsPerPage, setProductsPerPage] = useState(2); // Start with mobile default
+  const [productsPerPage, setProductsPerPage] = useState(4); // Start with mobile default
 
   // Function to determine products per page based on screen width
   function getProductsPerPage(width) {
@@ -38,21 +38,19 @@ const SolarFilmsData = () => {
       // md breakpoint
       return 2; // 1 row of 2
     } else {
-      return 2; // sm and mobile: 1 row of 2
+      return 4; // sm and mobile: 1 row of 2
     }
   }
 
   // Initialize and handle resize in useEffect
   useEffect(() => {
-    // Set initial value
     setProductsPerPage(getProductsPerPage(window.innerWidth));
 
-    // Handle resize
     function handleResize() {
       const newProductsPerPage = getProductsPerPage(window.innerWidth);
       if (newProductsPerPage !== productsPerPage) {
         setProductsPerPage(newProductsPerPage);
-        setCurrentPage(1); // Reset to first page when layout changes
+        setCurrentPage(1);
       }
     }
 
@@ -60,16 +58,13 @@ const SolarFilmsData = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, [productsPerPage]);
 
-  // Filtered products based on the selected category
   const filteredProducts =
     filterCategory === "All"
       ? solarFilmsData
       : solarFilmsData.filter((product) => product.category === filterCategory);
 
-  // Calculate total pages based on filtered products
   const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
 
-  // Calculate the products to display for the current page
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
   const currentProducts = filteredProducts.slice(
@@ -77,7 +72,6 @@ const SolarFilmsData = () => {
     indexOfLastProduct
   );
 
-  // Pagination change handler
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
@@ -94,10 +88,10 @@ const SolarFilmsData = () => {
   // console.log("Number of products:", currentProducts.length);
 
   return (
-    <div className="lg:w-11/12 md:w-11/12 sm:w-11/12 mx-auto antialiased">
-      <div className="lg:px-4 lg:py-24 md:px-4 md:py-12 sm:py-6">
-        <div className="lg:w-7/12 mb-14">
-          <h2 className="lg:text-5xl md:text-4xl sm:text-2xl lg:mb-4 font-bold text-secondary">
+    <div className="lg:w-11/12 md:w-11/12 sm:w-11/12 sm:pb-32 mx-auto antialiased">
+      <div className="lg:px-4 lg:py-24 md:px-4 md:py-12 sm:py-2">
+        <div className="lg:w-7/12 lg:mb-14 md:mb-8 sm:mb-6">
+          <h2 className="lg:text-5xl md:text-4xl sm:text-2xl lg:mb-4 md:mt-8 sm:mt-12 font-bold text-secondary">
             Discover Our Range of High-Performance Solar Films
           </h2>
           <p className="font-medium text-textGray lg:text-xl sm:mt-2">
@@ -129,7 +123,7 @@ const SolarFilmsData = () => {
                 className={`px-2 py-1 text-sm font-medium text-secondary rounded-md ${
                   filterCategory === category
                     ? "bg-primary text-white"
-                    : "bg-gray-200 text-gray-700"
+                    : "bg-transparent text-gray-700"
                 } hover:bg-primary hover:text-white cursor-pointer`}
               >
                 {category}
@@ -162,9 +156,8 @@ const SolarFilmsData = () => {
             </Select>
           </div>
         </div>
-
         {/* Product Cards */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 lg:gap-12 md:gap-6 sm:gap-6">
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 lg:gap-12 md:gap-6 sm:gap-4">
           {currentProducts.map((product) => (
             <Link
               key={product.id}
@@ -172,8 +165,8 @@ const SolarFilmsData = () => {
                 product.slug
               )}`}
             >
-              <div key={product.id} className="">
-                <div className="rounded-2xl py-12 bg-white">
+              <div key={product.id}>
+                <div className="rounded-2xl lg:py-12 md:py-12 sm:py-6 bg-white">
                   <div className="mx-auto">
                     <img
                       src={product.image}
@@ -237,7 +230,6 @@ const SolarFilmsData = () => {
             </Link>
           ))}
         </div>
-
         {/* Pagination */}
         <div className="mt-16 flex justify-center">
           <Pagination
