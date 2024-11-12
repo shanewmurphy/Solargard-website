@@ -97,10 +97,10 @@ const SolarFilmsData = () => {
     <div className="lg:w-11/12 md:w-11/12 sm:w-11/12 mx-auto antialiased">
       <div className="lg:px-4 lg:py-24 md:px-4 md:py-12 sm:py-6">
         <div className="lg:w-7/12 mb-14">
-          <h2 className="lg:text-5xl md:text-4xl sm:text-2xl lg:mb-4 font-bold">
+          <h2 className="lg:text-5xl md:text-4xl sm:text-2xl lg:mb-4 font-bold text-secondary">
             Discover Our Range of High-Performance Solar Films
           </h2>
-          <p className="font-medium text-textGray lg:text-xl">
+          <p className="font-medium text-textGray lg:text-xl sm:mt-2">
             Tailored Solutions to Enhance Comfort, Efficiency, and Protection
             for Every Space
           </p>
@@ -160,7 +160,7 @@ const SolarFilmsData = () => {
         </div>
 
         {/* Product Cards */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 lg:gap-12 md:gap-6 sm:gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 lg:gap-12 md:gap-6 sm:gap-6">
           {currentProducts.map((product) => (
             <Link
               key={product.id}
@@ -180,12 +180,12 @@ const SolarFilmsData = () => {
                   <h3 className="font-semibold text-secondary text-center lg:text-2xl mt-2">
                     {product.name}
                   </h3>
-                  <div className="w-9/12 mx-auto mt-8">
+                  <div className="w-9/12 mx-auto mt-8 lg:block md:block sm:hidden">
                     <div className="inline-flex items-center">
                       <span>
                         <SunRejection />
                       </span>
-                      <h6 className="lg:text-xs sm:text-xxs text-secondary font-medium pl-2">
+                      <h6 className="lg:text-xs text-secondary font-medium pl-2">
                         Total Solar Energy Rejected
                       </h6>
                     </div>
@@ -198,7 +198,7 @@ const SolarFilmsData = () => {
                       />
                     </div>
                   </div>
-                  <div className="w-9/12 mx-auto mt-4">
+                  <div className="w-9/12 mx-auto mt-4 lg:block md:block sm:hidden">
                     <div className="inline-flex items-center">
                       <span>
                         <LightTransmission />
@@ -215,11 +215,11 @@ const SolarFilmsData = () => {
                         value={product.VisibleLightTransValue}
                       />
                     </div>
-                    <div className="text-center mt-8 antialiased">
-                      <button className="outline outline-offset-2 outline-1 outline-slate-900 text-sm text-secondary font-semibold rounded-sm py-1 px-4 hover:bg-slate-900 hover:text-white">
-                        View Specs
-                      </button>
-                    </div>
+                  </div>
+                  <div className="text-center mt-8 antialiased">
+                    <button className="outline outline-offset-2 outline-1 outline-slate-900 lg:text-sm md:text-sm sm:text-xs text-secondary font-semibold rounded-sm py-1 px-4 hover:bg-slate-900 hover:text-white">
+                      View Specs
+                    </button>
                   </div>
                 </div>
                 <div>
