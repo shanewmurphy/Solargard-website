@@ -128,41 +128,45 @@ export default function SolarFilms() {
         <h4 className="text-white text-center font-semibold largeScreens:text-6xl lg:text-5xl md:text-4xl sm:text-2xl lg:py-16 md:py-12 sm:py-8">
           Facts and Statistics about Solar Films
         </h4>
-        <div className="lg:w-10/12 largeScreens:w-8/12 mx-auto">
-          <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-24 text-white text-center">
+        <div className="lg:w-10/12 largeScreens:w-8/12 md:w-8/12 sm:w-10/12 mx-auto">
+          <div className="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 lg:gap-24 md:gap-8 sm:gap-8 text-white text-center">
             <div>
               <h3 className="lg:text-9xl md:text-7xl sm:text-7xl font-extrabold text-center">
                 99
-                <span className="lg:text-6xl sm:text-2xl">%</span>
+                <span className="lg:text-4xl sm:text-2xl">%</span>
               </h3>
-              <h2 className="font-bold lg:text-3xl md:text-3xl sm:text-3xl">
+              <h2 className="font-bold lg:text-3xl md:text-3xl sm:text-3xl sm:mt-2">
                 UV Protection
               </h2>
-              <p className="text-white font-normal text-base mt-3">
+              <p className="text-white font-normal text-base sm:text-sm mt-3">
                 Solar films block up to 99% of harmful UV rays, protecting your
                 skin and reducing the fading of furnishings, carpets, and
                 artwork
               </p>
             </div>
             <div>
-              <h3 className="lg:text-9xl font-extrabold">
+              <h3 className="lg:text-9xl md:text-7xl sm:text-7xl font-extrabold text-center">
                 78
-                <span className="lg:text-6xl">%</span>
+                <span className="lg:text-4xl sm:text-2xl">%</span>
               </h3>
-              <h2 className="font-bold lg:text-3xl">Heat Reduction</h2>
-              <p className="text-white font-normal text-base mt-3">
+              <h2 className="font-bold lg:text-3xl md:text-3xl sm:text-3xl sm:mt-2">
+                Heat Reduction
+              </h2>
+              <p className="text-white font-normal text-base sm:text-sm mt-3">
                 Solar films can reduce up to 78% of solar heat gain through
                 windows, keeping interiors significantly cooler during hot
                 weather.
               </p>
             </div>
             <div>
-              <h3 className="lg:text-9xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-white to-transparent">
+              <h3 className="lg:text-9xl md:text-7xl sm:text-7xl font-extrabold text-center">
                 30
-                <span className="lg:text-6xl">%</span>
+                <span className="lg:text-4xl sm:text-2xl">%</span>
               </h3>
-              <h2 className="font-bold lg:text-3xl">Energy Savings</h2>
-              <p className="text-white font-normal text-base mt-3">
+              <h2 className="font-bold lg:text-3xl md:text-3xl sm:text-3xl sm:mt-2">
+                Energy Savings
+              </h2>
+              <p className="text-white font-normal text-base sm:text-sm mt-3">
                 By reducing the need for air conditioning, solar films can lower
                 cooling energy costs by up to 30%, making them a cost-effective
                 solution for both homes and businesses.
