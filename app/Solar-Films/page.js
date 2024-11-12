@@ -60,8 +60,8 @@ export default function SolarFilms() {
                 objectFit: "cover",
               }}
             />
-            <div className="absolute lg:w-4/5 largeScreens:w-9/12 inset-0 flex items-end justify-start p-24 largeScreens:p-40 text-white lg:text-5xl largeScreens:text-6xl font-bold rounded-bl-lg">
-              <h1>
+            <div className="absolute lg:w-4/5 largeScreens:w-9/12 inset-0 flex items-end justify-start lg:p-24 md:p-12 sm:p-8 largeScreens:p-40 rounded-bl-lg">
+              <h1 className="text-white lg:text-5xl md:text-3xl sm:text-xl largeScreens:text-6xl font-bold">
                 Experience the Ultimate in Comfort and Efficiency with Solar
                 Films
               </h1>
@@ -69,8 +69,8 @@ export default function SolarFilms() {
           </div>
         </div>
       </div>
-      <div className="bg-secondary lg:py-32 lg:px-24 md:py-32 md:px-16 sm:py-24 sm:px-8 antialiased">
-        <h1 className="text-white font-light lg:text-3xl largeScreens:text-4xl md:text-2xl sm:text-xl largeScreens:w-10/12 xl:mx-auto">
+      <div className="bg-secondary lg:py-32 lg:px-24 md:py-32 md:px-16 sm:py-24 sm:px-6 antialiased">
+        <h1 className="text-white font-light lg:text-3xl largeScreens:text-4xl md:text-2xl sm:text-base largeScreens:w-10/12 xl:mx-auto">
           Discover the power of Solar Gard Ireland’s premium solar films,
           designed to enhance comfort, reduce energy costs, and protect your
           interiors. Our advanced solar films provide a range of benefits,
@@ -79,18 +79,18 @@ export default function SolarFilms() {
           industrial applications.
         </h1>
       </div>
-      <div className="bg-secondary p-32 antialiased">
+      <div className="bg-secondary lg:p-32 antialiased">
         <h2 className="text-white text-center font-bold lg:text-5xl mb-8">
           Key Benefits of Solar Films
         </h2>
         <div>
-          <div className="lg:w-12/12 largeScreens:w-9/12 mx-auto antialiased">
-            <div className="grid grid-cols-3 gap-12 largeScreens:gap-20 text-white pb-24">
+          <div className="lg:w-12/12 largeScreens:w-9/12 md:w-10/12 sm:w-11/12 mx-auto antialiased">
+            <div className="grid lg:grid-cols-3 gap-12 largeScreens:gap-20 text-white pb-24">
               {BenefitsCardData.map((benefit) => (
                 <div key={benefit.id}>
                   <div className="relative" key={benefit.id}>
                     <Image
-                      className="rounded-2xl h-64"
+                      className="rounded-2xl lg:h-64 md:h-64 sm:h-52"
                       alt="Solar Gard ireland Solar Films benefits"
                       src={benefit.imageUrl}
                       placehoolder="blur"

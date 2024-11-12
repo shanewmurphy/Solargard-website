@@ -83,10 +83,11 @@ export default function SolarFilmsFAQs() {
               },
             }}
             itemClasses={{
-              base: "border-b font-semibold border-faq-border", // This controls the separator line
-              trigger: "px-2 py-0 rounded-lg h-14 flex items-center",
+              base: "border-b font-semibold border-faq-border antialiased", // This controls the separator line
+              trigger:
+                "px-2 py-0 text-2xl text-secondary rounded-lg h-16 flex items-center",
               indicator: "font-bold",
-              content: "text-sm font-medium px-2",
+              content: "text-sm lg:w-11/12 pb-6 font-medium px-2",
             }}
           >
             {SolarFilmsFAQ.map((faq) => (
