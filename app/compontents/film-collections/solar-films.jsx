@@ -174,7 +174,7 @@ const SolarFilmsData = () => {
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="lg:w-36 lg:h-36 md:w-28 md:h-28 sm:w-20 sm:h-20 mx-auto rounded-full bg-center bg-cover"
+                      className="lg:w-36 lg:h-36 md:w-28 md:h-28 sm:w-28 sm:h-28 mx-auto rounded-full bg-center bg-cover"
                     />
                   </div>
                   <h3 className="font-semibold text-secondary text-center lg:text-2xl mt-2">

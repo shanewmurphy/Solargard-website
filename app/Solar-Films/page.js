@@ -198,7 +198,7 @@ export default function SolarFilms() {
           </div>
         </div>
       </div>
-      <div className="flex w-full bg-gray">
+      <div className="flex w-full bg-grey">
         <SolarFilmsData />
       </div>
       <div>
