@@ -148,7 +148,11 @@ const SolarFilmsData = () => {
                 setFilterCategory(selected);
                 setCurrentPage(1);
               }}
-              className=""
+              classNames={{
+                listbox: "text-secondary", // Makes dropdown list text darker
+                trigger: "text-secondary", // Makes selected text darker
+                value: "text-secondary", // Makes value text darker
+              }}
             >
               {categories.map((category) => (
                 <SelectItem key={category} value={category}>
