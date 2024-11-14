@@ -53,7 +53,7 @@ const reviews = [
 export default function Testimonials() {
   const swiperRef = useRef();
   return (
-    <div className="w-full bg-primary lg:py-40 md:py-36 sm:py-28">
+    <div className="w-full bg-primary lg:py-24 md:py-36 sm:py-28">
       <div className="lg:w-10/12 md:w-10/12 sm:w-11/12 mx-auto antialiased">
         <div>
           <h4 className="text-white font-bold lg:text-5xl md:text-4xl sm:text-3xl">

@@ -45,7 +45,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-secondary">
+    <div className="min-h-screen bg-grey pb-40">
       <div
         ref={containerRef}
         className="relative lg:h-screen sm:h-dvh overflow-hidden"

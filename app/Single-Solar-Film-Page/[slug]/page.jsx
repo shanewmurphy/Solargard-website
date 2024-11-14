@@ -55,7 +55,7 @@ export default function SolarFilmPage({ params }) {
           </div>
         </div>
       </div>
-      <div className="bg-gray">
+      <div className="bg-grey">
         <div className="w-8/12 mx-auto py-24">
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
@@ -194,7 +194,7 @@ export default function SolarFilmPage({ params }) {
         </div>
       </div>
       {/* Technical Datasheet And Installation Advice Section */}
-      <div className="bg-gray lg:pb-44">
+      <div className="bg-grey lg:pb-44">
         <div className="w-8/12 mx-auto py-24 antialiased">
           <div className="grid grid-cols-2 gap-16">
             <div className="bg-white rounded-lg py-6 px-8">

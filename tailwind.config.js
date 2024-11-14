@@ -16,7 +16,7 @@ module.exports = {
       colors: {
         primary: "#3872e5",
         secondary: "#212332",
-        grey: "#efefef",
+        grey: "#F7F7F7",
         textGray: "#5C5C5C",
         textLightGray: "#888787",
         accent: "",
@@ -24,7 +24,7 @@ module.exports = {
       },
       screens: {
         sm: "360px",
-        largeScreens: "1800px",
+        largeScreens: "1920px",
       },
       borderRadius: {
         xl: "60px",

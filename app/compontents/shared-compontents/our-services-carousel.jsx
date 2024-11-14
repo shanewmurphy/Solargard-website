@@ -53,7 +53,7 @@ const CarouselData = [
 export default function OurServiceCarousel() {
   const swiperRef = useRef();
   return (
-    <div>
+    <div className="w-full bg-grey">
       <div className="w-11/12 mx-auto py-40">
         <div>
           <h3 className="text-secondary font-bold text-4xl mb-6">
