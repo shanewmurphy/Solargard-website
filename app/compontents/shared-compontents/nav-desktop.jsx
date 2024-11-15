@@ -3,8 +3,21 @@ export default function NavDesktop() {
     <div>
       <div className="bg-white text-white absolute z-10 w-10/12 mx-auto h-14 left-1/2 top-8 transform -translate-x-1/2 -translate-y-1/2 mt-6 rounded-2xl flex items-center xl:visible lg:visible md:visible sm:invisible">
         <div className="flex w-11/12 mx-auto items-center justify-between">
-          <div>
-            <Logo />
+          <div className="flex items-center">
+            <div>
+              <Logo />
+            </div>
+            <div className="text-secondary pl-4 antialiased">
+              <ul className="inline-flex font-medium text-base">
+                <li>Windows Films</li>
+                <li className="pl-4">Privacy Films</li>
+                <li className="pl-4">Manifestations & Graphics</li>
+                <li className="pl-4">CoverStyl'</li>
+                <li className="pl-4">Vehicle Tinting</li>
+                <li className="pl-4">Vehicle Wrapping</li>
+                <li className="pl-4">Cloaking</li>
+              </ul>
+            </div>
           </div>
           <div className="text-left text-secondary"></div>
           <div className="text-secondary">KKK</div>

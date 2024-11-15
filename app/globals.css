@@ -72,3 +72,8 @@ body {
     #d6dae3
   );
 }
+
+.section-spacing-top-btm {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}

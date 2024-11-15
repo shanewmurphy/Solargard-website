@@ -71,7 +71,7 @@ export default function SolarFilmsFAQs() {
       <div className="w-full bg-grey py-40 antialiased">
         <div className="lg:w-8/12 largeScreens:w-7/12 mx-auto">
           <h3 className="text-center font-bold text-3xl mb-6">
-            Common Solar Film Questions & Answers
+            Solar Film Questions & Answers
           </h3>
           <Accordion
             // className="font-bold"

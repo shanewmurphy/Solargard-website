@@ -94,7 +94,7 @@ export default function OurServiceCarousel() {
               <div>
                 <div>
                   <Image
-                    className="rounded-lg"
+                    className="rounded-lg w-full"
                     src={service.imageURL}
                     quality={100}
                     sizes="100vw"

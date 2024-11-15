@@ -106,12 +106,12 @@ export default function SolarFilms() {
       <div className="flex w-full bg-grey">
         <SolarFilmsData />
       </div>
-      <div className="bg-grey lg:py-40 antialiased">
-        <h2 className="text-secondary text-center font-bold lg:text-4xl md:text-4xl sm:text-2xl uppercase mb-8">
+      <div className="bg-grey lg:py-32 lg:px-24 md:py-32 md:px-16 sm:py-24 sm:px-0 antialiased">
+        <h2 className="text-secondary text-center font-bold lg:text-4xl md:text-4xl sm:text-xl uppercase lg:mb-8 md:mb-6 sm:mb-4">
           Key Benefits of Solar Films
         </h2>
         <div>
-          <div className="lg:w-12/12 largeScreens:w-8/12 md:w-10/12 sm:w-11/12 mx-auto antialiased">
+          <div className="lg:w-12/12 largeScreens:w-8/12 md:w-11/12 sm:w-11/12 mx-auto antialiased">
             <div className="grid lg:grid-cols-3 gap-12 largeScreens:gap-20 text-secondary pb-24">
               {BenefitsCardData.map((benefit) => (
                 <div key={benefit.id}>
@@ -137,7 +137,7 @@ export default function SolarFilms() {
                     </div>
                   </div>
                   <div>
-                    <p className="font-medium text-base max-h-20 lg:mt-2 md:mt-3 sm:mt-4">
+                    <p className="font-medium lg:text-base md:text-base sm:text-sm lg:mt-2 md:mt-3 sm:mt-4">
                       {benefit.description}
                     </p>
                     <h6 className="mt-3 font-semibold text-base antialiased">
@@ -179,14 +179,14 @@ export default function SolarFilms() {
           ))}
         </div>
       </div> */}
-      <div className="bg-grey w-full pb-60">
+      <div className="bg-grey w-full lg:py-40 lg:px-0 md:py-32 md:px-16 sm:py-8 sm:px-0 section-spacing-top-btm">
         <div className="largeScreens:w-8/12 lg:w-10/12 w-10/12 mx-auto">
-          <div className="flex text-secondary lg:flex-row sm:flex-col gap-16">
+          <div className="flex text-secondary lg:flex-row sm:flex-col lg:gap-16">
             <div className="basis-2/5">
-              <h3 className="largeScreens:text-6xl xl:text-5xl lg:text-4xl font-bold uppercase">
+              <h3 className="largeScreens:text-6xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl font-bold uppercase">
                 Facts and Statistics about Solar Films
               </h3>
-              <h4 className="text-2xl text-textLightGray mt-8">
+              <h4 className="text-2xl text-textLightGray lg:mt-8">
                 Solar films significantly reduce heat gain, lowering the need
                 for air conditioning and cutting down on energy bills
               </h4>
@@ -196,7 +196,7 @@ export default function SolarFilms() {
                 <div key={factstats.id} className="fact-item">
                   <div className="bg-white rounded-lg mb-4 px-8 py-6">
                     <div className="flex flex-row gap-6">
-                      <div className="basis-1/5">
+                      <div className="lg:basis-1/5">
                         <div className="flex items-end">
                           <h2 className="text-7xl font-extrabold">
                             {factstats.number}
@@ -204,7 +204,7 @@ export default function SolarFilms() {
                           <span className="font-semibold text-3xl pb-1">%</span>
                         </div>
                       </div>
-                      <div className="basis-4/5">
+                      <div className="lg:basis-4/5">
                         <h3 className="text-xl text-secondary font-semibold">
                           {factstats.title}
                         </h3>
@@ -222,7 +222,7 @@ export default function SolarFilms() {
       </div>
 
       <div>
-        <div className="bg-grey w-full pb-40">
+        <div className="bg-grey w-full section-spacing-top-btm">
           <div className="relative largeScreens:w-9/12 lg:w-10/12 rounded-xl mx-auto lg:h-[60vh] md:h-[70vh] sm:h-[60vh] overflow-hidden">
             <Image
               src={EnvironmentalImg}
