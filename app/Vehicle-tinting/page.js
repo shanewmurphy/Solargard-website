@@ -35,8 +35,8 @@ export default function VehicleTinting() {
       <div className="bg-grey lg:py-32 lg:px-24 md:py-32 md:px-16 sm:py-24 sm:px-6 antialiased">
         <h1 className="text-secondary font-medium lg:text-3xl largeScreens:text-4xl md:text-2xl sm:text-xl largeScreens:w-10/12 xl:mx-auto">
           At Solar Gard Ireland, our expert vehicle tinting services combine
-          style, comfort, and protection. Whether you're looking to reduce heat,
-          protect your interior, or add a sleek look to your car, our
+          style, comfort, and protection. Whether you&apos;re looking to reduce
+          heat, protect your interior, or add a sleek look to your car, our
           high-quality tint films are designed to meet your needs. With a range
           of shades and styles, we offer customised solutions that enhance your
           driving experience.

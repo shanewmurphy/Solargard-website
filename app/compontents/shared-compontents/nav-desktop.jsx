@@ -11,7 +11,7 @@ export default function NavDesktop() {
               <ul className="inline-flex font-medium text-base">
                 <li>Windows Films</li>
                 <li className="pl-4">Manifestations & Graphics</li>
-                <li className="pl-4">CoverStyl'</li>
+                <li className="pl-4">CoverStyl&apos;</li>
                 <li className="pl-4">Vehicle Tinting</li>
                 <li className="pl-4">Vehicle Wrapping</li>
                 <li className="pl-4">Cloaking</li>
