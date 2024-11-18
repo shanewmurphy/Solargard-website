@@ -1,66 +1,189 @@
+import { Description } from "@headlessui/react";
+import WindowFilmsIcon from "../shared-compontents/icons/WindowFilmsIcon";
+import PrivacyIcon from "../shared-compontents/icons/PrivacyIcon";
+import SafetyFilmIcon from "../shared-compontents/icons/SafetyFilmIcon";
+import CoverStylIcon from "../shared-compontents/icons/CoverStylIcon";
+import VehicleIcon from "../shared-compontents/icons/vehicleIcon";
+import VehicleWrappingIcon from "../shared-compontents/icons/vehicleWrappingIcon";
+import GraphicIcon from "../shared-compontents/icons/GraphicIcon";
+import CloakingIcon from "../shared-compontents/icons/CloakingIcon";
+const serviceListData = [
+  {
+    id: "01",
+    title: "Window Films",
+    description:
+      "Keep spaces cooler, reduce glare, and block harmful UV rays while saving on energy costs.",
+    icon: WindowFilmsIcon,
+    pageURL: "/",
+  },
+  {
+    id: "02",
+    title: "Privacy Films",
+    description:
+      "Add stylish privacy to your home or office without sacrificing natural light",
+    icon: PrivacyIcon,
+    pageURL: "/",
+  },
+  {
+    id: "03",
+    title: "Safety Films",
+    description:
+      "Protect against glass shattering with durable, protective films designed for homes and businesses.",
+    icon: SafetyFilmIcon,
+    pageURL: "/",
+  },
+  {
+    id: "04",
+    title: "CoverStyl'",
+    description:
+      "Eco-friendly, self-adhesive vinyl that transforms walls, furniture, and surfaces at a fraction of refurbishment costs.",
+    icon: CoverStylIcon,
+    pageURL: "/",
+  },
+  {
+    id: "05",
+    title: "Vehicle Tinting",
+    description:
+      "Enhance your car’s appearance, comfort, and UV protection with professional-grade window tinting.",
+    icon: VehicleIcon,
+    pageURL: "/",
+  },
+  {
+    id: "06",
+    title: "Vehicle Wrapping",
+    description:
+      "Customise your vehicle’s look with high-quality wraps that make a bold statement.",
+    icon: VehicleWrappingIcon,
+    pageURL: "/",
+  },
+  {
+    id: "07",
+    title: "Manifestations & Graphics",
+    description:
+      "Add functional and decorative designs to glass surfaces, making your space unique and compliant with safety regulations.",
+    icon: GraphicIcon,
+    pageURL: "/",
+  },
+  {
+    id: "08",
+    title: "Cloaking",
+    description:
+      "Maintain confidentiality in offices by obscuring on-screen data while keeping glass walls clear.",
+    icon: CloakingIcon,
+    pageURL: "/",
+  },
+];
+
 export default function CompanyProfile() {
   return (
-    <div className="w-full object-cover h-screen lg:bg-[url('/images/company-profile/background-gradient-img-min.png')] md:bg-[url('/images/company-profile/background-gradient-img-min.png')] sm:bg-[url('/images/company-profile/background-gradient-img-mobile-b.jpg')] bg-no-repeat">
-      <div className="antialiased">
-        <div className="lg:w-10/12 md:w-10/11 sm:w-11/12 mx-auto lg:pt-36 lg:pb-40 md:pt-36 md:pb-0 sm:pt-28 sm:pb-0">
-          <div className="flex lg:flex-row md:flex-col sm:flex-col lg:gap-24 md:gap-16 sm:gap-4 text-white">
-            <div className="basis-3/5">
-              <h2 className="text-white lg:text-5xl md:text-3xl sm:text-3xl font-bold">
-                Innovative Glass & Surface Solutions Tailored for You
-              </h2>
-              <p className="text-white font-normal lg:mt-8 md:mt-8 sm:mt-4 lg:text-base md:text-base sm:text-base">
-                At Solar Gard Ireland, we specialise in providing high-quality
-                glass film and surface transformation solutions for industrial,
-                commercial, and residential applications. With a focus on
-                delivering outstanding results and customer satisfaction, we
-                offer a wide range of innovative products designed to enhance
-                comfort, privacy, and aesthetics.
-              </p>
-              <p className="text-white font-normal lg:mt-8 md:mt-8 sm:mt-4 lg:text-base md:text-base sm:text-base">
-                From energy-saving solar films that reduce heat and glare to
-                stylish privacy films, safety films, and the versatile
-                CoverStyl&apos; self-adhesive vinyl, our offerings are ideal for
-                modernising any space. Additionally, we provide professional
-                vehicle tinting and car wrapping services to give your vehicle a
-                sleek, customised look.
-              </p>
+    <div>
+      {/* <div className="w-full object-cover h-screen lg:bg-[url('/images/company-profile/background-gradient-img-min.png')] md:bg-[url('/images/company-profile/background-gradient-img-min.png')] sm:bg-[url('/images/company-profile/background-gradient-img-mobile-b.jpg')] bg-no-repeat">
+        <div className="antialiased">
+          <div className="lg:w-10/12 md:w-10/11 sm:w-11/12 mx-auto lg:pt-36 lg:pb-40 md:pt-36 md:pb-0 sm:pt-28 sm:pb-0">
+            <div className="flex lg:flex-row md:flex-col sm:flex-col lg:gap-24 md:gap-16 sm:gap-4 text-white">
+              <div className="basis-3/5">
+                <h2 className="text-white lg:text-5xl md:text-3xl sm:text-3xl font-bold">
+                  Innovative Glass & Surface Solutions Tailored for You
+                </h2>
+                <p className="text-white font-normal lg:mt-8 md:mt-8 sm:mt-4 lg:text-base md:text-base sm:text-base">
+                  At Solar Gard Ireland, we specialise in providing high-quality
+                  glass film and surface transformation solutions for
+                  industrial, commercial, and residential applications. With a
+                  focus on delivering outstanding results and customer
+                  satisfaction, we offer a wide range of innovative products
+                  designed to enhance comfort, privacy, and aesthetics.
+                </p>
+                <p className="text-white font-normal lg:mt-8 md:mt-8 sm:mt-4 lg:text-base md:text-base sm:text-base">
+                  From energy-saving solar films that reduce heat and glare to
+                  stylish privacy films, safety films, and the versatile
+                  CoverStyl&apos; self-adhesive vinyl, our offerings are ideal
+                  for modernising any space. Additionally, we provide
+                  professional vehicle tinting and car wrapping services to give
+                  your vehicle a sleek, customised look.
+                </p>
+              </div>
+              <div className="basis-2/5">
+                <div>
+                  <p className="text-sm border-b-2 pb-3">
+                    <b>Expertise & Experience:</b> With years of experience in
+                    the industry, we have a proven track record of delivering
+                    premium installations and tailored solutions to meet our
+                    clients unique needs.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm border-b-2 pb-3 mt-3">
+                    <b>Comprehensive Product Range:</b> Our extensive product
+                    range includes solar, privacy, anti-heat, anti-glare, UV
+                    protection, safety films, and CoverStyl&apos;, all designed
+                    to improve functionality and appearance.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm border-b-2 pb-3 mt-3">
+                    <b>Customer-Centered Approach:</b> We are committed to
+                    exceeding customer expectations by providing exceptional
+                    service, expert advice, and precise installations.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm border-b-2 pb-3 mt-3">
+                    <b>Eco-Friendly Solutions:</b> Our products not only enhance
+                    your environment but also contribute to energy savings and
+                    sustainability by reducing waste and extending the life of
+                    surfaces.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="basis-2/5">
-              <div>
-                <p className="text-sm border-b-2 pb-3">
-                  <b>Expertise & Experience:</b> With years of experience in the
-                  industry, we have a proven track record of delivering premium
-                  installations and tailored solutions to meet our clients
-                  unique needs.
-                </p>
-              </div>
-              <div>
-                <p className="text-sm border-b-2 pb-3 mt-3">
-                  <b>Comprehensive Product Range:</b> Our extensive product
-                  range includes solar, privacy, anti-heat, anti-glare, UV
-                  protection, safety films, and CoverStyl&apos;, all designed to
-                  improve functionality and appearance.
-                </p>
-              </div>
-              <div>
-                <p className="text-sm border-b-2 pb-3 mt-3">
-                  <b>Customer-Centered Approach:</b> We are committed to
-                  exceeding customer expectations by providing exceptional
-                  service, expert advice, and precise installations.
-                </p>
-              </div>
-              <div>
-                <p className="text-sm border-b-2 pb-3 mt-3">
-                  <b>Eco-Friendly Solutions:</b> Our products not only enhance
-                  your environment but also contribute to energy savings and
-                  sustainability by reducing waste and extending the life of
-                  surfaces.
-                </p>
-              </div>
+            <div className="lg:mt-24 md:mt-16 sm:mt-8 sm:pb-16 w-full h-auto max-w-full">
+              <YearsBannerText />
             </div>
           </div>
-          <div className="lg:mt-24 md:mt-16 sm:mt-8 sm:pb-16 w-full h-auto max-w-full">
-            <YearsBannerText />
+        </div>
+      </div> */}
+      <div className="w-full bg-grey pb-40">
+        <div className="w-10/12 mx-auto">
+          <div className="flex flex-row gap-16">
+            <div className="basis-3/5">
+              <h1 className="text-secondary font-bold lg:text-5xl mb-4">
+                Your Experts in Window Films, Surface Enhancement, and Vehicle
+                Tinting Customisation
+              </h1>
+              <h2 className="text-textGray font-mdium lg:text-xl">
+                At Solar Gard Ireland, we specialise in delivering cutting-edge
+                solutions for windows, interiors, and vehicles. Whether you’re
+                enhancing comfort, upgrading aesthetics, custom graphics, or
+                boosting security, our wide range of services ensures we have
+                the perfect solution for your needs.
+              </h2>
+            </div>
+            <div className="basis-2/5"></div>
+          </div>
+          <div className="w-full mt-16">
+            <div className="grid grid-cols-3 gap-4 antialiased">
+              {serviceListData.map((serviceitem) => (
+                <div key={serviceitem.id} className="bg-white p-6 rounded-md">
+                  <div className="flex items-center">
+                    <span>{serviceitem.icon && <serviceitem.icon />}</span>
+                    <h3 className="text-secondary text-xl font-bold pl-4">
+                      {serviceitem.title}
+                    </h3>
+                  </div>
+                  <p className="text-sm font-medium text-textGray mt-2">
+                    {serviceitem.description}
+                  </p>
+                  <p className="mt-2 font-semibold text-sm">More Info</p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-16">
+              <h4 className="font-medium text-textGray text-4xl">
+                We’re committed to helping you redefine your space—whether it’s
+                your home, office, or vehicle—with solutions that blend
+                practicality, style, and sustainability.
+              </h4>
+            </div>
           </div>
         </div>
       </div>
@@ -178,6 +301,48 @@ function HomeIcon() {
     </svg>
   );
 }
+function LargeLogo() {
+  <svg
+    width="192"
+    height="196"
+    viewBox="0 0 192 196"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clip-path="url(#clip0_793_34970)">
+      <path
+        d="M76.5842 195.814C56.8338 195.814 37.0834 195.807 17.3329 195.814C7.01523 195.814 -0.568353 186.119 2.45357 176.038C3.79185 171.582 6.89292 168.028 11.9223 166.494C17.1387 164.897 22.3911 165.484 27.6219 165.463C38.6951 165.412 49.7682 165.642 60.8414 165.685C80.6494 165.764 100.457 165.778 120.265 165.864C126.424 165.892 132.36 164.789 137.864 162.116C143.592 159.336 148.369 155.295 152.24 150.158C156.917 143.932 159.55 136.974 159.831 129.265C160.011 124.364 159.579 119.527 157.845 114.727C155.687 108.766 152.377 103.678 148.002 99.3076C145.664 96.9718 142.7 95.2236 139.893 93.3893C132.072 88.2735 123.201 88.2376 114.308 88.3093C103.688 88.3953 93.0753 88.4526 82.4554 88.4884C77.6347 88.5027 72.7564 88.8968 68.0077 88.2806C60.9781 87.3707 55.2005 81.6243 54.6681 74.1726C54.2508 68.3833 56.1718 63.6257 60.7695 60.2366C64.1224 57.7647 68.13 57.0912 72.3751 57.1628C82.7144 57.3276 93.0537 57.2058 103.4 57.2058C111.07 57.2058 118.74 57.2273 126.41 57.1986C133.77 57.17 141.131 57.0983 148.492 57.0267C155.312 56.9622 160.997 50.313 160.414 43.1981C159.932 37.2583 154.687 31.6194 147.938 31.7269C137.382 31.8988 126.827 31.863 116.272 31.8988C102.673 31.9418 89.0748 31.8988 75.4762 32.0493C70.7994 32.0995 66.065 32.2642 61.4674 33.0237C58.4023 33.5253 55.4451 35.0013 52.5887 36.3483C48.2069 38.419 44.5159 41.5358 41.3212 45.1112C39.2347 47.4398 37.4719 50.1267 35.9465 52.8638C34.4716 55.5005 33.1621 58.3164 32.3778 61.2182C31.5216 64.378 31.1331 67.7169 30.9388 70.9985C30.579 77.096 31.4712 83.0573 34.1046 88.6389C36.3279 93.3463 39.1555 97.6239 42.8394 101.407C46.293 104.954 50.2719 107.712 54.6249 109.819C59.8197 112.327 65.4391 113.373 71.2814 113.308C78.9658 113.222 86.6501 113.408 94.3272 113.401C103.235 113.401 112.142 113.294 121.05 113.265C128.158 113.244 133.914 116.009 136.9 122.544C138.944 127.008 138.901 131.858 136.138 136.351C132.684 141.961 127.612 144.018 121.165 143.96C103.825 143.81 86.4918 143.817 69.1517 143.889C62.6114 143.917 56.2654 142.663 50.164 140.693C39.4721 137.239 29.8236 131.758 22.0097 123.561C18.0884 119.449 14.2607 115.135 11.0876 110.449C8.46863 106.587 6.55475 102.159 4.89269 97.7672C3.10832 93.0669 1.32395 88.1947 0.741146 83.2508C-0.0718949 76.4583 -0.201406 69.501 0.230297 62.6656C0.518099 58.0943 2.15138 53.5731 3.4321 49.1021C4.3027 46.0641 5.37476 43.0405 6.7706 40.2103C8.33912 37.029 10.1595 33.9265 12.2532 31.0677C14.7715 27.6285 17.4912 24.2824 20.4988 21.2731C23.5495 18.2207 26.8952 15.3977 30.4135 12.9043C33.8816 10.4467 37.6302 8.29715 41.4651 6.45573C44.6454 4.92957 48.1278 3.99812 51.5022 2.86604C61.8703 -0.623344 72.6053 0.186307 83.2468 0.100326C97.1189 -0.0143144 110.991 0.0143458 124.87 0.00718075C133.468 0.00718075 142.066 -0.0429746 150.657 0.121822C155.924 0.222132 160.745 2.08505 165.544 4.2059C171.962 7.04326 177.099 11.3996 181.481 16.6874C185.489 21.5167 188.007 27.0767 189.993 33.0811C193.058 42.3598 191.712 51.746 191.712 61.0964C191.712 79.4819 191.439 97.8746 191.18 116.26C191.05 125.682 191.022 135.119 190.302 144.505C189.957 149.076 188.474 153.655 186.877 158.004C185.46 161.859 183.496 165.62 181.186 169.024C178.696 172.692 175.79 176.174 172.581 179.234C169.278 182.379 165.616 185.295 161.694 187.617C157.795 189.924 153.435 191.515 149.182 193.177C139.289 197.039 128.892 195.799 118.646 195.857C104.631 195.936 90.6146 195.878 76.5986 195.878C76.5986 195.857 76.5986 195.835 76.5986 195.821L76.5842 195.814Z"
+        fill="url(#paint0_linear_793_34970)"
+      />
+    </g>
+    <defs>
+      <linearGradient
+        id="paint0_linear_793_34970"
+        x1="8.91473"
+        y1="181.433"
+        x2="194.88"
+        y2="7.59374"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stop-color="#120C18" />
+        <stop offset="0.06" stop-color="#1C1622" />
+        <stop offset="0.16" stop-color="#37333C" />
+        <stop offset="0.3" stop-color="#636168" />
+        <stop offset="0.46" stop-color="#A0A0A4" />
+        <stop offset="0.53" stop-color="#BBBDBF" />
+        <stop offset="0.58" stop-color="#B2B4B7" />
+        <stop offset="0.66" stop-color="#999CA4" />
+        <stop offset="0.76" stop-color="#727585" />
+        <stop offset="0.87" stop-color="#3C3F59" />
+        <stop offset="0.98" stop-color="#03072C" />
+      </linearGradient>
+      <clipPath id="clip0_793_34970">
+        <rect width="192" height="196" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>;
+}
+
 function YearsBannerText() {
   return (
     <svg
