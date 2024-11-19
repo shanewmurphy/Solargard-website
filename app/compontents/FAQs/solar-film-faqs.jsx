@@ -74,7 +74,6 @@ export default function SolarFilmsFAQs() {
             Solar Film Questions & Answers
           </h3>
           <Accordion
-            // className="font-bold"
             classNames={{
               base: "gap-4",
               item: {

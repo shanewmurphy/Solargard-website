@@ -1,10 +1,12 @@
 "use client";
 import { useEffect } from "react";
 import Image from "next/image";
-
+import { Link } from "react-scroll";
 import HeroImg from "/public/images/car-tinting-imgs/Hero-car-tinting-img-min.jpg";
 import { Description } from "@headlessui/react";
 import CarTierOne from "/public/images/car-tinting-imgs/Car-imgs-pricing-A.png";
+import CarTierTwo from "/public/images/car-tinting-imgs/Car-imgs-pricing-b.png";
+import CarTierThree from "/public/images/car-tinting-imgs/Car-imgs-pricing-c.png";
 const vehicletintingData = [
   {
     id: "01",
@@ -66,7 +68,7 @@ const tintingPricingListData = [
     tierName: "Standard",
     filmType: "Hp Metalised",
     warranty: "15 years",
-    image: CarTierOne,
+    image: CarTierTwo,
     Hatchback: {
       full: "Full Car",
       half: "Half Car",
@@ -97,7 +99,7 @@ const tintingPricingListData = [
     tierName: "High",
     filmType: "Nano Ceramic",
     warranty: "Lifetime",
-    image: CarTierOne,
+    image: CarTierThree,
     Hatchback: {
       full: "Full Car",
       half: "Half Car",
@@ -129,9 +131,10 @@ const FilmSpecsData = [
   {
     id: "01",
     filmName: "Glue Dyed",
+    profileImg: "",
     filmProfile:
-      "Dyed window tint is a popular, budget-friendly option that adds a stylish, dark appearance to your vehicle. It works by absorbing solar heat and reducing glare somewhat",
-    HeatReduction: "Basic",
+      "Provides an economical option for enhancing your car’s appearance and maintaining privacy. Ideal for drivers seeking basic UV protection and moderate glare reduction on a budget",
+    HeatReduction: "Low",
     GlareReduction: "Moderate",
     UVProtection: "Up to 99%",
     Warranty: "2 years",
@@ -140,8 +143,9 @@ const FilmSpecsData = [
   {
     id: "02",
     filmName: "HP Metallized",
+    profileImg: "",
     filmProfile:
-      "Metallized tint uses tiny metallic particles to reflect sunlight and block heat. It’s durable and offers greater UV protection compared to dyed films.",
+      "Offers excellent heat rejection, glare reduction, and long-lasting durability. A perfect mid-tier choice for those who want enhanced comfort and a sleek.",
     HeatReduction: "High",
     GlareReduction: "Excellent",
     UVProtection: "Up to 99%",
@@ -151,8 +155,9 @@ const FilmSpecsData = [
   {
     id: "03",
     filmName: "Nano Ceramic",
+    profileImg: "",
     filmProfile:
-      "Ceramic tints are the highest-performing option, offering unmatched heat rejection and UV protection. Unlike metalised tints, ceramic films don’t interfere with electronic signals and are incredibly durable.",
+      "Delivers superior heat rejection, outstanding clarity, and unmatched durability. The premium choice for those who demand top-tier performance, maximum UV protection, and a lifetime of reliability.",
     HeatReduction: "Superior",
     GlareReduction: "Excellent",
     UVProtection: "Up to 99%",
@@ -263,7 +268,15 @@ export default function VehicleTinting() {
                     </div>
                     <div>
                       <button className="text-sm font-medium underline hover:no-underline">
-                        View Specs
+                        <Link
+                          to="specsScrollTo"
+                          spy={true}
+                          smooth={true}
+                          offset={50}
+                          duration={500}
+                        >
+                          View Specs
+                        </Link>
                       </button>
                     </div>
                   </div>
@@ -327,6 +340,78 @@ export default function VehicleTinting() {
               <h5 className="text-center mt-4 font-semibold text-3xl">
                 021 4545606
               </h5>
+            </div>
+          </div>
+          <div className="mt-48">
+            <div className="lg:w-9/12">
+              <h2 className="font-bold text-secondary lg:text-4xl">
+                Discover the Best Tinting Film for Your Vehicle
+              </h2>
+              <p className="font-medium text-textGray text-xl mt-2">
+                At Solar Gard Ireland, we offer a range of high-performance
+                vehicle tinting films designed to suit various needs and
+                preferences
+              </p>
+            </div>
+            <div
+              className="grid grid-cols-3 gap-12 mt-8 lg:text-base antialiased"
+              id="specsScrollTo"
+            >
+              {FilmSpecsData.map((specsData) => (
+                <div className="bg-white rounded-lg p-8">
+                  <div className="rounded-full h-64 w-64 bg-gray-300 mx-auto"></div>
+                  <div>
+                    <h2 className="font-bold text-center mt-3 lg:text-3xl">
+                      {specsData.filmName}
+                    </h2>
+                  </div>
+                  <div className="flex items-center justify-between text-secondary font-semibold mt-4">
+                    <div>
+                      <h6>Heat Reduction</h6>
+                    </div>
+                    <div>
+                      <span className="font-medium lg:text-sm text-textGray">
+                        {specsData.HeatReduction}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-between text-secondary font-semibold mt-1">
+                    <div>
+                      <h6>Glare Reduction</h6>
+                    </div>
+                    <div>
+                      <span className="font-medium lg:text-sm text-textGray">
+                        {specsData.GlareReduction}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-between text-secondary font-semibold mt-1">
+                    <div>
+                      <h6>Warranty</h6>
+                    </div>
+                    <div>
+                      <span className="font-medium lg:text-sm text-textGray">
+                        {specsData.Warranty}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-between text-secondary font-semibold mt-1">
+                    <div>
+                      <h6>Durability</h6>
+                    </div>
+                    <div>
+                      <span className="font-medium lg:text-sm text-textGray">
+                        {specsData.Durability}
+                      </span>
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-xs font-medium text-secondary mt-6">
+                      {specsData.filmProfile}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
