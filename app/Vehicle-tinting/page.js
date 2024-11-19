@@ -32,86 +32,83 @@ const vehicletintingData = [
 const tintingPricingListData = [
   {
     id: "01",
-    tierName: "CLASSIC",
-    filmType: "ATC Dyed",
+    tierName: "Entry",
+    filmType: "Glue Dyed",
+    warranty: "2 years",
     image: CarTierOne,
-    fourDoorSalon: {
+    Hatchback: {
       full: "Full Car",
       half: "Half Car",
-      fullprice: 190,
+      fullprice: 320,
       halfprice: 150,
     },
-    fiveDoorHatchback: {
+    SUV: {
       full: "Full Car",
       half: "Half Car",
-      fullprice: 190,
-      halfprice: 150,
-    },
-    estate: {
-      full: "Full Car",
-      half: "Half Car",
-      fullprice: 190,
-      halfprice: 150,
+      fullprice: 340,
+      halfprice: 170,
     },
     coupe: {
       full: "Full Car",
       half: "Half Car",
-      fullprice: 190,
-      halfprice: 150,
+      fullprice: 300,
+      halfprice: 130,
+    },
+    MPV: {
+      full: "Full Car",
+      half: "Half Car",
+      fullprice: 330,
+      halfprice: 170,
     },
   },
   {
     id: "02",
-    tierName: "HIGH PERFORMANCE",
-    filmType: "ATR Metalized",
+    tierName: "Standard",
+    filmType: "Hp Metalised",
+    warranty: "15 years",
     image: CarTierOne,
-    fourDoorSalon: {
+    Hatchback: {
       full: "Full Car",
       half: "Half Car",
-      fullprice: 290,
-      halfprice: 250,
+      fullprice: 360,
+      halfprice: 170,
     },
-    fiveDoorHatchback: {
+    SUV: {
       full: "Full Car",
       half: "Half Car",
-      fullprice: 290,
-      halfprice: 250,
-    },
-    estate: {
-      full: "Full Car",
-      half: "Half Car",
-      fullprice: 290,
-      halfprice: 250,
+      fullprice: 380,
+      halfprice: 190,
     },
     coupe: {
       full: "Full Car",
       half: "Half Car",
-      fullprice: 290,
-      halfprice: 250,
+      fullprice: 340,
+      halfprice: 150,
+    },
+    MPV: {
+      full: "Full Car",
+      half: "Half Car",
+      fullprice: 340,
+      halfprice: 150,
     },
   },
   {
     id: "03",
-    tierName: "AVANTGARDE",
-    filmType: "IRX Nano Ceramic",
+    tierName: "High",
+    filmType: "Nano Ceramic",
+    warranty: "Lifetime",
     image: CarTierOne,
-    fourDoorSalon: {
+    Hatchback: {
       full: "Full Car",
       half: "Half Car",
-      fullprice: 390,
-      halfprice: 250,
+      fullprice: 400,
+      halfprice: 260,
     },
-    fiveDoorHatchback: {
+    SUV: {
       full: "Full Car",
       half: "Half Car",
-      fullprice: 390,
-      halfprice: 250,
-    },
-    estate: {
-      full: "Full Car",
-      half: "Half Car",
-      fullprice: 390,
-      halfprice: 250,
+      fullprice: 490,
+      halfprice: 270,
     },
     coupe: {
       full: "Full Car",
@@ -119,6 +116,48 @@ const tintingPricingListData = [
       fullprice: 390,
       halfprice: 250,
     },
+    MPV: {
+      full: "Full Car",
+      half: "Half Car",
+      fullprice: 430,
+      halfprice: 270,
+    },
+  },
+];
+
+const FilmSpecsData = [
+  {
+    id: "01",
+    filmName: "Glue Dyed",
+    filmProfile:
+      "Dyed window tint is a popular, budget-friendly option that adds a stylish, dark appearance to your vehicle. It works by absorbing solar heat and reducing glare somewhat",
+    HeatReduction: "Basic",
+    GlareReduction: "Moderate",
+    UVProtection: "Up to 99%",
+    Warranty: "2 years",
+    Durability: "Prone to fading over time",
+  },
+  {
+    id: "02",
+    filmName: "HP Metallized",
+    filmProfile:
+      "Metallized tint uses tiny metallic particles to reflect sunlight and block heat. It’s durable and offers greater UV protection compared to dyed films.",
+    HeatReduction: "High",
+    GlareReduction: "Excellent",
+    UVProtection: "Up to 99%",
+    Warranty: "15 years",
+    Durability: "Long-lasting, minimal fading",
+  },
+  {
+    id: "03",
+    filmName: "Nano Ceramic",
+    filmProfile:
+      "Ceramic tints are the highest-performing option, offering unmatched heat rejection and UV protection. Unlike metalised tints, ceramic films don’t interfere with electronic signals and are incredibly durable.",
+    HeatReduction: "Superior",
+    GlareReduction: "Excellent",
+    UVProtection: "Up to 99%",
+    Warranty: "Lifetime",
+    Durability: "Extremely durable, fade-resistant",
   },
 ];
 
@@ -197,71 +236,97 @@ export default function VehicleTinting() {
                 <h3 className="text-center font-bold text-4xl">
                   Choose the Perfect Tinting Package for Your Vehicle
                 </h3>
-                <h4 className="text-center font-medium">
+                {/* <h4 className="text-center font-medium mt-2">
                   Below are our available packages, designed to suit different
                   preferences and budgets. Whether you want a full vehicle tint
                   or just a few windows, we have the right option for you.
-                </h4>
+                </h4> */}
               </div>
             </div>
             <div className="grid grid-cols-3 gap-12">
               {tintingPricingListData.map((tier) => (
-                <div key={tier.id} className="bg-white rounded-lg p-8">
+                <div
+                  key={tier.id}
+                  className="bg-white rounded-lg p-8 antialiased"
+                >
                   <div className="lg:w-7/12 mx-auto">
                     <Image src={tier.image} />
                   </div>
-                  <h2 className="text-2xl font-bold">{tier.tierName}</h2>
-                  <p className="text-gray-600">{tier.filmType}</p>
-                  <div className="mt-6 border-b-2 pb-4">
-                    <h3 className="text-base font-semibold mb-1">
-                      4-Door Salon
-                    </h3>
-                    <div className="flex justify-between">
-                      <div>{tier.fourDoorSalon.full}</div>
-                      <div>€{tier.fourDoorSalon.fullprice}</div>
+                  <div>
+                    <h2 className="text-3xl font-bold">{tier.tierName}</h2>
+                  </div>
+                  <div className="flex items-center justify-between mt-2">
+                    <div>
+                      <h5 className="text-gray-600 font-semibold text-2xl">
+                        {tier.filmType}
+                      </h5>
                     </div>
-                    <div className="flex justify-between">
-                      <div>{tier.fourDoorSalon.half}</div>
-                      <div>€{tier.fourDoorSalon.halfprice}</div>
+                    <div>
+                      <button className="text-sm font-medium underline hover:no-underline">
+                        View Specs
+                      </button>
+                    </div>
+                  </div>
+                  <div className="flex items-center text-base font-medium text-secondary justify-between mt-1">
+                    <div>Warranty</div>
+                    <div className="font-semibold">{tier.warranty}</div>
+                  </div>
+                  <div className="mt-4 border-b-2 pb-4">
+                    <h3 className="text-base font-semibold mb-1">Hatchback</h3>
+                    <div className="flex justify-between font-semibold">
+                      <div>{tier.Hatchback.full}</div>
+                      <div>€{tier.Hatchback.fullprice}</div>
+                    </div>
+                    <div className="flex justify-between font-semibold">
+                      <div>{tier.Hatchback.half}</div>
+                      <div>€{tier.Hatchback.halfprice}</div>
                     </div>
                   </div>
                   <div className="mt-4 border-b-2 pb-4">
-                    <h3 className="text-base font-semibold mb-1">
-                      5-Door Hatchback
-                    </h3>
-                    <div className="flex justify-between">
-                      <div>{tier.fiveDoorHatchback.full}</div>
-                      <div>€{tier.fiveDoorHatchback.fullprice}</div>
+                    <h3 className="text-base font-semibold mb-1">MPV/Van</h3>
+                    <div className="flex justify-between font-semibold">
+                      <div>{tier.MPV.full}</div>
+                      <div>€{tier.MPV.fullprice}</div>
                     </div>
-                    <div className="flex justify-between">
-                      <div>{tier.fiveDoorHatchback.half}</div>
-                      <div>€{tier.fiveDoorHatchback.halfprice}</div>
+                    <div className="flex justify-between font-semibold">
+                      <div>{tier.MPV.half}</div>
+                      <div>€{tier.MPV.halfprice}</div>
                     </div>
                   </div>
                   <div className="mt-4 border-b-2 pb-4">
-                    <h3 className="text-base font-semibold">Estate</h3>
-                    <div className="flex justify-between">
-                      <div>{tier.estate.full}</div>
-                      <div>€{tier.estate.fullprice}</div>
+                    <h3 className="text-base font-semibold">Estate/SUV/Jeep</h3>
+                    <div className="flex justify-between font-semibold">
+                      <div>{tier.SUV.full}</div>
+                      <div>€{tier.SUV.fullprice}</div>
                     </div>
-                    <div className="flex justify-between">
-                      <div>{tier.estate.half}</div>
-                      <div>€{tier.estate.halfprice}</div>
+                    <div className="flex justify-between font-semibold">
+                      <div>{tier.SUV.half}</div>
+                      <div>€{tier.SUV.halfprice}</div>
                     </div>
                   </div>
                   <div className="mt-4">
                     <h3 className="text-base font-semibold">Coupe</h3>
-                    <div className="flex justify-between">
+                    <div className="flex justify-between font-semibold">
                       <div>{tier.coupe.full}</div>
                       <div>€{tier.coupe.fullprice}</div>
                     </div>
-                    <div className="flex justify-between">
+                    <div className="flex justify-between font-semibold">
                       <div>{tier.coupe.half}</div>
                       <div>€{tier.coupe.halfprice}</div>
                     </div>
                   </div>
                 </div>
               ))}
+            </div>
+            <div className="lg:w-8/12 mx-auto mt-8">
+              <h4 className="font-medium text-center text-secondary text-2xl">
+                Simply call us to book. Provide us with your vehicle&apos;s make
+                and model, and let us know which package you&apos;re interested
+                in.
+              </h4>
+              <h5 className="text-center mt-4 font-semibold text-3xl">
+                021 4545606
+              </h5>
             </div>
           </div>
         </div>
