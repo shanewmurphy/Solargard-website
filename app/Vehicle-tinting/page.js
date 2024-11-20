@@ -2,11 +2,18 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import { Link } from "react-scroll";
+import CarTintingFAQs from "../compontents/FAQs/car-tinting-faqs";
+import OurServiceCarousel from "../compontents/shared-compontents/our-services-carousel";
+import ContactUs from "../compontents/shared-compontents/Contact-Us";
+
 import HeroImg from "/public/images/car-tinting-imgs/Hero-car-tinting-img-min.jpg";
-import { Description } from "@headlessui/react";
 import CarTierOne from "/public/images/car-tinting-imgs/Car-imgs-pricing-A.png";
 import CarTierTwo from "/public/images/car-tinting-imgs/Car-imgs-pricing-b.png";
 import CarTierThree from "/public/images/car-tinting-imgs/Car-imgs-pricing-c.png";
+import GlueDyed from "/public/images/car-tinting-imgs/Glue-Dyed-profile-img.jpg";
+import HPMetallized from "/public/images/car-tinting-imgs/HP-Metallized-profile-img.jpg";
+import NanoCeramic from "/public/images/car-tinting-imgs/Nano-Ceramic-profile-img.jpg";
+
 const vehicletintingData = [
   {
     id: "01",
@@ -131,7 +138,7 @@ const FilmSpecsData = [
   {
     id: "01",
     filmName: "Glue Dyed",
-    profileImg: "",
+    profileImg: GlueDyed,
     filmProfile:
       "Provides an economical option for enhancing your car’s appearance and maintaining privacy. Ideal for drivers seeking basic UV protection and moderate glare reduction on a budget",
     HeatReduction: "Low",
@@ -143,11 +150,11 @@ const FilmSpecsData = [
   {
     id: "02",
     filmName: "HP Metallized",
-    profileImg: "",
+    profileImg: HPMetallized,
     filmProfile:
       "Offers excellent heat rejection, glare reduction, and long-lasting durability. A perfect mid-tier choice for those who want enhanced comfort and a sleek.",
     HeatReduction: "High",
-    GlareReduction: "Excellent",
+    GlareReduction: "Effective",
     UVProtection: "Up to 99%",
     Warranty: "15 years",
     Durability: "Long-lasting, minimal fading",
@@ -155,7 +162,7 @@ const FilmSpecsData = [
   {
     id: "03",
     filmName: "Nano Ceramic",
-    profileImg: "",
+    profileImg: NanoCeramic,
     filmProfile:
       "Delivers superior heat rejection, outstanding clarity, and unmatched durability. The premium choice for those who demand top-tier performance, maximum UV protection, and a lifetime of reliability.",
     HeatReduction: "Superior",
@@ -267,7 +274,7 @@ export default function VehicleTinting() {
                       </h5>
                     </div>
                     <div>
-                      <button className="text-sm font-medium underline hover:no-underline">
+                      <button className="text-sm font-medium underline hover:no-underline hover:text-primary">
                         <Link
                           to="specsScrollTo"
                           spy={true}
@@ -359,7 +366,16 @@ export default function VehicleTinting() {
             >
               {FilmSpecsData.map((specsData) => (
                 <div className="bg-white rounded-lg p-8">
-                  <div className="rounded-full h-64 w-64 bg-gray-300 mx-auto"></div>
+                  <div className="rounded-full h-64 w-64  bg-gray-300 mx-auto">
+                    <Image
+                      src={specsData.profileImg}
+                      className="h-64 w-64 rounded-full"
+                      style={{
+                        width: "100%",
+                        objectFit: "auto",
+                      }}
+                    />
+                  </div>
                   <div>
                     <h2 className="font-bold text-center mt-3 lg:text-3xl">
                       {specsData.filmName}
@@ -414,7 +430,16 @@ export default function VehicleTinting() {
               ))}
             </div>
           </div>
+          <div className="mt-40">
+            <CarTintingFAQs />
+          </div>
         </div>
+      </div>
+      <div className="w-full">
+        <OurServiceCarousel />
+      </div>
+      <div>
+        <ContactUs />
       </div>
     </div>
   );
