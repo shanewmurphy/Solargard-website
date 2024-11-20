@@ -365,7 +365,7 @@ export default function VehicleTinting() {
               id="specsScrollTo"
             >
               {FilmSpecsData.map((specsData) => (
-                <div className="bg-white rounded-lg p-8">
+                <div className="bg-white rounded-lg p-8" key={specsData.id}>
                   <div className="rounded-full h-64 w-64  bg-gray-300 mx-auto">
                     <Image
                       src={specsData.profileImg}

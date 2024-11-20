@@ -151,34 +151,6 @@ export default function SolarFilms() {
           </div>
         </div>
       </div>
-      {/* <div className="bg-grey w-full pb-60">
-        <div className="w-10/12 mx-auto">
-          {FactsStatsData.map((factstats) => (
-            <div key={factstats.id} className="fact-item">
-              <div className="bg-white  rounded-lg mb-4 px-16 py-16">
-                <div className="flex flex-row gap-6">
-                  <div className="basis-3/12">
-                    <div className="flex items-end">
-                      <h2 className="text-9xl font-extrabold">
-                        {factstats.number}
-                      </h2>
-                      <span className="font-semibold text-3xl pb-5">%</span>
-                    </div>
-                  </div>
-                  <div className="basis-9/12">
-                    <h3 className="text-4xl text-secondary font-semibold">
-                      {factstats.title}
-                    </h3>
-                    <p className="mt-4 w-10/12 text-textGray text-lg">
-                      {factstats.description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div> */}
       <div className="bg-grey w-full lg:py-40 lg:px-0 md:py-32 md:px-16 sm:py-8 sm:px-0 section-spacing-top-btm">
         <div className="largeScreens:w-8/12 lg:w-10/12 w-10/12 mx-auto">
           <div className="flex text-secondary lg:flex-row sm:flex-col lg:gap-16">
@@ -220,7 +192,6 @@ export default function SolarFilms() {
           </div>
         </div>
       </div>
-
       <div>
         <div className="bg-grey w-full section-spacing-top-btm">
           <div className="relative largeScreens:w-9/12 lg:w-10/12 rounded-xl mx-auto lg:h-[60vh] md:h-[70vh] sm:h-[60vh] overflow-hidden">
