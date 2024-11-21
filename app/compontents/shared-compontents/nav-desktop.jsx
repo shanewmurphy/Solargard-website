@@ -1,10 +1,10 @@
-import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
+import DesktopFlyoutMenu from "./desktop-flyout-menu";
 
 export default function NavDesktop() {
   return (
     <div>
       <div className="bg-white text-white absolute z-10 w-10/12 mx-auto h-14 left-1/2 top-8 transform -translate-x-1/2 -translate-y-1/2 mt-6 rounded-2xl flex items-center xl:visible lg:visible md:visible sm:invisible">
-        <div className="flex w-11/12 mx-auto items-center justify-between">
+        <div className="flex w-11/12 mx-auto items-center justify-between antialiased">
           <div className="flex items-center">
             <div>
               <LogoNew />
@@ -12,23 +12,7 @@ export default function NavDesktop() {
             <div className="text-secondary pl-4 antialiased">
               <ul className="inline-flex font-medium text-base">
                 <li>
-                  <Popover className="">
-                    <PopoverButton>Window Films</PopoverButton>
-                    <PopoverPanel
-                      anchor="bottom"
-                      className="flex flex-col bg-white py-4 px-6 rounded-md mt-5 appearance-none bg-transparent border-none outline-none transition duration-200 ease-out data-[closed]:scale-95 data-[closed]:opacity-0"
-                    >
-                      <a href="/" className="mb-2">
-                        Solar Films
-                      </a>
-                      <a href="/" className="mb-2">
-                        Privacy Films
-                      </a>
-                      <a href="/" className="mb-2">
-                        Safely Films
-                      </a>
-                    </PopoverPanel>
-                  </Popover>
+                  <DesktopFlyoutMenu />
                 </li>
                 <li className="pl-4">Manifestations & Graphics</li>
                 <li className="pl-4">CoverStyl&apos;</li>
@@ -150,13 +134,13 @@ function LogoNew() {
           y2="22.5152"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.11" stop-color="#251E5A" />
-          <stop offset="0.18" stop-color="#2B2764" />
-          <stop offset="0.29" stop-color="#3C3F81" />
-          <stop offset="0.44" stop-color="#5867AF" />
-          <stop offset="0.45" stop-color="#5968B0" />
-          <stop offset="0.71" stop-color="#4295B9" />
-          <stop offset="0.87" stop-color="#37ACBE" />
+          <stop offset="0.11" stopColor="#251E5A" />
+          <stop offset="0.18" stopColor="#2B2764" />
+          <stop offset="0.29" stopColor="#3C3F81" />
+          <stop offset="0.44" stopColor="#5867AF" />
+          <stop offset="0.45" stopColor="#5968B0" />
+          <stop offset="0.71" stopColor="#4295B9" />
+          <stop offset="0.87" stopColor="#37ACBE" />
         </linearGradient>
       </defs>
     </svg>
