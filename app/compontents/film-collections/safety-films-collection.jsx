@@ -157,11 +157,13 @@ const SafetyFilmsComponent = () => {
             >
               <div key={product.id}>
                 <div className="rounded-2xl lg:py-12 md:py-12 sm:py-6 bg-white">
-                  <div className="mx-auto">
-                    <img
+                  <div className="relative lg:w-36 lg:h-36 md:w-28 md:h-28 sm:w-28 sm:h-28 mx-auto rounded-full">
+                    <Image
                       src={product.image}
                       alt={product.name}
-                      className="lg:w-36 lg:h-36 md:w-28 md:h-28 sm:w-28 sm:h-28 mx-auto rounded-full bg-center bg-cover"
+                      layout="fill"
+                      objectFit="cover"
+                      className="rounded-full bg-center bg-cover"
                     />
                   </div>
                   <h3 className="font-semibold text-secondary text-center lg:text-2xl mt-2">
