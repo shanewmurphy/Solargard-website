@@ -3,12 +3,15 @@
 import { useState, useEffect } from "react";
 import { manifestData } from "@/app/Data-Sheets/Manifestions-Graphics-Data";
 import Link from "next/link";
-import { Progress } from "@nextui-org/progress";
 import Image from "next/image";
 import { Select, SelectItem } from "@nextui-org/select";
 import { Pagination } from "@nextui-org/pagination";
 
-import Swiper from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
 
 const categories = [
   "All",
@@ -100,7 +103,7 @@ const ManifestationsComponent = () => {
             </p>
           </div>
           {/* Filter Buttons and Listbox for Mobile */}
-          <div className="flex items-center flex-wrap gap-2 mb-8">
+          <div className="flex items-center gap-2 mb-8">
             <div className="lg:flex md:flex sm:hidden">
               <span>
                 <FilterIcon />
@@ -110,23 +113,48 @@ const ManifestationsComponent = () => {
               </h6>
             </div>
             {/* Desktop Filter Buttons */}
-            <div className="hidden lg:flex gap-2">
-              {categories.map((category) => (
-                <button
-                  key={category}
-                  onClick={() => {
-                    setFilterCategory(category);
-                    setCurrentPage(1); // Reset to first page when filter changes
-                  }}
-                  className={`px-2 py-1 text-sm font-medium text-secondary rounded-md ${
-                    filterCategory === category
-                      ? "bg-primary text-white"
-                      : "bg-transparent text-gray-600 border-1 border-gray-300"
-                  } hover:bg-primary hover:text-white cursor-pointer`}
-                >
-                  {category}
-                </button>
-              ))}
+            <div className="hidden lg:flex gap-2 w-11/12">
+              <Swiper
+                modules={[Navigation]}
+                navigation
+                spaceBetween={8}
+                breakpoints={{
+                  // Desktop
+                  1024: {
+                    slidesPerView: 8,
+                    spaceBetween: 8,
+                  },
+                  // Tablet
+                  768: {
+                    slidesPerView: 6,
+                    spaceBetween: 8,
+                  },
+                  // Mobile fallback
+                  0: {
+                    slidesPerView: 3,
+                    spaceBetween: 8,
+                  },
+                }}
+                className="categories-swiper"
+              >
+                {categories.map((category) => (
+                  <SwiperSlide key={category}>
+                    <button
+                      onClick={() => {
+                        setFilterCategory(category);
+                        setCurrentPage(1);
+                      }}
+                      className={`py-1 px-1 text-sm font-medium text-secondary rounded-md ${
+                        filterCategory === category
+                          ? "bg-primary text-white"
+                          : "bg-transparent text-gray-600 border-1 border-gray-300"
+                      } hover:bg-primary hover:text-white cursor-pointer w-full`}
+                    >
+                      {category}
+                    </button>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
             {/* Mobile Listbox for Category Selection */}
             <div className="w-full lg:hidden">
