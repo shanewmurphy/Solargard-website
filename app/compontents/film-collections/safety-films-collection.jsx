@@ -7,7 +7,7 @@ import Image from "next/image";
 import { Select, SelectItem } from "@nextui-org/select";
 import { Pagination } from "@nextui-org/pagination";
 
-const categories = ["All", "Transparent", "KKKK", "JJJJJJ", "AAAA"];
+const categories = ["All", "Transparent", "Combination", "Anti Fog"];
 
 const SafetyFilmsComponent = () => {
   const [currentPage, setCurrentPage] = useState(1);
