@@ -212,8 +212,8 @@ const ManifestationsComponent = () => {
                         className="rounded-full"
                         src={product.image}
                         alt={product.name}
-                        layout="fill"
-                        objectFit="cover"
+                        fill={true}
+                        style={{ objectFit: "cover" }}
                       />
                     </div>
                     <h3 className="font-bold text-secondary text-center lg:text-xl mt-4">

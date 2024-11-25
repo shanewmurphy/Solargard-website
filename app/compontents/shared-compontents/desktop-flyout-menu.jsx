@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import { Popover } from "@headlessui/react";
+import Link from "next/link";
 import {
   ChevronDownIcon,
   PhoneIcon,
@@ -19,12 +20,12 @@ import {
 const windowFilms = [
   {
     name: "Solar Films",
-    description: "Get a better understanding of your traffic",
-    href: "#",
+    description: "Heat Reduced, Anti-Glare, UV Protection",
+    href: "/Solar-Films",
     icon: ChartPieIcon,
   },
   {
-    name: "Engagement",
+    name: "Safety Films",
     description: "Speak directly to your customers",
     href: "#",
     icon: CursorArrowRaysIcon,
@@ -78,17 +79,19 @@ export default function DesktopFlyoutMenu() {
                   {windowFilms.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex gap-x-4 rounded-lg p-4 hover:bg-gray-50"
+                      className="group text-xl relative flex gap-x-4 rounded-lg p-4 hover:bg-gray-50"
                     >
                       <div>
-                        <a
+                        <Link
                           href={item.href}
                           className="font-semibold text-gray-900"
                         >
                           {item.name}
                           <span className="absolute inset-0" />
-                        </a>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
+                        </Link>
+                        <p className="mt-1 text-gray-600 text-sm">
+                          {item.description}
+                        </p>
                       </div>
                     </div>
                   ))}

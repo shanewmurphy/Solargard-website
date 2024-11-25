@@ -85,10 +85,11 @@ export default function ManifestationGraphicsPage() {
         <div className="lg:w-11/12 mx-auto">
           <div className="grid grid-cols-3 gap-8 antialiased">
             {KeyPoints.map((point) => (
-              <div className="bg-white rounded-md p-4 pb-16">
+              <div className="bg-white rounded-md p-4 pb-16" key={point.id}>
                 <div className="flex items-center">
                   <Image
                     className="rounded-sm bg-center bg-cover mx-auto"
+                    alt={point.title}
                     quality={100}
                     layout="responsive"
                     src={point.image}
@@ -119,38 +120,40 @@ export default function ManifestationGraphicsPage() {
                 Choose Solar Gard Ireland for Your Manifestations & Graphics
               </h3>
               <div className="basis-1/4">
-                <div class="flex items-start space-x-3 mt-8">
-                  <span class="text-gray-500 text-xl">
+                <div className="flex items-start space-x-3 mt-8">
+                  <span className="text-gray-500 text-xl">
                     <CustomDesignsIcon />
                   </span>
                   <div>
-                    <h5 class="text-2xl font-bold">Custom Designs</h5>
-                    <p class="text-gray-600 font-medium text-base lg:w-[80%]">
+                    <h5 className="text-2xl font-bold">Custom Designs</h5>
+                    <p className="text-gray-600 font-medium text-base lg:w-[80%]">
                       Enhance privacy in bedrooms, bathrooms, and living areas
                       without sacrificing natural light.
                     </p>
                   </div>
                 </div>
-                <div class="flex items-start space-x-3 mt-8">
-                  <span class="text-gray-500 text-xl">
+                <div className="flex items-start space-x-3 mt-8">
+                  <span className="text-gray-500 text-xl">
                     <MaterialsIcon />
                   </span>
                   <div>
-                    <h5 class="text-2xl font-bold">High-Quality Materials</h5>
-                    <p class="text-gray-600 font-medium text-base lg:w-[80%]">
+                    <h5 className="text-2xl font-bold">
+                      High-Quality Materials
+                    </h5>
+                    <p className="text-gray-600 font-medium text-base lg:w-[80%]">
                       We use durable, high-quality materials that ensure your
                       graphics look great and last for years, even in
                       high-traffic areas.
                     </p>
                   </div>
                 </div>
-                <div class="flex items-start space-x-3 mt-8">
-                  <span class="text-gray-500 text-xl">
+                <div className="flex items-start space-x-3 mt-8">
+                  <span className="text-gray-500 text-xl">
                     <ExpertIcon />
                   </span>
                   <div>
-                    <h5 class="text-2xl font-bold">Expert Installation</h5>
-                    <p class="text-gray-600 font-medium text-base lg:w-[80%]">
+                    <h5 className="text-2xl font-bold">Expert Installation</h5>
+                    <p className="text-gray-600 font-medium text-base lg:w-[80%]">
                       With years of experience, our team provides professional
                       installation, ensuring your manifestations and graphics
                       are applied flawlessly and with precision.
