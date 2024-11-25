@@ -119,6 +119,10 @@ const TintingFilmDataComponent = () => {
               spaceBetween={8}
               breakpoints={{
                 // Desktop
+                1524: {
+                  slidesPerView: 6,
+                  spaceBetween: 8,
+                },
                 1024: {
                   slidesPerView: 4,
                   spaceBetween: 8,
@@ -145,7 +149,7 @@ const TintingFilmDataComponent = () => {
                     className={`py-1 px-1 text-sm font-medium text-secondary rounded-md ${
                       filterCategory === category
                         ? "bg-primary text-white"
-                        : "bg-transparent text-gray-600 border-1 border-gray-300"
+                        : "bg-transparent text-gray-600"
                     } hover:bg-primary hover:text-white cursor-pointer w-full`}
                   >
                     {category}
