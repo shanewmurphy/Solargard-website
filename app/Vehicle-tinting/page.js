@@ -14,6 +14,8 @@ import GlueDyed from "/public/images/car-tinting-imgs/Glue-Dyed-profile-img.jpg"
 import HPMetallized from "/public/images/car-tinting-imgs/HP-Metallized-profile-img.jpg";
 import NanoCeramic from "/public/images/car-tinting-imgs/Nano-Ceramic-profile-img.jpg";
 
+import TintingFilmDataComponent from "../compontents/film-collections/tinting-films.collection";
+
 const vehicletintingData = [
   {
     id: "01",
@@ -429,6 +431,9 @@ export default function VehicleTinting() {
                 </div>
               ))}
             </div>
+          </div>
+          <div>
+            <TintingFilmDataComponent />
           </div>
           <div className="mt-40">
             <CarTintingFAQs />
