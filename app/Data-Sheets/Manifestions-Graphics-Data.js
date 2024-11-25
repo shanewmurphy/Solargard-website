@@ -2516,7 +2516,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/tickmark.svg",
   },
   {
-    id: "67",
+    id: "69",
     name: "Pink C",
     slug: "Pink-C",
     category: "Colour Transparent",
@@ -2553,7 +2553,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/caution.svg",
   },
   {
-    id: "68",
+    id: "70",
     name: "Purple C",
     slug: "Purple-C",
     category: "Colour Transparent",
@@ -2590,7 +2590,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/notrecommended.svg",
   },
   {
-    id: "69",
+    id: "71",
     name: "Raspberry C",
     slug: "Raspberry-C",
     category: "Colour Transparent",
@@ -2627,7 +2627,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/notrecommended.svg",
   },
   {
-    id: "70",
+    id: "72",
     name: "Turquoise C",
     slug: "Turquoise-C",
     category: "Colour Transparent",
@@ -2664,7 +2664,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/caution.svg",
   },
   {
-    id: "71",
+    id: "73",
     name: "Aurora Winter",
     slug: "Aurora-Winter",
     category: "Colour Transparent",
@@ -2701,7 +2701,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/notrecommended.svg",
   },
   {
-    id: "72",
+    id: "74",
     name: "Plum C",
     slug: "Plum-C",
     category: "Colour Transparent",
@@ -2738,7 +2738,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/notrecommended.svg",
   },
   {
-    id: "73",
+    id: "75",
     name: "Chocolate C",
     slug: "Chocolate-C",
     category: "Colour Transparent",
@@ -2775,7 +2775,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/notrecommended.svg",
   },
   {
-    id: "74",
+    id: "76",
     name: "Aurora Summer",
     slug: "Aurora-summer",
     category: "Colour Transparent",
@@ -2812,7 +2812,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/notrecommended.svg",
   },
   {
-    id: "75",
+    id: "77",
     name: "White Opaque",
     slug: "White-Opaque",
     category: "Blackout",
@@ -2849,7 +2849,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/notrecommended.svg",
   },
   {
-    id: "76",
+    id: "78",
     name: "Black Opaque",
     slug: "Black-Opaque",
     category: "Blackout",
@@ -2886,7 +2886,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/notrecommended.svg",
   },
   {
-    id: "77",
+    id: "79",
     name: "Aquatica",
     slug: "Aquatica",
     category: "Abstract",
@@ -2923,7 +2923,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/tickmark.svg",
   },
   {
-    id: "78",
+    id: "80",
     name: "Ascent",
     slug: "Ascent",
     category: "Abstract",
@@ -2960,7 +2960,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/tickmark.svg",
   },
   {
-    id: "79",
+    id: "81",
     name: "Brain",
     slug: "Brain",
     category: "Abstract",
@@ -2997,7 +2997,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/tickmark.svg",
   },
   {
-    id: "80",
+    id: "82",
     name: "Jungle",
     slug: "Jungle",
     category: "Abstract",
@@ -3034,7 +3034,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/tickmark.svg",
   },
   {
-    id: "81",
+    id: "83",
     name: "Kaleidoscope",
     slug: "Kaleidoscope",
     category: "Abstract",
@@ -3071,7 +3071,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/tickmark.svg",
   },
   {
-    id: "82",
+    id: "84",
     name: "Ripple",
     slug: "Ripple",
     category: "Abstract",
@@ -3108,7 +3108,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/tickmark.svg",
   },
   {
-    id: "83",
+    id: "85",
     name: "Spring Wood",
     slug: "Spring-Wood",
     category: "Abstract",
@@ -3145,7 +3145,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/tickmark.svg",
   },
   {
-    id: "84",
+    id: "86",
     name: "Scale",
     slug: "Scale",
     category: "Gradation",
@@ -3182,7 +3182,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/tickmark.svg",
   },
   {
-    id: "85",
+    id: "87",
     name: "Castel",
     slug: "Castel",
     category: "Black",
@@ -3219,7 +3219,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/caution.svg",
   },
   {
-    id: "86",
+    id: "88",
     name: "Matrix",
     slug: "Matrix",
     category: "Black",
@@ -3256,7 +3256,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/caution.svg",
   },
   {
-    id: "87",
+    id: "89",
     name: "Atlas",
     slug: "Atlas",
     category: "Grey",
@@ -3292,7 +3292,7 @@ export const manifestData = [
     StadipIntClearDoublePane: "/images/solar-films-imgs/tickmark.svg",
   },
   {
-    id: "88",
+    id: "90",
     name: "Iridium",
     slug: "Iridium",
     category: "Grey",
