@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import DesktopFlyoutMenu from "./desktop-flyout-menu";
 
 export default function NavDesktop() {
@@ -7,14 +9,18 @@ export default function NavDesktop() {
         <div className="flex w-11/12 mx-auto items-center justify-between antialiased">
           <div className="flex items-center">
             <div>
-              <LogoNew />
+              <Link href="/">
+                <LogoNew />
+              </Link>
             </div>
             <div className="text-secondary pl-4 antialiased">
               <ul className="inline-flex font-medium text-base">
                 <li>
                   <DesktopFlyoutMenu />
                 </li>
-                <li className="pl-4">Manifestations & Graphics</li>
+                <Link href="/Manifestations-Graphics">
+                  <li className="pl-4">Manifestations & Graphics</li>
+                </Link>
                 <li className="pl-4">CoverStyl&apos;</li>
                 <li className="pl-4">Vehicle Tinting</li>
                 <li className="pl-4">Vehicle Wrapping</li>

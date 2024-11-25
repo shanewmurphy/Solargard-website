@@ -161,9 +161,7 @@ const SolarFilmsData = () => {
           {currentProducts.map((product) => (
             <Link
               key={product.id}
-              href={`/Single-Solar-Film-Page/${encodeURIComponent(
-                product.slug
-              )}`}
+              href={`/Solar-spec-page/${encodeURIComponent(product.slug)}`}
             >
               <div key={product.id}>
                 <div className="rounded-2xl lg:py-12 md:py-12 sm:py-6 bg-white">
