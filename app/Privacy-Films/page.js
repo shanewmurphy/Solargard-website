@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import PrivacyFilmsComponent from "../compontents/film-collections/privacy-films-collection";
 import ContactUs from "../compontents/shared-compontents/Contact-Us";
+import PrivacyFAQs from "../compontents/FAQs/privacy-faqs";
 
 import PrivacyHeroImg from "/public/images/Privacy-Films-imgs/privacy-hero-img-min.jpg";
 import FrostedImg from "/public/images/Privacy-Films-imgs/Frosted-qualities-img.jpg";
@@ -236,6 +237,9 @@ export default function PrivacyFilmsPage() {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <PrivacyFAQs />
       </div>
       <div>
         <ContactUs />
