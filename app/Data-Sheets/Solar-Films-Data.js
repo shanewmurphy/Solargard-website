@@ -1223,7 +1223,7 @@ export const solarFilmsData = [
     warranty: "up to 12 years",
     fireRating: "M1",
     storage: "3 years",
-    widths: "92cm 122cm 1523cm 183cm",
+    widths: "92cm 122cm 153cm 183cm",
     UltravioletTransmission: "1%",
     VisibleLightTransmission: "23%",
     ReflectionExternalVisibleLight: "60%",

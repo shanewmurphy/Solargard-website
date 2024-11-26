@@ -42,7 +42,7 @@ export const manifestData = [
     slug: "Mat-Frost",
     category: "Opalescent",
     FilmDescription:
-      "Mat Acid-X privacy films are designed to provide protection against the scrutiny of prying eyes. Whilst completely opalescent, the film still allows most natural light to pass through.",
+      "Mat Frosted privacy films are designed to provide protection against the scrutiny of prying eyes. Whilst completely opalescent, the film still allows most natural light to pass through. With disposable plastic liner or silicone paper liner for digital cutting.",
     image: "/images/manif-graphics-imgs/films-pics/mat-frosted.jpg",
     warranty: "5 years",
     fireRating: "M1",

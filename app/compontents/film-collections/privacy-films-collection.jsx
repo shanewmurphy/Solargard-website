@@ -9,7 +9,7 @@ import Image from "next/image";
 import { Select, SelectItem } from "@nextui-org/select";
 import { Pagination } from "@nextui-org/pagination";
 
-const categories = ["All", "Exterior", "Interior", "Frosted"];
+const categories = ["All", "Solar Films", "Frosted Films"];
 
 const PrivacyFilmsComponent = () => {
   const [currentPage, setCurrentPage] = useState(1);

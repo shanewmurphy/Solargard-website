@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 
 import PrivacyFilmsComponent from "../compontents/film-collections/privacy-films-collection";
+import ContactUs from "../compontents/shared-compontents/Contact-Us";
 
 import PrivacyHeroImg from "/public/images/Privacy-Films-imgs/privacy-hero-img-min.jpg";
 import FrostedImg from "/public/images/Privacy-Films-imgs/Frosted-qualities-img.jpg";
@@ -32,6 +33,27 @@ const FilmQualitiesData = [
     consideration:
       "They do not offer outward visibility, making them more suited for spaces prioritizing privacy over views.",
     image: FrostedImg,
+  },
+];
+
+const ComparisonData = [
+  {
+    id: "01",
+    Type: "Solar Films",
+    PrivacyHours: "Daytime only",
+    Visibility: "Maintains outward visibility",
+    LightTransmission: "Reflective but maintains brightness indoors",
+    Aesthetic: "Modern, mirrored appearance",
+    Benefits: "UV protection, heat & glare reduction",
+  },
+  {
+    id: "02",
+    Type: "Frosted Films",
+    PrivacyHours: "24/7",
+    Visibility: "Fully obscures both sides",
+    LightTransmission: "Allows light to pass through softly",
+    Aesthetic: "Elegant frosted or etched-glass look",
+    Benefits: "Decorative and permanent privacy",
   },
 ];
 
@@ -96,7 +118,7 @@ export default function PrivacyFilmsPage() {
                     <h3 className="lg:text-3xl font-bold text-secondary mt-6">
                       {qualities.filmType}
                     </h3>
-                    <h4 className="lg:text-sm text-textGray font-medium">
+                    <h4 className="lg:text-base text-textGray font-medium">
                       {qualities.subtitle}
                     </h4>
                     <div className="border-b-2 border-gray-300 pb-4">
@@ -129,6 +151,94 @@ export default function PrivacyFilmsPage() {
             ))}
           </div>
         </div>
+      </div>
+      <div className="bg-grey">
+        <PrivacyFilmsComponent />
+      </div>
+      <div className="bg-grey">
+        <div className="lg:w-10/12 mx-auto py-40">
+          <div className="flex flex-row gap-16">
+            <div className="basis-4/12">
+              <h3 className="lg:text-5xl font-bold mt-[20%]">
+                Solar Films Vs Frosted Films
+              </h3>
+              <h4 className="lg:text-4xl font-semibold text-textLightGray mt-2">
+                A Comparison
+              </h4>
+              <h5 className="font-medium text-secondary lg:text-lg mt-[5%]">
+                We’re dedicated to providing high-quality privacy solutions
+                tailored to your needs. Whether you want a sleek, modern look
+                with solar films or timeless elegance with frosted films, we’ve
+                got you covered.
+              </h5>
+            </div>
+            <div className="basis-8/12">
+              <div className="grid grid-cols-2 gap-6">
+                {ComparisonData.map((comparison) => (
+                  <div
+                    className="bg-white rounded-lg p-8 antialiased"
+                    key={comparison.id}
+                  >
+                    <h3 className="lg:text-3xl font-bold text-secondary">
+                      {comparison.Type}
+                    </h3>
+                    <div className="border-b-1 border-gray-300 pb-3 mt-4">
+                      <span className="text-sm text-secondary font-semibold">
+                        Privacy Hours
+                      </span>
+                      <h4 className="text-textLightGray font-medium text-base">
+                        {comparison.PrivacyHours}
+                      </h4>
+                    </div>
+                    <div className="border-b-1 border-gray-300 pb-3 mt-4">
+                      <span className="text-sm text-secondary font-semibold">
+                        Visibility
+                      </span>
+                      <h4 className="text-textLightGray font-medium text-base">
+                        {comparison.Visibility}
+                      </h4>
+                    </div>
+                    <div className="border-b-1 border-gray-300 pb-3 mt-4">
+                      <span className="text-sm text-secondary font-semibold">
+                        Light Transmission
+                      </span>
+                      <h4 className="text-textLightGray font-medium text-base">
+                        {comparison.LightTransmission}
+                      </h4>
+                    </div>
+                    <div className="border-b-1 border-gray-300 pb-3 mt-4">
+                      <span className="text-sm text-secondary font-semibold">
+                        Aesthetics
+                      </span>
+                      <h4 className="text-textLightGray font-medium text-base">
+                        {comparison.Aesthetic}
+                      </h4>
+                    </div>
+                    <div className="border-b-1 border-gray-300 pb-3 mt-4">
+                      <span className="text-sm text-secondary font-semibold">
+                        Aesthetics
+                      </span>
+                      <h4 className="text-textLightGray font-medium text-base">
+                        {comparison.Aesthetic}
+                      </h4>
+                    </div>
+                    <div className="border-b-1 border-gray-300 pb-3 mt-4">
+                      <span className="text-sm text-secondary font-semibold">
+                        Benefits
+                      </span>
+                      <h4 className="text-textLightGray font-medium text-base">
+                        {comparison.Benefits}
+                      </h4>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <ContactUs />
       </div>
     </div>
   );
