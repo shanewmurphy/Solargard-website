@@ -37,7 +37,7 @@ export default function HomeHero() {
           <div className="absolute inset-0 bg-gradient-to-t from-slate-800 from-1% to-transparent"></div>
 
           {/* Text content outside of the gradient and with 100% opacity */}
-          <div className="absolute w-7/12 mx-auto inset-0 flex justify-center items-center">
+          <div className="absolute z-0 w-7/12 mx-auto inset-0 flex justify-center items-center">
             <h1 className="text-white text-center lg:font-semibold md:font-bold sm:font-semibold largeScreens:text-5xl xl:text-4xl lg:text-3xl md:text-3xl sm:text-xl sm:px-8 z-10 opacity-100">
               Transform Spaces & Vehicles with Solar Gard Ireland. Experts in
               Glass Films, Surface Enhancements & Custom Wraps

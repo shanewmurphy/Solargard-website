@@ -20,18 +20,18 @@ import {
 const windowFilms = [
   {
     name: "Solar Films",
-    description: "Heat Reduced, Anti-Glare, UV Protection",
+    description: "Heat Reduction, Anti-Glare, UV Protection",
     href: "/Solar-Films",
     icon: ChartPieIcon,
   },
   {
-    name: "Safety Films",
+    name: "Privacy Films",
     description: "Speak directly to your customers",
-    href: "#",
+    href: "/Privacy-Films",
     icon: CursorArrowRaysIcon,
   },
   {
-    name: "Security",
+    name: "Safety Films",
     description: "Your customers' data will be safe and secure",
     href: "#",
     icon: FingerPrintIcon,
@@ -61,7 +61,7 @@ export default function DesktopFlyoutMenu() {
   };
 
   return (
-    <Popover className="relative antialiased">
+    <Popover className="relative antialiased z-10">
       {({ open }) => (
         <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <Popover.Button className="inline-flex items-center gap-x-1 text-base font-semibold text-secondary">
@@ -72,7 +72,7 @@ export default function DesktopFlyoutMenu() {
           {isOpen && (
             <Popover.Panel
               static
-              className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
+              className="absolute left-1/2 z-20 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
             >
               <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-base shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4">

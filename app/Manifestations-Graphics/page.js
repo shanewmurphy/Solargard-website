@@ -93,7 +93,10 @@ export default function ManifestationGraphicsPage() {
                     quality={100}
                     layout="responsive"
                     src={point.image}
-                    objectFit="cover"
+                    style={{
+                      objectFit: "cover",
+                      width: "100%",
+                    }}
                   />
                 </div>
                 <div>
