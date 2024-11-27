@@ -58,6 +58,34 @@ const ComparisonData = [
   },
 ];
 
+import ResidentialIcon from "./icons/Residential-icon";
+import CommercialIcon from "./icons/Commercial-icon";
+import IndustrailIcon from "./icons/Industrial-icon";
+
+const PrivacyUses = [
+  {
+    id: "01",
+    title: "Residential",
+    description:
+      "Enhance privacy in bedrooms, bathrooms, and living areas without sacrificing natural light.",
+    icon: ResidentialIcon,
+  },
+  {
+    id: "02",
+    title: "Commercial",
+    description:
+      "Create private workspaces, meeting rooms, and secure areas while maintaining a professional look.",
+    icon: CommercialIcon,
+  },
+  {
+    id: "03",
+    title: "Industrial",
+    description:
+      "Protect sensitive information and secure private areas in industrial settings",
+    icon: IndustrailIcon,
+  },
+];
+
 export default function PrivacyFilmsPage() {
   useEffect(() => {
     (async () => {
@@ -234,6 +262,45 @@ export default function PrivacyFilmsPage() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-grey py-40">
+        <div className="lg:w-10/12 mx-auto">
+          <div className="flex flex-row gap-24">
+            <div className="basis-1/2">
+              <h3 className="font-bold text-secondary lg:text-5xl">
+                Versatile Use for Any Space
+              </h3>
+              <h5 className="font-normal text-textLightGray lg:text-base mt-6">
+                At Solar Gard Ireland, we offer a range of privacy films
+                designed to meet diverse needs for residential, commercial, and
+                industrial applications. Our films combine functionality and
+                aesthetics, providing tailored solutions that protect your
+                privacy while enhancing your space.
+              </h5>
+              <h6 className="font-medium text-textLightGray lg:text-xl mt-6">
+                Contact us today to learn more about our privacy film options
+                and find the perfect solution for your home or business!
+              </h6>
+            </div>
+            <div className="basis-1/2 antialiased">
+              {PrivacyUses.map((use) => (
+                <div className="bg-white p-8 mb-6 rounded-lg" key={use.id}>
+                  <div className="flex items-center gap-6">
+                    <div className="w-9">{use.icon && <use.icon />}</div>
+                    <div className="pl-6">
+                      <h5 className="font-semibold text-secondary lg:text-2xl">
+                        {use.title}
+                      </h5>
+                      <p className="font-medium text-textLightGray lg:text-sm">
+                        {use.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
