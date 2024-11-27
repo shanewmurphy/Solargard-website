@@ -1,4 +1,3 @@
-import { Description } from "@headlessui/react";
 import WindowFilmsIcon from "../shared-compontents/icons/WindowFilmsIcon";
 import PrivacyIcon from "../shared-compontents/icons/PrivacyIcon";
 import SafetyFilmIcon from "../shared-compontents/icons/SafetyFilmIcon";
@@ -7,6 +6,7 @@ import VehicleIcon from "../shared-compontents/icons/vehicleIcon";
 import VehicleWrappingIcon from "../shared-compontents/icons/vehicleWrappingIcon";
 import GraphicIcon from "../shared-compontents/icons/GraphicIcon";
 import CloakingIcon from "../shared-compontents/icons/CloakingIcon";
+
 const serviceListData = [
   {
     id: "01",
@@ -145,20 +145,19 @@ export default function CompanyProfile() {
       <div className="w-full bg-grey pb-40">
         <div className="w-10/12 mx-auto">
           <div className="flex flex-row gap-16">
-            <div className="basis-3/5">
+            <div className="w-9/12">
               <h1 className="text-secondary font-bold lg:text-5xl mb-4">
                 Your Experts in Window Films, Surface Enhancement, and Vehicle
                 Tinting Customisation
               </h1>
               <h2 className="text-textGray font-mdium lg:text-xl">
                 At Solar Gard Ireland, we specialise in delivering cutting-edge
-                solutions for windows, interiors, and vehicles. Whether you’re
-                enhancing comfort, upgrading aesthetics, custom graphics, or
-                boosting security, our wide range of services ensures we have
-                the perfect solution for your needs.
+                solutions for windows, interiors, and vehicles. Whether
+                you&apos;re enhancing comfort, upgrading aesthetics, custom
+                graphics, or boosting security, our wide range of services
+                ensures we have the perfect solution for your needs.
               </h2>
             </div>
-            <div className="basis-2/5"></div>
           </div>
           <div className="w-full mt-16">
             <div className="grid grid-cols-3 gap-4 antialiased">
@@ -179,9 +178,9 @@ export default function CompanyProfile() {
             </div>
             <div className="mt-16">
               <h4 className="font-medium text-textGray text-4xl">
-                We’re committed to helping you redefine your space—whether it’s
-                your home, office, or vehicle—with solutions that blend
-                practicality, style, and sustainability.
+                We’re committed to helping you redefine your space—whether
+                it&apos;s your home, office, or vehicle—with solutions that
+                blend practicality, style, and sustainability.
               </h4>
             </div>
           </div>

@@ -82,11 +82,11 @@ const SafetyFilmsComponent = () => {
       <div className="lg:px-4 lg:py-16 md:px-4 md:py-12 sm:py-2">
         <div className="lg:w-7/12 lg:mb-14 md:mb-8 sm:mb-6">
           <h2 className="lg:text-5xl md:text-4xl sm:text-2xl lg:mb-4 md:mt-8 sm:mt-12 font-bold text-secondary">
-            Discover Our Range of High-Performance Solar Films
+            Discover Our Range of High-Performance Safety Films
           </h2>
           <p className="font-medium text-textGray lg:text-xl sm:mt-2">
-            Tailored Solutions to Enhance Comfort, Efficiency, and Protection
-            for Every Space
+            Your Trusted Partner for Safety Solutions, Versatile Solutions for
+            Every Environment
           </p>
         </div>
 

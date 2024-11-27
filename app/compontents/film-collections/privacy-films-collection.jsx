@@ -107,7 +107,7 @@ const PrivacyFilmsComponent = () => {
           <div className="hidden lg:flex gap-2">
             {categories.map((category) => (
               <button
-                key={category}
+                key={category.id}
                 onClick={() => {
                   setFilterCategory(category);
                   setCurrentPage(1); // Reset to first page when filter changes
@@ -141,7 +141,7 @@ const PrivacyFilmsComponent = () => {
               }}
             >
               {categories.map((category) => (
-                <SelectItem key={category} value={category}>
+                <SelectItem key={category.id} value={category}>
                   {category}
                 </SelectItem>
               ))}

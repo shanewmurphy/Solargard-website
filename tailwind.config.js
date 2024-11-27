@@ -24,7 +24,7 @@ module.exports = {
       },
       screens: {
         sm: "360px",
-        largeScreens: "1920px",
+        XS: "1920px",
       },
       borderRadius: {
         xl: "60px",
