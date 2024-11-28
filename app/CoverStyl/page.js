@@ -99,8 +99,8 @@ export default function CoverstylePage() {
           choose from—ranging from wood and marble to metallic and fabric
           textures—CoverStyl&rsquo; brings new life to your interiors while
           being eco-friendly and cost-effective. Whether you&apos;re renovating
-          a commercial space or updating your home&apos;s decor, CoverStyl' is
-          the perfect solution for a sleek, modern look.
+          a commercial space or updating your home&apos;s decor,
+          CoverStyl&rsquo; is the perfect solution for a sleek, modern look.
         </h1>
       </div>
       <div className="lg:w-10/12 py-20 mx-auto">
