@@ -108,10 +108,11 @@ export default function CoverstylFilmComponent() {
       <div className="bg-grey w-full">
         <div className="lg:w-7/12 lg:mb-14 md:mb-8 sm:mb-6">
           <h2 className="lg:text-5xl md:text-4xl sm:text-2xl lg:mb-4 md:mt-8 sm:mt-12 font-bold text-secondary">
-            Explore Our Range of CoverStyl'
+            Explore Our Range of CoverStyl&rsquo;
           </h2>
           <p className="font-medium text-textGray lg:text-xl sm:mt-2">
-            Transform Your Space with Innovative Surface Design with CoverStyl’
+            Transform Your Space with Innovative Surface Design with
+            CoverStyl&rsquo;
           </p>
         </div>
         {/* Added flex-nowrap and overflow-x-auto for horizontal scrolling */}
@@ -165,7 +166,7 @@ export default function CoverstylFilmComponent() {
         </div>
         <div className="mx-auto">
           <h5 className="text-center text-secondary font-semibold lg:text-xl">
-            Please visit our CoverStyl' Partner for full list of materials
+            Please visit our CoverStyl&rsquo; Partner for full list of materials
           </h5>
           <div className="text-center mt-4">
             <Link href="https://coverstyl.com/en/" target="_blank">

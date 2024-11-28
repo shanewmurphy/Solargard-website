@@ -93,14 +93,14 @@ export default function CoverstylePage() {
       <div className="bg-grey lg:py-40">
         <h1 className="text-secondary font-medium lg:text-3xl largeScreens:text-4xl md:text-2xl sm:text-xl w-10/12 mx-auto">
           Looking to refresh your space without the hassle of a full renovation?
-          Solar Gard Ireland offers CoverStyl', an innovative self-adhesive
-          vinyl film that transforms walls, furniture, and surfaces quickly and
-          affordably. With over 500 stunning finishes to choose from—ranging
-          from wood and marble to metallic and fabric textures—CoverStyl' brings
-          new life to your interiors while being eco-friendly and
-          cost-effective. Whether you&apos;re renovating a commercial space or
-          updating your home&apos;s decor, CoverStyl' is the perfect solution
-          for a sleek, modern look.
+          Solar Gard Ireland offers CoverStyl&rsquo;, an innovative
+          self-adhesive vinyl film that transforms walls, furniture, and
+          surfaces quickly and affordably. With over 500 stunning finishes to
+          choose from—ranging from wood and marble to metallic and fabric
+          textures—CoverStyl&rsquo; brings new life to your interiors while
+          being eco-friendly and cost-effective. Whether you&apos;re renovating
+          a commercial space or updating your home&apos;s decor, CoverStyl' is
+          the perfect solution for a sleek, modern look.
         </h1>
       </div>
       <div className="lg:w-10/12 py-20 mx-auto">
