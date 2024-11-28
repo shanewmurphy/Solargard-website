@@ -21,10 +21,14 @@ export default function NavDesktop() {
                 <Link href="/Manifestations-Graphics">
                   <li className="pl-4">Manifestations & Graphics</li>
                 </Link>
-                <li className="pl-4">CoverStyl&apos;</li>
-                <li className="pl-4">Vehicle Tinting</li>
-                <li className="pl-4">Vehicle Wrapping</li>
-                <li className="pl-4">Cloaking</li>
+                <Link href="/CoverStyl">
+                  <li className="pl-4">CoverStyl&apos;</li>
+                </Link>
+                <Link href="/Vehicle-tinting">
+                  <li className="pl-4">Vehicle Tinting</li>
+                </Link>
+                {/* <li className="pl-4">Vehicle Wrapping</li>
+                <li className="pl-4">Cloaking</li> */}
               </ul>
             </div>
           </div>

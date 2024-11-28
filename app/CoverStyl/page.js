@@ -2,6 +2,9 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import CoverstylFilmComponent from "../compontents/film-collections/coverastyl-films-collection";
+import CoverStylFAQs from "../compontents/FAQs/coverstyl-faqs";
+import OurServiceCarousel from "../compontents/shared-compontents/our-services-carousel";
+import ContactUs from "../compontents/shared-compontents/Contact-Us";
 
 import CoverStylHeroImg from "/public/images/coverstyl/Coverstyl-hero-min.jpg";
 import CostEffective from "/public/images/coverstyl/Cost-Effective.jpg";
@@ -11,6 +14,7 @@ import Finishes from "/public/images/coverstyl/Finishes.jpg";
 import Furniture from "/public/images/coverstyl/Furniture.jpg";
 import WallCoverings from "/public/images/coverstyl/Wall-Coverings.jpg";
 import commercial from "/public/images/coverstyl/Commercial-Spaces.jpg";
+import CoverstylOffice from "/public/images/coverstyl/Coverstyl-office.jpg";
 
 const WhyCoverstyl = [
   {
@@ -135,6 +139,82 @@ export default function CoverstylePage() {
       <div className="lg:w-10/12 py-20 mx-auto">
         <CoverstylFilmComponent />
       </div>
+      <section className="bg-grey py-40">
+        <div className="lg:w-10/12 mx-auto">
+          <div className="flex flex-col w-full">
+            <div className="relative">
+              <Image
+                src={CoverstylOffice}
+                alt="Solar Gard Privacy Films"
+                sizes="100vw"
+                placeholder="blur"
+                className="rounded-lg h-[80vh] bg-bottom"
+                style={{
+                  width: "100%",
+                  objectFit: "cover",
+                }}
+              />
+              <div className="absolute inset-0 flex flex-col items-center justify-center space-y-2">
+                <h2 className="text-white text-center lg:text-8xl md:text-3xl sm:text-xl largeScreens:text-6xl font-bold">
+                  CoverStyl&rsquo;
+                </h2>
+                <h3 className="text-white text-center font-semibold lg:text-4xl">
+                  Cost-Effective Renovation Solution
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-16 antialiased mt-8">
+            <div>
+              <h3 className="font-bold text-secondary lg:text-lg">
+                CoverStyl&rsquo; is not only a budget-friendly solution but also
+                a smart investment for businesses and homeowners looking to
+                transform their space efficiently and economicall
+              </h3>
+              <p className="font-medium text-textLightGray lg:text-base mt-4">
+                Why spend a fortune on replacing furniture, walls, or surfaces
+                when you can achieve a brand-new look with CoverStyl&rsquo; at a
+                fraction of the cost? Traditional renovations often involve high
+                labor fees, material costs, and long downtime. With
+                CoverStyl&rsquo;, you can update your space quickly and
+                affordably without sacrificing quality.
+              </p>
+            </div>
+            <div>
+              <div className="border-b-1 border-slate-600 pb-4">
+                <h3 className="text-secondary font-bold lg:text-lg">
+                  Up to 50-70% savings compared to traditional refurbishment
+                  costs
+                </h3>
+              </div>
+              <div className="border-b-1 border-slate-600 pb-4 mt-3">
+                <h3 className="text-secondary font-bold lg:text-lg">
+                  No need to replace—simply wrap and refresh existing surfaces
+                </h3>
+              </div>
+              <div className="border-b-1 border-slate-600 pb-4 mt-3">
+                <h3 className="text-secondary font-bold lg:text-lg">
+                  Reduce downtime with fast, hassle-free installation
+                </h3>
+              </div>
+              <div className="border-b-1 border-slate-600 pb-4 mt-3">
+                <h3 className="text-secondary font-bold lg:text-lg">
+                  Avoid costly material disposal and reduce waste
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <CoverStylFAQs />
+      </section>
+      <section>
+        <OurServiceCarousel />
+      </section>
+      <section>
+        <ContactUs />
+      </section>
     </div>
   );
 }

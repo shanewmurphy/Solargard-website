@@ -106,7 +106,7 @@ export default function CoverstylFilmComponent() {
   return (
     <div className="container mx-auto px-4">
       <div className="bg-grey w-full">
-        <div className="lg:w-7/12 lg:mb-14 md:mb-8 sm:mb-6">
+        <div className="lg:w-8/12 lg:mb-14 md:mb-8 sm:mb-6">
           <h2 className="lg:text-5xl md:text-4xl sm:text-2xl lg:mb-4 md:mt-8 sm:mt-12 font-bold text-secondary">
             Explore Our Range of CoverStyl&rsquo;
           </h2>
@@ -166,15 +166,15 @@ export default function CoverstylFilmComponent() {
         </div>
         <div className="mx-auto">
           <h5 className="text-center text-secondary font-semibold lg:text-xl">
-            Please visit our CoverStyl&rsquo; Partner for full list of materials
+            Please visit our partners website to view the full range
           </h5>
           <div className="text-center mt-4">
             <Link href="https://coverstyl.com/en/" target="_blank">
               <button
                 type="button"
-                className="outline outline-offset-2 outline-1 outline-slate-900 lg:text-base md:text-sm sm:text-xs text-secondary font-semibold rounded-sm py-1 px-8 hover:bg-slate-900 hover:text-white"
+                className="outline outline-offset-2 outline-1 outline-slate-900 lg:text-base md:text-sm sm:text-xs text-secondary font-semibold rounded-sm py-2 px-8 hover:bg-slate-900 hover:text-white"
               >
-                Our Partner
+                Browse Full collection
               </button>
             </Link>
           </div>
