@@ -79,7 +79,7 @@ export default function SafetyFilmsPage() {
           </h1>
         </div>
         <div className="bg-grey lg:py-40">
-          <div className="XS:w-8/12 lg:w-11/12 mx-auto antialiased">
+          <div className="XS:w-8/12 lg:w-10/12 mx-auto antialiased">
             <div className="flex flex-col w-full">
               <div className="relative">
                 <Image

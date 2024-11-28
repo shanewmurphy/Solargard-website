@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Select, SelectItem } from "@nextui-org/select";
 import { Pagination } from "@nextui-org/pagination";
+import { Progress } from "@nextui-org/progress";
 
 const categories = ["All", "Transparent", "Combination", "Anti Fog"];
 
@@ -78,7 +79,7 @@ const SafetyFilmsComponent = () => {
   // console.log("Number of products:", currentProducts.length);
 
   return (
-    <div className="largeScreens:w-9/12 lg:w-11/12 md:w-11/12 sm:w-11/12 mx-auto antialiased">
+    <div className="largeScreens:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 mx-auto antialiased">
       <div className="lg:px-4 lg:py-16 md:px-4 md:py-12 sm:py-2">
         <div className="lg:w-7/12 lg:mb-14 md:mb-8 sm:mb-6">
           <h2 className="lg:text-5xl md:text-4xl sm:text-2xl lg:mb-4 md:mt-8 sm:mt-12 font-bold text-secondary">
@@ -151,9 +152,7 @@ const SafetyFilmsComponent = () => {
           {currentProducts.map((product) => (
             <Link
               key={product.id}
-              href={`/Single-Solar-Film-Page/${encodeURIComponent(
-                product.slug
-              )}`}
+              href={`/safety-spec-page/${encodeURIComponent(product.slug)}`}
             >
               <div key={product.id}>
                 <div className="rounded-2xl lg:py-12 md:py-12 sm:py-6 bg-white">
@@ -169,6 +168,42 @@ const SafetyFilmsComponent = () => {
                   <h3 className="font-semibold text-secondary text-center lg:text-2xl mt-2">
                     {product.name}
                   </h3>
+                  <div className="w-9/12 mx-auto mt-8 lg:block md:block sm:hidden">
+                    <div className="inline-flex items-center">
+                      <span>
+                        <SunRejection />
+                      </span>
+                      <h6 className="lg:text-xs text-secondary font-medium pl-2">
+                        Total Solar Energy Rejected
+                      </h6>
+                    </div>
+                    <div className="flex flex-col w-full bg-slate-100 rounded-lg max-w-md">
+                      <Progress
+                        aria-label="Loading..."
+                        size="lg"
+                        className="h-2"
+                        value={product.EnergyRejectedValue}
+                      />
+                    </div>
+                  </div>
+                  <div className="w-9/12 mx-auto mt-4 lg:block md:block sm:hidden">
+                    <div className="inline-flex items-center">
+                      <span>
+                        <LightTransmission />
+                      </span>
+                      <h6 className="lg:text-xs text-secondary font-medium pl-2">
+                        Visible Light Transmission
+                      </h6>
+                    </div>
+                    <div className="flex flex-col w-full bg-slate-100 rounded-lg max-w-md">
+                      <Progress
+                        size="lg"
+                        aria-label="Loading..."
+                        className="h-2"
+                        value={product.VisibleLightTransValue}
+                      />
+                    </div>
+                  </div>
                   <div className="text-center mt-8 antialiased">
                     <button className="outline outline-offset-2 outline-1 outline-slate-900 lg:text-sm md:text-sm sm:text-xs text-secondary font-semibold rounded-sm py-1 px-4 hover:bg-slate-900 hover:text-white">
                       View Specs

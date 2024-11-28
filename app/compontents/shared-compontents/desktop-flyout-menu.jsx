@@ -33,7 +33,7 @@ const windowFilms = [
   {
     name: "Safety Films",
     description: "Your customers' data will be safe and secure",
-    href: "#",
+    href: "/Safety-Films",
     icon: FingerPrintIcon,
   },
 ];
