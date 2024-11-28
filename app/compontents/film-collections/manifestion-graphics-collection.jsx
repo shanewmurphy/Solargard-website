@@ -202,7 +202,7 @@ const ManifestationsComponent = () => {
             {currentProducts.map((product) => (
               <Link
                 key={product.id}
-                href={`/Single-Solar-Film-Page/${encodeURIComponent(
+                href={`/manifestations-graphics-spec-page/${encodeURIComponent(
                   product.slug
                 )}`}
               >
