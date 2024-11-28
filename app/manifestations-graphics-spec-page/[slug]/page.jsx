@@ -59,8 +59,22 @@ export default function ManifestationGraphicSpecPage({ params }) {
         </div>
       </div>
       <div className="bg-grey">
+        <div className="lg:w-8/12 mx-auto pt-16">
+          <Image
+            className="rounded-2xl"
+            src={product.image}
+            alt="Solar Gard Privacy Films"
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+            width={500}
+            height={300}
+          />
+        </div>
         <div className="w-8/12 mx-auto py-24">
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="grid lg:grid-cols-2 gap-16 mt-16">
             <div>
               <div className="w-full">
                 {/* Energy Rejection details */}
