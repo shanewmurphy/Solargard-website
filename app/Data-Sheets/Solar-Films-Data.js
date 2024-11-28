@@ -397,8 +397,8 @@ export const solarFilmsData = [
     category: "Exterior Mirror",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
-    EnergyRejectedValue: "99",
-    VisibleLightTransValue: "100",
+    EnergyRejectedValue: "90",
+    VisibleLightTransValue: "10",
     filmDescription:
       "Vista 90 XC films are highly effective at reducing solar heat gain, whilst at the same time continuing to allow some natural light transmission. This film provides effective protection against solar glare, whilst its one-way mirror aspect further guarantees privacy from prying eyes. Its modern design immediately lends a contemporary feel to any building exterior.",
     warranty: "up to 3 years",

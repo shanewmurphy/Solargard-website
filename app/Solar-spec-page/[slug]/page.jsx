@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import HeroSolarFilmImg from "/public/images/solar-films-imgs/hero-solar-film-min.jpg";
 import ContactUs from "@/app/compontents/shared-compontents/Contact-Us";
+
 export default function SolarFilmPage({ params }) {
   // Decode the URL-encoded slug
   const decodedSlug = decodeURIComponent(params.slug);
