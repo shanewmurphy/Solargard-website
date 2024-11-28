@@ -98,9 +98,9 @@ export default function CoverstylePage() {
           affordably. With over 500 stunning finishes to choose from—ranging
           from wood and marble to metallic and fabric textures—CoverStyl' brings
           new life to your interiors while being eco-friendly and
-          cost-effective. Whether you’re renovating a commercial space or
-          updating your home’s decor, CoverStyl' is the perfect solution for a
-          sleek, modern look.
+          cost-effective. Whether you&apos;re renovating a commercial space or
+          updating your home&apos;s decor, CoverStyl' is the perfect solution
+          for a sleek, modern look.
         </h1>
       </div>
       <div className="lg:w-10/12 py-20 mx-auto">
