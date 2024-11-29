@@ -62,7 +62,7 @@ export default function Footer() {
                   <div>
                     <Link href="/">
                       <button className="text-sm font-medium hover:underline">
-                        CoverStyl'
+                        CoverStyl&apos;
                       </button>
                     </Link>
                   </div>
