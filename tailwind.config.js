@@ -42,5 +42,5 @@ module.exports = {
       },
     },
   },
-  plugins: [nextui()],
+  plugins: [nextui({ defaultTheme: "light" })],
 };

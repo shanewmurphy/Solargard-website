@@ -1,5 +1,4 @@
-import { Disclosure } from "@headlessui/react";
-import { ArrowUpIcon } from "@heroicons/react/24/solid";
+import { Accordion, AccordionItem } from "@nextui-org/react";
 
 const FAQ = [
   {
@@ -54,51 +53,37 @@ const FAQ = [
 
 export default function GeneralFaqs() {
   return (
-    <div>
-      <div className="w-full bg-gray lg:py-40 md:py-36 sm:py-24 antialiased">
-        <div className="lg:w-8/12 md:w-10/12 sm:w-11/12 mx-auto">
-          <h4 className="text-secondary font-bold text-center lg:text-3xl md:text-3xl sm:text-xl lg:mb-8 md:mb-6 sm:mb-4">
-            Common Questions & Answers
-          </h4>
-          <div className="lg:space-y-4 md:space-y-4 sm:space-y-2">
-            {FAQ.map((item) => (
-              <Disclosure key={item.id}>
-                {({ open }) => (
-                  <div className="border-b-2 border-secondary">
-                    <Disclosure.Button className="flex justify-between w-full lg:px-4 lg:py-4 md:px-4 md:py-4 sm:px-3 sm:py-4 text-left text-sm font-medium text-secondary focus:outline-none focus-visible:ring focus-visible:ring-opacity-75">
-                      <h5 className="text-secondary font-semibold lg:text-lg md:text-base sm:text-sm">
-                        {item.Question}
-                      </h5>
-                      <div>
-                        <ArrowUpIcon
-                          className={`${
-                            open ? "transform rotate-180" : ""
-                          } w-5 h-5 text-secondary`}
-                        />
-                      </div>
-                    </Disclosure.Button>
-                    <Disclosure.Panel className="px-4 pt-4 pb-2 text-gray-600">
-                      <p className="text-secondary font-medium lg:text-sm md:text-sm sm:text-sm pb-4">
-                        {item.Answer}
-                      </p>
-                    </Disclosure.Panel>
-                  </div>
-                )}
-              </Disclosure>
-            ))}
-          </div>
-          <div>
-            <h6 className="text-center font-bold text-secondary lg:text-2xl lg:mt-8 md:mt-6 sm:mt-8">
-              Still have a question?
-            </h6>
-            <p className="text-center font-semibold text-secondary lg:text-lg md:text-lg sm:text-sm lg:mt-1 md:mt-2 sm:mt-1">
-              Contact us for further assistance
-            </p>
-            <p className="text-center font-extrabold text-secondary lg:text-3xl md:text-2xl sm:text-xl mt-2">
-              021 454 5606
-            </p>
-          </div>
-        </div>
+    <div className="bg-grey lg:py-20">
+      <div className="lg:w-8/12 largeScreens:w-7/12 mx-auto">
+        <h3 className="text-center font-bold text-3xl mb-6">
+          Questions & Answers
+        </h3>
+        <Accordion
+          classNames={{
+            base: "gap-4",
+            item: {
+              base: "border-divider data-[open=true]:border-divider", // This ensures consistent border color
+              content: "text-xl font-bold text-secondary",
+            },
+          }}
+          itemClasses={{
+            base: "border-b font-semibold border-faq-border antialiased", // This controls the separator line
+            trigger:
+              "px-2 py-0 text-2xl text-secondary rounded-lg h-16 flex items-center",
+            indicator: "font-bold",
+            content: "text-sm lg:w-11/12 pb-6 font-medium px-2",
+          }}
+        >
+          {FAQ.map((faq) => (
+            <AccordionItem
+              key={faq.id}
+              aria-label={faq.Question}
+              title={faq.Question}
+            >
+              {faq.Answer}
+            </AccordionItem>
+          ))}
+        </Accordion>
       </div>
     </div>
   );

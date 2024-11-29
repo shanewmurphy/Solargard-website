@@ -75,7 +75,7 @@ const CoverStylData = [
     category: "Colour",
     productName: "Steel Blue",
     productImage: "/images/coverstyl/coverstyl-product-img/Steel-Blue.jpg",
-    productLink: "",
+    productLink: "https://coverstyl.com/en/collection/color/m6/",
   },
   {
     id: "11",

@@ -26,13 +26,13 @@ const windowFilms = [
   },
   {
     name: "Privacy Films",
-    description: "Speak directly to your customers",
+    description: "Frosted Films, Enhanced Privacy Films",
     href: "/Privacy-Films",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "Safety Films",
-    description: "Your customers' data will be safe and secure",
+    description: "Shatter Resistance, Graffiti Protection, Security Films",
     href: "/Safety-Films",
     icon: FingerPrintIcon,
   },

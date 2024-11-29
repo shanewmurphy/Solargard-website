@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import ManifGraphicsData from "../compontents/film-collections/manifestion-graphics-collection";
 import OurServiceCarousel from "../compontents/shared-compontents/our-services-carousel";
-import SolarFilmsFAQs from "../compontents/FAQs/solar-film-faqs";
+import GraphicsManifestationsFAQs from "../compontents/FAQs/manifestations-graphics-faq";
 import ContactUs from "../compontents/shared-compontents/Contact-Us";
 
 import HeroImgTwo from "/public/images/manif-graphics-imgs/manif-graphics-hero-img-B.png";
@@ -178,6 +178,9 @@ export default function ManifestationGraphicsPage() {
       <div>
         <OurServiceCarousel />
       </div>
+      <section>
+        <GraphicsManifestationsFAQs />
+      </section>
       <div>
         <ContactUs />
       </div>
