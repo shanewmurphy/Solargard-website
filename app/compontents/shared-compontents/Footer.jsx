@@ -9,7 +9,7 @@ export default function Footer() {
             <LogoWhite />
           </div>
           <div className="mt-1">
-            <address className="not-italic font-normal text-sm">
+            <address className="not-italic font-medium text-base">
               Unit 5, Karlbrook Enterprise Park, <br />
               Doughcloyne Industrial Estate, <br />
               Wilton, Cork. T12 H593
@@ -35,22 +35,72 @@ export default function Footer() {
         <div className="basis-3/5 antialiased">
           <div className="grid grid-cols-2">
             <div>
-              <h5 className="font-semibold lg:text-xl">Our Services</h5>
-              <div className="flex font-medium text-base">
+              <h5 className="font-semibold lg:text-2xl">Our Services</h5>
+              <div className="flex font-medium text-base antialiased gap-12">
                 <div>
-                  <Link href="/"></Link>
+                  <div>
+                    <Link href="/Solar-Films">
+                      <button className="text-sm font-medium hover:underline cursor-pointer">
+                        Solar Films
+                      </button>
+                    </Link>
+                  </div>
+                  <div>
+                    <Link href="/">
+                      <button className="text-sm font-medium hover:underline">
+                        Privacy Films
+                      </button>
+                    </Link>
+                  </div>
+                  <div>
+                    <Link href="/">
+                      <button className="text-sm font-medium hover:underline">
+                        Safety Films
+                      </button>
+                    </Link>
+                  </div>
+                  <div>
+                    <Link href="/">
+                      <button className="text-sm font-medium hover:underline">
+                        CoverStyl'
+                      </button>
+                    </Link>
+                  </div>
                 </div>
-                <div>BBB</div>
+                <div>
+                  <div>
+                    <Link href="/">
+                      <button className="text-sm font-medium hover:underline">
+                        Vehicle Tinting
+                      </button>
+                    </Link>
+                  </div>
+                  <div>
+                    <Link href="/">
+                      <span className="text-sm font-medium hover:underline">
+                        Vehicle Wrapping
+                      </span>
+                    </Link>
+                  </div>
+                  <div>
+                    <Link href="/">
+                      <span className="text-sm font-medium hover:underline">
+                        Manifestations & Graphics
+                      </span>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
             <div>BBB</div>
           </div>
           <div>
-            <h3 className="font-normal lg:text-sm">
+            <h3 className="font-normal lg:text-sm mt-4">
               Solar Gard Ireland specialises in premium glass film solutions for
               residential, commercial, and automotive needs. From solar and
-              privacy films to CoverStyl', car tinting, and vehicle wrapping, we
-              transform spaces and vehicles with style and functionality.
+              privacy films to CoverStyl&apos;, car tinting, and vehicle
+              wrapping, we transform spaces and vehicles with style and
+              functionality.
             </h3>
           </div>
         </div>

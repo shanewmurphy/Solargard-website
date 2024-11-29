@@ -54,7 +54,10 @@ body {
     text-wrap: balance;
   }
 }
-
+a,
+button {
+  cursor: pointer !important;
+}
 .back-gradient {
   background-image: linear-gradient(
     to right top,
