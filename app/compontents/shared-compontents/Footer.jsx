@@ -37,7 +37,9 @@ export default function Footer() {
             <div>
               <h5 className="font-semibold lg:text-xl">Our Services</h5>
               <div className="flex font-medium text-base">
-                <div>AAA</div>
+                <div>
+                  <Link href="/"></Link>
+                </div>
                 <div>BBB</div>
               </div>
             </div>

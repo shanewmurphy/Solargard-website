@@ -116,7 +116,12 @@ export default function ManifestationGraphicsPage() {
         <div className="lg:w-11/12 mx-auto">
           <div className="flex flex-col-2 gap-24">
             <div className="basis-3/4">
-              <Image src={WhyChooseUs} quality={100} className="rounded-lg" />
+              <Image
+                src={WhyChooseUs}
+                quality={100}
+                alt="Solar Gard Ireland, Tints, Wraps, Prints"
+                className="rounded-lg"
+              />
             </div>
             <div>
               <h3 className="font-bold text-secondary lg:text-4xl w-[75%]">
