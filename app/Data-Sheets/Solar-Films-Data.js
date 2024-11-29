@@ -980,6 +980,7 @@ export const solarFilmsData = [
     name: "Alu 50 Static",
     slug: "alu-50-static",
     category: "Interior Mirror",
+    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Alu_50-Static",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "59",
@@ -1019,6 +1020,7 @@ export const solarFilmsData = [
     name: "Alu 70 C",
     slug: "alu-70-c",
     category: "Interior Mirror",
+    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Alu_70C",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "68",
@@ -1058,6 +1060,7 @@ export const solarFilmsData = [
     name: "Alu 80 C",
     slug: "alu-80-c",
     category: "Interior Mirror",
+    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Alu_80C",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "79",
@@ -1097,6 +1100,7 @@ export const solarFilmsData = [
     name: "Alu 80 Static",
     slug: "alu-80-static",
     category: "Interior Mirror",
+    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Alu_80_Static",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "79",
@@ -1136,6 +1140,7 @@ export const solarFilmsData = [
     name: "Silver 50 C",
     slug: "silver-50-c",
     category: "Interior Mirror",
+    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Silver_50_C",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "58",
@@ -1175,6 +1180,7 @@ export const solarFilmsData = [
     name: "Silver 70 C",
     slug: "silver-70-c",
     category: "Interior Mirror",
+    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Silver_70_C",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "68",
@@ -1214,6 +1220,7 @@ export const solarFilmsData = [
     name: "Silver 80 C",
     slug: "silver-80-c",
     category: "Interior Mirror",
+    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Silver_80_C",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "80",
@@ -1253,6 +1260,7 @@ export const solarFilmsData = [
     name: "Silver 95 C",
     slug: "silver-95-c",
     category: "Interior Mirror",
+    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Silver_95_C",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "87",
@@ -1292,6 +1300,7 @@ export const solarFilmsData = [
     name: "Silver 99 C",
     slug: "silver-99-c",
     category: "Interior Mirror",
+    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Silver_99_C",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "91",
@@ -1331,6 +1340,7 @@ export const solarFilmsData = [
     name: "Vista 80 C",
     slug: "vista-80-c",
     category: "Interior Mirror",
+    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Vista_80_C",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "76",
@@ -1370,6 +1380,7 @@ export const solarFilmsData = [
     name: "Vista 90 C",
     slug: "vista-90-c",
     category: "Interior Mirror",
+    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Vista_90_C",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "76",

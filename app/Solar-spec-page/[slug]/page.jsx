@@ -1,3 +1,4 @@
+"use client";
 import { solarFilmsData } from "@/app/Data-Sheets/Solar-Films-Data";
 import { Progress } from "@nextui-org/progress";
 import { notFound } from "next/navigation";
@@ -24,7 +25,16 @@ export default function SolarFilmPage({ params }) {
   if (!product) {
     notFound();
   }
-  // import hero image
+  // If this is inside a component that's displaying a specific solar film item:
+  const handleDownload = () => {
+    // Create an anchor element
+    const link = document.createElement("a");
+    link.href = `${product.PDFDownloadLink}.pdf`; // Changed from solarFilm to product
+    link.download = `${product.name} Data Sheet.pdf`; // Changed from solarFilm to product
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <div className="antialiased">
@@ -50,7 +60,10 @@ export default function SolarFilmPage({ params }) {
             {product.filmDescription}
           </p>
           <div className="text-center mt-16">
-            <button className="outline outline-offset-2 outline-1 outline-white text-white font-semibold rounded-sm py-2 px-10 hover:bg-white hover:text-secondary">
+            <button
+              onClick={handleDownload}
+              className="outline outline-offset-2 outline-1 outline-white text-white font-semibold rounded-sm py-2 px-10 hover:bg-white hover:text-secondary"
+            >
               Download Data Sheet
             </button>
           </div>
