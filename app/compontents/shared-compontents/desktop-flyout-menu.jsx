@@ -65,7 +65,7 @@ export default function DesktopFlyoutMenu() {
       {({ open }) => (
         <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <Popover.Button className="inline-flex items-center gap-x-1 text-base font-semibold text-secondary">
-            <span>Window Films</span>
+            <span className="hover:text-HoverColor">Window Films</span>
             <ChevronDownIcon aria-hidden="true" className="size-5" />
           </Popover.Button>
 

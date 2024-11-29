@@ -5,8 +5,8 @@ import DesktopFlyoutMenu from "./desktop-flyout-menu";
 export default function NavDesktop() {
   return (
     <div>
-      <div className="bg-white text-white absolute z-10 w-10/12 mx-auto h-14 left-1/2 top-8 transform -translate-x-1/2 -translate-y-1/2 mt-6 rounded-2xl flex items-center xl:visible lg:visible md:visible sm:invisible">
-        <div className="flex w-11/12 mx-auto items-center justify-between antialiased">
+      <div className="bg-white text-white absolute z-10 lg:w-11/12 XS:w-10/12 mx-auto h-14 left-1/2 top-8 transform -translate-x-1/2 -translate-y-1/2 mt-6 rounded-2xl flex items-center xl:visible lg:visible md:visible sm:invisible">
+        <div className="flex w-full px-6 mx-auto items-center justify-between antialiased">
           <div className="flex items-center">
             <div>
               <Link href="/">
@@ -19,21 +19,35 @@ export default function NavDesktop() {
                   <DesktopFlyoutMenu />
                 </li>
                 <Link href="/Manifestations-Graphics">
-                  <li className="pl-4">Manifestations & Graphics</li>
+                  <li className="pl-4 font-semibold hover:text-HoverColor">
+                    Manifestations & Graphics
+                  </li>
                 </Link>
                 <Link href="/CoverStyl">
-                  <li className="pl-4">CoverStyl&apos;</li>
+                  <li className="pl-4 font-semibold  hover:text-HoverColor">
+                    CoverStyl&apos;
+                  </li>
                 </Link>
                 <Link href="/Vehicle-tinting">
-                  <li className="pl-4">Vehicle Tinting</li>
+                  <li className="pl-4 font-semibold  hover:text-HoverColor">
+                    Vehicle Tinting
+                  </li>
                 </Link>
-                {/* <li className="pl-4">Vehicle Wrapping</li>
-                <li className="pl-4">Cloaking</li> */}
+                <li className="pl-4 font-semibold  hover:text-HoverColor">
+                  Vehicle Wraps
+                </li>
+                <li className="pl-4 font-semibold  hover:text-HoverColor">
+                  Cloaking
+                </li>
               </ul>
             </div>
           </div>
-          <div className="text-left text-secondary"></div>
-          <div className="text-secondary">KKK</div>
+          <div className="text-white flex items-center font-bold bg-slate-800 px-4 py-1 rounded-full">
+            <span className="inline-flex pr-1">
+              <PhoneIconNav />
+            </span>
+            021 454 5606
+          </div>
         </div>
       </div>
     </div>
@@ -71,7 +85,7 @@ function Logo() {
 function LogoNew() {
   return (
     <svg
-      width="199"
+      width="160"
       height="43"
       viewBox="0 0 199 43"
       fill="none"
@@ -153,6 +167,23 @@ function LogoNew() {
           <stop offset="0.87" stopColor="#37ACBE" />
         </linearGradient>
       </defs>
+    </svg>
+  );
+}
+
+function PhoneIconNav() {
+  return (
+    <svg
+      width="26"
+      height="24"
+      viewBox="0 0 28 26"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M14.0023 0C6.28121 0 0 5.83061 0 12.9978C0 16.739 1.73862 20.3015 4.77013 22.7722C5.01284 22.9683 5.3804 22.9455 5.59393 22.7224C5.8063 22.4971 5.78296 22.1559 5.54026 21.9577C2.76079 19.6928 1.16569 16.4271 1.16569 12.9978C1.16569 6.42959 6.92415 1.08315 14.0012 1.08315C21.077 1.08315 26.8366 6.42959 26.8366 12.9978C26.8366 19.5672 21.077 24.9125 14.0012 24.9125C12.2637 24.9125 11.1575 24.619 10.8063 24.0612C10.3594 23.3549 11.0572 22.0941 11.6091 21.1681L11.9253 21.298C12.245 21.4291 12.5823 21.4962 12.93 21.4962C13.916 21.4962 14.8098 20.9558 15.2089 20.1196L15.7211 19.0397C16.2765 17.8753 15.7048 16.5083 14.4504 15.9917L12.7071 15.2768C12.5228 15.202 12.3419 14.8294 12.3489 14.1676C12.3582 13.4019 12.6173 12.4303 13.0595 11.5009C14.0502 9.42018 15.3769 8.53633 15.8308 8.7183L17.5741 9.43209C18.8028 9.93359 20.3197 9.38335 20.8565 8.25254L21.3699 7.17264C21.6371 6.60831 21.6546 5.98009 21.4131 5.40385C21.1739 4.82869 20.7071 4.37377 20.098 4.12465L18.3571 3.40868C18.0035 3.26462 17.6208 3.19205 17.2159 3.19205C14.7106 3.19205 11.6044 6.03641 9.66511 10.1091C7.3734 14.9248 7.5986 19.5271 10.1785 20.5864L10.5356 20.7326C9.83197 21.9143 9.04201 23.4178 9.7958 24.6136C10.3851 25.5462 11.7596 26 13.9977 26C21.7188 26 28 20.1683 28 13.0022C28.0047 5.83061 21.7235 0 14.0023 0Z"
+        fill="white"
+      />
     </svg>
   );
 }

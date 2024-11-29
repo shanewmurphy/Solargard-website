@@ -7,14 +7,16 @@ import VehicleWrappingIcon from "../shared-compontents/icons/vehicleWrappingIcon
 import GraphicIcon from "../shared-compontents/icons/GraphicIcon";
 import CloakingIcon from "../shared-compontents/icons/CloakingIcon";
 
+import Link from "next/link";
+
 const serviceListData = [
   {
     id: "01",
-    title: "Window Films",
+    title: "Solar Films",
     description:
       "Keep spaces cooler, reduce glare, and block harmful UV rays while saving on energy costs.",
     icon: WindowFilmsIcon,
-    pageURL: "/",
+    pageURL: "/Solar-Films",
   },
   {
     id: "02",
@@ -22,7 +24,7 @@ const serviceListData = [
     description:
       "Add stylish privacy to your home or office without sacrificing natural light",
     icon: PrivacyIcon,
-    pageURL: "/",
+    pageURL: "/Privacy-Films",
   },
   {
     id: "03",
@@ -30,7 +32,7 @@ const serviceListData = [
     description:
       "Protect against glass shattering with durable, protective films designed for homes and businesses.",
     icon: SafetyFilmIcon,
-    pageURL: "/",
+    pageURL: "/Safety-Films",
   },
   {
     id: "04",
@@ -38,7 +40,7 @@ const serviceListData = [
     description:
       "Eco-friendly, self-adhesive vinyl that transforms walls, furniture, and surfaces at a fraction of refurbishment costs.",
     icon: CoverStylIcon,
-    pageURL: "/",
+    pageURL: "/Coverstyl",
   },
   {
     id: "05",
@@ -46,7 +48,7 @@ const serviceListData = [
     description:
       "Enhance your car’s appearance, comfort, and UV protection with professional-grade window tinting.",
     icon: VehicleIcon,
-    pageURL: "/",
+    pageURL: "/Vehicle-tinting",
   },
   {
     id: "06",
@@ -62,7 +64,7 @@ const serviceListData = [
     description:
       "Add functional and decorative designs to glass surfaces, making your space unique and compliant with safety regulations.",
     icon: GraphicIcon,
-    pageURL: "/",
+    pageURL: "/Manifestations-Graphics",
   },
   {
     id: "08",
@@ -77,71 +79,6 @@ const serviceListData = [
 export default function CompanyProfile() {
   return (
     <div>
-      {/* <div className="w-full object-cover h-screen lg:bg-[url('/images/company-profile/background-gradient-img-min.png')] md:bg-[url('/images/company-profile/background-gradient-img-min.png')] sm:bg-[url('/images/company-profile/background-gradient-img-mobile-b.jpg')] bg-no-repeat">
-        <div className="antialiased">
-          <div className="lg:w-10/12 md:w-10/11 sm:w-11/12 mx-auto lg:pt-36 lg:pb-40 md:pt-36 md:pb-0 sm:pt-28 sm:pb-0">
-            <div className="flex lg:flex-row md:flex-col sm:flex-col lg:gap-24 md:gap-16 sm:gap-4 text-white">
-              <div className="basis-3/5">
-                <h2 className="text-white lg:text-5xl md:text-3xl sm:text-3xl font-bold">
-                  Innovative Glass & Surface Solutions Tailored for You
-                </h2>
-                <p className="text-white font-normal lg:mt-8 md:mt-8 sm:mt-4 lg:text-base md:text-base sm:text-base">
-                  At Solar Gard Ireland, we specialise in providing high-quality
-                  glass film and surface transformation solutions for
-                  industrial, commercial, and residential applications. With a
-                  focus on delivering outstanding results and customer
-                  satisfaction, we offer a wide range of innovative products
-                  designed to enhance comfort, privacy, and aesthetics.
-                </p>
-                <p className="text-white font-normal lg:mt-8 md:mt-8 sm:mt-4 lg:text-base md:text-base sm:text-base">
-                  From energy-saving solar films that reduce heat and glare to
-                  stylish privacy films, safety films, and the versatile
-                  CoverStyl&apos; self-adhesive vinyl, our offerings are ideal
-                  for modernising any space. Additionally, we provide
-                  professional vehicle tinting and car wrapping services to give
-                  your vehicle a sleek, customised look.
-                </p>
-              </div>
-              <div className="basis-2/5">
-                <div>
-                  <p className="text-sm border-b-2 pb-3">
-                    <b>Expertise & Experience:</b> With years of experience in
-                    the industry, we have a proven track record of delivering
-                    premium installations and tailored solutions to meet our
-                    clients unique needs.
-                  </p>
-                </div>
-                <div>
-                  <p className="text-sm border-b-2 pb-3 mt-3">
-                    <b>Comprehensive Product Range:</b> Our extensive product
-                    range includes solar, privacy, anti-heat, anti-glare, UV
-                    protection, safety films, and CoverStyl&apos;, all designed
-                    to improve functionality and appearance.
-                  </p>
-                </div>
-                <div>
-                  <p className="text-sm border-b-2 pb-3 mt-3">
-                    <b>Customer-Centered Approach:</b> We are committed to
-                    exceeding customer expectations by providing exceptional
-                    service, expert advice, and precise installations.
-                  </p>
-                </div>
-                <div>
-                  <p className="text-sm border-b-2 pb-3 mt-3">
-                    <b>Eco-Friendly Solutions:</b> Our products not only enhance
-                    your environment but also contribute to energy savings and
-                    sustainability by reducing waste and extending the life of
-                    surfaces.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="lg:mt-24 md:mt-16 sm:mt-8 sm:pb-16 w-full h-auto max-w-full">
-              <YearsBannerText />
-            </div>
-          </div>
-        </div>
-      </div> */}
       <div className="w-full bg-grey pb-40">
         <div className="w-10/12 mx-auto">
           <div className="flex flex-row gap-16">
@@ -172,13 +109,22 @@ export default function CompanyProfile() {
                   <p className="text-sm font-medium text-textGray mt-2">
                     {serviceitem.description}
                   </p>
-                  <p className="mt-2 font-semibold text-sm">More Info</p>
+                  <Link href={serviceitem.pageURL}>
+                    <div className="group flex items-center space-x-2 mt-1">
+                      <button className="mt-2 font-semibold hover:text-HoverColor text-sm">
+                        More Info
+                        <span className="inline-block pl-1">
+                          <ArrowIcon className="text-gray-600 group-hover:text-HoverColor transition-colors duration-300" />
+                        </span>
+                      </button>
+                    </div>
+                  </Link>
                 </div>
               ))}
             </div>
             <div className="mt-16">
               <h4 className="font-medium text-textGray text-4xl">
-                We’re committed to helping you redefine your space—whether
+                We&apos;re committed to helping you redefine your space—whether
                 it&apos;s your home, office, or vehicle—with solutions that
                 blend practicality, style, and sustainability.
               </h4>
@@ -419,6 +365,28 @@ function YearsBannerText() {
       <path
         d="M37.5483 99.2426C30.3868 99.2426 24.0244 98.0144 18.4609 95.5582C12.9271 93.0724 8.57692 89.6545 5.41049 85.3043C2.24406 80.9542 0.646048 75.953 0.616455 70.3008H25.4744C25.504 72.0468 26.0367 73.6152 27.0724 75.006C28.1378 76.3673 29.5878 77.4327 31.4226 78.2021C33.2573 78.9715 35.3584 79.3562 37.7258 79.3562C40.0045 79.3562 42.0168 78.9567 43.7628 78.1577C45.5087 77.3291 46.87 76.1898 47.8466 74.7397C48.8231 73.2897 49.2966 71.6325 49.267 69.7681C49.2966 67.9334 48.7344 66.3058 47.5802 64.8853C46.4557 63.4648 44.8725 62.3551 42.8306 61.5561C40.7887 60.7571 38.4361 60.3576 35.7727 60.3576H26.5398V43.3121H35.7727C38.2289 43.3121 40.3892 42.9126 42.2535 42.1136C44.1475 41.3146 45.6123 40.2049 46.6481 38.7844C47.7134 37.364 48.2313 35.7364 48.2017 33.9016C48.2313 32.1261 47.8022 30.5576 46.9144 29.1964C46.0266 27.8351 44.7837 26.7698 43.1857 26.0004C41.6173 25.2309 39.7973 24.8462 37.7258 24.8462C35.4768 24.8462 33.4645 25.2457 31.6889 26.0447C29.9429 26.8438 28.5669 27.9535 27.5607 29.3739C26.5545 30.7944 26.0367 32.422 26.0071 34.2568H2.39202C2.42162 28.6933 3.94565 23.7809 6.96411 19.5195C10.0122 15.2582 14.1848 11.9142 19.4819 9.48757C24.779 7.06096 30.8603 5.84766 37.7258 5.84766C44.4434 5.84766 50.3768 6.98698 55.5259 9.26562C60.7046 11.5443 64.7441 14.6811 67.6442 18.6761C70.5738 22.6416 72.0239 27.1841 71.9943 32.3036C72.0535 37.3936 70.3075 41.5662 66.7564 44.8214C63.2348 48.0766 58.7663 50.0001 53.3508 50.592V51.3022C60.6898 52.1012 66.2089 54.3503 69.908 58.0494C73.6071 61.7189 75.4271 66.3353 75.3679 71.8988C75.3975 77.2255 73.7995 81.9456 70.5738 86.059C67.3778 90.1724 62.9241 93.398 57.2127 95.7358C51.5309 98.0736 44.9761 99.2426 37.5483 99.2426Z"
         fill="white"
+      />
+    </svg>
+  );
+}
+
+function ArrowIcon({ className }) {
+  return (
+    <svg
+      width="22"
+      height="12"
+      viewBox="0 0 22 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <path
+        d="M21.7672 5.41008L16.5771 0.219006C16.2721 -0.076211 15.7874 -0.072566 15.4861 0.22751C15.186 0.526373 15.1812 1.0111 15.4752 1.31726L20.1185 5.96064L15.4752 10.604C15.1812 10.9102 15.186 11.3949 15.4861 11.6938C15.7874 11.9939 16.2721 11.9975 16.5771 11.7023L21.7672 6.51121C21.9142 6.36542 21.9956 6.16739 21.9956 5.96088C21.9956 5.75436 21.9142 5.55631 21.7672 5.41054V5.41008Z"
+        className="fill-current"
+      />
+      <path
+        d="M21.0175 5.18359H0.777526C0.347461 5.18359 0 5.53227 0 5.96112C0 6.38997 0.347461 6.73865 0.777526 6.73865H21.0175C21.4475 6.73865 21.795 6.38997 21.795 5.96112C21.795 5.53227 21.4475 5.18359 21.0175 5.18359Z"
+        className="fill-current"
       />
     </svg>
   );

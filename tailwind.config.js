@@ -15,6 +15,7 @@ module.exports = {
       },
       colors: {
         primary: "#3872e5",
+        HoverColor: "#3872e5",
         secondary: "#212332",
         grey: "#F7F7F7",
         textGray: "#5C5C5C",
@@ -24,7 +25,7 @@ module.exports = {
       },
       screens: {
         sm: "360px",
-        XS: "1920px",
+        XS: "1520px",
       },
       borderRadius: {
         xl: "60px",

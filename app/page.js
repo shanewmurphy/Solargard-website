@@ -8,7 +8,7 @@ import CompanyProfile from "./compontents/homepage/company-profile";
 import GeneralFaqs from "./compontents/FAQs/general-faq";
 import Testimonials from "./compontents/shared-compontents/testimonials";
 import ContactUs from "./compontents/shared-compontents/Contact-Us";
-import GridServicesNav from "./compontents/homepage/grid-services";
+import Footer from "./compontents/shared-compontents/Footer";
 export default function Home() {
   useEffect(() => {
     (async () => {
@@ -41,6 +41,9 @@ export default function Home() {
       </div>
       <div>
         <ContactUs />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
