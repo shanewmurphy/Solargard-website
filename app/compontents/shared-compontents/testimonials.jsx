@@ -3,7 +3,6 @@ import React, { useRef } from "react";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
-import { comment } from "postcss";
 
 const reviews = [
   {
@@ -53,10 +52,10 @@ const reviews = [
 export default function Testimonials() {
   const swiperRef = useRef();
   return (
-    <div className="w-full bg-primary lg:py-24 md:py-36 sm:py-28">
+    <div className="w-full bg-grey lg:py-24 md:py-36 sm:py-28">
       <div className="lg:w-10/12 md:w-10/12 sm:w-11/12 mx-auto antialiased">
         <div>
-          <h4 className="text-white font-bold lg:text-5xl md:text-4xl sm:text-3xl">
+          <h4 className="text-textLightGray font-bold lg:text-5xl md:text-4xl sm:text-3xl">
             Customers Testimonials
           </h4>
         </div>
@@ -97,19 +96,19 @@ export default function Testimonials() {
               <div className="my-swiper">
                 {reviews.map((review) => (
                   <SwiperSlide key={review.id}>
-                    <div className="lg:mt-24 md:mt-24 sm:mt-12">
+                    <div className="lg:mt-8 md:mt-8 sm:mt-6">
                       <div>
                         <div className="">
-                          <p className="text-white font-semibold lg:text-lg md:text-base sm:text-base pr-8">
+                          <p className="text-secondary font-medium lg:text-base md:text-lg sm:text-base pr-8">
                             {review.comment}
                           </p>
                         </div>
                         <div className="flex flex-row items-center mt-8">
-                          <div className="rounded-full bg-white p-1">
+                          <div className="">
                             <GoogleIcon />
                           </div>
                           <div>
-                            <p className="text-white font-medium text-lg mt-3 pl-3">
+                            <p className="text-textLightGray font-medium text-lg mt-3 pl-3">
                               {review.name}
                             </p>
                           </div>
@@ -178,10 +177,10 @@ function LeftArrowIcon() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="white" />
+      <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="#12191d" />
       <path
         d="M32 23H19.83L25.42 17.41L24 16L16 24L24 32L25.41 30.59L19.83 25H32V23Z"
-        fill="white"
+        fill="#12191d"
       />
     </svg>
   );
@@ -195,10 +194,10 @@ function RightArrowIcon() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="white" />
+      <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="#12191d" />
       <path
         d="M24 16L22.59 17.41L28.17 23H16V25H28.17L22.59 30.59L24 32L32 24L24 16Z"
-        fill="white"
+        fill="#12191d"
       />
     </svg>
   );

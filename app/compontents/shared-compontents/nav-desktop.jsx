@@ -5,7 +5,7 @@ import DesktopFlyoutMenu from "./desktop-flyout-menu";
 export default function NavDesktop() {
   return (
     <div>
-      <div className="bg-white text-white absolute z-10 lg:w-11/12 XS:w-10/12 mx-auto h-14 left-1/2 top-8 transform -translate-x-1/2 -translate-y-1/2 mt-6 rounded-2xl flex items-center xl:visible lg:visible md:visible sm:invisible">
+      <div className="bg-white text-white absolute z-10 lg:w-11/12 XS:w-10/12 mx-auto h-14 left-1/2 top-8 transform -translate-x-1/2 -translate-y-1/2 mt-6 rounded-2xl flex items-center xl:visible lg:visible md:invisible sm:invisible">
         <div className="flex w-full px-6 mx-auto items-center justify-between antialiased">
           <div className="flex items-center">
             <div>

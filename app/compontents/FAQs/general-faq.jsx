@@ -55,7 +55,7 @@ export default function GeneralFaqs() {
   return (
     <div className="bg-grey lg:py-20">
       <div className="lg:w-8/12 largeScreens:w-7/12 mx-auto">
-        <h3 className="text-center font-bold text-3xl mb-6">
+        <h3 className="text-center font-bold text-secondary text-4xl mb-6">
           Questions & Answers
         </h3>
         <Accordion
@@ -71,7 +71,8 @@ export default function GeneralFaqs() {
             trigger:
               "px-2 py-0 text-2xl text-secondary rounded-lg h-16 flex items-center",
             indicator: "font-bold",
-            content: "text-sm lg:w-11/12 pb-6 font-medium px-2",
+            content:
+              "text-base lg:w-11/12 pb-6 text-secondary font-medium px-2",
           }}
         >
           {FAQ.map((faq) => (
