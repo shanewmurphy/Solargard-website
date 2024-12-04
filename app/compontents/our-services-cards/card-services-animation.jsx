@@ -5,8 +5,12 @@ import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Card = ({ children }) => (
-  <div className="h-screen w-full flex items-center justify-center text-4xl text-white absolute top-0 left-0">
+const Card = ({ children, isFirst }) => (
+  <div
+    className={`h-screen w-full flex items-center justify-center text-4xl text-white ${
+      isFirst ? "fixed top-0 left-0" : "absolute top-0 left-0"
+    } overflow-hidden rounded-[40px]`}
+  >
     {children}
   </div>
 );
@@ -17,25 +21,65 @@ export default function Home() {
   useEffect(() => {
     const container = containerRef.current;
     const cards = gsap.utils.toArray(container.children);
+    const cardHeight = window.innerHeight;
+
+    // Set initial states
+    gsap.set(cards.slice(1), {
+      clipPath: "inset(100% 0% 0% 0% round 40px)",
+    });
+
+    // Pin the first card separately
+    gsap.set(cards[0], {
+      position: "fixed",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100vh",
+      zIndex: 1,
+    });
 
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: container,
-        start: "top top",
-        end: () => "+=" + (cards.length - 1) * 100 + "%",
+        start: "top-=0px top",
+        end: () => `+=${cardHeight * (cards.length - 1)}`,
         pin: true,
+        pinSpacing: true,
         anticipatePin: 1,
-        scrub: 2,
-        markers: false, // Remove this in production
+        scrub: 1,
+        markers: false,
+        fastScrollEnd: true,
+        preventOverlaps: true,
       },
     });
 
+    // Animate subsequent cards
     cards.forEach((card, i) => {
       if (i > 0) {
+        // Remove the previous card movement
+        // tl.to(
+        //   cards[i - 1].querySelector("img"),
+        //   {
+        //     y: "-10%",
+        //     ease: "none",
+        //   },
+        //   `card${i}`
+        // );
+
+        // Current card reveal
         tl.fromTo(
           card,
-          { yPercent: 100, opacity: 1 },
-          { yPercent: 0, opacity: 1 }
+          {
+            clipPath: "inset(100% 0% 0% 0% round 40px)",
+            zIndex: i + 1,
+          },
+          {
+            clipPath: "inset(0% 0% 0% 0% round 40px)",
+            zIndex: i + 1,
+            duration: 1,
+            ease: "none",
+          },
+          `card${i}`
         );
       }
     });
@@ -46,205 +90,191 @@ export default function Home() {
   }, []);
 
   return (
-    <section>
-      <div className="min-h-screen bg-grey pb-40">
-        <div
-          ref={containerRef}
-          className="relative lg:h-screen sm:h-dvh overflow-hidden"
-        >
-          <Card bgColor="#212332">
-            <div className="lg:w-9/12 md:w-11/12 sm:w-11/12 relative">
-              <img
-                className="w-full h-full object-cover lg:rounded-xl md:rounded-xl sm:rounded-lg lg:flex md:flex sm:hidden"
-                src="/images/card-service-imgs/solar-films-card-service-img-min.jpg"
-                alt="Card 1"
-              />
-
-              <img
-                className="w-full h-full object-cover lg:hidden md:hidden sm:flex rounded-3xl"
-                src="/images/card-service-imgs/solar-film-card-service-mobile.jpg"
-              />
-              <div className="absolute bottom-0 flex flex-col items-start lg:px-24 lg:py-[15%] md:px-16 md:py-[10%] sm:px-4 sm:py-[40%]">
-                <h2 className="lg:text-7xl md:text-6xl font-bold text-white">
-                  Solar Films
-                </h2>
-                <p className="lg:text-3xl font-medium mt-2 sm:hidden">
-                  Anti-heat, Anti-glare, UV films, Reflective Films
-                </p>
-                <div>
-                  <Link href="Solar-Films">
-                    <button className="bg-white hover:bg-secdorny flex items-center text-secondary lg:text-2xl md:text-xl sm:text-xl font-semibold lg:py-4 lg:px-12 md:py mt-6 rounded-2xl">
-                      View Solar Films
-                      <span className="inline-flex items-center pl-4">
-                        <NavIcon />
-                      </span>
-                    </button>
-                  </Link>
+    <main>
+      <div className="min-h-screen bg-grey">
+        <section className="relative">
+          <div className="pin-spacer">
+            <div
+              ref={containerRef}
+              className="relative h-screen w-full overflow-hidden"
+              style={{
+                height: "100vh",
+                willChange: "transform",
+              }}
+            >
+              <Card isFirs>
+                <div className="xxl:w-9/12 lg:w-10/12 md:w-11/12 lg:h-[90vh] md:h-[60vh] sm:h-[70vh] sm:w-11/12 relative">
+                  <img
+                    className="w-full h-full object-cover rounded-xl lg:flex md:flex sm:hidden"
+                    src="/images/card-service-imgs/solar-films-card-service-img-min.jpg"
+                    alt="Card 1"
+                  />
+                  <img
+                    className="w-full h-full object-cover lg:hidden md:hidden sm:flex rounded-3xl"
+                    src="/images/card-service-imgs/solar-film-card-service-mobile.jpg"
+                  />
+                  <div className="absolute bottom-0 flex flex-col items-start lg:px-24 lg:py-[15%] md:px-16 md:py-[10%] sm:px-4 sm:py-[40%]">
+                    <h2 className="lg:text-7xl md:text-6xl sm:text-5xl font-bold text-white">
+                      Solar Films
+                    </h2>
+                    <div>
+                      <Link href="Solar-Films">
+                        <button className="bg-white hover:bg-secdorny flex items-center text-secondary lg:text-2xl md:text-xl sm:text-lg font-semibold lg:py-4 lg:px-12 md:py-2 md:px-6 sm:py-2 sm:px-6 mt-6 lg:rounded-2xl md:rounded-lg sm:rounded-lg">
+                          View Solar Films
+                          <span className="inline-flex items-center pl-4">
+                            <NavIcon />
+                          </span>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </Card>
-          <Card>
-            <div className="lg:w-9/12 md:w-11/12 sm:w-11/12 relative">
-              <img
-                className="w-full h-full object-cover lg:rounded-xl md:rounded-xl sm:rounded-lg lg:flex md:flex sm:hidden"
-                src="/images/card-service-imgs/car-tinting-b.jpg"
-                alt="Card 2"
-              />
-              <img
-                className="w-full h-full object-cover lg:hidden md:hidden sm:flex"
-                src="/images/card-service-imgs/Car-Tint-mobile-img.jpg"
-              />
-              <div className="absolute bottom-0 flex flex-col items-start px-24 py-[15%]">
-                <h2 className="text-7xl font-bold text-white">
-                  Vehicle Tinting
-                </h2>
-                <p className="lg:text-3xl font-medium mt-2">
-                  Premium car tinting, offering style, privacy, and UV
-                  protection
-                </p>
-                <div>
-                  <Link href="Vehicle-tinting">
-                    <button className="bg-white hover:bg-secdorny flex items-center text-secondary lg:text-2xl font-semibold py-4 px-12 mt-6 rounded-2xl">
-                      View Vehicle Tinting
-                      <span className="inline-flex items-center pl-4">
-                        <NavIcon />
-                      </span>
-                    </button>
-                  </Link>
+              </Card>
+              <Card>
+                <div className="xxl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 lg:h-[90vh] md:h-[60vh] sm:h-[70vh] relative">
+                  <img
+                    className="w-full h-full object-cover rounded-xl lg:flex md:flex sm:hidden"
+                    src="/images/card-service-imgs/car-tinting-b.jpg"
+                    alt="Card 2"
+                  />
+                  <img
+                    className="w-full h-full object-cover lg:hidden md:hidden sm:flex"
+                    src="/images/card-service-imgs/Car-Tint-mobile-img.jpg"
+                  />
+                  <div className="absolute bottom-0 flex flex-col items-start px-24 py-[15%]">
+                    <h2 className="text-7xl font-bold text-white">
+                      Vehicle Tinting
+                    </h2>
+                    <div>
+                      <Link href="Vehicle-tinting">
+                        <button className="bg-white hover:bg-secdorny flex items-center text-secondary lg:text-2xl font-semibold py-4 px-12 mt-6 rounded-2xl">
+                          View Vehicle Tinting
+                          <span className="inline-flex items-center pl-4">
+                            <NavIcon />
+                          </span>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </Card>
-          <Card>
-            <div className="lg:w-9/12 md:w-11/12 sm:w-11/12 relative">
-              <img
-                className="w-full h-full object-cover lg:rounded-xl md:rounded-xl sm:rounded-lg lg:flex md:flex sm:hidden"
-                src="/images/card-service-imgs/coverstyl-card-img.jpg"
-                alt="Card 3"
-              />
-              <img
-                className="w-full h-full object-cover lg:hidden md:hidden sm:flex"
-                src="/images/card-service-imgs/coverstyl-mobile-img.jpg"
-              />
-              <div className="absolute bottom-0 flex flex-col items-start px-24 py-[15%]">
-                <h2 className="text-7xl font-bold text-white">
-                  CoverStyl&apos;
-                </h2>
-                <p className="lg:text-3xl font-medium mt-2 w-[70%]">
-                  Revitalise any surface with CoverStyl&apos; cost-effective
-                  solution for stylish transformations
-                </p>
-                <div>
-                  <Link href="CoverStyl">
-                    <button className="bg-white hover:bg-secdorny flex items-center text-secondary lg:text-2xl font-semibold py-4 px-12 mt-6 rounded-2xl">
-                      View CoverStyl&apos;
-                      <span className="inline-flex items-center pl-4">
-                        <NavIcon />
-                      </span>
-                    </button>
-                  </Link>
+              </Card>
+              <Card>
+                <div className="xxl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 lg:h-[90vh] md:h-[60vh] sm:h-[70vh] relative">
+                  <img
+                    className="w-full h-full object-cover rounded-xl lg:flex md:flex sm:hidden"
+                    src="/images/card-service-imgs/coverstyl-card-img.jpg"
+                    alt="Card 3"
+                  />
+                  <img
+                    className="w-full h-full object-cover lg:hidden md:hidden sm:flex"
+                    src="/images/card-service-imgs/coverstyl-mobile-img.jpg"
+                  />
+                  <div className="absolute bottom-0 flex flex-col items-start px-24 py-[15%]">
+                    <h2 className="text-7xl font-bold text-white">
+                      CoverStyl&apos;
+                    </h2>
+                    <div>
+                      <Link href="CoverStyl">
+                        <button className="bg-white hover:bg-secdorny flex items-center text-secondary lg:text-2xl font-semibold py-4 px-12 mt-6 rounded-2xl">
+                          View CoverStyl&apos;
+                          <span className="inline-flex items-center pl-4">
+                            <NavIcon />
+                          </span>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </Card>
-          <Card>
-            <div className="lg:w-9/12 md:w-11/12 sm:w-11/12 relative">
-              <img
-                className="w-full h-full object-cover lg:rounded-xl md:rounded-xl sm:rounded-lg lg:flex md:flex sm:hidden"
-                src="/images/card-service-imgs/manifestations-graphics-card-img.jpg"
-                alt="Card 4"
-              />
-              <img
-                className="w-full h-full object-cover lg:hidden md:hidden sm:flex"
-                src="/images/card-service-imgs/manifestations-graphics-mobile.jpg"
-              />
-              <div className="absolute bottom-0 flex flex-col items-start px-24 py-[15%]">
-                <h2 className="text-7xl font-bold text-white">
-                  Manifestations & Graphics
-                </h2>
-                <p className="lg:text-3xl font-medium mt-2">
-                  Enhance your space with our privacy films, offering discreet
-                  style and dependable protection
-                </p>
-                <div>
-                  <Link href="Manifestations-Graphics">
-                    <button className="bg-white hover:bg-secdorny flex items-center text-secondary lg:text-2xl font-semibold py-4 px-12 mt-6 rounded-2xl">
-                      View Manifestations & Graphics
-                      <span className="inline-flex items-center pl-4">
-                        <NavIcon />
-                      </span>
-                    </button>
-                  </Link>
+              </Card>
+              <Card>
+                <div className="xxl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 lg:h-[90vh] md:h-[60vh] sm:h-[70vh]relative">
+                  <img
+                    className="w-full h-full object-cover rounded-xl lg:flex md:flex sm:hidden"
+                    src="/images/card-service-imgs/manifestations-graphics-card-img.jpg"
+                    alt="Card 4"
+                  />
+                  <img
+                    className="w-full h-full object-cover lg:hidden md:hidden sm:flex"
+                    src="/images/card-service-imgs/manifestations-graphics-mobile.jpg"
+                  />
+                  <div className="absolute bottom-0 flex flex-col items-start px-24 py-[15%]">
+                    <h2 className="text-7xl font-bold text-white">
+                      Manifestations & Graphics
+                    </h2>
+                    <div>
+                      <Link href="Manifestations-Graphics">
+                        <button className="bg-white hover:bg-secdorny flex items-center text-secondary lg:text-2xl font-semibold py-4 px-12 mt-6 rounded-2xl">
+                          View Manifestations & Graphics
+                          <span className="inline-flex items-center pl-4">
+                            <NavIcon />
+                          </span>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </Card>
-          <Card>
-            <div className="lg:w-9/12 md:w-11/12 sm:w-11/12 relative">
-              <img
-                className="w-full h-full object-cover lg:rounded-xl md:rounded-xl sm:rounded-lg lg:flex md:flex sm:hidden"
-                src="/images/card-service-imgs/vehicle-wrapping-card-img.jpg"
-                alt="Card 5"
-              />
-              <img
-                className="w-full h-full object-cover lg:hidden md:hidden sm:flex"
-                src="/images/card-service-imgs/vehicle-wrapping-mobile-img.jpg"
-              />
-              <div className="absolute bottom-0 flex flex-col items-start px-24 py-[15%]">
-                <h2 className="text-7xl font-bold text-white">
-                  Vehicle Wrapping
-                </h2>
-                <p className="lg:text-3xl font-medium mt-2">
-                  Transform your vehicle with custom wraps that showcase your
-                  brand or personal style
-                </p>
-                <div>
-                  <Link href="/">
-                    <button className="bg-white hover:bg-secdorny flex items-center text-secondary lg:text-2xl font-semibold py-4 px-12 mt-6 rounded-2xl">
-                      View Vehicle Wrapping
-                      <span className="inline-flex items-center pl-4">
-                        <NavIcon />
-                      </span>
-                    </button>
-                  </Link>
+              </Card>
+              <Card>
+                <div className="xxl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 lg:h-[90vh] md:h-[60vh] sm:h-[70vh] relative">
+                  <img
+                    className="w-full h-full object-cover rounded-xl lg:flex md:flex sm:hidden"
+                    src="/images/card-service-imgs/vehicle-wrapping-card-img.jpg"
+                    alt="Card 5"
+                  />
+                  <img
+                    className="w-full h-full object-cover lg:hidden md:hidden sm:flex"
+                    src="/images/card-service-imgs/vehicle-wrapping-mobile-img.jpg"
+                  />
+                  <div className="absolute bottom-0 flex flex-col items-start px-24 py-[15%]">
+                    <h2 className="text-7xl font-bold text-white">
+                      Vehicle Wrapping
+                    </h2>
+                    <div>
+                      <Link href="/">
+                        <button className="bg-white hover:bg-secdorny flex items-center text-secondary lg:text-2xl font-semibold py-4 px-12 mt-6 rounded-2xl">
+                          View Vehicle Wrapping
+                          <span className="inline-flex items-center pl-4">
+                            <NavIcon />
+                          </span>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </Card>
-          <Card>
-            <div className="lg:w-9/12 md:w-11/12 sm:w-11/12 relative">
-              <img
-                className="w-full h-full object-cover lg:rounded-xl md:rounded-xl sm:rounded-lg lg:flex md:flex sm:hidden"
-                src="/images/card-service-imgs/privacy-films-card-img.jpg"
-                alt="Card 5"
-              />
-              <img
-                className="w-full h-full object-cover lg:hidden md:hidden sm:flex"
-                src="/images/card-service-imgs/privacy-card-mobile-img.jpg"
-              />
-              <div className="absolute bottom-0 flex flex-col items-start px-24 py-[15%]">
-                <h2 className="text-7xl font-bold text-white">Privacy Films</h2>
-                <p className="lg:text-3xl font-medium mt-2">
-                  Enhance your space with our privacy films, offering discreet
-                  style and dependable protection
-                </p>
-                <div>
-                  <Link href="/">
-                    <button className="bg-white hover:bg-secdorny flex items-center text-secondary lg:text-2xl font-semibold py-4 px-12 mt-6 rounded-2xl">
-                      View Privacy Films
-                      <span className="inline-flex items-center pl-4">
-                        <NavIcon />
-                      </span>
-                    </button>
-                  </Link>
+              </Card>
+              <Card>
+                <div className="xxl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 lg:h-[90vh] md:h-[60vh] sm:h-[80vh] relative">
+                  <img
+                    className="w-full h-full object-cover rounded-xl lg:flex md:flex sm:hidden"
+                    src="/images/card-service-imgs/privacy-films-card-img.jpg"
+                    alt="Card 6"
+                  />
+                  <img
+                    className="w-full h-full object-cover lg:hidden md:hidden sm:flex"
+                    src="/images/card-service-imgs/privacy-card-mobile-img.jpg"
+                  />
+                  <div className="absolute bottom-0 flex flex-col items-start px-24 py-[15%]">
+                    <h2 className="text-7xl font-bold text-white">
+                      Privacy Films
+                    </h2>
+                    <div>
+                      <Link href="/">
+                        <button className="bg-white hover:bg-secdorny flex items-center text-secondary lg:text-2xl font-semibold py-4 px-12 mt-6 rounded-2xl">
+                          View Privacy Films
+                          <span className="inline-flex items-center pl-4">
+                            <NavIcon />
+                          </span>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </Card>
             </div>
-          </Card>
-        </div>
+          </div>
+        </section>
       </div>
-    </section>
+    </main>
   );
 }
 

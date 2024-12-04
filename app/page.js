@@ -33,18 +33,18 @@ export default function Home() {
       <div>
         <CompanyProfile />
       </div>
-      <div>
+      {/* <div>
         <GeneralFaqs />
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <Testimonials />
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <ContactUs />
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }

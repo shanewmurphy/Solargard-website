@@ -2,9 +2,9 @@ export default function HomeIntroText() {
   return (
     <section className="section-spacing">
       <div>
-        <div className="bg-grey lg:py-40 lg:px-24 md:py-48 md:px-16 sm:px-8 antialiased">
-          <div className="lg:w-11/12 xl:w-11/12 largeScreens:w-10/12 mx-auto">
-            <h1 className="text-secondary font-light lg:text-3xl md:text-2xl sm:text-xl">
+        <div className="bg-grey antialiased">
+          <div className="xxl:w-8/12 xl:w-9/12 lg:w-full md:w-11/12 sm:w-full xxl:px-0 lg:px-24 md:px-16 sm:px-6 mx-auto">
+            <h1 className="text-secondary font-medium xxl:text-4xl xl:text-3xl lg:text-2xl md:text-2xl sm:text-xl">
               Solar Gard Solutions Providing Innovative Glass Film Solutions for
               Industrial&#x2C; Commercial&#x2C; and Domestic Applications&#x2C;
               Solar Gard is a leading provider of glass film and surfaces
@@ -14,7 +14,6 @@ export default function HomeIntroText() {
                 privacy films&#x2C;
               </span>
               <span className="text-primary font-semibold">
-                {" "}
                 anti-heat&#x2C;
               </span>
               <span className="text-primary font-semibold pl-2">

@@ -55,13 +55,13 @@ export default function HomeHero() {
 
           {/* Text content outside of the gradient and with 100% opacity */}
           <div className="absolute z-0 lg:w-8/12 mx-auto inset-0 flex flex-col justify-center items-center antialiased">
-            <h1 className="text-white text-center lg:text-7xl md:text-5xl sm:text-4xl font-bold">
+            <h1 className="text-white text-center xxl:text-7xl lg:text-6xl md:text-5xl sm:text-3xl font-bold">
               Solar Gard Solutions Ireland
             </h1>
             <h1 className="text-white text-center lg:text-5xl md:text-4xl sm:text-3xl font-bold mt-2">
               Tints - Prints - Wraps
             </h1>
-            <h1 className="text-white w-[90%] text-center lg:font-semibold md:font-bold sm:font-medium lg:text-4xl md:text-2xl sm:px-8 z-10 opacity-100 mt-4">
+            <h1 className="text-white w-[90%] text-center lg:font-semibold md:font-bold sm:font-medium lg:text-3xl md:text-2xl sm:px-8 z-10 opacity-100 mt-4">
               Transform Spaces & Vehicles with Solar Gard Ireland. Experts in
               Glass Films, Surface Enhancements & Custom Wraps
             </h1>
