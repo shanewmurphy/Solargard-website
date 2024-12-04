@@ -7,6 +7,10 @@
   --foreground: #171717;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -16,6 +20,11 @@
 .scroll-container {
   height: 100vh;
   overflow: hidden;
+}
+.section-spacing {
+  padding-top: 15%;
+  padding-bottom: 15%;
+  background-color: #f7f7f7;
 }
 
 .card {
