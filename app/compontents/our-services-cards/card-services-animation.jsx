@@ -122,15 +122,15 @@ export default function Home() {
               src="/images/card-service-imgs/coverstyl-mobile-img.jpg"
             />
             <div className="absolute bottom-0 flex flex-col items-start px-24 py-[15%]">
-              <h2 className="text-7xl font-bold text-white">CoverStyl'</h2>
+              <h2 className="text-7xl font-bold text-white">CoverStyl&apos;</h2>
               <p className="lg:text-3xl font-medium mt-2 w-[70%]">
-                Revitalise any surface with CoverStyl' cost-effective solution
-                for stylish transformations
+                Revitalise any surface with CoverStyl&apos; cost-effective
+                solution for stylish transformations
               </p>
               <div>
                 <Link href="CoverStyl">
                   <button className="bg-white hover:bg-secdorny flex items-center text-secondary lg:text-2xl font-semibold py-4 px-12 mt-6 rounded-2xl">
-                    View CoverStyl'
+                    View CoverStyl&apos;
                     <span className="inline-flex items-center pl-4">
                       <NavIcon />
                     </span>
@@ -156,8 +156,8 @@ export default function Home() {
                 Manifestations & Graphics
               </h2>
               <p className="lg:text-3xl font-medium mt-2">
-                Revitalise any surface with CoverStyl' cost-effective solution
-                for stylish transformations
+                Enhance your space with our privacy films, offering discreet
+                style and dependable protection
               </p>
               <div>
                 <Link href="Manifestations-Graphics">
