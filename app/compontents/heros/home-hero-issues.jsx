@@ -6,7 +6,7 @@ import HeroMobileImg from "@/public/images/hero-imgs/hero-mobile.jpg";
 
 export default function HomeHero() {
   return (
-    <div className="relative w-full h-screen sm:h-[70vh]">
+    <section className="relative w-full h-screen">
       {/* Desktop Image */}
       <div className="hidden lg:block absolute inset-0">
         <Image
@@ -43,6 +43,9 @@ export default function HomeHero() {
         />
       </div>
 
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-800 via-transparent"></div>
+
       {/* Text Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center h-full px-4">
         <h1 className="text-white font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
@@ -56,6 +59,6 @@ export default function HomeHero() {
           Films, Surface Enhancements & Custom Wraps.
         </p>
       </div>
-    </div>
+    </section>
   );
 }

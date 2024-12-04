@@ -6,8 +6,9 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-html {
-  overflow-x: hidden;
+body {
+  overflow-x: hidden !important;
+  overflow-x: hidden !important;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -20,34 +21,10 @@ html {
   overflow: hidden;
 }
 section {
+  width: 100vh;
   padding-top: 10%;
   padding-bottom: 10%;
   background-color: #f7f7f7;
-}
-
-.card {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  color: white;
-}
-
-.card:nth-child(1) {
-  background-color: #ff6b6b;
-}
-.card:nth-child(2) {
-  background-color: #4ecdc4;
-}
-.card:nth-child(3) {
-  background-color: #45b7d1;
-}
-.card:nth-child(4) {
-  background-color: #f7b731;
-}
-.card:nth-child(5) {
-  background-color: #5f27cd;
 }
 
 body {
