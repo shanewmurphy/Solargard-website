@@ -21,9 +21,9 @@ export default function Home() {
       <div>
         <HomeHero />
       </div>
-      <div>
+      {/* <div>
         <HomeIntroText />
-      </div>
+      </div> */}
       {/* <div>
         <GridServicesNav />
       </div> */}
