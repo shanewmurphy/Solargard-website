@@ -24,7 +24,8 @@ module.exports = {
         "faq-border": "#26166f",
       },
       screens: {
-        sm: "320px",
+        xs: "320px",
+        sm: "640px",
         md: "768px",
         lg: "1024px",
         xl: "1620px",

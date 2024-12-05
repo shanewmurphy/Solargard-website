@@ -1,5 +1,4 @@
 import localFont from "next/font/local";
-
 import { Inter, Poppins } from "@next/font/google";
 import "./globals.css";
 import NavDesktop from "./compontents/shared-compontents/nav-desktop";

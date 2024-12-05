@@ -2,53 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-html,
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-/* body html {
+body html {
   overflow-x: hidden !important;
   overflow-y: hidden !important;
 }
 html {
   overflow-x: hidden !important;
   overflow-y: hidden !important;
-} */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
-.scroll-container {
-  height: 100vh;
-  overflow: hidden;
-}
+
 section {
-  width: 100vh;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 7%;
+  padding-bottom: 7%;
   background-color: #f7f7f7;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
 a,
 button {
   cursor: pointer !important;
@@ -74,4 +42,18 @@ button {
 .section-spacing-top-btm {
   padding-top: 10%;
   padding-bottom: 15%;
+}
+@media only screen and (min-width: 1620px) {
+  section {
+    padding-top: 8%;
+    padding-bottom: 8%;
+    /* background-color: pink; */
+  }
+}
+@media only screen and (min-width: 1920px) {
+  section {
+    padding-top: 7%;
+    padding-bottom: 7%;
+    background-color: brown;
+  }
 }
