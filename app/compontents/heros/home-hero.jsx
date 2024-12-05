@@ -60,16 +60,12 @@ export default function HomeHero() {
 
       {/* Text Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center h-[50vh]">
-        <h1 className="text-white font-bold sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl xxl:text-8xl">
+        <h1 className="text-white font-bold sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl xxl:text-8xl">
           Solar Gard Solutions
         </h1>
         <h2 className="text-white font-bold sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl lg:mt-4">
           Tints - Prints - Wraps
         </h2>
-        {/* <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl mt-6 max-w-2xl">
-          Transform Spaces & Vehicles with Solar Gard Solutions Ireland. Experts
-          in Glass Films, Surface Enhancements & Custom Wraps.
-        </p> */}
       </div>
     </section>
   );

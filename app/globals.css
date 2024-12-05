@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body html {
-  overflow-x: hidden !important;
-  overflow-y: hidden !important;
-}
-html {
-  overflow-x: hidden !important;
-  overflow-y: hidden !important;
-}
-
 section {
   padding-top: 7%;
   padding-bottom: 7%;
@@ -42,6 +33,14 @@ button {
 .section-spacing-top-btm {
   padding-top: 10%;
   padding-bottom: 15%;
+}
+@media only screen and (max-width: 428px) {
+  section {
+    padding-top: 20%;
+    padding-bottom: 10%;
+    /* background-color: aquamarine; */
+    /* background-color: pink; */
+  }
 }
 @media only screen and (min-width: 1620px) {
   section {

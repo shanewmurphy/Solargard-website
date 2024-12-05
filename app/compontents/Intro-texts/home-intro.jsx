@@ -3,8 +3,8 @@ export default function HomeIntroText() {
     <section>
       <div>
         <div className="bg-grey antialiased">
-          <div className="xxl:w-8/12 xl:w-10/12 lg:w-11/12  md:w-11/12 sm:w-full xxl:px-0 lg:px-24 md:px-16 sm:px-6 mx-auto">
-            <h1 className="text-secondary font-medium xxl:text-4xl xl:text-3xl lg:text-2xl md:text-2xl sm:text-xl">
+          <div className="xxl:w-8/12 xl:w-10/12 lg:w-11/12  md:w-11/12 sm:w-11/12 xxl:px-0 lg:px-24 md:px-16 sm:px-2 mx-auto">
+            <h1 className="text-secondary font-medium xxl:text-4xl xl:text-3xl lg:text-2xl md:text-2xl sm:text-base">
               Solar Gard Solutions Providing Innovative Glass Film Solutions for
               Industrial&#x2C; Commercial&#x2C; and Domestic Applications&#x2C;
               Solar Gard is a leading provider of glass film and surfaces
