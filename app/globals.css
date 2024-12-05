@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-section {
-  padding-top: 7%;
-  padding-bottom: 7%;
-  background-color: #f7f7f7;
-}
-
 a,
 button {
   cursor: pointer !important;
@@ -36,26 +30,4 @@ b {
 .section-spacing-top-btm {
   padding-top: 10%;
   padding-bottom: 15%;
-}
-@media only screen and (max-width: 428px) {
-  section {
-    padding-top: 20%;
-    padding-bottom: 10%;
-    /* background-color: aquamarine; */
-    /* background-color: pink; */
-  }
-}
-@media only screen and (min-width: 1620px) {
-  section {
-    padding-top: 8%;
-    padding-bottom: 8%;
-    /* background-color: pink; */
-  }
-}
-@media only screen and (min-width: 1920px) {
-  section {
-    padding-top: 7%;
-    padding-bottom: 7%;
-    background-color: brown;
-  }
 }

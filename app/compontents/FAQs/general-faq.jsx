@@ -53,9 +53,9 @@ const FAQ = [
 
 export default function GeneralFaqs() {
   return (
-    <div className="bg-grey lg:py-20">
-      <div className="lg:w-8/12 largeScreens:w-7/12 mx-auto">
-        <h3 className="text-center font-bold text-secondary text-4xl mb-6">
+    <div className="bg-grey xxl:py-44 xl:py-36 lg:py-24 md:py-16 sm:py-12">
+      <div className="xxl:w-7/12 xl:w-7/12 lg:w-8/12 md:w-10/12 sm:w-11/12 mx-auto">
+        <h3 className="text-center font-bold text-secondary xxl:text-6xl xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl lg:mb-6">
           Questions & Answers
         </h3>
         <Accordion
@@ -63,25 +63,31 @@ export default function GeneralFaqs() {
             base: "gap-4",
             item: {
               base: "border-divider data-[open=true]:border-divider", // This ensures consistent border color
-              content: "text-xl font-bold text-secondary",
+              content: "font-semibold text-secondary", // Removed Tailwind sizes
+              title: "font-bold", // Removed Tailwind sizes
             },
           }}
           itemClasses={{
             base: "border-b font-semibold border-faq-border antialiased", // This controls the separator line
             trigger:
-              "px-2 py-0 text-2xl text-secondary rounded-lg h-16 flex items-center",
-            indicator: "font-bold",
-            content:
-              "text-base lg:w-11/12 pb-6 text-secondary font-medium px-2",
+              "px-3 py-0 text-secondary rounded-lg h-16 flex items-center", // Removed Tailwind sizes
+            indicator: "font-bold text-2xl",
+            content: "text-secondary font-medium px-2", // Removed Tailwind sizes
           }}
         >
           {FAQ.map((faq) => (
             <AccordionItem
               key={faq.id}
               aria-label={faq.Question}
-              title={faq.Question}
+              title={
+                <span className="lg:text-lg md:text-lg sm:text-sm lg:font-semibold text-secondary">
+                  {faq.Question}
+                </span>
+              }
             >
-              {faq.Answer}
+              <div className="lg:text-base md:text-base sm:text-sm font-medium text-secondary pb-6">
+                {faq.Answer}
+              </div>
             </AccordionItem>
           ))}
         </Accordion>
