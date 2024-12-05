@@ -42,9 +42,9 @@ export default function Home() {
       <div>
         <ContactUs />
       </div>
-      {/* <div>
+      <div>
         <Footer />
-      </div> */}
+      </div>
     </div>
   );
 }
