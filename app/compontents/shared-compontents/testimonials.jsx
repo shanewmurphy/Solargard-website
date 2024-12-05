@@ -53,9 +53,9 @@ export default function Testimonials() {
   const swiperRef = useRef();
   return (
     <div className="w-full bg-grey lg:py-24 md:py-36 sm:py-28">
-      <div className="lg:w-10/12 md:w-10/12 sm:w-11/12 mx-auto antialiased">
+      <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-11/12 sm:w-11/12 mx-auto antialiased">
         <div>
-          <h4 className="text-textLightGray font-bold lg:text-5xl md:text-4xl sm:text-3xl">
+          <h4 className="text-secondary font-bold lg:text-5xl md:text-4xl sm:text-3xl">
             Customers Testimonials
           </h4>
         </div>
@@ -81,7 +81,7 @@ export default function Testimonials() {
                 spaceBetween: 20,
               },
               768: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 20,
               },
               1240: {
@@ -99,16 +99,16 @@ export default function Testimonials() {
                     <div className="lg:mt-8 md:mt-8 sm:mt-6">
                       <div>
                         <div className="">
-                          <p className="text-secondary font-medium lg:text-base md:text-lg sm:text-base pr-8">
+                          <p className="text-secondary font-medium lg:text-base md:text-lg sm:text-sm pr-8">
                             {review.comment}
                           </p>
                         </div>
                         <div className="flex flex-row items-center mt-8">
-                          <div className="">
+                          <div className="flex items-center">
                             <GoogleIcon />
                           </div>
                           <div>
-                            <p className="text-textLightGray font-medium text-lg mt-3 pl-3">
+                            <p className="text-textLightGray font-medium text-lg pl-3">
                               {review.name}
                             </p>
                           </div>
@@ -120,7 +120,7 @@ export default function Testimonials() {
               </div>
             </div>
           </Swiper>
-          <div className="mt-8">
+          <div className="lg:mt-8">
             <div className="flex justify-end">
               <div className="mr-4">
                 <button onClick={() => swiperRef.current.slidePrev()}>

@@ -36,12 +36,12 @@ export default function Home() {
       <div>
         <GeneralFaqs />
       </div>
-      {/* <div>
+      <div>
         <Testimonials />
-      </div> */}
-      {/* <div>
+      </div>
+      <div>
         <ContactUs />
-      </div> */}
+      </div>
       {/* <div>
         <Footer />
       </div> */}
