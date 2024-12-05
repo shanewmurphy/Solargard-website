@@ -12,9 +12,9 @@ export default function HomeIntroText() {
             <b> anti-glare</b>, <b>UV films</b>, reflective films,
             <b> safety films</b>, <b>frosted films</b>, <b>vehicle tinting</b>,
             and <b>manifestations & graphics</b>. We also specialise in
-            <b> vehicle wrapping</b> with custom graphics, and <b>CoverStyl'</b>
-            , a self-adhesive vinyl that offers solution to enhance walls,
-            furniture, and other surfaces.
+            <b> vehicle wrapping</b> with custom graphics, and
+            <b>CoverStyl&apos;</b>, a self-adhesive vinyl that offers solution
+            to enhance walls, furniture, and other surfaces.
           </h1>
         </div>
       </div>
