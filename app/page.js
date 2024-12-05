@@ -30,9 +30,9 @@ export default function Home() {
       <div>
         <OurServices />
       </div>
-      {/* <div>
+      <div>
         <CompanyProfile />
-      </div> */}
+      </div>
       {/* <div>
         <GeneralFaqs />
       </div> */}
