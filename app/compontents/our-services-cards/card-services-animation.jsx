@@ -92,7 +92,7 @@ export default function Home() {
   return (
     <main>
       <div className="min-h-screen bg-grey">
-        <section className="relative">
+        <div className="relative">
           <div className="pin-spacer">
             <div
               ref={containerRef}
@@ -103,7 +103,7 @@ export default function Home() {
               }}
             >
               <Card isFirs>
-                <div className="xxl:w-9/12 lg:w-10/12 md:w-11/12 lg:h-[90vh] md:h-[60vh] sm:h-[70vh] sm:w-11/12 relative">
+                <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-11/12 lg:h-[90vh] md:h-[60vh] sm:h-[70vh] sm:w-11/12 relative">
                   <img
                     className="w-full h-full object-cover rounded-xl lg:flex md:flex sm:hidden"
                     src="/images/card-service-imgs/solar-films-card-service-img-min.jpg"
@@ -114,12 +114,12 @@ export default function Home() {
                     src="/images/card-service-imgs/solar-film-card-service-mobile.jpg"
                   />
                   <div className="absolute bottom-0 flex flex-col items-start lg:px-24 lg:py-[15%] md:px-16 md:py-[10%] sm:px-4 sm:py-[40%]">
-                    <h2 className="lg:text-7xl md:text-6xl sm:text-5xl font-bold text-white">
+                    <h2 className="xxl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl font-bold text-white">
                       Solar Films
                     </h2>
                     <div>
                       <Link href="Solar-Films">
-                        <button className="bg-white hover:bg-secdorny flex items-center text-secondary lg:text-2xl md:text-xl sm:text-lg font-semibold lg:py-4 lg:px-12 md:py-2 md:px-6 sm:py-2 sm:px-6 mt-6 lg:rounded-2xl md:rounded-lg sm:rounded-lg">
+                        <button className="bg-white flex items-center text-secondary lg:text-2xl md:text-xl sm:text-lg font-semibold lg:py-4 lg:px-12 md:py-2 md:px-6 sm:py-2 sm:px-6 mt-6 lg:rounded-2xl md:rounded-lg sm:rounded-lg">
                           View Solar Films
                           <span className="inline-flex items-center pl-4">
                             <NavIcon />
@@ -131,7 +131,7 @@ export default function Home() {
                 </div>
               </Card>
               <Card>
-                <div className="xxl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 lg:h-[90vh] md:h-[60vh] sm:h-[70vh] relative">
+                <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-11/12 sm:w-11/12 lg:h-[90vh] md:h-[60vh] sm:h-[70vh] relative">
                   <img
                     className="w-full h-full object-cover rounded-xl lg:flex md:flex sm:hidden"
                     src="/images/card-service-imgs/car-tinting-b.jpg"
@@ -142,7 +142,7 @@ export default function Home() {
                     src="/images/card-service-imgs/Car-Tint-mobile-img.jpg"
                   />
                   <div className="absolute bottom-0 flex flex-col items-start px-24 py-[15%]">
-                    <h2 className="text-7xl font-bold text-white">
+                    <h2 className="xxl:text-8xl lg:text-7xl font-bold text-white">
                       Vehicle Tinting
                     </h2>
                     <div>
@@ -159,7 +159,7 @@ export default function Home() {
                 </div>
               </Card>
               <Card>
-                <div className="xxl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 lg:h-[90vh] md:h-[60vh] sm:h-[70vh] relative">
+                <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-11/12 sm:w-11/12 lg:h-[90vh] md:h-[60vh] sm:h-[70vh] relative">
                   <img
                     className="w-full h-full object-cover rounded-xl lg:flex md:flex sm:hidden"
                     src="/images/card-service-imgs/coverstyl-card-img.jpg"
@@ -170,7 +170,7 @@ export default function Home() {
                     src="/images/card-service-imgs/coverstyl-mobile-img.jpg"
                   />
                   <div className="absolute bottom-0 flex flex-col items-start px-24 py-[15%]">
-                    <h2 className="text-7xl font-bold text-white">
+                    <h2 className="xxl:text-8xl lg:text-7xl font-bold text-white">
                       CoverStyl&apos;
                     </h2>
                     <div>
@@ -187,7 +187,7 @@ export default function Home() {
                 </div>
               </Card>
               <Card>
-                <div className="xxl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 lg:h-[90vh] md:h-[60vh] sm:h-[70vh]relative">
+                <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-11/12 sm:w-11/12 lg:h-[90vh] md:h-[60vh] sm:h-[70vh]relative">
                   <img
                     className="w-full h-full object-cover rounded-xl lg:flex md:flex sm:hidden"
                     src="/images/card-service-imgs/manifestations-graphics-card-img.jpg"
@@ -198,7 +198,7 @@ export default function Home() {
                     src="/images/card-service-imgs/manifestations-graphics-mobile.jpg"
                   />
                   <div className="absolute bottom-0 flex flex-col items-start px-24 py-[15%]">
-                    <h2 className="text-7xl font-bold text-white">
+                    <h2 className="xxl:text-8xl lg:text-7xl font-bold text-white">
                       Manifestations & Graphics
                     </h2>
                     <div>
@@ -215,7 +215,7 @@ export default function Home() {
                 </div>
               </Card>
               <Card>
-                <div className="xxl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 lg:h-[90vh] md:h-[60vh] sm:h-[70vh] relative">
+                <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-11/12 sm:w-11/12 lg:h-[90vh] md:h-[60vh] sm:h-[70vh] relative">
                   <img
                     className="w-full h-full object-cover rounded-xl lg:flex md:flex sm:hidden"
                     src="/images/card-service-imgs/vehicle-wrapping-card-img.jpg"
@@ -226,7 +226,7 @@ export default function Home() {
                     src="/images/card-service-imgs/vehicle-wrapping-mobile-img.jpg"
                   />
                   <div className="absolute bottom-0 flex flex-col items-start px-24 py-[15%]">
-                    <h2 className="text-7xl font-bold text-white">
+                    <h2 className="xxl:text-8xl lg:text-7xl font-bold text-white">
                       Vehicle Wrapping
                     </h2>
                     <div>
@@ -243,7 +243,7 @@ export default function Home() {
                 </div>
               </Card>
               <Card>
-                <div className="xxl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 lg:h-[90vh] md:h-[60vh] sm:h-[80vh] relative">
+                <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-11/12 sm:w-11/12 lg:h-[90vh] md:h-[60vh] sm:h-[80vh] relative">
                   <img
                     className="w-full h-full object-cover rounded-xl lg:flex md:flex sm:hidden"
                     src="/images/card-service-imgs/privacy-films-card-img.jpg"
@@ -254,7 +254,7 @@ export default function Home() {
                     src="/images/card-service-imgs/privacy-card-mobile-img.jpg"
                   />
                   <div className="absolute bottom-0 flex flex-col items-start px-24 py-[15%]">
-                    <h2 className="text-7xl font-bold text-white">
+                    <h2 className="xxl:text-8xl lg:text-7xl font-bold text-white">
                       Privacy Films
                     </h2>
                     <div>
@@ -272,7 +272,7 @@ export default function Home() {
               </Card>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </main>
   );

@@ -29,7 +29,10 @@ button {
     #d6dae3
   );
 }
-
+b {
+  color: #3872e5;
+  font-weight: 600;
+}
 .section-spacing-top-btm {
   padding-top: 10%;
   padding-bottom: 15%;

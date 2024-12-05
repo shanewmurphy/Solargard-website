@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import BlendedHeroImg from "@/public/images/hero-imgs/Blended_Hero-img-min.jpg";
+import BlendedHeroImg from "@/public/images/hero-imgs/Blended_Hero-img-B-min.jpg";
 import HeroMdImg from "@/public/images/hero-imgs/Hero-homepge_md.jpg";
-import HeroMobileImg from "@/public/images/hero-imgs/hero-mobile.jpg";
+import HeroMobileImg from "@/public/images/hero-imgs/hero-mobile-B.jpg";
 
 export default function HomeHero() {
   return (

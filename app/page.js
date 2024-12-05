@@ -27,9 +27,9 @@ export default function Home() {
       {/* <div>
         <GridServicesNav />
       </div> */}
-      {/* <div>
+      <div>
         <OurServices />
-      </div> */}
+      </div>
       {/* <div>
         <CompanyProfile />
       </div> */}
