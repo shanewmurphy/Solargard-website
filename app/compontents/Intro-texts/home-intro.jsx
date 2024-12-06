@@ -2,7 +2,7 @@ export default function HomeIntroText() {
   return (
     <div>
       <div className="bg-grey relative antialiased">
-        <div className="xxl:w-8/12 xl:w-11/12 lg:w-11/12 md:w-11/12 sm:w-11/12 xxl:px-0 lg:px-24 md:px-16 sm:px-2 xxl:py-44 xl:py-36 lg:py-24 md:py-16 sm:py-12 mx-auto">
+        <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 xxl:py-56 xl:py-40 lg:py-36 md:py-24 sm:py-12 mx-auto">
           <h1 className="text-secondary font-medium xxl:text-4xl xl:text-3xl lg:text-2xl md:text-2xl sm:text-lg">
             Solar Gard Solutions, Ireland Providing Innovative Glass Film
             Solutions for Industrial, Commercial, and Domestic Applications,

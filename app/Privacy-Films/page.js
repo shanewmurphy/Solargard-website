@@ -118,7 +118,7 @@ export default function PrivacyFilmsPage() {
         </div>
       </div>
       <div className="bg-grey">
-        <div className="xxl:w-8/12 xl:w-11/12 lg:w-11/12 md:w-11/12 sm:w-11/12 xxl:px-0 lg:px-24 md:px-16 sm:px-2 xxl:py-44 xl:py-36 lg:py-24 md:py-16 sm:py-12 mx-auto">
+        <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 xxl:py-56 xl:py-40 lg:py-36 md:py-24 sm:py-12 mx-auto">
           <h1 className="text-secondary font-medium xxl:text-4xl xl:text-3xl lg:text-2xl md:text-2xl sm:text-lgo">
             At Solar Gard Solutions, Ireland. our privacy films offer an elegant
             and effective solution for maintaining privacy while still allowing
@@ -191,10 +191,10 @@ export default function PrivacyFilmsPage() {
         <div className="xxl:w-8/12 xl:w-11/12 lg:w-11/12 md:w-11/12 sm:w-11/12 mx-auto lg:py-40">
           <div className="flex lg:flex-row sm:flex-col gap-16">
             <div className="basis-4/12">
-              <h3 className="lg:text-5xl font-bold mt-[20%]">
+              <h3 className="lg:text-5xl md:text-3xl sm:text-3xl font-bold mt-[20%]">
                 Solar Films Vs Frosted Films
               </h3>
-              <h4 className="lg:text-4xl font-semibold text-textLightGray mt-2">
+              <h4 className="lg:text-5xl md:text-3xl sm:text-3xl font-semibold text-textLightGray mt-2">
                 A Comparison
               </h4>
               <h5 className="font-medium text-secondary lg:text-lg mt-[5%]">
@@ -211,7 +211,7 @@ export default function PrivacyFilmsPage() {
                     className="bg-white rounded-lg p-8 antialiased"
                     key={comparison.id}
                   >
-                    <h3 className="lg:text-base md:text-base sm:text-sm font-bold text-secondary">
+                    <h3 className="lg:text-base md:text-4xl sm:text-3xl font-bold text-secondary">
                       {comparison.Type}
                     </h3>
                     <div className="border-b-1 border-gray-300 pb-3 mt-4">
@@ -273,7 +273,7 @@ export default function PrivacyFilmsPage() {
         <div className="xxl:w-8/12 xl:w-11/12 lg:w-11/12 md:w-11/12 sm:w-11/12 mx-auto">
           <div className="flex lg:flex-row md:flex-col sm:flex-col lg:gap-24 md:gap-14 sm:gap-8">
             <div className="basis-1/2">
-              <h3 className="font-bold text-secondary lg:text-5xl md:text-4xl sm:text-3xl">
+              <h3 className="font-bold text-secondary lg:text-5xl md:text-4xl sm:text-4xl">
                 Versatile Use for Any Space
               </h3>
               <h5 className="font-normal text-textLightGray lg:text-base md:text-base sm:text-base mt-6">
