@@ -211,10 +211,10 @@ export default function SolarFilmPage({ params }) {
         </div>
       </div>
       {/* Technical Datasheet And Installation Advice Section */}
-      <div className="bg-grey lg:pb-44">
+      <div className="bg-grey pb-44">
         <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-9/12 sm:w-11/12 mx-auto lg:py-24 antialiased">
           <div className="grid lg:grid-cols-2 gap-16">
-            <div className="bg-white rounded-lg lg:py-6 lg:px-8 md:py-4 md:px-6 sm:px-4 sm:py-8">
+            <div className="bg-white rounded-lg py-6 px-8">
               <h5 className="font-semibold text-secondary lg:text-xl md:text-lg sm:text-xl">
                 Technical Datasheet
               </h5>
@@ -222,7 +222,7 @@ export default function SolarFilmPage({ params }) {
                 Data from a product applied to a clear 3 mm glass (* on double
                 glazing 4-16-4)
               </p>
-              <div className="flex justify-between my-4 lg:pb-4 mt-8 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 mt-8 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Ultraviolet Transmission</h6>
                 </div>
@@ -230,7 +230,7 @@ export default function SolarFilmPage({ params }) {
                   <span>{product.UltravioletTransmission}</span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 lg:pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Visible Light Transmission</h6>
                 </div>
@@ -328,10 +328,10 @@ export default function SolarFilmPage({ params }) {
               </div>
             </div>
             <div className="bg-white rounded-lg py-6 px-8">
-              <h5 className="font-semibold text-secondary lg:text-xl">
+              <h5 className="font-semibold text-secondary lg:text-xl md:text-lg sm:text-xl">
                 Installation Advice
               </h5>
-              <p className="font-normal text-secondary lg:text-sm pt-1">
+              <p className="font-normal text-secondary lg:text-sm md:text-sm sm:text-xs pt-1">
                 Vertical position and standard glass surface**
               </p>
               <div className="flex justify-between my-4 pb-4 mt-8 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">

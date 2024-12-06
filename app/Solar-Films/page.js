@@ -94,7 +94,7 @@ export default function SolarFilms() {
           </div>
         </div>
       </div>
-      <div className="bg-grey  xxl:px-0 lg:py-32 lg:px-24 md:py-32 md:px-16 sm:py-16 sm:px-6 antialiased">
+      <div className="bg-grey  xxl:px-0 lg:py-32 lg:px-24 md:py-32 md:px-16 sm:py-16 sm:px-0 antialiased">
         <div className="xxl:w-8/12 xl:w-11/12 lg:w-11/12 md:w-11/12 sm:w-11/12 mx-auto">
           <h1 className="text-secondary font-medium xxl:text-4xl xl:text-3xl lg:text-2xl md:text-2xl sm:text-lg">
             Discover the power of Solar Gard Solutions, Ireland’s premium solar
