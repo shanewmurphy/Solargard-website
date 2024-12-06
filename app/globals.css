@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-a,
-button {
+a {
   cursor: pointer !important;
 }
 .back-gradient {

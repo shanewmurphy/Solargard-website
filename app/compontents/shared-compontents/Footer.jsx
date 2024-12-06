@@ -13,7 +13,9 @@ export default function Footer() {
             <address className="not-italic font-medium text-base">
               Unit 5, Karlbrook Enterprise Park, <br />
               Doughcloyne Industrial Estate, <br />
-              Wilton, Cork. T12 H593
+              Wilton, Cork, <br />
+              Ireland <br />
+              T12 H593
             </address>
           </div>
           <div className="flex  items-center mt-6">
@@ -147,7 +149,7 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <h3 className="font-normal lg:text-base md:text-base sm:text-sm mt-8 antialiased">
+            <h3 className="font-normal lg:text-base md:text-base sm:text-sm mt-12 antialiased">
               Solar Gard Solutions Ireland specialises in premium glass film
               solutions for residential, commercial, and automotive needs. From
               solar and privacy films to CoverStyl&apos;, car tinting, and
@@ -157,7 +159,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="lg:w-11/12 pb-16 mx-auto text-white border-t-2 border-white">
+      <div className="lg:w-11/12 md:w-11/12 sm:w-11/12 pb-16 mx-auto text-white border-t-2 border-white">
         <h6 className="text-xs font-normal mt-2">
           &copy; {new Date().getFullYear()} All rights reserved.
         </h6>

@@ -82,12 +82,12 @@ export default function CompanyProfile() {
       <div className="w-full bg-grey xxl:py-44 xl:py-36 lg:py-24 md:py-16 sm:py-12">
         <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-11/12 sm:w-11/12 mx-auto">
           <div className="flex flex-row lg:gap-16">
-            <div className="w-9/12 sm:w-11/12">
+            <div className="w-9/12 sm:w-full">
               <h1 className="text-secondary font-bold lg:text-5xl md:text-3xl sm:text-2xl mb-4">
                 Your Experts in Window Films, Surface Enhancement, and Vehicle
                 Tinting Customisation
               </h1>
-              <h2 className="text-textGray font-mdium lg:text-xl md:text-lg sm:text-sm">
+              <h2 className="text-textGray font-medium lg:text-xl md:text-lg sm:text-sm">
                 At Solar Gard Solutions Ireland, we specialise in delivering
                 cutting-edge solutions for windows, interiors, and vehicles.
                 Whether you&apos;re enhancing comfort, upgrading aesthetics,
@@ -102,7 +102,7 @@ export default function CompanyProfile() {
                 <div key={serviceitem.id} className="bg-white p-6 rounded-md">
                   <div className="flex items-center">
                     <span>{serviceitem.icon && <serviceitem.icon />}</span>
-                    <h3 className="text-secondary lg:text-xl md:text-xl sm:text-lg font-bold pl-4">
+                    <h3 className="text-secondary lg:text-xl md:text-xl sm:text-xl font-bold pl-4">
                       {serviceitem.title}
                     </h3>
                   </div>
@@ -123,7 +123,7 @@ export default function CompanyProfile() {
               ))}
             </div>
             <div className="lg:mt-16 md:mt-8 sm:mt-6">
-              <h4 className="font-medium text-textGray lg:text-4xl md:text-2xl sm:text-lg">
+              <h4 className="font-medium text-textGray lg:text-4xl md:text-2xl sm:text-sm">
                 We&apos;re committed to helping you redefine your space—whether
                 it&apos;s your home, office, or vehicle—with solutions that
                 blend practicality, style, and sustainability.

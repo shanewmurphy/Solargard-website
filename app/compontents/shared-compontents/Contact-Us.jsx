@@ -1,7 +1,7 @@
 export default function ContactUs() {
   return (
     <div className="w-full bg-white lg:py-40 md:py-36 sm:py-28">
-      <div className="lg:w-10/12 md:w-10/12 sm:w-11/12 mx-auto antialiased">
+      <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-10/12 sm:w-11/12 mx-auto antialiased">
         <div className="lg:w-7/12">
           <h4 className="text-textGray font-extrabold lg:text-5xl md:text-6xl sm:text-3xl">
             Ready to Get Started? Contact Us Today!
