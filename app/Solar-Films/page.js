@@ -113,7 +113,7 @@ export default function SolarFilms() {
         </h2> */}
         <div>
           <div className="xxl:w-8/12 xl:w-11/12 lg:w-11/12 md:w-11/12 sm:w-11/12  mx-auto antialiased">
-            <div className="grid lg:grid-cols-3 gap-12 largeScreens:gap-20 text-secondary pb-24">
+            <div className="grid lg:grid-cols-3 gap-12 largeScreens:gap-20 text-secondary">
               {BenefitsCardData.map((benefit) => (
                 <div key={benefit.id}>
                   <div className="relative" key={benefit.id}>
@@ -138,13 +138,13 @@ export default function SolarFilms() {
                     </div>
                   </div>
                   <div>
-                    <p className="font-medium lg:text-base md:text-base sm:text-sm lg:mt-2 md:mt-3 sm:mt-4">
+                    <p className="font-medium lg:text-lg md:text-base sm:text-base lg:mt-2 md:mt-3 sm:mt-4">
                       {benefit.description}
                     </p>
                     <h6 className="mt-3 font-bold text-xl antialiased">
                       Benefits
                     </h6>
-                    <p className="text-sm font-medium">{benefit.benefit}</p>
+                    <p className="text-base font-medium">{benefit.benefit}</p>
                   </div>
                 </div>
               ))}
@@ -152,14 +152,14 @@ export default function SolarFilms() {
           </div>
         </div>
       </div>
-      <div className="bg-grey w-full lg:py-40 lg:px-0 md:py-32 md:px-16 sm:py-8 sm:px-0 section-spacing-top-btm">
+      <div className="bg-grey w-full xxl:px-0 lg:px-24 md:px-16 sm:px-2 xxl:py-44 xl:py-36 lg:py-24 md:py-16 sm:py-12">
         <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-11/12 sm:w-11/12 mx-auto">
           <div className="flex text-secondary lg:flex-row md:flex-col sm:flex-col lg:gap-16">
             <div className="basis-2/5">
-              <h3 className="xxl:text-5xl xl:text-4xl lg:text-4xl md:text-xl sm:text-3xl font-bold lg:uppercase">
+              <h3 className="xxl:text-5xl xl:text-4xl lg:text-4xl md:text-2xl sm:text-3xl font-bold lg:uppercase">
                 Facts and Statistics about Solar Films
               </h3>
-              <h4 className="xxl:text-xl xl:text-xl lg:text-xl md:text-2xl sm:text-base font-medium text-textLightGray lg:mt-4 md:mt-2 sm:mt-2 sm:mb-8">
+              <h4 className="xxl:text-xl xl:text-xl lg:text-xl md:text-2xl sm:text-lg font-medium text-textLightGray lg:mt-4 md:mt-2 sm:mt-2 sm:mb-8">
                 Solar films significantly reduce heat gain, lowering the need
                 for air conditioning and cutting down on energy bills
               </h4>
@@ -167,8 +167,8 @@ export default function SolarFilms() {
             <div className="basis-3/5">
               {FactsStatsData.map((factstats) => (
                 <div key={factstats.id}>
-                  <div className="bg-white rounded-lg mb-4 lg:px-8 lg:py-6 md:px-6 md:py-6 sm:p-5">
-                    <div className="flex flex-row sm:flex-col lg:gap-6 md:gap-4 sm:gap-2">
+                  <div className="bg-white rounded-lg mb-4 lg:p-8 md:p-6 sm:p-5">
+                    <div className="flex flex-row sm:flex-col lg:gap-4 md:gap-4 sm:gap-2">
                       <div className="lg:basis-1/5">
                         <div className="flex items-end">
                           <h2 className="lg:text-7xl md:text-5xl sm:text-6xl font-extrabold">
@@ -181,7 +181,7 @@ export default function SolarFilms() {
                         <h3 className="text-xl text-secondary font-semibold">
                           {factstats.title}
                         </h3>
-                        <p className="mt-1 font-medium  text-textGray text-sm">
+                        <p className="mt-1 font-medium  text-textGray text-base">
                           {factstats.description}
                         </p>
                       </div>
@@ -199,7 +199,7 @@ export default function SolarFilms() {
             <Image
               src={EnvironmentalImg}
               fill
-              alt="Solar Gard Ireland Environmental impact of Solar films"
+              alt="Solar Gard Solutions Ireland. Environmental impact of Solar films"
               sizes="100vw"
               style={{
                 objectFit: "cover", // cover, contain, none

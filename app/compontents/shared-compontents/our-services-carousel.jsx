@@ -54,9 +54,9 @@ export default function OurServiceCarousel() {
   const swiperRef = useRef();
   return (
     <div className="w-full bg-grey">
-      <div className="w-11/12 mx-auto py-40">
+      <div className="w-11/12 mx-auto">
         <div>
-          <h3 className="text-secondary font-bold text-4xl mb-6">
+          <h3 className="text-secondary font-bold xxl:text-6xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl mb-6">
             Other products and services we provide
           </h3>
         </div>
@@ -109,7 +109,7 @@ export default function OurServiceCarousel() {
               <div className="mt-2">
                 <div className="flex justify-between">
                   <div>
-                    <h3 className="font-bold text-secondary text-xl">
+                    <h3 className="font-bold text-secondary xxl:text-3xl xl:text-2xl lg:text-xl">
                       {service.title}
                     </h3>
                   </div>
