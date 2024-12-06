@@ -5,7 +5,7 @@ export const SafetyFilmsData = [
     slug: "Super-Clear-2-C",
     category: "Transparent",
     FilmDescription:
-      "Clear 4 XC film secures your windows and prevents broken glass from scattering in the event of an impact. Perfectly transparent and easy to apply.",
+      "Super Clear 2 C film secures your windows and prevents broken glass from scattering in the event of an impact. Perfectly transparent and easy to apply.",
     image: "/images/safety-film-imgs/Super-Clear-2-C-min.jpg",
     EnergyRejectedValue: "14",
     VisibleLightTransValue: "84",

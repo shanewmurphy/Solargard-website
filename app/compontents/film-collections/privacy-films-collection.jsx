@@ -85,7 +85,7 @@ const PrivacyFilmsComponent = () => {
   };
 
   return (
-    <div className="xxl:w-8/12 xl:w-11/12 lg:w-11/12 md:w-11/12 sm:w-11/12 mx-auto antialiased">
+    <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 mx-auto antialiased">
       <div className="lg:px-4 lg:py-16 md:px-4 md:py-12 sm:py-2">
         <div className="lg:w-7/12 lg:mb-14 md:mb-8 sm:mb-6">
           <h2 className="lg:text-5xl md:text-4xl sm:text-2xl lg:mb-4 md:mt-8 sm:mt-12 font-bold text-secondary">

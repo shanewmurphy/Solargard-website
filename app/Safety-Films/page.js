@@ -105,7 +105,7 @@ export default function SafetyFilmsPage() {
               </div>
             </div>
             <div>
-              <h3 className="font-semibold xxl:text-3xl xl:text-3xl lg:text-xl md:text-xl sm:text-base text-secondary xxl:mt-6 lg:mt-4 md:mt-2 sm:mt-3">
+              <h3 className="font-semibold xxl:text-3xl xl:text-2xl lg:text-xl md:text-xl sm:text-base text-secondary xxl:mt-6 lg:mt-4 md:mt-2 sm:mt-3">
                 Safety films are an innovative solution designed to strengthen
                 glass surfaces, reduce the risk of breakage, and protect against
                 accidental or intentional damage. Safety films act as a

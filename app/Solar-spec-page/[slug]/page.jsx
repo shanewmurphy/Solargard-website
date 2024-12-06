@@ -73,7 +73,7 @@ export default function SolarFilmPage({ params }) {
         </div>
       </div>
       <div className="bg-grey">
-        <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-9/12 sm:w-11/12 mx-auto py-24">
+        <div className="xxl:w-8/12 xl:w-9/12 lg:w-9/12 md:w-9/12 sm:w-11/12 mx-auto py-24">
           <div className="grid lg:grid-cols-2 lg:gap-16 md:gap-8 sm:gap-6">
             <div>
               <div className="w-full">

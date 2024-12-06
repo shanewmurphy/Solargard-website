@@ -188,7 +188,7 @@ export default function PrivacyFilmsPage() {
         <PrivacyFilmsComponent />
       </div>
       <div className="bg-grey">
-        <div className="xxl:w-8/12 xl:w-11/12 lg:w-11/12 md:w-11/12 sm:w-11/12 mx-auto lg:py-40">
+        <div className="xxl:w-8/12 xl:w-9/12 lg:w-11/12 md:w-11/12 sm:w-11/12 mx-auto lg:py-40">
           <div className="flex lg:flex-row sm:flex-col gap-16">
             <div className="basis-4/12">
               <h3 className="lg:text-5xl md:text-3xl sm:text-3xl font-bold mt-[20%]">
@@ -270,7 +270,7 @@ export default function PrivacyFilmsPage() {
         </div>
       </div>
       <div className="bg-grey py-40">
-        <div className="xxl:w-8/12 xl:w-11/12 lg:w-11/12 md:w-11/12 sm:w-11/12 mx-auto">
+        <div className="xxl:w-8/12 xl:w-9/12 lg:w-11/12 md:w-11/12 sm:w-11/12 mx-auto">
           <div className="flex lg:flex-row md:flex-col sm:flex-col lg:gap-24 md:gap-14 sm:gap-8">
             <div className="basis-1/2">
               <h3 className="font-bold text-secondary lg:text-5xl md:text-4xl sm:text-4xl">
