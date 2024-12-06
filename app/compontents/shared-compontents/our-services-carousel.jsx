@@ -54,9 +54,9 @@ export default function OurServiceCarousel() {
   const swiperRef = useRef();
   return (
     <div className="w-full bg-grey">
-      <div className="w-11/12 mx-auto">
+      <div className="w-11/12 xxl:px-0 lg:py-32 lg:px-24 md:py-32 md:px-16 sm:py-16 sm:px-6  mx-auto">
         <div>
-          <h3 className="text-secondary font-bold xxl:text-6xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl mb-6">
+          <h3 className="text-secondary font-bold xxl:text-5xl xl:text-4xl lg:text-4xl md:text-3xl sm:text-2xl mb-6">
             Other products and services we provide
           </h3>
         </div>

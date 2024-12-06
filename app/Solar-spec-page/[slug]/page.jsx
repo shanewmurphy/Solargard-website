@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import HeroSolarFilmImg from "/public/images/solar-films-imgs/hero-solar-film-min.jpg";
 import ContactUs from "@/app/compontents/shared-compontents/Contact-Us";
+import Footer from "@/app/compontents/shared-compontents/Footer";
 
 export default function SolarFilmPage({ params }) {
   // Decode the URL-encoded slug
@@ -51,15 +52,17 @@ export default function SolarFilmPage({ params }) {
           />
         </div>
         <div className="absolute inset-0 flex items-center justify-center">
-          <p className="text-white font-bold text-8xl">{product.name}</p>
+          <p className="text-white font-bold xxl:text-6xl lg:text-8xl sm:text-6xl text-center">
+            {product.name}
+          </p>
         </div>
       </div>
-      <div className="bg-secondary w-full py-36 px-16">
-        <div className="w-8/12 mx-auto">
-          <p className="text-white text-center font-medium text-2xl">
+      <div className="bg-secondary w-full lg:py-36 lg:px-16 md:py-16 md:px-6 sm:py-16 sm:px-2">
+        <div className="lg:w-8/12 sm:w-11/12 mx-auto">
+          <p className="text-white text-center font-medium xxl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-base">
             {product.filmDescription}
           </p>
-          <div className="text-center mt-16">
+          <div className="text-center lg:mt-16 md:mt-8 sm:mt-6">
             <button
               onClick={handleDownload}
               className="outline outline-offset-2 outline-1 outline-white text-white font-semibold rounded-sm py-2 px-10 hover:bg-white hover:text-secondary"
@@ -70,8 +73,8 @@ export default function SolarFilmPage({ params }) {
         </div>
       </div>
       <div className="bg-grey">
-        <div className="w-8/12 mx-auto py-24">
-          <div className="grid lg:grid-cols-2 gap-16">
+        <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-9/12 sm:w-11/12 mx-auto py-24">
+          <div className="grid lg:grid-cols-2 lg:gap-16 md:gap-8 sm:gap-6">
             <div>
               <div className="w-full">
                 {/* Energy Rejection details */}
@@ -95,7 +98,7 @@ export default function SolarFilmPage({ params }) {
                     size="lg"
                     aria-label="Loading..."
                     color="secondary"
-                    className="h-3"
+                    className="h-2"
                     value={product.EnergyRejectedValue}
                   />
                 </div>
@@ -125,7 +128,7 @@ export default function SolarFilmPage({ params }) {
                     size="lg"
                     aria-label="Loading..."
                     color="secondary"
-                    className="h-3"
+                    className="h-2"
                     value={product.VisibleLightTransValue}
                   />
                 </div>
@@ -134,7 +137,7 @@ export default function SolarFilmPage({ params }) {
             </div>
           </div>
           {/* Warranty and Fir Rating details */}
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="grid lg:grid-cols-2 lg:gap-16 md:gap-8 sm:gap-6">
             <div>
               <ul className="inline-flex items-center pt-6">
                 <li>
@@ -153,7 +156,7 @@ export default function SolarFilmPage({ params }) {
             </div>
             <div>
               <div>
-                <ul className="inline-flex items-center pt-6">
+                <ul className="inline-flex items-center lg:pt-6">
                   <li>
                     <FireRatingIcon />
                   </li>
@@ -171,7 +174,7 @@ export default function SolarFilmPage({ params }) {
             </div>
           </div>
           {/* Storage and Widths details */}
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="grid lg:grid-cols-2 lg:gap-16 md:gap-8 sm:gap-6">
             <div>
               <ul className="inline-flex items-center pt-6">
                 <li>
@@ -189,7 +192,7 @@ export default function SolarFilmPage({ params }) {
               <div className="border-b-2 border-slate-500 mt-6"></div>
             </div>
             <div>
-              <ul className="inline-flex items-center pt-6">
+              <ul className="inline-flex items-center lg:pt-6">
                 <li>
                   <WidthIcon />
                 </li>
@@ -209,17 +212,17 @@ export default function SolarFilmPage({ params }) {
       </div>
       {/* Technical Datasheet And Installation Advice Section */}
       <div className="bg-grey lg:pb-44">
-        <div className="w-8/12 mx-auto py-24 antialiased">
-          <div className="grid grid-cols-2 gap-16">
-            <div className="bg-white rounded-lg py-6 px-8">
-              <h5 className="font-semibold text-secondary lg:text-xl">
+        <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-9/12 sm:w-11/12 mx-auto lg:py-24 antialiased">
+          <div className="grid lg:grid-cols-2 gap-16">
+            <div className="bg-white rounded-lg lg:py-6 lg:px-8 md:py-4 md:px-6 sm:px-4 sm:py-8">
+              <h5 className="font-semibold text-secondary lg:text-xl md:text-lg sm:text-xl">
                 Technical Datasheet
               </h5>
-              <p className="font-normal text-secondary lg:text-sm pt-1">
+              <p className="font-normal text-secondary text-sm sm:text-xs pt-1">
                 Data from a product applied to a clear 3 mm glass (* on double
                 glazing 4-16-4)
               </p>
-              <div className="flex justify-between my-4 pb-4 mt-8 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 lg:pb-4 mt-8 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Ultraviolet Transmission</h6>
                 </div>
@@ -227,7 +230,7 @@ export default function SolarFilmPage({ params }) {
                   <span>{product.UltravioletTransmission}</span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 lg:pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Visible Light Transmission</h6>
                 </div>
@@ -235,7 +238,7 @@ export default function SolarFilmPage({ params }) {
                   <span>{product.VisibleLightTransmission}</span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Reflection Of External Visible Light</h6>
                 </div>
@@ -243,7 +246,7 @@ export default function SolarFilmPage({ params }) {
                   <span>{product.ReflectionExternalVisibleLight}</span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Reflection Of Internal Visible Light</h6>
                 </div>
@@ -251,7 +254,7 @@ export default function SolarFilmPage({ params }) {
                   <span>{product.ReflectionInternalVisibleLight}</span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Total Solar Energy Rejected</h6>
                 </div>
@@ -259,7 +262,7 @@ export default function SolarFilmPage({ params }) {
                   <span>{product.TotalSolarEnergyRejected}</span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Total Solar Energy Rejected 2*</h6>
                 </div>
@@ -267,7 +270,7 @@ export default function SolarFilmPage({ params }) {
                   <span>{product.TotalSolarEnergyRejected2}</span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Reduction In Solar Glare</h6>
                 </div>
@@ -275,7 +278,7 @@ export default function SolarFilmPage({ params }) {
                   <span>{product.ReductionInSolarGlare}</span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>G-Value</h6>
                 </div>
@@ -283,7 +286,7 @@ export default function SolarFilmPage({ params }) {
                   <span>{product.GValue}</span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Shading Coefficient</h6>
                 </div>
@@ -291,7 +294,7 @@ export default function SolarFilmPage({ params }) {
                   <span>{product.ShadingCoefficient}</span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Installation Type</h6>
                 </div>
@@ -299,7 +302,7 @@ export default function SolarFilmPage({ params }) {
                   <span>{product.InstallationType}</span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Film Composition</h6>
                 </div>
@@ -307,7 +310,7 @@ export default function SolarFilmPage({ params }) {
                   <span>{product.FilmComposition}</span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Thickness</h6>
                 </div>
@@ -315,7 +318,7 @@ export default function SolarFilmPage({ params }) {
                   <span>{product.Thickness}</span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Colour From The Outside</h6>
                 </div>
@@ -331,7 +334,7 @@ export default function SolarFilmPage({ params }) {
               <p className="font-normal text-secondary lg:text-sm pt-1">
                 Vertical position and standard glass surface**
               </p>
-              <div className="flex justify-between my-4 pb-4 mt-8 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 mt-8 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Clear Single Pane</h6>
                 </div>
@@ -341,7 +344,7 @@ export default function SolarFilmPage({ params }) {
                   </span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Tinted Single Pane</h6>
                 </div>
@@ -351,7 +354,7 @@ export default function SolarFilmPage({ params }) {
                   </span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Reflective Tinted Single Pane</h6>
                 </div>
@@ -364,7 +367,7 @@ export default function SolarFilmPage({ params }) {
                   </span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Clear Double Pane</h6>
                 </div>
@@ -374,7 +377,7 @@ export default function SolarFilmPage({ params }) {
                   </span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Tinted Double Pane</h6>
                 </div>
@@ -384,7 +387,7 @@ export default function SolarFilmPage({ params }) {
                   </span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Reflective Tinted Double Pane</h6>
                 </div>
@@ -397,7 +400,7 @@ export default function SolarFilmPage({ params }) {
                   </span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Gas-Filled Double Pane - Low E</h6>
                 </div>
@@ -407,7 +410,7 @@ export default function SolarFilmPage({ params }) {
                   </span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Stadip Ext. Clear Double Pane</h6>
                 </div>
@@ -420,7 +423,7 @@ export default function SolarFilmPage({ params }) {
                   </span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Stadip Int. Clear Double Pane</h6>
                 </div>
@@ -434,7 +437,7 @@ export default function SolarFilmPage({ params }) {
                 </div>
               </div>
               <div className="mt-4">
-                <ul className="inline-flex items-center font-semibold text-secondary lg:text-sm align-middle">
+                <ul className="inline-flex items-center font-semibold text-secondary lg:text-sm md:text-sm sm:text-xs align-middle">
                   <li>
                     <span>
                       <TickMarlIcon />
@@ -444,7 +447,7 @@ export default function SolarFilmPage({ params }) {
                     <h6 className="pl-1">Yes</h6>
                   </li>
                 </ul>
-                <ul className="inline-flex items-center font-semibold text-secondary lg:text-sm align-middle pl-4">
+                <ul className="inline-flex items-center font-semibold text-secondary lg:text-sm md:text-sm sm:text-xs align-middle pl-4">
                   <li>
                     <span>
                       <NoIcon />
@@ -454,7 +457,7 @@ export default function SolarFilmPage({ params }) {
                     <h6 className="pl-2">Not Recommended</h6>
                   </li>
                 </ul>
-                <ul className="inline-flex items-center font-semibold text-secondary lg:text-sm align-middle pl-4">
+                <ul className="inline-flex items-center font-semibold text-secondary lg:text-sm md:text-sm sm:text-xs align-middle pl-4">
                   <li>
                     <span>
                       <CautionIcon />
@@ -476,6 +479,9 @@ export default function SolarFilmPage({ params }) {
       </div>
       <div>
         <ContactUs />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

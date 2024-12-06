@@ -85,7 +85,7 @@ export default function SolarFilms() {
               }}
               className="h-[70vh]"
             />
-            <div className="absolute lg:w-4/5 largeScreens:w-9/12 inset-0 flex items-end justify-start lg:p-24 md:p-12 sm:p-8 largeScreens:p-40 rounded-bl-lg">
+            <div className="absolute lg:w-4/5 inset-0 flex items-end justify-start lg:p-24 md:p-12 sm:p-8 largeScreens:p-40 rounded-bl-lg">
               {/* <h1 className="text-white lg:text-5xl md:text-3xl sm:text-xl largeScreens:text-6xl font-bold">
                 Experience the Ultimate in Comfort and Efficiency with Solar
                 Films
@@ -94,15 +94,17 @@ export default function SolarFilms() {
           </div>
         </div>
       </div>
-      <div className="bg-grey lg:py-32 lg:px-24 md:py-32 md:px-16 sm:py-16 sm:px-6 antialiased">
-        <h1 className="text-secondary font-medium xxl:text-4xl xl:text-3xl lg:text-2xl md:text-2xl sm:text-lg">
-          Discover the power of Solar Gard Solutions, Ireland’s premium solar
-          films, designed to enhance comfort, reduce energy costs, and protect
-          your interiors. Our advanced solar films provide a range of benefits,
-          including heat reduction, anti glare control, and enhanced privacy,
-          making them the ideal solution for residential, commercial, and
-          industrial applications.
-        </h1>
+      <div className="bg-grey  xxl:px-0 lg:py-32 lg:px-24 md:py-32 md:px-16 sm:py-16 sm:px-6 antialiased">
+        <div className="xxl:w-8/12 xl:w-11/12 lg:w-11/12 md:w-11/12 sm:w-11/12 mx-auto">
+          <h1 className="text-secondary font-medium xxl:text-4xl xl:text-3xl lg:text-2xl md:text-2xl sm:text-lg">
+            Discover the power of Solar Gard Solutions, Ireland’s premium solar
+            films, designed to enhance comfort, reduce energy costs, and protect
+            your interiors. Our advanced solar films provide a range of
+            benefits, including heat reduction, anti glare control, and enhanced
+            privacy, making them the ideal solution for residential, commercial,
+            and industrial applications.
+          </h1>
+        </div>
       </div>
       <div className="flex w-full bg-grey">
         <SolarFilmsData />
@@ -112,7 +114,7 @@ export default function SolarFilms() {
           Key Benefits of Solar Films
         </h2> */}
         <div>
-          <div className="xxl:w-8/12 xl:w-11/12 lg:w-11/12 md:w-11/12 sm:w-11/12  mx-auto antialiased">
+          <div className="xxl:w-8/12 xl:w-11/12 lg:w-11/12 md:w-11/12 sm:w-11/12 mx-auto antialiased">
             <div className="grid lg:grid-cols-3 gap-12 largeScreens:gap-20 text-secondary">
               {BenefitsCardData.map((benefit) => (
                 <div key={benefit.id}>
@@ -194,7 +196,7 @@ export default function SolarFilms() {
         </div>
       </div>
       <div>
-        <div className="bg-grey w-full sm:pb-28 section-spacing-top-btm antialiased">
+        <div className="bg-grey w-full xxl:pb-60 sm:pb-28 section-spacing-top-btm antialiased">
           <div className="relative xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-10/12 sm:w-11/12 rounded-xl mx-auto lg:h-[60vh] md:h-[70vh] sm:h-[60vh] overflow-hidden">
             <Image
               src={EnvironmentalImg}
