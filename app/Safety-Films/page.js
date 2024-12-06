@@ -6,6 +6,7 @@ import SafetyFilmsComponent from "../compontents/film-collections/safety-films-c
 import ContactUs from "../compontents/shared-compontents/Contact-Us";
 import OurServiceCarousel from "../compontents/shared-compontents/our-services-carousel";
 import SafetyFAQs from "../compontents/FAQs/safety-flims-faqs";
+import Footer from "../compontents/shared-compontents/Footer";
 
 import SafetyHeroImg from "/public/images/safety-film-imgs/safety-hero-min.jpg";
 import StoreFrontImg from "/public/images/safety-film-imgs/storefront-min.jpg";
@@ -97,14 +98,14 @@ export default function SafetyFilmsPage() {
                   }}
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <h1 className="text-white text-center lg:text-7xl md:text-3xl sm:text-xl largeScreens:text-6xl font-bold">
+                  <h1 className="text-white text-center xxl:text-8xl xl:text-8xl lg:text-7xl md:text-3xl sm:text-5xl font-bold">
                     Benefits of <br /> Safety Films
                   </h1>
                 </div>
               </div>
             </div>
             <div>
-              <h3 className="font-bold xxl:text-3xl xl:text-3xl lg:text-xl text-secondary  xxl:mt-6 lg:mt-4">
+              <h3 className="font-semibold xxl:text-3xl xl:text-3xl lg:text-xl md:text-xl sm:text-sm text-secondary  xxl:mt-6 lg:mt-4 md:mt-2 sm:mt-3">
                 Safety films are an innovative solution designed to strengthen
                 glass surfaces, reduce the risk of breakage, and protect against
                 accidental or intentional damage. Safety films act as a
@@ -112,12 +113,12 @@ export default function SafetyFilmsPage() {
                 security.
               </h3>
               <div>
-                <div className="grid grid-cols-2 gap-16 mt-8">
+                <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 lg:gap-16 md:gap-8 sm:gap-4 mt-16">
                   <div className="border-b-1 border-slate-400 pb-6">
                     <h6 className="font-bold text-secondary lg:text-xl">
                       Break-In Prevention
                     </h6>
-                    <p className="font-medium text-textLightGray">
+                    <p className="font-medium text-textLightGray lg:text-base md:text-base sm:text-sm">
                       Reinforce windows to deter intruders and prevent easy
                       access.
                     </p>
@@ -126,18 +127,18 @@ export default function SafetyFilmsPage() {
                     <h6 className="font-bold text-secondary lg:text-xl">
                       Glass Shatter Protection
                     </h6>
-                    <p className="font-medium text-textLightGray">
+                    <p className="font-medium text-textLightGray lg:text-base md:text-base sm:text-sm">
                       Hold broken glass fragments together, minimising injury
                       risks during accidents or impacts.
                     </p>
                   </div>
                 </div>
-                <div className="grid grid-cols-2 gap-16 mt-8">
+                <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 lg:gap-16 md:gap-8 sm:gap-4 mt-8">
                   <div className="border-b-1 border-slate-400 pb-6">
                     <h6 className="font-bold text-secondary lg:text-xl">
                       Scratch Resistance
                     </h6>
-                    <p className="font-medium text-textLightGray">
+                    <p className="font-medium text-textLightGray lg:text-base md:text-base sm:text-sm">
                       Safeguard your glass from daily wear and tear, keeping it
                       clear and polished.
                     </p>
@@ -146,7 +147,7 @@ export default function SafetyFilmsPage() {
                     <h6 className="font-bold text-secondary lg:text-xl">
                       Graffiti Protection
                     </h6>
-                    <p className="font-medium text-textLightGray">
+                    <p className="font-medium text-textLightGray lg:text-base md:text-base sm:text-sm">
                       Easily remove unwanted marks, paint, or scratches without
                       replacing the glass.
                     </p>
@@ -165,8 +166,11 @@ export default function SafetyFilmsPage() {
         <div>
           <OurServiceCarousel />
         </div>
-        <div className="bg-grey">
+        <div>
           <ContactUs />
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
     </div>
