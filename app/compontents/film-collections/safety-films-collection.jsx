@@ -79,157 +79,159 @@ const SafetyFilmsComponent = () => {
   // console.log("Number of products:", currentProducts.length);
 
   return (
-    <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 py-12 mx-auto antialiased">
-      <div className="">
-        <div className="xxl:w-9/12 lg:w-10/12 md:w-11/12 lg:mb-14 md:mb-8 sm:mb-6">
-          <h2 className="lg:text-5xl md:text-4xl sm:text-2xl lg:mb-4 md:mt-8 sm:mt-12 font-bold text-secondary">
-            Discover Our Range of High-Performance Safety Films
-          </h2>
-          <p className="font-medium text-textGray lg:text-xl sm:mt-2">
-            Your Trusted Partner for Safety Solutions, Versatile Solutions for
-            Every Environment
-          </p>
-        </div>
-
-        {/* Filter Buttons and Listbox for Mobile */}
-        <div className="flex items-center flex-wrap gap-2 mb-8">
-          <div className="lg:flex md:flex sm:hidden">
-            <span>
-              <FilterIcon />
-            </span>
-            <h6 className="text-sm font-medium text-secondary pl-2">
-              Filter |
-            </h6>
+    <div className="bg-grey w-full">
+      <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 py-12 mx-auto antialiased">
+        <div>
+          <div className="xxl:w-9/12 lg:w-10/12 md:w-11/12 lg:mb-14 md:mb-8 sm:mb-6">
+            <h2 className="lg:text-5xl md:text-4xl sm:text-2xl lg:mb-4 md:mt-8 sm:mt-12 font-bold text-secondary">
+              Discover Our Range of High-Performance Safety Films
+            </h2>
+            <p className="font-medium text-textGray lg:text-xl sm:mt-2">
+              Your Trusted Partner for Safety Solutions, Versatile Solutions for
+              Every Environment
+            </p>
           </div>
 
-          {/* Desktop Filter Buttons */}
-          <div className="hidden lg:flex gap-2">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => {
-                  setFilterCategory(category);
-                  setCurrentPage(1); // Reset to first page when filter changes
-                }}
-                className={`px-2 py-1 text-sm font-medium text-secondary rounded-md ${
-                  filterCategory === category
-                    ? "bg-primary text-white"
-                    : "bg-transparent text-gray-700"
-                } hover:bg-primary hover:text-white cursor-pointer`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-          {/* Mobile Listbox for Category Selection */}
-          <div className="w-full lg:hidden">
-            <Select
-              label="Filter Category"
-              placeholder="Select Category"
-              defaultSelectedKeys={["All"]}
-              onSelectionChange={(keys) => {
-                // Changed this
-                const selected = Array.from(keys)[0];
-                setFilterCategory(selected);
-                setCurrentPage(1);
-              }}
-              classNames={{
-                listbox: "text-secondary", // Makes dropdown list text darker
-                trigger: "text-secondary", // Makes selected text darker
-                value: "text-secondary", // Makes value text darker
-              }}
-            >
+          {/* Filter Buttons and Listbox for Mobile */}
+          <div className="flex items-center flex-wrap gap-2 mb-8">
+            <div className="lg:flex md:flex sm:hidden">
+              <span>
+                <FilterIcon />
+              </span>
+              <h6 className="text-sm font-medium text-secondary pl-2">
+                Filter |
+              </h6>
+            </div>
+
+            {/* Desktop Filter Buttons */}
+            <div className="hidden lg:flex gap-2">
               {categories.map((category) => (
-                <SelectItem key={category} value={category}>
+                <button
+                  key={category}
+                  onClick={() => {
+                    setFilterCategory(category);
+                    setCurrentPage(1); // Reset to first page when filter changes
+                  }}
+                  className={`px-2 py-1 text-sm font-medium text-secondary rounded-md ${
+                    filterCategory === category
+                      ? "bg-primary text-white"
+                      : "bg-transparent text-gray-700"
+                  } hover:bg-primary hover:text-white cursor-pointer`}
+                >
                   {category}
-                </SelectItem>
+                </button>
               ))}
-            </Select>
+            </div>
+            {/* Mobile Listbox for Category Selection */}
+            <div className="w-full lg:hidden">
+              <Select
+                label="Filter Category"
+                placeholder="Select Category"
+                defaultSelectedKeys={["All"]}
+                onSelectionChange={(keys) => {
+                  // Changed this
+                  const selected = Array.from(keys)[0];
+                  setFilterCategory(selected);
+                  setCurrentPage(1);
+                }}
+                classNames={{
+                  listbox: "text-secondary", // Makes dropdown list text darker
+                  trigger: "text-secondary", // Makes selected text darker
+                  value: "text-secondary", // Makes value text darker
+                }}
+              >
+                {categories.map((category) => (
+                  <SelectItem key={category} value={category}>
+                    {category}
+                  </SelectItem>
+                ))}
+              </Select>
+            </div>
           </div>
-        </div>
-        {/* Product Cards */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 lg:gap-12 md:gap-6 sm:gap-4">
-          {currentProducts.map((product) => (
-            <Link
-              key={product.id}
-              href={`/safety-spec-page/${encodeURIComponent(product.slug)}`}
-            >
-              <div key={product.id}>
-                <div className="rounded-2xl lg:py-12 md:py-12 sm:py-6 bg-white">
-                  <div className="relative lg:w-36 lg:h-36 md:w-28 md:h-28 sm:w-28 sm:h-28 mx-auto rounded-full">
-                    <Image
-                      src={product.image}
-                      alt={product.name}
-                      layout="fill"
-                      objectFit="cover"
-                      className="rounded-full bg-center bg-cover"
-                    />
-                  </div>
-                  <h3 className="font-semibold text-secondary text-center lg:text-2xl mt-2">
-                    {product.name}
-                  </h3>
-                  <div className="w-9/12 mx-auto mt-8 lg:block md:block sm:hidden">
-                    <div className="inline-flex items-center">
-                      <span>
-                        <SunRejection />
-                      </span>
-                      <h6 className="lg:text-xs text-secondary font-medium pl-2">
-                        Total Solar Energy Rejected
-                      </h6>
-                    </div>
-                    <div className="flex flex-col w-full bg-slate-100 rounded-lg max-w-md">
-                      <Progress
-                        aria-label="Loading..."
-                        size="lg"
-                        className="h-2"
-                        value={product.EnergyRejectedValue}
+          {/* Product Cards */}
+          <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 lg:gap-12 md:gap-6 sm:gap-4">
+            {currentProducts.map((product) => (
+              <Link
+                key={product.id}
+                href={`/safety-spec-page/${encodeURIComponent(product.slug)}`}
+              >
+                <div key={product.id}>
+                  <div className="rounded-2xl lg:py-12 md:py-12 sm:py-6 bg-white">
+                    <div className="relative lg:w-36 lg:h-36 md:w-28 md:h-28 sm:w-28 sm:h-28 mx-auto rounded-full">
+                      <Image
+                        src={product.image}
+                        alt={product.name}
+                        layout="fill"
+                        objectFit="cover"
+                        className="rounded-full bg-center bg-cover"
                       />
                     </div>
-                  </div>
-                  <div className="w-9/12 mx-auto mt-4 lg:block md:block sm:hidden">
-                    <div className="inline-flex items-center">
-                      <span>
-                        <LightTransmission />
-                      </span>
-                      <h6 className="lg:text-xs text-secondary font-medium pl-2">
-                        Visible Light Transmission
-                      </h6>
+                    <h3 className="font-semibold text-secondary text-center lg:text-2xl mt-2">
+                      {product.name}
+                    </h3>
+                    <div className="w-9/12 mx-auto mt-8 lg:block md:block sm:hidden">
+                      <div className="inline-flex items-center">
+                        <span>
+                          <SunRejection />
+                        </span>
+                        <h6 className="lg:text-xs text-secondary font-medium pl-2">
+                          Total Solar Energy Rejected
+                        </h6>
+                      </div>
+                      <div className="flex flex-col w-full bg-slate-100 rounded-lg max-w-md">
+                        <Progress
+                          aria-label="Loading..."
+                          size="lg"
+                          className="h-2"
+                          value={product.EnergyRejectedValue}
+                        />
+                      </div>
                     </div>
-                    <div className="flex flex-col w-full bg-slate-100 rounded-lg max-w-md">
-                      <Progress
-                        size="lg"
-                        aria-label="Loading..."
-                        className="h-2"
-                        value={product.VisibleLightTransValue}
-                      />
+                    <div className="w-9/12 mx-auto mt-4 lg:block md:block sm:hidden">
+                      <div className="inline-flex items-center">
+                        <span>
+                          <LightTransmission />
+                        </span>
+                        <h6 className="lg:text-xs text-secondary font-medium pl-2">
+                          Visible Light Transmission
+                        </h6>
+                      </div>
+                      <div className="flex flex-col w-full bg-slate-100 rounded-lg max-w-md">
+                        <Progress
+                          size="lg"
+                          aria-label="Loading..."
+                          className="h-2"
+                          value={product.VisibleLightTransValue}
+                        />
+                      </div>
+                    </div>
+                    <div className="text-center mt-8 antialiased">
+                      <button className="outline outline-offset-2 outline-1 outline-slate-900 lg:text-sm md:text-sm sm:text-xs text-secondary font-semibold rounded-sm py-1 px-4 hover:bg-slate-900 hover:text-white">
+                        View Specs
+                      </button>
                     </div>
                   </div>
-                  <div className="text-center mt-8 antialiased">
-                    <button className="outline outline-offset-2 outline-1 outline-slate-900 lg:text-sm md:text-sm sm:text-xs text-secondary font-semibold rounded-sm py-1 px-4 hover:bg-slate-900 hover:text-white">
-                      View Specs
-                    </button>
-                  </div>
-                </div>
-                <div>
-                  {/* 
+                  <div>
+                    {/* 
                   <p className="text-sm lg:pt-2">
                     {truncateText(product.filmDescription, 25)}
                   </p>
                   */}
+                  </div>
                 </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-        {/* Pagination */}
-        <div className="mt-16 flex justify-center">
-          <Pagination
-            color="secondary"
-            total={totalPages}
-            initialPage={1}
-            page={currentPage}
-            onChange={handlePageChange}
-          />
+              </Link>
+            ))}
+          </div>
+          {/* Pagination */}
+          <div className="mt-16 flex justify-center">
+            <Pagination
+              color="secondary"
+              total={totalPages}
+              initialPage={1}
+              page={currentPage}
+              onChange={handlePageChange}
+            />
+          </div>
         </div>
       </div>
     </div>

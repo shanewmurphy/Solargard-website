@@ -105,7 +105,7 @@ export default function SafetyFilmsPage() {
               </div>
             </div>
             <div>
-              <h3 className="font-semibold xxl:text-3xl xl:text-3xl lg:text-xl md:text-xl sm:text-sm text-secondary  xxl:mt-6 lg:mt-4 md:mt-2 sm:mt-3">
+              <h3 className="font-semibold xxl:text-3xl xl:text-3xl lg:text-xl md:text-xl sm:text-base text-secondary xxl:mt-6 lg:mt-4 md:mt-2 sm:mt-3">
                 Safety films are an innovative solution designed to strengthen
                 glass surfaces, reduce the risk of breakage, and protect against
                 accidental or intentional damage. Safety films act as a
@@ -113,7 +113,7 @@ export default function SafetyFilmsPage() {
                 security.
               </h3>
               <div>
-                <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 lg:gap-16 md:gap-8 sm:gap-4 mt-16">
+                <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 lg:gap-16 md:gap-8 sm:gap-4 lg:mt-16 md:mt-8 sm:mt-6">
                   <div className="border-b-1 border-slate-400 pb-6">
                     <h6 className="font-bold text-secondary lg:text-xl">
                       Break-In Prevention
@@ -157,7 +157,7 @@ export default function SafetyFilmsPage() {
             </div>
           </div>
         </div>
-        <div className="bg-grey pb-40">
+        <div>
           <SafetyFilmsComponent />
         </div>
         <div>

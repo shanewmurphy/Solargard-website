@@ -48,7 +48,7 @@ const SafetyFAQ = [
 
 export default function SafetyFAQs() {
   return (
-    <div className="bg-grey py-40">
+    <div className="bg-grey w-full xxl:py-56 xl:py-40 lg:py-24 sm:py-12">
       <div className="xxl:w-7/12 xl:w-7/12 lg:w-8/12 md:w-10/12 sm:w-11/12 mx-auto">
         <h3 className="text-center font-bold xxl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl mb-6">
           Safety Films Questions & Answers
