@@ -68,9 +68,9 @@ const PrivacyFAQ = [
 export default function PrivacyFAQs() {
   return (
     <div>
-      <div className="bg-grey lg:py-40">
-        <div className="lg:w-8/12 largeScreens:w-7/12 mx-auto">
-          <h3 className="text-center font-bold text-3xl mb-6">
+      <div className="bg-grey py-40">
+        <div className="xxl:w-7/12 xl:w-7/12 lg:w-8/12 md:w-10/12 sm:w-11/12 mx-auto">
+          <h3 className="text-center font-bold xxl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl mb-6">
             Privacy Films Questions & Answers
           </h3>
           <Accordion
@@ -93,9 +93,15 @@ export default function PrivacyFAQs() {
               <AccordionItem
                 key={faq.id}
                 aria-label={faq.question}
-                title={faq.question}
+                title={
+                  <div className="lg:text-lg md:text-lg sm:text-sm lg:font-semibold text-secondary">
+                    {faq.question}
+                  </div>
+                }
               >
-                {faq.anwser}
+                <div className="lg:text-base md:text-base sm:text-sm font-medium text-secondary pb-6">
+                  {faq.anwser}
+                </div>
               </AccordionItem>
             ))}
           </Accordion>

@@ -5,6 +5,7 @@ import Image from "next/image";
 import PrivacyFilmsComponent from "../compontents/film-collections/privacy-films-collection";
 import ContactUs from "../compontents/shared-compontents/Contact-Us";
 import PrivacyFAQs from "../compontents/FAQs/privacy-faqs";
+import Footer from "../compontents/shared-compontents/Footer";
 
 import PrivacyHeroImg from "/public/images/Privacy-Films-imgs/privacy-hero-img-min.jpg";
 import FrostedImg from "/public/images/Privacy-Films-imgs/Frosted-qualities-img.jpg";
@@ -116,19 +117,21 @@ export default function PrivacyFilmsPage() {
           </div>
         </div>
       </div>
-      <div className="bg-grey lg:py-40">
-        <h1 className="text-secondary font-medium lg:text-3xl largeScreens:text-4xl md:text-2xl sm:text-xl w-10/12 mx-auto">
-          At Solar Gard Ireland, our privacy films offer an elegant and
-          effective solution for maintaining privacy while still allowing
-          natural light to fill your space. Perfect for both residential and
-          commercial settings, our privacy films are designed to enhance
-          security, improve comfort, and add a stylish touch to any window or
-          glass surface.
-        </h1>
+      <div className="bg-grey">
+        <div className="xxl:w-8/12 xl:w-11/12 lg:w-11/12 md:w-11/12 sm:w-11/12 xxl:px-0 lg:px-24 md:px-16 sm:px-2 xxl:py-44 xl:py-36 lg:py-24 md:py-16 sm:py-12 mx-auto">
+          <h1 className="text-secondary font-medium xxl:text-4xl xl:text-3xl lg:text-2xl md:text-2xl sm:text-lgo">
+            At Solar Gard Solutions, Ireland. our privacy films offer an elegant
+            and effective solution for maintaining privacy while still allowing
+            natural light to fill your space. Perfect for both residential and
+            commercial settings, our privacy films are designed to enhance
+            security, improve comfort, and add a stylish touch to any window or
+            glass surface.
+          </h1>
+        </div>
       </div>
       <div className="bg-grey lg:py-40 antialiased">
-        <div className="lg:w-10/12 mx-auto">
-          <div className="grid grid-cols-2 gap-12">
+        <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-11/12 sm:w-11/12 mx-auto">
+          <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-flow-row gap-12">
             {FilmQualitiesData.map((qualities) => (
               <div className="bg-white rounded-lg p-4 pb-16" key={qualities.id}>
                 <div>
@@ -143,18 +146,18 @@ export default function PrivacyFilmsPage() {
                   />
                 </div>
                 <div>
-                  <div className="pl-6 pr-6">
-                    <h3 className="lg:text-3xl font-bold text-secondary mt-6">
+                  <div className="lg:pl-6 lg:pr-6">
+                    <h3 className="lg:text-3xl md:text-2xl sm:text-3xl font-bold text-secondary mt-6">
                       {qualities.filmType}
                     </h3>
-                    <h4 className="lg:text-base text-textGray font-medium">
+                    <h4 className="text-base text-textGray font-medium">
                       {qualities.subtitle}
                     </h4>
                     <div className="border-b-2 border-gray-300 pb-4">
                       <h5 className="lg:text-xl font-semibold text-secondary mt-4">
                         Effectiveness
                       </h5>
-                      <p className="lg:text-base font-medium text-textLightGray pt-0.5">
+                      <p className="lg:text-base md:text-base sm:text-sm font-medium text-textLightGray pt-0.5">
                         {qualities.effectiveness}
                       </p>
                     </div>
@@ -162,7 +165,7 @@ export default function PrivacyFilmsPage() {
                       <h5 className="lg:text-xl font-semibold text-secondary mt-4">
                         Benefits
                       </h5>
-                      <p className="lg:text-base font-medium text-textLightGray pt-0.5">
+                      <p className="lg:text-base md:text-base sm:text-sm font-medium text-textLightGray pt-0.5">
                         {qualities.benefits}
                       </p>
                     </div>
@@ -170,7 +173,7 @@ export default function PrivacyFilmsPage() {
                       <h5 className="lg:text-xl font-semibold text-secondary mt-4">
                         Consideration
                       </h5>
-                      <p className="lg:text-base font-medium text-textLightGray pt-0.5">
+                      <p className="lg:text-base md:text-base sm:text-sm font-medium text-textLightGray pt-0.5">
                         {qualities.consideration}
                       </p>
                     </div>
@@ -185,8 +188,8 @@ export default function PrivacyFilmsPage() {
         <PrivacyFilmsComponent />
       </div>
       <div className="bg-grey">
-        <div className="lg:w-10/12 mx-auto py-40">
-          <div className="flex flex-row gap-16">
+        <div className="xxl:w-8/12 xl:w-11/12 lg:w-11/12 md:w-11/12 sm:w-11/12 mx-auto lg:py-40">
+          <div className="flex lg:flex-row sm:flex-col gap-16">
             <div className="basis-4/12">
               <h3 className="lg:text-5xl font-bold mt-[20%]">
                 Solar Films Vs Frosted Films
@@ -202,13 +205,13 @@ export default function PrivacyFilmsPage() {
               </h5>
             </div>
             <div className="basis-8/12">
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid lg:grid-cols-2 sm:flex-col gap-6">
                 {ComparisonData.map((comparison) => (
                   <div
                     className="bg-white rounded-lg p-8 antialiased"
                     key={comparison.id}
                   >
-                    <h3 className="lg:text-3xl font-bold text-secondary">
+                    <h3 className="lg:text-base md:text-base sm:text-sm font-bold text-secondary">
                       {comparison.Type}
                     </h3>
                     <div className="border-b-1 border-gray-300 pb-3 mt-4">
@@ -267,34 +270,37 @@ export default function PrivacyFilmsPage() {
         </div>
       </div>
       <div className="bg-grey py-40">
-        <div className="lg:w-10/12 mx-auto">
-          <div className="flex flex-row gap-24">
+        <div className="xxl:w-8/12 xl:w-11/12 lg:w-11/12 md:w-11/12 sm:w-11/12 mx-auto">
+          <div className="flex lg:flex-row md:flex-col sm:flex-col lg:gap-24 md:gap-14 sm:gap-8">
             <div className="basis-1/2">
-              <h3 className="font-bold text-secondary lg:text-5xl">
+              <h3 className="font-bold text-secondary lg:text-5xl md:text-4xl sm:text-3xl">
                 Versatile Use for Any Space
               </h3>
-              <h5 className="font-normal text-textLightGray lg:text-base mt-6">
+              <h5 className="font-normal text-textLightGray lg:text-base md:text-base sm:text-base mt-6">
                 At Solar Gard Ireland, we offer a range of privacy films
                 designed to meet diverse needs for residential, commercial, and
                 industrial applications. Our films combine functionality and
                 aesthetics, providing tailored solutions that protect your
                 privacy while enhancing your space.
               </h5>
-              <h6 className="font-medium text-textLightGray lg:text-xl mt-6">
+              <h6 className="font-medium text-textLightGray lg:text-xl md:text-lg sm:text-base mt-6">
                 Contact us today to learn more about our privacy film options
                 and find the perfect solution for your home or business!
               </h6>
             </div>
             <div className="basis-1/2 antialiased">
               {PrivacyUses.map((use) => (
-                <div className="bg-white p-8 mb-6 rounded-lg" key={use.id}>
-                  <div className="flex items-center gap-6">
+                <div
+                  className="bg-white lg:p-8 md:p-6 sm:p-4 mb-6 rounded-lg"
+                  key={use.id}
+                >
+                  <div className="flex items-center lg:gap-6 md:gap-4 sm:gap-4">
                     <div className="w-9">{use.icon && <use.icon />}</div>
                     <div className="pl-6">
-                      <h5 className="font-semibold text-secondary lg:text-2xl">
+                      <h5 className="font-semibold text-secondary lg:text-2xl md:text-xl sm:text-lg">
                         {use.title}
                       </h5>
-                      <p className="font-medium text-textLightGray lg:text-sm">
+                      <p className="font-medium text-textLightGray lg:text-sm md:text-sm sm:text-xs">
                         {use.description}
                       </p>
                     </div>
@@ -310,6 +316,9 @@ export default function PrivacyFilmsPage() {
       </div>
       <div>
         <ContactUs />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
