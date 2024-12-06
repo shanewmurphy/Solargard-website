@@ -8,6 +8,7 @@ import EnvironmentalImg from "/public/images/solar-films-imgs/Environmental-min.
 import OurServiceCarousel from "../compontents/shared-compontents/our-services-carousel";
 import SolarFilmsFAQs from "../compontents/FAQs/solar-film-faqs";
 import ContactUs from "../compontents/shared-compontents/Contact-Us";
+import Footer from "../compontents/shared-compontents/Footer";
 
 const BenefitsCardData = [
   {
@@ -93,11 +94,11 @@ export default function SolarFilms() {
           </div>
         </div>
       </div>
-      <div className="bg-grey lg:py-32 lg:px-24 md:py-32 md:px-16 sm:py-24 sm:px-6 antialiased">
-        <h1 className="text-secondary font-medium lg:text-3xl largeScreens:text-4xl md:text-2xl sm:text-xl largeScreens:w-10/12 xl:mx-auto">
-          Discover the power of Solar Gard Ireland’s premium solar films,
-          designed to enhance comfort, reduce energy costs, and protect your
-          interiors. Our advanced solar films provide a range of benefits,
+      <div className="bg-grey lg:py-32 lg:px-24 md:py-32 md:px-16 sm:py-16 sm:px-6 antialiased">
+        <h1 className="text-secondary font-medium xxl:text-4xl xl:text-3xl lg:text-2xl md:text-2xl sm:text-lg">
+          Discover the power of Solar Gard Solutions, Ireland’s premium solar
+          films, designed to enhance comfort, reduce energy costs, and protect
+          your interiors. Our advanced solar films provide a range of benefits,
           including heat reduction, anti glare control, and enhanced privacy,
           making them the ideal solution for residential, commercial, and
           industrial applications.
@@ -107,11 +108,11 @@ export default function SolarFilms() {
         <SolarFilmsData />
       </div>
       <div className="bg-grey lg:py-32 lg:px-24 md:py-32 md:px-16 sm:py-24 sm:px-0 antialiased">
-        <h2 className="text-secondary text-center font-bold lg:text-4xl md:text-4xl sm:text-xl uppercase lg:mb-8 md:mb-6 sm:mb-4">
+        {/* <h2 className="text-secondary text-center font-bold lg:text-4xl md:text-4xl sm:text-xl uppercase lg:mb-8 md:mb-6 sm:mb-4">
           Key Benefits of Solar Films
-        </h2>
+        </h2> */}
         <div>
-          <div className="lg:w-12/12 largeScreens:w-8/12 md:w-11/12 sm:w-11/12 mx-auto antialiased">
+          <div className="xxl:w-8/12 xl:w-11/12 lg:w-11/12 md:w-11/12 sm:w-11/12  mx-auto antialiased">
             <div className="grid lg:grid-cols-3 gap-12 largeScreens:gap-20 text-secondary pb-24">
               {BenefitsCardData.map((benefit) => (
                 <div key={benefit.id}>
@@ -130,7 +131,7 @@ export default function SolarFilms() {
                       }}
                     />
                     <div
-                      className="absolute inset-0 flex items-end justify-start p-8 text-white largeScreens:text-4xl text-3xl font-bold rounded-bl-lg"
+                      className="absolute inset-0 flex items-end justify-start p-8 text-white text-3xl font-bold rounded-bl-lg"
                       key={benefit.id}
                     >
                       {benefit.title}
@@ -140,7 +141,7 @@ export default function SolarFilms() {
                     <p className="font-medium lg:text-base md:text-base sm:text-sm lg:mt-2 md:mt-3 sm:mt-4">
                       {benefit.description}
                     </p>
-                    <h6 className="mt-3 font-semibold text-base antialiased">
+                    <h6 className="mt-3 font-bold text-xl antialiased">
                       Benefits
                     </h6>
                     <p className="text-sm font-medium">{benefit.benefit}</p>
@@ -152,25 +153,25 @@ export default function SolarFilms() {
         </div>
       </div>
       <div className="bg-grey w-full lg:py-40 lg:px-0 md:py-32 md:px-16 sm:py-8 sm:px-0 section-spacing-top-btm">
-        <div className="largeScreens:w-8/12 lg:w-10/12 w-10/12 mx-auto">
-          <div className="flex text-secondary lg:flex-row sm:flex-col lg:gap-16">
+        <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-11/12 sm:w-11/12 mx-auto">
+          <div className="flex text-secondary lg:flex-row md:flex-col sm:flex-col lg:gap-16">
             <div className="basis-2/5">
-              <h3 className="largeScreens:text-6xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl font-bold uppercase">
+              <h3 className="xxl:text-5xl xl:text-4xl lg:text-4xl md:text-xl sm:text-3xl font-bold lg:uppercase">
                 Facts and Statistics about Solar Films
               </h3>
-              <h4 className="text-2xl text-textLightGray lg:mt-8">
+              <h4 className="xxl:text-xl xl:text-xl lg:text-xl md:text-2xl sm:text-base font-medium text-textLightGray lg:mt-4 md:mt-2 sm:mt-2 sm:mb-8">
                 Solar films significantly reduce heat gain, lowering the need
                 for air conditioning and cutting down on energy bills
               </h4>
             </div>
             <div className="basis-3/5">
               {FactsStatsData.map((factstats) => (
-                <div key={factstats.id} className="fact-item">
-                  <div className="bg-white rounded-lg mb-4 px-8 py-6">
-                    <div className="flex flex-row gap-6">
+                <div key={factstats.id}>
+                  <div className="bg-white rounded-lg mb-4 lg:px-8 lg:py-6 md:px-6 md:py-6 sm:p-5">
+                    <div className="flex flex-row sm:flex-col lg:gap-6 md:gap-4 sm:gap-2">
                       <div className="lg:basis-1/5">
                         <div className="flex items-end">
-                          <h2 className="text-7xl font-extrabold">
+                          <h2 className="lg:text-7xl md:text-5xl sm:text-6xl font-extrabold">
                             {factstats.number}
                           </h2>
                           <span className="font-semibold text-3xl pb-1">%</span>
@@ -180,7 +181,7 @@ export default function SolarFilms() {
                         <h3 className="text-xl text-secondary font-semibold">
                           {factstats.title}
                         </h3>
-                        <p className="mt-1  text-textGray text-sm">
+                        <p className="mt-1 font-medium  text-textGray text-sm">
                           {factstats.description}
                         </p>
                       </div>
@@ -193,8 +194,8 @@ export default function SolarFilms() {
         </div>
       </div>
       <div>
-        <div className="bg-grey w-full section-spacing-top-btm">
-          <div className="relative largeScreens:w-9/12 lg:w-10/12 rounded-xl mx-auto lg:h-[60vh] md:h-[70vh] sm:h-[60vh] overflow-hidden">
+        <div className="bg-grey w-full section-spacing-top-btm antialiased">
+          <div className="relative xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-10/12 sm:w-11/12 rounded-xl mx-auto lg:h-[60vh] md:h-[70vh] sm:h-[60vh] overflow-hidden">
             <Image
               src={EnvironmentalImg}
               fill
@@ -205,11 +206,11 @@ export default function SolarFilms() {
               }}
               className="object-top"
             />
-            <div className="absolute bottom-0 pb-28 lg:pl-20 largeScreens:py-40 largeScreens:pl-40 md:pl-8 sm:pl-6 text-white">
-              <h4 className="lg:text-6xl largeScreens:text-7xl md:text-5xl sm:text-3xl font-bold mb-2">
+            <div className="absolute bottom-0 lg:pb-28 lg:pl-20  md:pl-8 sm:pl-4 sm:pb-14 text-white">
+              <h4 className="lg:text-6xl md:text-5xl sm:text-2xl font-bold mb-2">
                 Environmental Impact
               </h4>
-              <p className="font-medium lg:text-3xl md:text-2xl sm:text-base lg:w-[60%]">
+              <p className="font-medium lg:text-3xl md:text-2xl sm:text-base lg:w-[60%] md:w-[60%] sm:w-[90%]">
                 By improving energy efficiency, Solar Films can contribute to a
                 reduction in a building&apos;s carbon footprint by 10-15% over
                 time.
@@ -226,6 +227,9 @@ export default function SolarFilms() {
       </div>
       <div>
         <ContactUs />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

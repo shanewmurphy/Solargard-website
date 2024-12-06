@@ -80,9 +80,9 @@ export default function GeneralFaqs() {
               key={faq.id}
               aria-label={faq.Question}
               title={
-                <span className="lg:text-lg md:text-lg sm:text-sm lg:font-semibold text-secondary">
+                <div className="lg:text-lg md:text-lg sm:text-sm lg:font-semibold text-secondary">
                   {faq.Question}
-                </span>
+                </div>
               }
             >
               <div className="lg:text-base md:text-base sm:text-sm font-medium text-secondary pb-6">
