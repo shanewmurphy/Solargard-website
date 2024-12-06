@@ -194,7 +194,7 @@ export default function SolarFilms() {
         </div>
       </div>
       <div>
-        <div className="bg-grey w-full section-spacing-top-btm antialiased">
+        <div className="bg-grey w-full sm:pb-28 section-spacing-top-btm antialiased">
           <div className="relative xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-10/12 sm:w-11/12 rounded-xl mx-auto lg:h-[60vh] md:h-[70vh] sm:h-[60vh] overflow-hidden">
             <Image
               src={EnvironmentalImg}
@@ -207,10 +207,10 @@ export default function SolarFilms() {
               className="object-top"
             />
             <div className="absolute bottom-0 lg:pb-28 lg:pl-20  md:pl-8 sm:pl-4 sm:pb-14 text-white">
-              <h4 className="lg:text-6xl md:text-5xl sm:text-2xl font-bold mb-2">
+              <h4 className="lg:text-6xl md:text-5xl sm:text-4xl font-bold mb-2">
                 Environmental Impact
               </h4>
-              <p className="font-medium lg:text-3xl md:text-2xl sm:text-base lg:w-[60%] md:w-[60%] sm:w-[90%]">
+              <p className="font-medium lg:text-3xl md:text-2xl sm:text-xl lg:w-[60%] md:w-[60%] sm:w-[90%]">
                 By improving energy efficiency, Solar Films can contribute to a
                 reduction in a building&apos;s carbon footprint by 10-15% over
                 time.
