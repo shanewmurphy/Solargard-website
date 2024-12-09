@@ -6,6 +6,7 @@ import ManifGraphicsData from "../compontents/film-collections/manifestion-graph
 import OurServiceCarousel from "../compontents/shared-compontents/our-services-carousel";
 import GraphicsManifestationsFAQs from "../compontents/FAQs/manifestations-graphics-faq";
 import ContactUs from "../compontents/shared-compontents/Contact-Us";
+import Footer from "../compontents/shared-compontents/Footer";
 
 import HeroImgTwo from "/public/images/manif-graphics-imgs/manif-graphics-hero-img-B.png";
 import KeyPointOne from "/public/images/manif-graphics-imgs/manifKeyPoint_01.jpg";
@@ -195,6 +196,9 @@ export default function ManifestationGraphicsPage() {
       </section>
       <div>
         <ContactUs />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
