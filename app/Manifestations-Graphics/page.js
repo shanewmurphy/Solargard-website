@@ -67,23 +67,25 @@ export default function ManifestationGraphicsPage() {
           </div>
         </div>
       </div>
-      <div className="bg-grey lg:py-32 lg:px-24 md:py-32 md:px-16 sm:py-24 sm:px-6 antialiased">
-        <h1 className="text-secondary font-medium lg:text-3xl largeScreens:text-4xl md:text-2xl sm:text-xl largeScreens:w-10/12 xl:mx-auto">
-          At Solar Gard Ireland, we specialise in creating custom glass
-          manifestations and graphics that not only enhance the visual appeal of
-          your space but also serve functional purposes like safety, branding,
-          and privacy. Whether you need decorative glass patterns for an office,
-          branding for your storefront, or safety markings for glass partitions,
-          our expert team can design and install high-quality solutions tailored
-          to your needs.
-        </h1>
+      <div className="bg-grey antialiased">
+        <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 xxl:py-56 xl:py-40 lg:py-36 md:py-24 sm:py-12 mx-auto">
+          <h1 className="text-secondary font-medium xxl:text-4xl xl:text-3xl lg:text-2xl md:text-2xl sm:text-lg">
+            At Solar Gard Ireland, we specialise in creating custom glass
+            manifestations and graphics that not only enhance the visual appeal
+            of your space but also serve functional purposes like safety,
+            branding, and privacy. Whether you need decorative glass patterns
+            for an office, branding for your storefront, or safety markings for
+            glass partitions, our expert team can design and install
+            high-quality solutions tailored to your needs.
+          </h1>
+        </div>
       </div>
       <div>
         <ManifGraphicsData />
       </div>
       <div className="w-full bg-grey lg:py-40">
-        <div className="lg:w-11/12 mx-auto">
-          <div className="grid grid-cols-3 gap-8 antialiased">
+        <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-9/12 sm:w-11/12 mx-auto">
+          <div className="grid lg:grid-cols-3 gap-8 sm:pt-40 antialiased">
             {KeyPoints.map((point) => (
               <div className="bg-white rounded-md p-4 pb-16" key={point.id}>
                 <div className="flex items-center">
@@ -100,7 +102,7 @@ export default function ManifestationGraphicsPage() {
                   />
                 </div>
                 <div>
-                  <h5 className="font-semibold text-secondary lg:text-2xl mt-5">
+                  <h5 className="font-semibold text-secondary lg:text-2xl md:text-xl sm:text-xl mt-5">
                     {point.title}
                   </h5>
                   <p className="lg:text-sm font-medium text-textLightGray mt-2">
@@ -113,8 +115,8 @@ export default function ManifestationGraphicsPage() {
         </div>
       </div>
       <div className="w-full bg-grey lg:py-40 antialiased">
-        <div className="lg:w-11/12 mx-auto">
-          <div className="flex flex-col-2 gap-24">
+        <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-9/12 sm:w-11/12 mx-auto">
+          <div className="flex lg:flex-row md:flex-cols sm:flex-col xxl:gap-24 lg:gap-16 sm:pt-24">
             <div className="basis-3/4">
               <Image
                 src={WhyChooseUs}
@@ -124,8 +126,9 @@ export default function ManifestationGraphicsPage() {
               />
             </div>
             <div>
-              <h3 className="font-bold text-secondary lg:text-4xl w-[75%]">
-                Choose Solar Gard Ireland for Your Manifestations & Graphics
+              <h3 className="font-bold text-secondary xxl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-2xl lg:w-[75%] sm:mt-4">
+                Choose Solar Gard Solutions, Ireland for Your Manifestations &
+                Graphics
               </h3>
               <div className="basis-1/4">
                 <div className="flex items-start space-x-3 mt-8">
@@ -133,8 +136,10 @@ export default function ManifestationGraphicsPage() {
                     <CustomDesignsIcon />
                   </span>
                   <div>
-                    <h5 className="text-2xl font-bold">Custom Designs</h5>
-                    <p className="text-gray-600 font-medium text-base lg:w-[80%]">
+                    <h5 className="xxl:text-2xl xl:text-xl lg:text-lg md:text-lg sm:text-xl font-bold">
+                      Custom Designs
+                    </h5>
+                    <p className="text-gray-600 font-medium text-base sm:text-sm lg:w-[80%]">
                       Enhance privacy in bedrooms, bathrooms, and living areas
                       without sacrificing natural light.
                     </p>
@@ -145,10 +150,10 @@ export default function ManifestationGraphicsPage() {
                     <MaterialsIcon />
                   </span>
                   <div>
-                    <h5 className="text-2xl font-bold">
+                    <h5 className="xxl:text-2xl xl:text-xl lg:text-lg md:text-lg sm:text-xl font-bold">
                       High-Quality Materials
                     </h5>
-                    <p className="text-gray-600 font-medium text-base lg:w-[80%]">
+                    <p className="text-gray-600 font-medium text-base sm:text-sm lg:w-[80%]">
                       We use durable, high-quality materials that ensure your
                       graphics look great and last for years, even in
                       high-traffic areas.
@@ -160,8 +165,10 @@ export default function ManifestationGraphicsPage() {
                     <ExpertIcon />
                   </span>
                   <div>
-                    <h5 className="text-2xl font-bold">Expert Installation</h5>
-                    <p className="text-gray-600 font-medium text-base lg:w-[80%]">
+                    <h5 className="xxl:text-2xl xl:text-xl lg:text-lg md:text-lg sm:text-xl font-bold">
+                      Expert Installation
+                    </h5>
+                    <p className="text-gray-600 font-medium text-base sm:text-sm lg:w-[80%]">
                       With years of experience, our team provides professional
                       installation, ensuring your manifestations and graphics
                       are applied flawlessly and with precision.
@@ -169,7 +176,7 @@ export default function ManifestationGraphicsPage() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-secondary font-bold lg:text-2xl mt-12">
+                  <h3 className="text-secondary font-bold lg:text-xl lg:mt-12 md:mt-6 sm:mt-4">
                     Ready to elevate your space with custom glass manifestations
                     and graphics? Contact us today to discuss your project, and
                     let’s bring your vision to life.

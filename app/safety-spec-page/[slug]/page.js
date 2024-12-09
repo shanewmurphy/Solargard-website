@@ -42,7 +42,7 @@ export default function SafetyFilmSpecPage({ params }) {
           />
         </div>
         <div className="absolute inset-0 flex items-center justify-center">
-          <p className="text-white font-bold xxl:text-6xl lg:text-8xl sm:text-6xl">
+          <p className="text-white font-bold xxl:text-9xl xl:text-7xl lg:text-8xl sm:text-6xl">
             {product.name}
           </p>
         </div>

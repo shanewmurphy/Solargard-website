@@ -15,6 +15,7 @@ export default function HomeHero() {
           placeholder="blur"
           quality={100}
           sizes="100vw"
+          priority
           // Make the image display full width
           style={{
             width: "100%",
