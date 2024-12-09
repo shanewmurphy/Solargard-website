@@ -7,11 +7,10 @@ import OurServiceCarousel from "../compontents/shared-compontents/our-services-c
 import ContactUs from "../compontents/shared-compontents/Contact-Us";
 import Footer from "../compontents/shared-compontents/Footer";
 
-import CoverStylHeroImg from "/public/images/coverstyl/Coverstyl-hero-min.jpg";
 import CostEffective from "/public/images/coverstyl/Cost-Effective.jpg";
 import VersatileDurable from "/public/images/coverstyl/Versatile-Durable.jpg";
 import Finishes from "/public/images/coverstyl/Finishes.jpg";
-import KitchenImg from "/public/images/coverstyl/Coverstyl-Kitchen.jpg";
+import KitchenImg from "/public/images/coverstyl/Coverstyl-kitchen.jpg";
 
 import Furniture from "/public/images/coverstyl/Furniture.jpg";
 import WallCoverings from "/public/images/coverstyl/Wall-Coverings.jpg";
@@ -127,10 +126,10 @@ export default function CoverstylePage() {
           >
             <div className="flex lg:flex-row md:flex-row sm:flex-col mb-8 lg:p-16 md:p-8 sm:p-6 lg:gap-24 md:gap-8 sm:gap-6">
               <div className="basis-3/5 lg:pt-[22%] md:pt-[10%]">
-                <h2 className="font-bold text-secondary lg:text-4xl md:text-2xl sm:text-xl antialiased">
+                <h2 className="font-bold text-secondary xxl:text-5xl lg:text-4xl md:text-2xl sm:text-xl antialiased">
                   {reason.title}
                 </h2>
-                <p className="font-medium text-textLightGray lg:text-base md:text-sm sm:text-sm mt-4 antialiased">
+                <p className="font-medium text-textLightGray xxl:text-xl lg:text-base md:text-sm sm:text-sm mt-4 antialiased">
                   {reason.description}
                 </p>
               </div>
@@ -178,12 +177,12 @@ export default function CoverstylePage() {
           </div>
           <div className="grid lg:grid-cols-2 lg:gap-16 md:gap-8 sm:gap-6 antialiased mt-8">
             <div>
-              <h3 className="font-bold text-secondary lg:text-lg md:text-xl sm:text-base">
+              <h3 className="font-bold text-secondary xxl:text-xl lg:text-lg md:text-xl sm:text-base">
                 CoverStyl&rsquo; is not only a budget-friendly solution but also
                 a smart investment for businesses and homeowners looking to
                 transform their space efficiently and economically.
               </h3>
-              <p className="font-medium text-textLightGray text-base sm:text-sm mt-4">
+              <p className="font-medium text-textLightGray xxl:text-base text-base sm:text-sm mt-4">
                 Why spend a fortune on replacing furniture, walls, or surfaces
                 when you can achieve a brand-new look with CoverStyl&rsquo; at a
                 fraction of the cost? Traditional renovations often involve high
