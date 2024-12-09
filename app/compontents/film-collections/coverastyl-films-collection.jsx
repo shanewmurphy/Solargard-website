@@ -104,9 +104,9 @@ export default function CoverstylFilmComponent() {
   const currentItems = CoverStylData.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="">
       <div className="bg-grey w-full">
-        <div className="lg:w-8/12 lg:mb-14 md:mb-8 sm:mb-6">
+        <div className="lg:mb-14 md:mb-8 sm:mb-6">
           <h2 className="lg:text-5xl md:text-4xl sm:text-2xl lg:mb-4 md:mt-8 sm:mt-12 font-bold text-secondary">
             Explore Our Range of CoverStyl&rsquo;
           </h2>
@@ -124,11 +124,11 @@ export default function CoverstylFilmComponent() {
                   w-[calc(50%-8px)] sm:w-[calc(50%-8px)] 
                   md:w-[calc(33.333%-12px)] xl:w-[calc(25%-12px)]"
             >
-              <div className="h-52 w-52 mx-auto mb-4">
+              <div className="lg:h-52 lg:w-52 md:h-36 md:w-36 sm:h-24 sm:w-24 mx-auto mb-4">
                 <img
                   src={product.productImage}
                   alt={product.productName}
-                  className="rounded-full h-52 w-52"
+                  className="rounded-full lg:h-52 lg:w-52 md:h-36 md:w-36 sm:h-24 sm:w-24"
                 />
               </div>
 

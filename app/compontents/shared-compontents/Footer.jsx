@@ -6,10 +6,10 @@ export default function Footer() {
     <div className="w-full bg-secondary antialiased">
       <div className="flex lg:flex-row md:flex-col sm:flex-col lg:gap-16 text-white lg:py-24 lg:px-24 md:py-16 md:px-8 sm:py-16 sm:px-6">
         <div className="basis-2/5">
-          <div className="">
+          <div>
             <LogoWhite />
           </div>
-          <div className="lg:mt-1 md:mt-2 sm:mt-4">
+          <div className="lg:mt-1 md:mt-2 sm:mt-2">
             <address className="not-italic font-medium text-base">
               Unit 5, Karlbrook Enterprise Park, <br />
               Doughcloyne Industrial Estate, <br />
@@ -18,7 +18,7 @@ export default function Footer() {
               T12 H593
             </address>
           </div>
-          <div className="flex  items-center mt-6">
+          <div className="flex items-center lg:mt-6 md:mt-3 sm:mt-6">
             <span>
               <PhoneIcon />
             </span>
@@ -171,11 +171,12 @@ export default function Footer() {
 function LogoWhite() {
   return (
     <svg
-      width="346"
+      width="300"
       height="50"
       viewBox="0 0 346 50"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="lg:w-72 md:w-80 sm:w-56"
     >
       <g clipPath="url(#clip0_957_34867)">
         <path

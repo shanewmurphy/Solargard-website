@@ -6,6 +6,7 @@ import Image from "next/image";
 
 import ManifestGraphicsHero from "/public/images/manif-graphics-imgs/manif-graphics-hero.jpg";
 import ContactUs from "@/app/compontents/shared-compontents/Contact-Us";
+import Footer from "@/app/compontents/shared-compontents/Footer";
 
 export default function ManifestationGraphicSpecPage({ params }) {
   // Decode the URL-encoded slug
@@ -481,6 +482,9 @@ export default function ManifestationGraphicSpecPage({ params }) {
       </div>
       <div>
         <ContactUs />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

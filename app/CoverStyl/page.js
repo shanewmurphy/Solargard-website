@@ -5,11 +5,13 @@ import CoverstylFilmComponent from "../compontents/film-collections/coverastyl-f
 import CoverStylFAQs from "../compontents/FAQs/coverstyl-faqs";
 import OurServiceCarousel from "../compontents/shared-compontents/our-services-carousel";
 import ContactUs from "../compontents/shared-compontents/Contact-Us";
+import Footer from "../compontents/shared-compontents/Footer";
 
 import CoverStylHeroImg from "/public/images/coverstyl/Coverstyl-hero-min.jpg";
 import CostEffective from "/public/images/coverstyl/Cost-Effective.jpg";
 import VersatileDurable from "/public/images/coverstyl/Versatile-Durable.jpg";
 import Finishes from "/public/images/coverstyl/Finishes.jpg";
+import KitchenImg from "/public/images/coverstyl/Coverstyl-Kitchen.jpg";
 
 import Furniture from "/public/images/coverstyl/Furniture.jpg";
 import WallCoverings from "/public/images/coverstyl/Wall-Coverings.jpg";
@@ -76,7 +78,7 @@ export default function CoverstylePage() {
       <div className="flex flex-col w-full">
         <div className="relative">
           <Image
-            src={CoverStylHeroImg}
+            src={CoverstylOffice}
             alt="Solar Gard CoverStyl'"
             sizes="100vw"
             placeholder="blur"
@@ -84,38 +86,51 @@ export default function CoverstylePage() {
               width: "100%",
               objectFit: "cover",
             }}
-            className="h-[65vh]"
+            className="h-[80vh]"
           />
-          <div className="absolute lg:w-4/5 largeScreens:w-9/12 inset-0 flex items-end justify-start lg:p-24 md:p-12 sm:p-8 largeScreens:p-40 rounded-bl-lg">
-            {/* <h1 className="text-white lg:text-5xl md:text-3xl sm:text-xl largeScreens:text-6xl font-bold">
-                Experience the Ultimate in Comfort and Efficiency with Solar
-                Films
-              </h1> */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center space-y-2">
+            <h2 className="text-white text-center xxl:text-8xl xl:text-8xl lg:text-7xl md:text-3xl sm:text-5xl font-bold">
+              CoverStyl&rsquo;
+            </h2>
+            <h3 className="text-white text-center font-semibold xxl:text-5xl xl:text-4xl lg:text-4xl md:text-3xl sm:text-xl">
+              Cost-Effective Renovation Solution
+            </h3>
           </div>
         </div>
       </div>
-      <div className="bg-grey lg:py-40">
-        <h1 className="text-secondary font-medium lg:text-3xl largeScreens:text-4xl md:text-2xl sm:text-xl w-10/12 mx-auto">
-          Looking to refresh your space without the hassle of a full renovation?
-          Solar Gard Ireland offers CoverStyl&rsquo;, an innovative
-          self-adhesive vinyl film that transforms walls, furniture, and
-          surfaces quickly and affordably. With over 500 stunning finishes to
-          choose from—ranging from wood and marble to metallic and fabric
-          textures—CoverStyl&rsquo; brings new life to your interiors while
-          being eco-friendly and cost-effective. Whether you&apos;re renovating
-          a commercial space or updating your home&apos;s decor,
-          CoverStyl&rsquo; is the perfect solution for a sleek, modern look.
-        </h1>
+      <div className="bg-grey">
+        <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 xxl:py-56 xl:py-40 lg:py-36 md:py-24 sm:py-12 mx-auto">
+          <div>
+            <h1 className="text-secondary font-medium xxl:text-4xl xl:text-3xl lg:text-2xl md:text-2xl sm:text-lg">
+              Looking to refresh your space without the hassle of a full
+              renovation? Solar Gard Ireland offers CoverStyl&rsquo;, an
+              innovative self-adhesive vinyl film that transforms walls,
+              furniture, and surfaces quickly and affordably. With over 500
+              stunning finishes to choose from—ranging from wood and marble to
+              metallic and fabric textures—CoverStyl&rsquo; brings new life to
+              your interiors while being eco-friendly and cost-effective.
+              Whether you&apos;re renovating a commercial space or updating your
+              home&apos;s decor, CoverStyl&rsquo; is the perfect solution for a
+              sleek, modern look.
+            </h1>
+          </div>
+        </div>
       </div>
-      <div className="lg:w-10/12 py-20 mx-auto">
+      <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 mx-auto">
+        <CoverstylFilmComponent />
+      </div>
+      <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 xxl:py-56 xl:py-40 lg:py-36 md:py-24 sm:py-12 mx-auto">
         {WhyCoverstyl.map((reason) => (
-          <div className="bg-white rounded-xl antialiased" key={reason.id}>
-            <div className="flex flex-row mb-8 p-16 gap-24">
-              <div className="basis-3/5 pt-[22%]">
-                <h2 className="font-bold text-secondary lg:text-4xl antialiased">
+          <div
+            className="bg-white lg:rounded-xl md:rounded-3xl sm:rounded-3xl antialiased"
+            key={reason.id}
+          >
+            <div className="flex lg:flex-row md:flex-row sm:flex-col mb-8 lg:p-16 md:p-8 sm:p-6 lg:gap-24 md:gap-8 sm:gap-6">
+              <div className="basis-3/5 lg:pt-[22%] md:pt-[10%]">
+                <h2 className="font-bold text-secondary lg:text-4xl md:text-2xl sm:text-xl antialiased">
                   {reason.title}
                 </h2>
-                <p className="font-medium text-textLightGray lg:text-base mt-4 antialiased">
+                <p className="font-medium text-textLightGray lg:text-base md:text-sm sm:text-sm mt-4 antialiased">
                   {reason.description}
                 </p>
               </div>
@@ -136,42 +151,39 @@ export default function CoverstylePage() {
           </div>
         ))}
       </div>
-      <div className="lg:w-10/12 py-20 mx-auto">
-        <CoverstylFilmComponent />
-      </div>
-      <section className="bg-grey py-40">
-        <div className="lg:w-10/12 mx-auto">
+      <section className="bg-grey antialiased">
+        <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 xxl:py-56 xl:py-40 lg:py-36 md:py-24 sm:py-12 mx-auto">
           <div className="flex flex-col w-full">
             <div className="relative">
               <Image
-                src={CoverstylOffice}
+                src={KitchenImg}
                 alt="Solar Gard Privacy Films"
                 sizes="100vw"
                 placeholder="blur"
-                className="rounded-lg h-[80vh] bg-bottom"
+                className="rounded-3xl h-[80vh] bg-bottom"
                 style={{
                   width: "100%",
                   objectFit: "cover",
                 }}
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center space-y-2">
-                <h2 className="text-white text-center lg:text-8xl md:text-3xl sm:text-xl largeScreens:text-6xl font-bold">
+                <h2 className="text-white text-center lg:text-8xl md:text-3xl sm:text-5xl largeScreens:text-6xl font-bold">
                   CoverStyl&rsquo;
                 </h2>
-                <h3 className="text-white text-center font-semibold lg:text-4xl">
+                <h3 className="text-white text-center font-semibold lg:text-4xl md:text-3xl sm:text-2xl">
                   Cost-Effective Renovation Solution
                 </h3>
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-16 antialiased mt-8">
+          <div className="grid lg:grid-cols-2 lg:gap-16 md:gap-8 sm:gap-6 antialiased mt-8">
             <div>
-              <h3 className="font-bold text-secondary lg:text-lg">
+              <h3 className="font-bold text-secondary lg:text-lg md:text-xl sm:text-base">
                 CoverStyl&rsquo; is not only a budget-friendly solution but also
                 a smart investment for businesses and homeowners looking to
-                transform their space efficiently and economicall
+                transform their space efficiently and economically.
               </h3>
-              <p className="font-medium text-textLightGray lg:text-base mt-4">
+              <p className="font-medium text-textLightGray text-base sm:text-sm mt-4">
                 Why spend a fortune on replacing furniture, walls, or surfaces
                 when you can achieve a brand-new look with CoverStyl&rsquo; at a
                 fraction of the cost? Traditional renovations often involve high
@@ -215,6 +227,9 @@ export default function CoverstylePage() {
       <section>
         <ContactUs />
       </section>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
