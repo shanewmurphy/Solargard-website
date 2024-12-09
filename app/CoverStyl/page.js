@@ -118,38 +118,6 @@ export default function CoverstylePage() {
       <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 mx-auto">
         <CoverstylFilmComponent />
       </div>
-      <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 xxl:py-56 xl:py-40 lg:py-36 md:py-24 sm:py-12 mx-auto">
-        {WhyCoverstyl.map((reason) => (
-          <div
-            className="bg-white lg:rounded-xl md:rounded-3xl sm:rounded-3xl antialiased"
-            key={reason.id}
-          >
-            <div className="flex lg:flex-row md:flex-row sm:flex-col mb-8 lg:p-16 md:p-8 sm:p-6 lg:gap-24 md:gap-8 sm:gap-6">
-              <div className="basis-3/5 lg:pt-[22%] md:pt-[10%]">
-                <h2 className="font-bold text-secondary xxl:text-5xl lg:text-4xl md:text-2xl sm:text-xl antialiased">
-                  {reason.title}
-                </h2>
-                <p className="font-medium text-textLightGray xxl:text-xl lg:text-base md:text-sm sm:text-sm mt-4 antialiased">
-                  {reason.description}
-                </p>
-              </div>
-              <div className="basis-2/5">
-                <Image
-                  src={reason.image}
-                  className="rounded-2xl"
-                  alt="Solar Gard CoverStyl'"
-                  sizes="100vw"
-                  placeholder="blur"
-                  style={{
-                    width: "100%",
-                    objectFit: "cover",
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
       <section className="bg-grey antialiased">
         <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 xxl:py-56 xl:py-40 lg:py-36 md:py-24 sm:py-12 mx-auto">
           <div className="flex flex-col w-full">
@@ -217,6 +185,39 @@ export default function CoverstylePage() {
           </div>
         </div>
       </section>
+      <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 xxl:py-56 xl:py-40 lg:py-36 md:py-24 sm:py-32 mx-auto">
+        {WhyCoverstyl.map((reason) => (
+          <div
+            className="bg-white lg:rounded-xl md:rounded-3xl sm:rounded-3xl antialiased"
+            key={reason.id}
+          >
+            <div className="flex lg:flex-row md:flex-row sm:flex-col mb-8 lg:p-16 md:p-8 sm:p-6 lg:gap-24 md:gap-8 sm:gap-6">
+              <div className="basis-3/5 lg:pt-[22%] md:pt-[10%]">
+                <h2 className="font-bold text-secondary xxl:text-5xl lg:text-4xl md:text-2xl sm:text-2xl antialiased">
+                  {reason.title}
+                </h2>
+                <p className="font-medium text-textLightGray xxl:text-xl lg:text-base md:text-sm sm:text-sm lg:mt-4 md:mt-3 sm:mt-2 antialiased">
+                  {reason.description}
+                </p>
+              </div>
+              <div className="basis-2/5">
+                <Image
+                  src={reason.image}
+                  className="rounded-2xl"
+                  alt="Solar Gard CoverStyl'"
+                  sizes="100vw"
+                  placeholder="blur"
+                  style={{
+                    width: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
       <section>
         <CoverStylFAQs />
       </section>
