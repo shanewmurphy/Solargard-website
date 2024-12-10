@@ -1,11 +1,18 @@
+"use client";
+import MobileSlideMenu from "./mobile-slideout-menu";
+
 export default function MobileNav() {
   return (
     <div className="xxl:hidden xl:hidden lg:hidden md:flex sm:flex absolute z-20 top-16 items-center sm:w-11/12 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-      <div className="h-12 w-full flex justify-between items-center px-4 mx-auto bg-white rounded-3xl">
+      <div className="h-14 w-full flex justify-between items-center px-4 mx-auto bg-white rounded-3xl">
         <div>
-          <MobileLogo />
+          <a href="/">
+            <MobileLogo />
+          </a>
         </div>
-        <div>Menu</div>
+        <div>
+          <MobileSlideMenu />
+        </div>
       </div>
     </div>
   );
@@ -89,8 +96,8 @@ function MobileLogo() {
           y2="22.0474"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00DBDE" />
-          <stop offset="0.96" stop-color="#FC00FF" />
+          <stop stopColor="#00DBDE" />
+          <stop offset="0.96" stopColor="#FC00FF" />
         </linearGradient>
         <clipPath id="clip0_1019_34948">
           <rect
