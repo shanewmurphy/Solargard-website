@@ -6,6 +6,7 @@ import PrivacyFilmsComponent from "../compontents/film-collections/privacy-films
 import ContactUs from "../compontents/shared-compontents/Contact-Us";
 import PrivacyFAQs from "../compontents/FAQs/privacy-faqs";
 import Footer from "../compontents/shared-compontents/Footer";
+import OurServiceCarousel from "../compontents/shared-compontents/our-services-carousel";
 
 import PrivacyHeroImg from "/public/images/Privacy-Films-imgs/privacy-hero-img-min.jpg";
 import FrostedImg from "/public/images/Privacy-Films-imgs/Frosted-qualities-img.jpg";
@@ -118,7 +119,7 @@ export default function PrivacyFilmsPage() {
         </div>
       </div>
       <div className="bg-grey">
-        <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 xxl:py-56 xl:py-40 lg:py-36 md:py-24 sm:py-12 mx-auto">
+        <div className="xxl:w-8/12 xl:w-8/12 lg:w-10/12 md:w-11/12 sm:w-11/12 xxl:py-56 xl:py-40 lg:py-36 md:py-24 sm:py-12 mx-auto">
           <h1 className="text-secondary font-medium xxl:text-4xl xl:text-3xl lg:text-2xl md:text-2xl sm:text-lg">
             At Solar Gard Solutions, Ireland. our privacy films offer an elegant
             and effective solution for maintaining privacy while still allowing
@@ -313,6 +314,9 @@ export default function PrivacyFilmsPage() {
       </div>
       <div>
         <PrivacyFAQs />
+      </div>
+      <div>
+        <OurServiceCarousel />
       </div>
       <div>
         <ContactUs />

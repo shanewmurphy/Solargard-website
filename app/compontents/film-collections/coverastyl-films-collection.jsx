@@ -172,7 +172,7 @@ export default function CoverstylFilmComponent() {
             <Link href="https://coverstyl.com/en/" target="_blank">
               <button
                 type="button"
-                className="outline outline-offset-2 outline-1 outline-slate-900 lg:text-base md:text-sm sm:text-xs text-secondary font-semibold rounded-sm py-2 px-8 hover:bg-slate-900 hover:text-white"
+                className="outline outline-offset-2 outline-1 bg-slate-900 lg:text-lg md:text-base sm:text-xs text-white font-medium rounded-lg py-3 px-12 hover:outline-slate-900 hover:bg-white hover:text-secondary"
               >
                 Browse Full collection
               </button>
