@@ -50,24 +50,49 @@ export default function MobileSlideMenu() {
                 </TransitionChild>
                 <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
                   <div className="px-4 sm:px-6">
-                    <DialogTitle className="text-base font-semibold text-gray-900">
-                      Panel title
-                    </DialogTitle>
+                    <DialogTitle className="text-base font-semibold text-gray-900"></DialogTitle>
                   </div>
                   <div className="relative mt-12 flex-1 px-4 sm:px-6 antialiased">
                     <div>
                       <button className="text-xl font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
-                        Solar Films
+                        <a href="/Solar-Films">Solar Films</a>
                       </button>
                     </div>
                     <div className="mt-2">
                       <button className="text-xl font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
-                        Privacy Films
+                        <a href="/Privacy-Films">Privacy Films</a>
                       </button>
                     </div>
                     <div className="mt-2">
                       <button className="text-xl font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
-                        Safety Films
+                        <a href="/Safety-Films">Safety Films</a>
+                      </button>
+                    </div>
+                    <div className="mt-2">
+                      <button className="text-xl font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
+                        <a href="/Manifestations-Graphics">
+                          Manifestations & Graphics
+                        </a>
+                      </button>
+                    </div>
+                    <div className="mt-2">
+                      <button className="text-xl font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
+                        <a href="/CoverStyl">CoverStyl&rsquo;</a>
+                      </button>
+                    </div>
+                    <div className="mt-2">
+                      <button className="text-xl font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
+                        <a href="/Vehicle-tinting">Vehicle Tinting</a>
+                      </button>
+                    </div>
+                    <div className="mt-2">
+                      <button className="text-xl font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
+                        Vehicle Wraps
+                      </button>
+                    </div>
+                    <div className="mt-2">
+                      <button className="text-xl font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
+                        Cloaking
                       </button>
                     </div>
                   </div>
