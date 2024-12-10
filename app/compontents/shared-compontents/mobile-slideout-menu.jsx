@@ -50,33 +50,33 @@ export default function MobileSlideMenu() {
                 </TransitionChild>
                 <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
                   <div className="px-4 sm:px-6">
-                    <DialogTitle className="text-base font-semibold text-gray-900"></DialogTitle>
+                    <DialogTitle className="text-base inline-flex items-center font-semibold text-gray-900"></DialogTitle>
                   </div>
                   <div className="relative mt-12 flex-1 px-4 sm:px-6 antialiased">
                     <div>
-                      <button className="text-xl font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
+                      <button className="text-xl font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
                         <a href="/Solar-Films">Solar Films</a>
                       </button>
                     </div>
                     <div className="mt-2">
-                      <button className="text-xl font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
+                      <button className="text-xl font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
                         <a href="/Privacy-Films">Privacy Films</a>
                       </button>
                     </div>
                     <div className="mt-2">
-                      <button className="text-xl font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
+                      <button className="text-xl font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
                         <a href="/Safety-Films">Safety Films</a>
                       </button>
                     </div>
                     <div className="mt-2">
-                      <button className="text-xl font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
+                      <button className="text-xl font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
                         <a href="/Manifestations-Graphics">
                           Manifestations & Graphics
                         </a>
                       </button>
                     </div>
                     <div className="mt-2">
-                      <button className="text-xl font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
+                      <button className="text-xl text-zinc-400 font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
                         <a href="/CoverStyl">CoverStyl&rsquo;</a>
                       </button>
                     </div>
@@ -103,5 +103,21 @@ export default function MobileSlideMenu() {
         </div>
       </Dialog>
     </div>
+  );
+}
+function PhoneIcon() {
+  return (
+    <svg
+      width="28"
+      height="26"
+      viewBox="0 0 36 34"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M18.003 0C8.07584 0 0 7.62465 0 16.9972C0 21.8895 2.23537 26.5482 6.13302 29.779C6.44507 30.0354 6.91765 30.0057 7.1922 29.7139C7.46524 29.4193 7.43524 28.9731 7.12319 28.7139C3.54959 25.7521 1.49875 21.4816 1.49875 16.9972C1.49875 8.40793 8.90248 1.41643 18.0015 1.41643C27.099 1.41643 34.5042 8.40793 34.5042 16.9972C34.5042 25.5878 27.099 32.5779 18.0015 32.5779C15.7676 32.5779 14.3454 32.194 13.8938 31.4646C13.3192 30.5411 14.2164 28.8924 14.926 27.6813L15.3326 27.8513C15.7436 28.0227 16.1772 28.1105 16.6243 28.1105C17.892 28.1105 19.0412 27.4037 19.5543 26.3102L20.2129 24.898C20.927 23.3754 20.1919 21.5878 18.5791 20.9122L16.3377 19.9773C16.1007 19.8796 15.8681 19.3924 15.8771 18.5269C15.8891 17.5255 16.2222 16.255 16.7908 15.0397C18.0645 12.3187 19.7703 11.1629 20.3539 11.4009L22.5953 12.3343C24.175 12.9901 26.1254 12.2705 26.8155 10.7918L27.4756 9.3796C27.8191 8.64164 27.8416 7.82011 27.5311 7.06657C27.2235 6.31445 26.6234 5.71955 25.8403 5.39377L23.6019 4.45751C23.1474 4.26912 22.6553 4.17422 22.1347 4.17422C18.9136 4.17422 14.92 7.89377 12.4266 13.2195C9.48008 19.517 9.76963 25.5354 13.0867 26.9207L13.5458 27.1119C12.6411 28.6572 11.6254 30.6232 12.5946 32.187C13.3522 33.4065 15.1195 34 17.997 34C27.9241 34 36 26.3739 36 17.0028C36.006 7.62465 27.9302 0 18.003 0Z"
+        fill="#5C5C5C"
+      />
+    </svg>
   );
 }
