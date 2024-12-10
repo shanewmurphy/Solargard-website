@@ -5,6 +5,7 @@ import { Link } from "react-scroll";
 import CarTintingFAQs from "../compontents/FAQs/car-tinting-faqs";
 import OurServiceCarousel from "../compontents/shared-compontents/our-services-carousel";
 import ContactUs from "../compontents/shared-compontents/Contact-Us";
+import Footer from "../compontents/shared-compontents/Footer";
 
 import HeroImg from "/public/images/car-tinting-imgs/Hero-car-tinting-img-min.jpg";
 import CarTierOne from "/public/images/car-tinting-imgs/Car-imgs-pricing-A.png";
@@ -218,7 +219,7 @@ export default function VehicleTinting() {
         </div>
       </div>
       <div className="bg-grey w-full">
-        <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 mx-auto">
+        <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 sm:pt-32 mx-auto">
           <div>
             <div className="antialiased">
               <div className="lg:w-9/12 md:w-9/12 sm:w-11/12 mx-auto mb-6">
@@ -240,7 +241,7 @@ export default function VehicleTinting() {
                     />
                   </div>
                   <div>
-                    <h2 className="lg:text-3xl md:text-2xl sm:text-3xl font-bold">
+                    <h2 className="lg:text-3xl md:text-2xl sm:text-4xl sm:mt-8 font-bold">
                       {tier.tierName}
                     </h2>
                   </div>
@@ -321,25 +322,28 @@ export default function VehicleTinting() {
                 and model, and let us know which package you&apos;re interested
                 in.
               </h4>
-              <h5 className="text-center mt-4 font-semibold lg:text-3xl">
+              <h5 className="text-center mt-4 font-semibold lg:text-3xl md:text-2xl sm:text-3xl">
                 021 4545606
               </h5>
             </div>
           </div>
           <div className="mt-48">
             <div className="lg:w-9/12" id="specsScrollTo">
-              <h2 className="font-bold text-secondary lg:text-4xl">
+              <h2 className="font-bold text-secondary lg:text-4xl md:text-4xl sm:text-2xl">
                 Discover the Best Tinting Film for Your Vehicle
               </h2>
-              <p className="font-medium text-textGray text-xl mt-2">
+              <p className="font-medium text-textGray lg:text-xl md:text-lg sm:text-base mt-2">
                 At Solar Gard Ireland, we offer a range of high-performance
                 vehicle tinting films designed to suit various needs and
                 preferences
               </p>
             </div>
-            <div className="grid lg:grid-cols-3 gap-12 mt-8 lg:text-base antialiased">
+            <div className="grid lg:grid-cols-3 gap-12 mt-8 text-base antialiased">
               {FilmSpecsData.map((specsData) => (
-                <div className="bg-white rounded-lg p-8" key={specsData.id}>
+                <div
+                  className="bg-white rounded-lg lg:p-8 md:p-8 sm:p-4 sm:pb-12"
+                  key={specsData.id}
+                >
                   <div className="rounded-full h-64 w-64  bg-gray-300 mx-auto">
                     <Image
                       src={specsData.profileImg}
@@ -351,7 +355,7 @@ export default function VehicleTinting() {
                     />
                   </div>
                   <div>
-                    <h2 className="font-bold text-center mt-3 lg:text-3xl">
+                    <h2 className="font-bold text-center mt-3 lg:text-3xl md:text-3xl sm:text-3xl">
                       {specsData.filmName}
                     </h2>
                   </div>
@@ -390,7 +394,7 @@ export default function VehicleTinting() {
                       <h6>Durability</h6>
                     </div>
                     <div>
-                      <span className="font-medium lg:text-sm text-textGray">
+                      <span className="font-medium lg:text-sm md:text-sm sm:text-sm text-textGray">
                         {specsData.Durability}
                       </span>
                     </div>
@@ -405,17 +409,17 @@ export default function VehicleTinting() {
             </div>
           </div>
           <div className="pt-40">
-            <div className="grid grid-cols-3 gap-8 antialiase">
+            <div className="grid lg:grid-cols-3 gap-8 antialiase">
               {vehicletintingData.map((veheicleData) => (
                 <div
-                  className="bg-white p-4 pb-24 rounded-lg text-secondary"
+                  className="bg-white p-4 lg:pb-24 md:pb-16 sm:pb-12 rounded-lg text-secondary"
                   key={veheicleData.id}
                 >
                   <div className="flex relative w-full h-[390px]">
                     <Image
                       className="rounded-md"
                       src={veheicleData.thumbnail}
-                      alt="Solar Gard Solar Films"
+                      alt="Solar Gard Solar Vehicle Tinting Films"
                       sizes="100vw"
                       placeholder="blur"
                       blurDataURL="/path/to/placeholder.jpg" // Optional blur image
@@ -425,10 +429,10 @@ export default function VehicleTinting() {
                       }}
                     />
                   </div>
-                  <h3 className="lg:text-2xl md:text-xl font-bold mt-8">
+                  <h3 className="lg:text-2xl md:text-xl sm:text-2xl font-bold mt-8">
                     {veheicleData.title}
                   </h3>
-                  <p className="mt-4">{veheicleData.description}</p>
+                  <p className="mt-4 text-base">{veheicleData.description}</p>
                 </div>
               ))}
             </div>
@@ -446,6 +450,9 @@ export default function VehicleTinting() {
       </div>
       <div>
         <ContactUs />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

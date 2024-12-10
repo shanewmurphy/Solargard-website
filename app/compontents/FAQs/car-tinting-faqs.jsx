@@ -60,36 +60,44 @@ const CarTintFAQ = [
 export default function CarTintingFAQs() {
   return (
     <div>
-      <div className="lg:w-8/12 largeScreens:w-7/12 mx-auto">
-        <h3 className="text-center font-bold text-3xl mb-6">
-          Vehicle Tinting Questions & Answers
-        </h3>
-        <Accordion
-          classNames={{
-            base: "gap-4",
-            item: {
-              base: "border-divider data-[open=true]:border-divider", // This ensures consistent border color
-              content: "text-xl font-bold text-secondary",
-            },
-          }}
-          itemClasses={{
-            base: "border-b font-semibold border-faq-border antialiased", // This controls the separator line
-            trigger:
-              "px-2 py-0 text-2xl text-secondary rounded-lg h-16 flex items-center",
-            indicator: "font-bold",
-            content: "text-sm lg:w-11/12 pb-6 font-medium px-2",
-          }}
-        >
-          {CarTintFAQ.map((faq) => (
-            <AccordionItem
-              key={faq.id}
-              aria-label={faq.question}
-              title={faq.question}
-            >
-              {faq.anwser}
-            </AccordionItem>
-          ))}
-        </Accordion>
+      <div className="bg-grey w-full xxl:py-56 xl:py-40 lg:py-24 sm:py-12">
+        <div className="xxl:w-8/12 xl:w-8/12 lg:w-8/12 md:w-10/12 sm:w-11/12 mx-auto">
+          <h3 className="text-center font-bold text-3xl mb-6">
+            Vehicle Tinting Questions & Answers
+          </h3>
+          <Accordion
+            classNames={{
+              base: "gap-4",
+              item: {
+                base: "border-divider data-[open=true]:border-divider", // This ensures consistent border color
+                content: "text-xl font-bold text-secondary",
+              },
+            }}
+            itemClasses={{
+              base: "border-b font-semibold border-faq-border antialiased", // This controls the separator line
+              trigger:
+                "px-2 py-0 text-2xl text-secondary rounded-lg h-16 flex items-center",
+              indicator: "font-bold",
+              content: "text-sm lg:w-11/12 pb-6 font-medium px-2",
+            }}
+          >
+            {CarTintFAQ.map((faq) => (
+              <AccordionItem
+                key={faq.id}
+                aria-label={faq.question}
+                title={
+                  <div className="lg:text-lg md:text-lg sm:text-sm lg:font-semibold text-secondary">
+                    {faq.question}
+                  </div>
+                }
+              >
+                <div className="lg:text-base md:text-base sm:text-sm font-medium text-secondary pb-6">
+                  {faq.anwser}
+                </div>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
       </div>
     </div>
   );
