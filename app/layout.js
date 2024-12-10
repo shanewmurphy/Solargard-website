@@ -33,13 +33,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <div>{children}</div>
         <div>
           <NavDesktop />
         </div>
         <div>
           <MobileNav />
         </div>
-        {children}
       </body>
     </html>
   );

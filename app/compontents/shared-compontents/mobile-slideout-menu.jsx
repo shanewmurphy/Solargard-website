@@ -40,7 +40,7 @@ export default function MobileSlideMenu() {
                     <button
                       type="button"
                       onClick={() => setOpen(false)}
-                      className="relative text-4xl rounded-full bg-slate-100 p-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-white"
+                      className="relative text-4xl rounded-full bg-zinc-100 p-2 text-zinc-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-white"
                     >
                       <span className="absolute -inset-2.5" />
                       <span className="sr-only">Close panel</span>
@@ -52,48 +52,62 @@ export default function MobileSlideMenu() {
                   <div className="px-4 sm:px-6">
                     <DialogTitle className="text-base inline-flex items-center font-semibold text-gray-900"></DialogTitle>
                   </div>
-                  <div className="relative mt-12 flex-1 px-4 sm:px-6 antialiased">
+                  <div className="relative mt-8 flex-1 px-4 sm:px-6 antialiased">
                     <div>
-                      <button className="text-xl font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
-                        <a href="/Solar-Films">Solar Films</a>
-                      </button>
+                      <a href="/Solar-Films">
+                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
+                          Solar Films
+                        </button>
+                      </a>
                     </div>
                     <div className="mt-2">
-                      <button className="text-xl font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
-                        <a href="/Privacy-Films">Privacy Films</a>
-                      </button>
+                      <a href="/Privacy-Films">
+                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
+                          Privacy Films
+                        </button>
+                      </a>
                     </div>
                     <div className="mt-2">
-                      <button className="text-xl font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
-                        <a href="/Safety-Films">Safety Films</a>
-                      </button>
+                      <a href="/Safety-Films">
+                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
+                          Safety Films
+                        </button>
+                      </a>
                     </div>
                     <div className="mt-2">
-                      <button className="text-xl font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
-                        <a href="/Manifestations-Graphics">
+                      <a href="/Manifestations-Graphics">
+                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
                           Manifestations & Graphics
-                        </a>
-                      </button>
+                        </button>
+                      </a>
                     </div>
                     <div className="mt-2">
-                      <button className="text-xl text-zinc-400 font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
-                        <a href="/CoverStyl">CoverStyl&rsquo;</a>
-                      </button>
+                      <a href="/CoverStyl">
+                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
+                          CoverStyl&rsquo;
+                        </button>
+                      </a>
                     </div>
                     <div className="mt-2">
-                      <button className="text-xl font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
-                        <a href="/Vehicle-tinting">Vehicle Tinting</a>
-                      </button>
+                      <a href="/Vehicle-tinting">
+                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
+                          Vehicle Tinting
+                        </button>
+                      </a>
                     </div>
                     <div className="mt-2">
-                      <button className="text-xl font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
-                        Vehicle Wraps
-                      </button>
+                      <a href="/">
+                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
+                          Vehicle Wraps
+                        </button>
+                      </a>
                     </div>
                     <div className="mt-2">
-                      <button className="text-xl font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
-                        Cloaking
-                      </button>
+                      <a href="/">
+                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
+                          Cloaking
+                        </button>
+                      </a>
                     </div>
                   </div>
                 </div>
