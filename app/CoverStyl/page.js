@@ -119,7 +119,7 @@ export default function CoverstylePage() {
         <CoverstylFilmComponent />
       </div>
       <section className="bg-grey antialiased">
-        <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 xxl:py-56 xl:py-40 lg:py-36 md:py-24 sm:py-12 mx-auto">
+        <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 xxl:py-56 xl:py-40 lg:py-36 md:py-24 sm:py-40 mx-auto">
           <div className="flex flex-col w-full">
             <div className="relative">
               <Image
@@ -185,7 +185,7 @@ export default function CoverstylePage() {
           </div>
         </div>
       </section>
-      <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 xxl:py-56 xl:py-40 lg:py-36 md:py-24 sm:py-32 mx-auto">
+      <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 xxl:py-56 xl:py-40 lg:py-36 md:py-24 sm:py-0 mx-auto">
         {WhyCoverstyl.map((reason) => (
           <div
             className="bg-white lg:rounded-xl md:rounded-3xl sm:rounded-3xl antialiased"

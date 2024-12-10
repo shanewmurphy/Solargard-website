@@ -205,73 +205,48 @@ export default function VehicleTinting() {
           </div>
         </div>
       </div>
-      <div className="bg-grey lg:py-32 lg:px-24 md:py-32 md:px-16 sm:py-24 sm:px-6 antialiased">
-        <h1 className="text-secondary font-medium lg:text-3xl largeScreens:text-4xl md:text-2xl sm:text-xl largeScreens:w-10/12 xl:mx-auto">
-          At Solar Gard Ireland, our expert vehicle tinting services combine
-          style, comfort, and protection. Whether you&apos;re looking to reduce
-          heat, protect your interior, or add a sleek look to your car, our
-          high-quality tint films are designed to meet your needs. With a range
-          of shades and styles, we offer customised solutions that enhance your
-          driving experience.
-        </h1>
+      <div className="bg-grey antialiased">
+        <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 xxl:py-56 xl:py-40 lg:py-36 md:py-24 sm:py-12 mx-auto">
+          <h1 className="text-secondary font-medium xxl:text-4xl xl:text-3xl lg:text-2xl md:text-2xl sm:text-lg">
+            At Solar Gard Ireland, our expert vehicle tinting services combine
+            style, comfort, and protection. Whether you&apos;re looking to
+            reduce heat, protect your interior, or add a sleek look to your car,
+            our high-quality tint films are designed to meet your needs. With a
+            range of shades and styles, we offer customised solutions that
+            enhance your driving experience.
+          </h1>
+        </div>
       </div>
-      <div className="bg-grey lg:py-32 lg:px-24">
-        <div className="largeScreens:w-10/12 lg:w-11/12 mx-auto">
-          <div className="grid grid-cols-3 gap-8 antialiase">
-            {vehicletintingData.map((veheicleData) => (
-              <div
-                className="bg-white p-4 pb-24 rounded-lg text-secondary"
-                key={veheicleData.id}
-              >
-                <div className="flex relative w-full h-[390px]">
-                  <Image
-                    className="rounded-md"
-                    src={veheicleData.thumbnail}
-                    alt="Solar Gard Solar Films"
-                    sizes="100vw"
-                    placeholder="blur"
-                    blurDataURL="/path/to/placeholder.jpg" // Optional blur image
-                    fill // Automatically fills the parent container
-                    style={{
-                      objectFit: "cover", // Ensures the image covers the container
-                    }}
-                  />
-                </div>
-                <h3 className="lg:text-2xl md:text-xl font-bold mt-8">
-                  {veheicleData.title}
-                </h3>
-                <p className="mt-4">{veheicleData.description}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-40">
-            <div className="lg:w-9/12 mx-auto antialiased">
-              <div className="lg:w-9/12 mx-auto mb-6">
-                <h3 className="text-center font-bold text-4xl">
+      <div className="bg-grey w-full">
+        <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 mx-auto">
+          <div>
+            <div className="antialiased">
+              <div className="lg:w-9/12 md:w-9/12 sm:w-11/12 mx-auto mb-6">
+                <h3 className="text-center font-bold lg:text-4xl md:text-2xl sm:text-2xl">
                   Choose the Perfect Tinting Package for Your Vehicle
                 </h3>
-                {/* <h4 className="text-center font-medium mt-2">
-                  Below are our available packages, designed to suit different
-                  preferences and budgets. Whether you want a full vehicle tint
-                  or just a few windows, we have the right option for you.
-                </h4> */}
               </div>
             </div>
-            <div className="grid grid-cols-3 gap-12">
+            <div className="grid lg:grid-cols-3 gap-12">
               {tintingPricingListData.map((tier) => (
                 <div
                   key={tier.id}
                   className="bg-white rounded-lg p-8 antialiased"
                 >
                   <div className="lg:w-7/12 mx-auto">
-                    <Image src={tier.image} />
+                    <Image
+                      src={tier.image}
+                      alt="Solar Gard Vehicle Tinting service"
+                    />
                   </div>
                   <div>
-                    <h2 className="text-3xl font-bold">{tier.tierName}</h2>
+                    <h2 className="lg:text-3xl md:text-2xl sm:text-3xl font-bold">
+                      {tier.tierName}
+                    </h2>
                   </div>
                   <div className="flex items-center justify-between mt-2">
                     <div>
-                      <h5 className="text-gray-600 font-semibold text-2xl">
+                      <h5 className="text-gray-600 font-semibold lg:text-2xl md:text-2xl sm:text-lg">
                         {tier.filmType}
                       </h5>
                     </div>
@@ -281,7 +256,7 @@ export default function VehicleTinting() {
                           to="specsScrollTo"
                           spy={true}
                           smooth={true}
-                          offset={50}
+                          offset={0}
                           duration={500}
                         >
                           View Specs
@@ -341,18 +316,18 @@ export default function VehicleTinting() {
               ))}
             </div>
             <div className="lg:w-8/12 mx-auto mt-8">
-              <h4 className="font-medium text-center text-secondary text-2xl">
+              <h4 className="font-medium text-center text-secondary lg:text-2xl">
                 Simply call us to book. Provide us with your vehicle&apos;s make
                 and model, and let us know which package you&apos;re interested
                 in.
               </h4>
-              <h5 className="text-center mt-4 font-semibold text-3xl">
+              <h5 className="text-center mt-4 font-semibold lg:text-3xl">
                 021 4545606
               </h5>
             </div>
           </div>
           <div className="mt-48">
-            <div className="lg:w-9/12">
+            <div className="lg:w-9/12" id="specsScrollTo">
               <h2 className="font-bold text-secondary lg:text-4xl">
                 Discover the Best Tinting Film for Your Vehicle
               </h2>
@@ -362,10 +337,7 @@ export default function VehicleTinting() {
                 preferences
               </p>
             </div>
-            <div
-              className="grid grid-cols-3 gap-12 mt-8 lg:text-base antialiased"
-              id="specsScrollTo"
-            >
+            <div className="grid lg:grid-cols-3 gap-12 mt-8 lg:text-base antialiased">
               {FilmSpecsData.map((specsData) => (
                 <div className="bg-white rounded-lg p-8" key={specsData.id}>
                   <div className="rounded-full h-64 w-64  bg-gray-300 mx-auto">
@@ -432,9 +404,38 @@ export default function VehicleTinting() {
               ))}
             </div>
           </div>
-          <div>
-            <TintingFilmDataComponent />
+          <div className="pt-40">
+            <div className="grid grid-cols-3 gap-8 antialiase">
+              {vehicletintingData.map((veheicleData) => (
+                <div
+                  className="bg-white p-4 pb-24 rounded-lg text-secondary"
+                  key={veheicleData.id}
+                >
+                  <div className="flex relative w-full h-[390px]">
+                    <Image
+                      className="rounded-md"
+                      src={veheicleData.thumbnail}
+                      alt="Solar Gard Solar Films"
+                      sizes="100vw"
+                      placeholder="blur"
+                      blurDataURL="/path/to/placeholder.jpg" // Optional blur image
+                      fill // Automatically fills the parent container
+                      style={{
+                        objectFit: "cover", // Ensures the image covers the container
+                      }}
+                    />
+                  </div>
+                  <h3 className="lg:text-2xl md:text-xl font-bold mt-8">
+                    {veheicleData.title}
+                  </h3>
+                  <p className="mt-4">{veheicleData.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
+          {/* <div>
+            <TintingFilmDataComponent />
+          </div> */}
           <div className="mt-40">
             <CarTintingFAQs />
           </div>
