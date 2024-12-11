@@ -1,14 +1,14 @@
 import Image from "next/image";
 
-import VehicleHeroImg from "/public/images/vehicle-wrap-imgs/vehicle-hero-img.jpg";
+import CasperHeroImg from "/public/images/casper-imgs/Casper-hero-img-min.jpg";
 
-export default function VehicleWrappingPage() {
+export default function CasperPage() {
   return (
     <div>
       <div className="flex flex-col w-full">
         <div className="relative">
           <Image
-            src={VehicleHeroImg}
+            src={CasperHeroImg}
             alt="Solar Gard Vehicle Wrapping"
             sizes="100vw"
             placeholder="blur"
@@ -31,9 +31,10 @@ export default function VehicleWrappingPage() {
             Sorry this page is under construction
           </h1>
           <p className="mt-3 text-base font-medium">
-            Our vehicle wrapping services offer high-quality, custom designs to
-            enhance your car's appearance and protect its original paint. From
-            branding to unique personal styles, we’ve got you covered.
+            Casper&#8482; Cloaking is an innovative architectural film that
+            ensures digital privacy by obscuring screens on glass walls while
+            maintaining a clear view of the surroundings. Perfect for modern
+            offices, it allows secure collaboration in any environment.
           </p>
           <p className="font-semibold text-base mt-4">
             For more information, please contact our office at:

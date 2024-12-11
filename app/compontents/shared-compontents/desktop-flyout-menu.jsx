@@ -36,6 +36,12 @@ const windowFilms = [
     href: "/Safety-Films",
     icon: FingerPrintIcon,
   },
+  {
+    name: "Casper",
+    description: "Cloaking Film, Obscures Content on Digital Screens",
+    href: "/Casper",
+    icon: FingerPrintIcon,
+  },
 ];
 
 const callsToAction = [

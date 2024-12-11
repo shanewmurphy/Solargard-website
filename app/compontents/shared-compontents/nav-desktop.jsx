@@ -33,12 +33,11 @@ export default function NavDesktop() {
                     Vehicle Tinting
                   </li>
                 </Link>
-                <li className="pl-4 font-semibold  hover:text-HoverColor">
-                  Vehicle Wraps
-                </li>
-                <li className="pl-4 font-semibold  hover:text-HoverColor">
-                  Casper
-                </li>
+                <Link href="/Vehicle-Wrapping">
+                  <li className="pl-4 font-semibold  hover:text-HoverColor">
+                    Vehicle Wraps
+                  </li>
+                </Link>
               </ul>
             </div>
           </div>

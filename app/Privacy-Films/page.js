@@ -130,8 +130,11 @@ export default function PrivacyFilmsPage() {
           </h1>
         </div>
       </div>
+      <div className="bg-grey">
+        <PrivacyFilmsComponent />
+      </div>
       <div className="bg-grey lg:py-40 antialiased">
-        <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-11/12 sm:w-11/12 mx-auto">
+        <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 mx-auto">
           <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-flow-row gap-12">
             {FilmQualitiesData.map((qualities) => (
               <div className="bg-white rounded-lg p-4 pb-16" key={qualities.id}>
@@ -184,9 +187,6 @@ export default function PrivacyFilmsPage() {
             ))}
           </div>
         </div>
-      </div>
-      <div className="bg-grey">
-        <PrivacyFilmsComponent />
       </div>
       <div className="bg-grey">
         <div className="xxl:w-8/12 xl:w-9/12 lg:w-11/12 md:w-11/12 sm:w-11/12 mx-auto lg:py-40">
