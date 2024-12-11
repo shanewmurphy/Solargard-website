@@ -33,7 +33,7 @@ export default function VehicleWrappingPage() {
           <p className="mt-3 text-base font-medium">
             Our vehicle wrapping services offer high-quality, custom designs to
             enhance your car's appearance and protect its original paint. From
-            branding to unique personal styles, we’ve got you covered.
+            branding to unique personal styles, we&apos;ve got you covered.
           </p>
           <p className="font-semibold text-base mt-4">
             For more information, please contact our office at:

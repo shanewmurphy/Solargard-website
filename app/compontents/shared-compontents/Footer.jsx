@@ -122,7 +122,7 @@ export default function Footer() {
                     </button>
                   </Link>
                   <div>
-                    <Link href="/">
+                    <Link href="/Contact-Us">
                       <button className="text-sm font-medium hover:underline">
                         Contact Us
                       </button>

@@ -38,6 +38,11 @@ export default function NavDesktop() {
                     Vehicle Wraps
                   </li>
                 </Link>
+                <Link href="/Contact-Us">
+                  <li className="pl-4 font-semibold  hover:text-HoverColor">
+                    Contact Us
+                  </li>
+                </Link>
               </ul>
             </div>
           </div>
