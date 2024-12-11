@@ -80,7 +80,7 @@ export default function CompanyProfile() {
   return (
     <div>
       <div className="w-full bg-grey xxl:py-44 xl:py-36 lg:py-24 md:py-16 sm:py-12">
-        <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-11/12 sm:w-11/12 mx-auto">
+        <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 mx-auto">
           <div className="flex flex-row lg:gap-16">
             <div className="w-9/12 sm:w-full">
               <h1 className="text-secondary font-bold lg:text-5xl md:text-3xl sm:text-2xl mb-4">

@@ -273,7 +273,7 @@ export default function ManifestationGraphicSpecPage({ params }) {
                   <span>{product.TotalSolarEnergyRejected2}</span>
                 </div>
               </div>
-              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm border-b-1 border-slate-400">
+              <div className="flex justify-between my-4 pb-4 font-medium text-secondary lg:text-sm md:text-sm sm:text-xs border-b-1 border-slate-400">
                 <div>
                   <h6>Reduction In Solar Glare</h6>
                 </div>

@@ -3,6 +3,7 @@ import { Inter, Poppins } from "@next/font/google";
 import "./globals.css";
 import NavDesktop from "./compontents/shared-compontents/nav-desktop";
 import MobileNav from "./compontents/shared-compontents/mobile-nav";
+
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],

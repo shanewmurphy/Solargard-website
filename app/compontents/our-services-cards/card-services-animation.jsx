@@ -12,7 +12,7 @@ const cardData = [
     image: "/images/card-service-imgs/solar-films-card-service-img-min.jpg",
     mobileImage: "/images/card-service-imgs/solar-film-card-service-mobile.jpg",
     buttonLabel: "View Solar Films",
-    link: "Solar-Films",
+    link: "/Solar-Films",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const cardData = [
     image: "/images/card-service-imgs/car-tinting-b.jpg",
     mobileImage: "/images/card-service-imgs/Car-Tint-mobile-img.jpg",
     buttonLabel: "View Vehicle Tinting",
-    link: "Vehicle-tinting",
+    link: "/Vehicle-tinting",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const cardData = [
     image: "/images/card-service-imgs/coverstyl-card-img.jpg",
     mobileImage: "/images/card-service-imgs/coverstyl-mobile-img.jpg",
     buttonLabel: "View CoverStyl'",
-    link: "CoverStyl",
+    link: "/CoverStyl",
   },
   {
     id: 4,
@@ -36,23 +36,23 @@ const cardData = [
     image: "/images/card-service-imgs/manifestations-graphics-card-img.jpg",
     mobileImage: "/images/card-service-imgs/manifestations-graphics-mobile.jpg",
     buttonLabel: "View Manifestations & Graphics",
-    link: "Manifestations-Graphics",
+    link: "/Manifestations-Graphics",
   },
-  {
-    id: 5,
-    title: "Vehicle Wrapping",
-    image: "/images/card-service-imgs/vehicle-wrapping-card-img.jpg",
-    mobileImage: "/images/card-service-imgs/vehicle-wrapping-mobile-img.jpg",
-    buttonLabel: "View Vehicle Wrapping",
-    link: "/",
-  },
+  // {
+  //   id: 5,
+  //   title: "Vehicle Wrapping",
+  //   image: "/images/card-service-imgs/vehicle-wrapping-card-img.jpg",
+  //   mobileImage: "/images/card-service-imgs/vehicle-wrapping-mobile-img.jpg",
+  //   buttonLabel: "View Vehicle Wrapping",
+  //   link: "/",
+  // },
   {
     id: 6,
     title: "Privacy Films",
     image: "/images/card-service-imgs/privacy-films-card-img.jpg",
     mobileImage: "/images/card-service-imgs/privacy-card-mobile-img.jpg",
     buttonLabel: "View Privacy Films",
-    link: "/",
+    link: "/Privacy-Films",
   },
 ];
 
@@ -132,7 +132,7 @@ export default function Home() {
             >
               {cardData.map((card, index) => (
                 <Card key={card.id} isFirst={index === 0}>
-                  <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-11/12 lg:h-[90vh] md:h-[60vh] sm:h-[70vh] sm:w-11/12 relative">
+                  <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 lg:h-[90vh] md:h-[60vh] sm:h-[70vh] sm:w-11/12 relative">
                     <img
                       className="w-full h-full object-cover rounded-xl lg:flex md:flex sm:hidden"
                       src={card.image}
@@ -148,7 +148,7 @@ export default function Home() {
                       </h2>
                       <div>
                         <Link href={card.link}>
-                          <button className="bg-white flex items-center text-secondary lg:text-2xl md:text-xl sm:text-sm font-semibold lg:py-4 lg:px-12 md:py-2 md:px-6 sm:py-2 sm:px-6 mt-6 lg:rounded-2xl md:rounded-lg sm:rounded-lg">
+                          <button className="bg-white flex items-center text-secondary lg:text-2xl md:text-xl sm:text-sm hover:bg-gray-600 hover:text-white font-semibold lg:py-4 lg:px-12 md:py-2 md:px-6 sm:py-2 sm:px-6 mt-6 lg:rounded-2xl md:rounded-lg sm:rounded-lg">
                             {card.buttonLabel}
                             <span className="inline-flex items-center pl-4">
                               <NavIcon />

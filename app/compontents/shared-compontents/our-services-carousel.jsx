@@ -119,7 +119,7 @@ export default function OurServiceCarousel() {
                   <div>
                     <Link href={service.pageURL}>
                       <div className="group flex items-center">
-                        <p className="text-base text-secondary hover:text-primary font-medium underline hover:no-underline">
+                        <p className="text-base sm:text-sm text-secondary hover:text-primary font-medium underline hover:no-underline">
                           View
                           <span className="inline-block pl-2">
                             <ArrowRightIcon className="text-gray-600 group-hover:text-primary transition-colors duration-300" />
