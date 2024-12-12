@@ -6,6 +6,8 @@ export const solarFilmsData = [
     name: "Alu 50 XC",
     slug: "alu-50-xc",
     category: "Exterior Mirror",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/qp0ocifmebjkjw6es2e0s/Alu_50_XC.pdf?rlkey=p18oauivb21kuu9znk1ml18bv&st=e3hbhy3e&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-02.jpg",
     EnergyRejectedValue: "49",
@@ -44,6 +46,8 @@ export const solarFilmsData = [
     name: "Alu 70 XC",
     slug: "alu-70-xc",
     category: "Exterior Mirror",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/3zkm731po1ei75vghbhpn/70_XC.pdf?rlkey=r8tt1z1ml35cauf44oa7q62fm&st=l8mgxfj8&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-02.jpg",
     EnergyRejectedValue: "65",
@@ -82,6 +86,8 @@ export const solarFilmsData = [
     name: "Alu 80 XC",
     slug: "alu-80-xc",
     category: "Exterior Mirror",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/tlbw5y82aba1qazbc57ww/Alu_80_XC.pdf?rlkey=3bh5v9csp4mwqnwqqql3zpjp8&st=zdezxkjb&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-02.jpg",
     EnergyRejectedValue: "60",
@@ -120,6 +126,8 @@ export const solarFilmsData = [
     name: "Chrome 245 XC",
     slug: "chrome-245-xc",
     category: "Exterior Mirror",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/68geczu0po0a52spsiifp/Chrome_245_XC.pdf?rlkey=3e0p9hfk42dyc6q55y86uai74&st=ln3u5e87&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "53",
@@ -159,6 +167,8 @@ export const solarFilmsData = [
     name: "Chrome 270 XC",
     slug: "chrome-270-xc",
     category: "Exterior Mirror",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/wkkmedsux034zrfvas5sl/Chrome_270_XC.pdf?rlkey=vjhoolx9zgzi44nz5vkevh9w7&st=uxj03wmc&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "71",
@@ -198,6 +208,8 @@ export const solarFilmsData = [
     name: "Chrome 285 XC",
     slug: "chrome-285-xc",
     category: "Exterior Mirror",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/m62amskz0dupawdosw4v3/Chrome_285_XC.pdf?rlkey=6q6b0h30f3h4zrebzanrjyxla&st=s2jpv67y&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "84",
@@ -237,6 +249,8 @@ export const solarFilmsData = [
     name: "Silver 44 XC",
     slug: "silver-44-xc",
     category: "Exterior Mirror",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/xexoraraykw90913z7w8o/Silver_44_XC.pdf?rlkey=f15784xwuh7p9kydc7hcxg29p&st=rndfbkaf&dl=0",
     description:
       "Vista 90 XC films are highly effective at reducing solar heat gain, whilst at the same time continuing to allow some natural light transmission. This film provides effective protection against solar glare, whilst its one-way mirror aspect further guarantees privacy from prying eyes. Its modern design immediately lends a contemporary feel to any building exterior.",
     image:
@@ -278,6 +292,8 @@ export const solarFilmsData = [
     name: "Silver 60 XC",
     slug: "silver-60-xc",
     category: "Exterior Mirror",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/5y2d47pfcuvdmoz8oqzyw/Silver_60_XC.pdf?rlkey=7v8qznf7ebwa6g27q9fznv2kl&st=3ojl1f6j&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "66",
@@ -317,6 +333,8 @@ export const solarFilmsData = [
     name: "Silver 80 XC",
     slug: "silver-80-xc",
     category: "Exterior Mirror",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/o8duh8olkqbdiqzb6rym6/Silver_80_XC.pdf?rlkey=2vrt3wrogcs7yzim351oy0tjq&st=kxrwulnt&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-02.jpg",
     EnergyRejectedValue: "82",
@@ -356,6 +374,8 @@ export const solarFilmsData = [
     name: "Sky Black 99 XC",
     slug: "sky-black-99-xc",
     category: "Exterior Mirror",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/865c4pahxs612x33ldrce/Sky_Black_99_XC.pdf?rlkey=9qx2wm1dl70frnrfs5x28ghgb&st=o838hx5t&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "99",
@@ -395,6 +415,8 @@ export const solarFilmsData = [
     name: "Vista 90 XC",
     slug: "vista-90-xc",
     category: "Exterior Mirror",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/1ptwk4w51l6s70iea1wtj/Vista_90_XC.pdf?rlkey=kojlxs7eno8marpls6900bgzw&st=8i8jhm82&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "90",
@@ -434,6 +456,8 @@ export const solarFilmsData = [
     name: "Vista 99 XC",
     slug: "vista-99-xc",
     category: "Exterior Mirror",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/asdmpefp2rmme0p9b1if3/Vista_99_XC.pdf?rlkey=z9saezv1dj5x60l88mvtdqmt4&st=4v4tooc0&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "99",
@@ -980,7 +1004,8 @@ export const solarFilmsData = [
     name: "Alu 50 Static",
     slug: "alu-50-static",
     category: "Interior Mirror",
-    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Alu_50-Static",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/7ack8fea36lslcwf8xaud/Alu_50_Static.pdf?rlkey=qr5m7js68gotepbc2oayzfyyu&st=zpvvxuwu&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "59",
@@ -1020,7 +1045,8 @@ export const solarFilmsData = [
     name: "Alu 70 C",
     slug: "alu-70-c",
     category: "Interior Mirror",
-    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Alu_70C",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/cxt3l00yzfxg9vh43s6iz/Alu_70C.pdf?rlkey=xgbtqedrwkdlo2m1iapnuz5bb&st=8ygyk36s&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "68",
@@ -1100,7 +1126,8 @@ export const solarFilmsData = [
     name: "Alu 80 Static",
     slug: "alu-80-static",
     category: "Interior Mirror",
-    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Alu_80_Static",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/zvsrfws3nzy4ejlxfuxxx/Alu_80_Static.pdf?rlkey=blct74ecpj8095y8l1sqzv8ko&st=n381bukw&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "79",
@@ -1140,7 +1167,8 @@ export const solarFilmsData = [
     name: "Silver 50 C",
     slug: "silver-50-c",
     category: "Interior Mirror",
-    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Silver_50_C",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/zebox2ewz3zrytucz9t1b/Silver_50_C.pdf?rlkey=vg90koj7c7a8058riurxsrz5c&st=o287fag2&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "58",
@@ -1180,7 +1208,8 @@ export const solarFilmsData = [
     name: "Silver 70 C",
     slug: "silver-70-c",
     category: "Interior Mirror",
-    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Silver_70_C",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/cuhfo4ng2ze4go2fq8mbi/Silver_70_C.pdf?rlkey=6z34hsnhzl2p1ey3zjd8wy40q&st=srio92r1&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "68",
@@ -1220,7 +1249,8 @@ export const solarFilmsData = [
     name: "Silver 80 C",
     slug: "silver-80-c",
     category: "Interior Mirror",
-    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Silver_80_C",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/6kmofx3s0vwbqs2jaxv7y/Silver_80_C.pdf?rlkey=o41nwefb4oc7ozvd21qqa628v&st=yof9mkeo&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "80",
@@ -1260,7 +1290,8 @@ export const solarFilmsData = [
     name: "Silver 95 C",
     slug: "silver-95-c",
     category: "Interior Mirror",
-    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Silver_95_C",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/6kmofx3s0vwbqs2jaxv7y/Silver_80_C.pdf?rlkey=o41nwefb4oc7ozvd21qqa628v&st=yof9mkeo&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "87",
@@ -1300,7 +1331,8 @@ export const solarFilmsData = [
     name: "Silver 99 C",
     slug: "silver-99-c",
     category: "Interior Mirror",
-    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Silver_99_C",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/tbwecyrkpxtt6p73dlnaq/Silver_99_C.pdf?rlkey=kfs5a2r54tbt3l97osov3a81c&st=qob3bjio&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "91",
@@ -1340,7 +1372,8 @@ export const solarFilmsData = [
     name: "Vista 80 C",
     slug: "vista-80-c",
     category: "Interior Mirror",
-    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Vista_80_C",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/kh7ffuxlqvfq5yvl5mc83/Vista_80_C.pdf?rlkey=ywgq3ocq2ygqlpuvy3wwryhgf&st=fs4b6zi2&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "76",
@@ -1380,7 +1413,8 @@ export const solarFilmsData = [
     name: "Vista 90 C",
     slug: "vista-90-c",
     category: "Interior Mirror",
-    PDFDownloadLink: "/PDFs/Solar-Films/Interior_Mirror/Vista_90_C",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/ltfbkylhhx3b6gs9xc02f/Vista_90_C.pdf?rlkey=kjsmc1738yfqcv11palpxw6vh&st=g58vcdyq&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-01.jpg",
     EnergyRejectedValue: "76",

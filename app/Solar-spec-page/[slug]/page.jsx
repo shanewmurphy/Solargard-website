@@ -23,18 +23,9 @@ export default function SolarFilmPage({ params }) {
   // );
 
   // If no product is found, show 404
-  if (!product) {
-    notFound();
-  }
-  // If this is inside a component that's displaying a specific solar film item:
   const handleDownload = () => {
-    // Create an anchor element
-    const link = document.createElement("a");
-    link.href = `${product.PDFDownloadLink}.pdf`; // Changed from solarFilm to product
-    link.download = `${product.name} Data Sheet.pdf`; // Changed from solarFilm to product
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // Open the Dropbox link in a new window
+    window.open(product.PDFDownloadLink, "_blank");
   };
 
   return (
