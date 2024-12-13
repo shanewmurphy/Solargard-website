@@ -27,7 +27,7 @@ const CarouselData = [
   },
   {
     id: "04",
-    title: "Safety Film",
+    title: "Safety Films",
     imageURL: "/images/service-carousel-imgs/safety-films.jpg",
     pageURL: "/Safety-Films",
   },
@@ -122,7 +122,7 @@ export default function OurServiceCarousel() {
                         <p className="text-base sm:text-sm text-secondary hover:text-primary font-medium underline hover:no-underline">
                           View
                           <span className="inline-block pl-2">
-                            <ArrowRightIcon className="text-gray-600 group-hover:text-primary transition-colors duration-300" />
+                            <ArrowNavIcon className="text-gray-600 group-hover:text-primary transition-colors duration-300" />
                           </span>
                         </p>
                       </div>
@@ -200,6 +200,25 @@ function ArrowRightIcon({ className }) {
     >
       <path
         d="M14.4669 0.604936L15.0661 0L22 7L15.0661 14L14.4669 13.3951L20.3735 7.4321H0V6.5679H20.3735L14.4669 0.604936Z"
+        className="fill-current"
+      />
+    </svg>
+  );
+}
+function ArrowNavIcon({ className }) {
+  return (
+    <svg
+      width="23"
+      height="12"
+      viewBox="0 0 23 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M16.3429 11.7396C15.9641 11.3893 15.9616 10.8198 16.3367 10.4659L20.1187 6.89993H0.963418C0.431547 6.89993 0 6.49681 0 5.99997C0 5.50314 0.431547 5.10001 0.963418 5.10001H20.1187L16.3367 1.53407C15.9616 1.18018 15.9641 0.610683 16.3429 0.260299C16.7205 -0.0889157 17.3302 -0.0865457 17.7053 0.266158L22.4421 4.73326C23.186 5.43517 23.186 6.56483 22.4421 7.26674L17.7053 11.7338C17.3302 12.0866 16.7205 12.0889 16.3429 11.7396Z"
         className="fill-current"
       />
     </svg>

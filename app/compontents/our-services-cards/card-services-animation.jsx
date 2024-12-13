@@ -148,7 +148,7 @@ export default function Home() {
                       </h2>
                       <div>
                         <Link href={card.link}>
-                          <button className="bg-white flex items-center text-secondary lg:text-2xl md:text-xl sm:text-sm hover:bg-gray-600 hover:text-white font-semibold lg:py-4 lg:px-12 md:py-2 md:px-6 sm:py-2 sm:px-6 mt-6 lg:rounded-2xl md:rounded-lg sm:rounded-lg">
+                          <button className="bg-white flex items-center text-secondary lg:text-2xl md:text-xl sm:text-sm hover:bg-primary hover:text-white font-semibold lg:py-4 lg:px-12 md:py-2 md:px-6 sm:py-2 sm:px-6 mt-6 lg:rounded-2xl md:rounded-lg sm:rounded-lg">
                             {card.buttonLabel}
                             <span className="inline-flex items-center pl-4">
                               <NavIcon />
@@ -177,7 +177,7 @@ function NavIcon() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="18" cy="18" r="18" fill="#3163C6" />
+      <circle cx="18" cy="18" r="18" fill="#0d1218" />
       <path
         d="M10.4184 19.1006L24.1507 19.1006C24.4828 19.1006 24.752 18.8314 24.752 18.4993C24.752 18.1673 24.4828 17.8981 24.1507 17.8981L10.4184 17.8981C10.0864 17.8981 9.8172 18.1673 9.8172 18.4993C9.8172 18.8314 10.0864 19.1006 10.4184 19.1006Z"
         fill="white"

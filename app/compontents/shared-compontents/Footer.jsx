@@ -39,12 +39,28 @@ export default function Footer() {
               </a>
             </h6>
           </div>
-          <div className="flex items-center mt-3">
-            <div>
-              <FacebookIcon />
+          <div className="inline-flex items-center mt-2">
+            <div className="group">
+              <a
+                href="https://www.facebook.com/solargard.tinting/"
+                target="_blank"
+                className="group-hover:text-HoverColor transition-colors duration-300"
+              >
+                <span>
+                  <FacebookIcon />
+                </span>
+              </a>
             </div>
-            <div className="pl-2">
-              <InstagramIcon />
+            <div className="group pl-2">
+              <a
+                href="https://www.instagram.com/solargard_ireland/"
+                target="_blank"
+                className="group-hover:text-HoverColor transition-colors duration-300"
+              >
+                <span>
+                  <InstagramIcon />
+                </span>
+              </a>
             </div>
           </div>
         </div>
