@@ -1,3 +1,5 @@
+"use client";
+
 import { manifestData } from "@/app/Data-Sheets/Manifestions-Graphics-Data";
 import Link from "next/link";
 import { Progress } from "@nextui-org/progress";
@@ -27,7 +29,11 @@ export default function ManifestationGraphicSpecPage({ params }) {
   if (!product) {
     notFound();
   }
-  // import hero image
+
+  const handleDownload = () => {
+    // Open the Dropbox link in a new window
+    window.open(product.PDFDownloadLink, "_blank");
+  };
 
   return (
     <div className="antialiased">
@@ -54,8 +60,11 @@ export default function ManifestationGraphicSpecPage({ params }) {
           <p className="text-white text-center font-medium xxl:text-4xl xl:text-4xl lg:text-3xl md:text-xl sm:text-base">
             {product.FilmDescription}
           </p>
-          <div className="text-center mt-16">
-            <button className="outline outline-offset-2 outline-1 outline-white text-white font-semibold rounded-sm py-2 px-10 hover:bg-white hover:text-secondary">
+          <div className="text-center lg:mt-16 md:mt-8 sm:mt-6">
+            <button
+              onClick={handleDownload}
+              className="outline outline-offset-2 outline-1 outline-white text-white font-semibold rounded-sm py-2 px-10 hover:bg-white hover:text-secondary"
+            >
               Download Data Sheet
             </button>
           </div>

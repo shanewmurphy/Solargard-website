@@ -1,3 +1,5 @@
+"use client";
+
 import { SafetyFilmsData } from "@/app/Data-Sheets/Safety-Films-Data";
 import { Progress } from "@nextui-org/progress";
 import { notFound } from "next/navigation";
@@ -27,6 +29,11 @@ export default function SafetyFilmSpecPage({ params }) {
   }
   // import hero image
 
+  const handleDownload = () => {
+    // Open the Dropbox link in a new window
+    window.open(product.PDFDownloadLink, "_blank");
+  };
+
   return (
     <div className="antialiased">
       <div className="w-full h-[70vh] relative">
@@ -52,8 +59,11 @@ export default function SafetyFilmSpecPage({ params }) {
           <p className="text-white text-center font-medium xxl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-base">
             {product.FilmDescription}
           </p>
-          <div className="text-center mt-16">
-            <button className="outline outline-offset-2 outline-1 outline-white text-white font-semibold rounded-sm py-2 px-10 hover:bg-white hover:text-secondary">
+          <div className="text-center lg:mt-16 md:mt-8 sm:mt-6">
+            <button
+              onClick={handleDownload}
+              className="outline outline-offset-2 outline-1 outline-white text-white font-semibold rounded-sm py-2 px-10 hover:bg-white hover:text-secondary"
+            >
               Download Data Sheet
             </button>
           </div>

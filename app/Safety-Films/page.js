@@ -82,6 +82,9 @@ export default function SafetyFilmsPage() {
             </h1>
           </div>
         </div>
+        <div>
+          <SafetyFilmsComponent />
+        </div>
         <div className="bg-grey">
           <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 xxl:py-56 xl:py-40 lg:py-36 md:py-24 sm:py-12 mx-auto">
             <div className="flex flex-col w-full">
@@ -156,9 +159,6 @@ export default function SafetyFilmsPage() {
               </div>
             </div>
           </div>
-        </div>
-        <div>
-          <SafetyFilmsComponent />
         </div>
         <div>
           <SafetyFAQs />

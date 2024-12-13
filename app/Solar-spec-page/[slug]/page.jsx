@@ -23,6 +23,7 @@ export default function SolarFilmPage({ params }) {
   // );
 
   // If no product is found, show 404
+
   const handleDownload = () => {
     // Open the Dropbox link in a new window
     window.open(product.PDFDownloadLink, "_blank");

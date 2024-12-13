@@ -4,6 +4,8 @@ export const SafetyFilmsData = [
     name: "Super Clear 2 C",
     slug: "Super-Clear-2-C",
     category: "Transparent",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/ahe81bpa7wjb465dv1381/Super_Clear_2_C.pdf?rlkey=ktlx9tnaxf6vl4cqu7gds9pxo&st=datf1acv&dl=0",
     FilmDescription:
       "Super Clear 2 C film secures your windows and prevents broken glass from scattering in the event of an impact. Perfectly transparent and easy to apply.",
     image: "/images/safety-film-imgs/Super-Clear-2-C-min.jpg",
@@ -43,6 +45,8 @@ export const SafetyFilmsData = [
     name: "Clear 4 XC",
     slug: "Clear-4-XC",
     category: "Transparent",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/jbfsmzh9jh7i51kdf6k79/Safe_4_XC.pdf?rlkey=qd3ihginjmxwfcdvjfkxe98md&st=tdencjj5&dl=0",
     FilmDescription:
       "Clear 7 C films help secure your windows by ensuring that the glass does not shatter, remaining transparent and retaining its overall integrity in the event of an impact, explosion or fire. Comply with European Standard EN 12600",
     image: "/images/safety-film-imgs/Super-Clear-2-C-min.jpg",
@@ -82,6 +86,8 @@ export const SafetyFilmsData = [
     name: "Clear 7 C",
     slug: "Clear-7-C",
     category: "Transparent",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/o72sak09wuiv2enu7804a/Clear_7_C.pdf?rlkey=my7sapf01i1afis9a0fxrzeyp&st=cqh5t3mo&dl=0",
     FilmDescription:
       "Super Clear 2 C films help secure your windows by ensuring that the glass does not shatter, remaining transparent and retaining its overall integrity in the event of an impact, explosion or fire.",
     image: "/images/safety-film-imgs/superclear7C.jpg",
@@ -121,6 +127,8 @@ export const SafetyFilmsData = [
     name: "Safe 4 C",
     slug: "Safe-4-C",
     category: "Transparent",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/2nrruwivxi36nahyjvk2r/Safe_4_C.pdf?rlkey=bxj0jmjddhc2fn4nfpu4uut12&st=7gmvqmad&dl=0",
     FilmDescription:
       "Safe 4 C films are perfectly transparent and help secure your windows by ensuring that the glass does not shatter, remaining transparent and retaining its overall integrity in the event of an impact, explosion or fire. Comply with European Standard EN 12600.",
     image: "/images/safety-film-imgs/superclear7C.jpg",
@@ -160,6 +168,8 @@ export const SafetyFilmsData = [
     name: "Clear 8 C",
     slug: "Clear-8-C",
     category: "Transparent",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/r07yl6cynzfuo8nc8zvj1/Clear_8_C.pdf?rlkey=271kju3gxnsxsjcbufy9b8mjb&st=s55t6v3o&dl=0",
     FilmDescription:
       "Clear 8 C films help secure your windows by ensuring that the glass does not shatter, remaining transparent and retaining its overall integrity in the event of an impact, explosion or fire. Comply with European Standard EN 12600.",
     image: "/images/safety-film-imgs/Super-Clear-2-C-min.jpg",
@@ -199,6 +209,8 @@ export const SafetyFilmsData = [
     name: "Clear 8 XC",
     slug: "Clear-8-XC",
     category: "Transparent",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/93irhrj3barmz8bzyu0nt/Clear_8_XC.pdf?rlkey=sgkk9dwiexhr4o9ftzoby1t57&st=u3zwdkxe&dl=0",
     FilmDescription:
       "Clear 8 XC films help secure your windows by ensuring that the glass does not shatter, remaining transparent and retaining its overall integrity in the event of an impact, explosion or fire. Comply with European Standard EN 12600.",
     image: "/images/safety-film-imgs/Super-Clear-2-C-min.jpg",
@@ -238,6 +250,8 @@ export const SafetyFilmsData = [
     name: "Clear 17 C",
     slug: "Clear-17-C",
     category: "Transparent",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/yp8s7bv52h9lc3gmiblpw/Clear_17_C.pdf?rlkey=uismhnoelgdw0erp17colwmqk&st=hxp7emfr&dl=0",
     FilmDescription:
       "Clear 17 C film helps secure your windows by ensuring that the glass does not shatter, remaining transparent and retaining its overall integrity in the event of an impact, explosion or fire. Ideally suited to covering large glazed expanses, it complies with European Standard EN 13541 –ER1.",
     image: "/images/safety-film-imgs/clear17c.jpg",
@@ -277,6 +291,8 @@ export const SafetyFilmsData = [
     name: "Safer 4 XC",
     slug: "Safer-4-XC",
     category: "Transparent",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/jbfsmzh9jh7i51kdf6k79/Safe_4_XC.pdf?rlkey=qd3ihginjmxwfcdvjfkxe98md&st=7fxv6b0e&dl=0",
     FilmDescription:
       "Safer 4 XC solvent resistant films provide highly effective protection against tags and graffiti. The film's protective qualities are not limited to solvents, it will also shield a window's surface from other acts of vandalism involving scratching or acid etching. An easy film to install and replace, it is also classed as a security film, providing protection by holding shattered glass in place in the event of an explosion or serious impact.",
     image: "/images/safety-film-imgs/Super-Clear-2-C-min.jpg",
@@ -316,6 +332,8 @@ export const SafetyFilmsData = [
     name: "Clear 18 C",
     slug: "Clear-18-C",
     category: "Transparent",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/n4rf6sf03ea0gvst4cw8c/Clear_18_C.pdf?rlkey=9qedj25cysfoosbn7rhygpa53&st=zu7o11c0&dl=0",
     FilmDescription:
       "Clear 18 C films help secure your windows by ensuring that the glass does not shatter, remaining transparent and retaining its overall integrity in the event of an impact, explosion or fire. Ideal for use on large glazed surfaces, these films are European Standard EN 356 compliant.",
     image: "/images/safety-film-imgs/Super-Clear-2-C-min.jpg",
@@ -355,6 +373,8 @@ export const SafetyFilmsData = [
     name: "Super Clear 3 C",
     slug: "Super-Clear-3-C",
     category: "Transparent",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/k07v8u2t8vevq405i4cu7/Super_Clear_3_C.pdf?rlkey=rfqmo1yvpkao6tq1i44u3vz93&st=0qztws87&dl=0",
     FilmDescription:
       "Super Clear 3 C films help secure your windows by ensuring that the glass does not shatter, remaining transparent and retaining its overall integrity in the event of an impact, explosion or fire. Comply with European Standard EN 12600.",
     image: "/images/safety-film-imgs/superclear3C.jpg",
@@ -394,6 +414,8 @@ export const SafetyFilmsData = [
     name: "Silver 470 C",
     slug: "Silver-470-C",
     category: "Combination",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/k4tbb5toldulakw2nm1qg/Silver_470_C.pdf?rlkey=mwuw4qhg75h215brid7jg5mgy&st=ugt0go7a&dl=0",
     FilmDescription:
       "Silver 470 C films are highly effective at reducing solar heat gain, whilst at the same time continuing to allow most natural light to pass through. Solar glare is greatly diminished and its one-way mirror aspect guarantees privacy from prying eyes, whilst affording a modern feel to the exterior of a building. A highly resilient film, it helps to secure your windows by ensuring that the glass does not shatter in the event of an impact or explosion. Complies with European Standard EN 12600.",
     image: "/images/safety-film-imgs/silver470C.jpg",
@@ -435,6 +457,8 @@ export const SafetyFilmsData = [
     name: "Silver 480 C",
     slug: "Silver-480-C",
     category: "Combination",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/8x8iluaudxlx6u22r3q1f/Silver_480_C.pdf?rlkey=6dqvma4j57aozk65jn7o6c7kb&st=8n3swfxv&dl=0",
     FilmDescription:
       "Silver 480 C films are highly effective at reducing solar heat gain, whilst at the same time continuing to allow most natural light to pass through. Solar glare is greatly diminished and its one-way mirror aspect guarantees privacy from prying eyes, whilst affording a modern feel to the exterior of a building. A highly resilient film, it helps to secure your windows by ensuring that the glass does not shatter in the event of an impact or explosion. Conforms to European Standard EN 12600.",
     image: "/images/safety-film-imgs/Silver-480-C.jpg",
@@ -474,6 +498,8 @@ export const SafetyFilmsData = [
     name: "Silver 880 C",
     slug: "Silver-880-C",
     category: "Combination",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/256n1rzkqiwuuz2nq6ah2/Silver_880_C.pdf?rlkey=8kg0d5iu0niuymm396cvir8x0&st=j1tx304i&dl=0",
     FilmDescription:
       "Silver 880 C films are highly effective at reducing solar heat gain, whilst at the same time continuing to allow most natural light to pass through. Solar glare is greatly diminished and its one-way mirror aspect guarantees privacy from prying eyes, whilst affording a modern feel to the exterior of a building. A highly resilient film, it helps to secure your windows by ensuring that the glass does not shatter in the event of an impact or explosion. Conforms to European Standard EN 12600.",
     image: "/images/safety-film-imgs/Silver-880-C.jpg",
@@ -513,6 +539,8 @@ export const SafetyFilmsData = [
     name: "Mat White Security",
     slug: "Mat-White-Security",
     category: "Combination",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/ytsplysen0xpwz34500tk/Mat_White_Security.pdf?rlkey=ja1lo3ovrtwkb88hqmeyg5mj6&st=riz7l1v8&dl=0",
     FilmDescription:
       "Mat White Security privacy films are designed to provide protection against the scrutiny of prying eyes. Whilst completely opalescent, the film still allows most natural light to pass through. Designed to act as a security film, it provides protection by holding shattered glass in place in the event of an impact.",
     image: "/images/safety-film-imgs/Mat-White-Security.jpg",
@@ -552,6 +580,8 @@ export const SafetyFilmsData = [
     name: "Neutral 440 C",
     slug: "Neutral-440-C",
     category: "Combination",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/i2ul6gb7d9adolcm5g6hc/Neutral_440_C.pdf?rlkey=3519gn39pi3xcrfyda44rnr1q&st=68fkbn48&dl=0",
     FilmDescription:
       "Neutral 440 C films are highly effective at reducing solar heat gain, whilst at the same time continuing to allow some natural light transmission. They help noticeably reduce solar glare, their tinted aspect helping convey a touch of colour and customization to the external aspect of a building. Designed to act as a security film, it provides protection by holding shattered glass in place in the event of an impact.",
     image: "/images/safety-film-imgs/Neutral-440-C.jpg",
@@ -591,6 +621,8 @@ export const SafetyFilmsData = [
     name: "Neutral 465 C",
     slug: "Neutral-465-C",
     category: "Combination",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/y9f3u7ishzr725oz31fe6/Neutral_465_C.pdf?rlkey=j4zm4ta4wd0k203r9mr8hjveg&st=gwwj5bbh&dl=0",
     FilmDescription:
       "Neutral 465 C security films are highly effective at reducing solar heat gain, whilst at the same time continuing to allow some natural light transmission. They help noticeably reduce solar glare, their tinted aspect helping convey a touch of colour and customization to the external aspect of a building. Designed to act as a security film, it provides protection by holding shattered glass in place in the event of an impact.",
     image: "/images/safety-film-imgs/Neutral-465-C.jpg",
@@ -630,6 +662,8 @@ export const SafetyFilmsData = [
     name: "Silver 480 XC",
     slug: "Silver-480-XC",
     category: "Combination",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/diftwvfrjx34n5xrr886p/Silver_480_XC.pdf?rlkey=i2hka56wj3epg5lh5keqdtofd&st=dx1fs1ls&dl=0",
     FilmDescription:
       "Silver 480 XC films are highly effective at reducing solar heat gain, whilst at the same time continuing to allow some natural light transmission. This film provides a good level of protection against solar glare, whilst its one-way mirror aspect further guarantees privacy from prying eyes. Its modern design immediately lends a contemporary feel to any building exterior. In addition, ist safety composition will protect you from glass splinters. 2B2 certification and EN 12600 standard.",
     image: "/images/safety-film-imgs/Silver-480-XC.jpg",
@@ -669,6 +703,8 @@ export const SafetyFilmsData = [
     name: "Clear AB Anti Fog",
     slug: "Clear-AB-Anti-Fog",
     category: "Anti Fog",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/ydomuqgltf5ih3w0vtnz9/Clear_AB_Anti_Fog.pdf?rlkey=8gko0vk07a5uciussa99ej0rz&st=wcfbt24d&dl=0",
     FilmDescription:
       "Clear AB Anti Fog film helps prevent windows and mirrors from fogging up in situations where ambient temperatures may vary significantly, such as in bathrooms, swimming pools, saunas, cold-rooms, etc.",
     image: "/images/safety-film-imgs/Clear-AB-Anti-Fog.jpg",
