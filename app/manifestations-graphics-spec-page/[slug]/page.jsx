@@ -71,7 +71,7 @@ export default function ManifestationGraphicSpecPage({ params }) {
         </div>
       </div>
       <div className="bg-grey">
-        <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-9/12 sm:w-11/12 mx-auto pt-16">
+        <div className="xxl:w-8/12 xl:w-8/12 lg:w-10/12 md:w-9/12 sm:w-11/12 mx-auto pt-16">
           <Image
             className="rounded-2xl"
             src={product.image}
@@ -85,7 +85,7 @@ export default function ManifestationGraphicSpecPage({ params }) {
             height={1}
           />
         </div>
-        <div className="xxl:w-8/12 xl:w-9/12 lg:w-9/12 md:w-9/12 sm:w-11/12 mx-auto py-24">
+        <div className="xxl:w-8/12 xl:w-8/12 lg:w-9/12 md:w-9/12 sm:w-11/12 mx-auto py-24">
           <div className="grid lg:grid-cols-2 lg:gap-16 md:gap-8 sm:gap-6">
             <div>
               <div className="w-full">
@@ -224,7 +224,7 @@ export default function ManifestationGraphicSpecPage({ params }) {
       </div>
       {/* Technical Datasheet And Installation Advice Section */}
       <div className="bg-grey lg:pb-44 md:pb-40 sm:pb-44">
-        <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-9/12 sm:w-11/12 mx-auto lg:py-24 antialiased">
+        <div className="xxl:w-8/12 xl:w-8/12 lg:w-10/12 md:w-9/12 sm:w-11/12 mx-auto lg:py-24 antialiased">
           <div className="grid lg:grid-cols-2 gap-16">
             <div className="bg-white rounded-lg py-6 px-8">
               <h5 className="font-semibold text-secondary lg:text-xl md:text-lg sm:text-xl">

@@ -52,60 +52,67 @@ export default function MobileSlideMenu() {
                   <div className="px-4 sm:px-6">
                     <DialogTitle className="text-base inline-flex items-center font-semibold text-gray-900"></DialogTitle>
                   </div>
-                  <div className="relative mt-8 flex-1 px-4 sm:px-6 antialiased">
-                    <div>
+                  <div className="relative mt-4 flex-1 px-4 sm:px-6 antialiased">
+                    <div className="border-b-1 pb-1">
                       <a href="/Solar-Films">
-                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
+                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full  text-left p-2 pl-4 hover:bg-zinc-100">
                           Solar Films
                         </button>
                       </a>
                     </div>
-                    <div className="mt-2">
+                    <div className="mt-2 border-b-1 pb-1">
                       <a href="/Privacy-Films">
-                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
+                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
                           Privacy Films
                         </button>
                       </a>
                     </div>
-                    <div className="mt-2">
+                    <div className="mt-2 border-b-1 pb-1">
                       <a href="/Safety-Films">
-                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
+                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
                           Safety Films
                         </button>
                       </a>
                     </div>
-                    <div className="mt-2">
+                    <div className="mt-2 border-b-1 pb-1">
+                      <a href="/Casper">
+                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
+                          Casper Cloaking
+                        </button>
+                      </a>
+                    </div>
+                    <div className="mt-6 border-b-1 pb-1">
                       <a href="/Manifestations-Graphics">
-                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
+                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
                           Manifestations & Graphics
                         </button>
                       </a>
                     </div>
-                    <div className="mt-2">
+                    <div className="mt-2 border-b-1 pb-1">
                       <a href="/CoverStyl">
-                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
+                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
                           CoverStyl&rsquo;
                         </button>
                       </a>
                     </div>
-                    <div className="mt-2">
+                    <div className="mt-6 border-b-1 pb-1">
                       <a href="/Vehicle-tinting">
-                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
+                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
                           Vehicle Tinting
                         </button>
                       </a>
                     </div>
-                    <div className="mt-2">
-                      <a href="/">
-                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
+                    <div className="mt-2 border-b-1 pb-1">
+                      <a href="/Vehicle-Wrapping">
+                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
                           Vehicle Wraps
                         </button>
                       </a>
                     </div>
-                    <div className="mt-2">
-                      <a href="/">
-                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full border-b-1 text-left p-2 pl-4 hover:bg-zinc-100">
-                          Cloaking
+                    <div className="mt-6 border-b-1 pb-1">
+                      <a href="/Contact-Us">
+                        <button className="text-lg text-zinc-500 font-semibold rounded-md w-full text-left p-2 pl-4 hover:bg-zinc-100">
+                          Contact Us
                         </button>
                       </a>
                     </div>

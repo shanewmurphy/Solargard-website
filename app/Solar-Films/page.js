@@ -85,11 +85,13 @@ export default function SolarFilms() {
               }}
               className="h-[70vh]"
             />
-            <div className="absolute lg:w-4/5 inset-0 flex items-end justify-start lg:p-24 md:p-12 sm:p-8 largeScreens:p-40 rounded-bl-lg">
-              {/* <h1 className="text-white lg:text-5xl md:text-3xl sm:text-xl largeScreens:text-6xl font-bold">
-                Experience the Ultimate in Comfort and Efficiency with Solar
-                Films
-              </h1> */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center space-y-2">
+              <h2 className="text-white text-center xxl:text-8xl xl:text-8xl lg:text-7xl md:text-3xl sm:text-5xl font-bold">
+                Solar Films
+              </h2>
+              <h3 className="text-white text-center font-semibold xxl:text-5xl xl:text-4xl lg:text-4xl md:text-3xl sm:text-xl">
+                Anti Glare - Heat Reduction - UV Protection
+              </h3>
             </div>
           </div>
         </div>
@@ -97,9 +99,9 @@ export default function SolarFilms() {
       <div className="bg-grey antialiased">
         <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 xxl:py-56 xl:py-40 lg:py-36 md:py-24 sm:py-12 mx-auto">
           <h1 className="text-secondary font-medium xxl:text-4xl xl:text-3xl lg:text-2xl md:text-2xl sm:text-lg">
-            Discover the power of Solar Gard Solutions, Ireland’s premium solar
-            films, designed to enhance comfort, reduce energy costs, and protect
-            your interiors. Our advanced solar films provide a range of
+            Discover the power of Solar Gard Solutions, Ireland&apos;s premium
+            solar films, designed to enhance comfort, reduce energy costs, and
+            protect your interiors. Our advanced solar films provide a range of
             benefits, including heat reduction, anti glare control, and enhanced
             privacy, making them the ideal solution for residential, commercial,
             and industrial applications.

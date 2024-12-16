@@ -77,7 +77,7 @@ const PrivacyFilmsComponent = () => {
     );
 
     if (product.category === "Frosted Films") {
-      return `/mainifestations-graphics-specs-page/${encodeURIComponent(
+      return `/manifestations-graphics-spec-page/${encodeURIComponent(
         product.slug
       )}`;
     }
