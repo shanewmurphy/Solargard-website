@@ -661,6 +661,8 @@ export const solarFilmsData = [
     name: "Bronze 80 XC",
     slug: "bronze-80-xc",
     category: "Exterior Colour",
+    PDFDownloadLink:
+      "https://www.dropbox.com/scl/fi/38u908dualjmcktvb9f6j/Bronze_80_C.pdf?rlkey=4fyodz6i5suakgxamqxyneugw&st=fpxkt4w1&dl=0",
     image:
       "/images/solar-films-imgs/solar-films-tumbnaills/solar-film-thumbnail-02.jpg",
     EnergyRejectedValue: "80",

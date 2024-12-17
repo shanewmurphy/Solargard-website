@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import Image from "next/image";
+
 import { Link } from "react-scroll";
 import CarTintingFAQs from "../compontents/FAQs/car-tinting-faqs";
 import OurServiceCarousel from "../compontents/shared-compontents/our-services-carousel";
@@ -198,11 +199,13 @@ export default function VehicleTinting() {
             }}
             className="h-[70vh] object-top"
           />
-          <div className="absolute lg:w-4/5 largeScreens:w-9/12 inset-0 flex items-end justify-start lg:p-24 md:p-12 sm:p-8 largeScreens:p-40 rounded-bl-lg">
-            {/* <h1 className="text-white lg:text-5xl md:text-3xl sm:text-xl largeScreens:text-6xl font-bold">
-                Experience the Ultimate in Comfort and Efficiency with Solar
-                Films
-              </h1> */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center space-y-2">
+            <h2 className="text-white text-center xxl:text-8xl xl:text-8xl lg:text-7xl md:text-3xl sm:text-5xl font-bold">
+              Vehicle Tinting
+            </h2>
+            {/* <h3 className="text-white text-center font-semibold xxl:text-5xl xl:text-4xl lg:text-4xl md:text-3xl sm:text-xl">
+              Security - Shatter Resistance
+            </h3> */}
           </div>
         </div>
       </div>
