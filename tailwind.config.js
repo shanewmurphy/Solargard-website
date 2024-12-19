@@ -34,6 +34,9 @@ module.exports = {
       borderRadius: {
         xl: "60px",
       },
+      height: {
+        400: "25rem",
+      },
       backgroundImage: {
         "gradient-img":
           "url('/images/company-profile/large-background-gradient-img-min.jpg')",
