@@ -31,7 +31,7 @@ export default function CasperPage() {
       <div className="bg-grey py-24 pb-40 antialiased">
         <div className="xxl:w-6/12 xl:w-6/12 lg:w-6/12 sm:w-10/12 mx-auto">
           <h1 className="xxl:text-4xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl text-center font-bold text-secondary">
-            Sorry this page is under construction
+            Sorry this page is under construction -----
           </h1>
           <p className="mt-3 text-base font-medium">
             Casper&#8482; Cloaking is an innovative architectural film that

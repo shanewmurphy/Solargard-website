@@ -56,7 +56,7 @@ const serviceListData = [
     description:
       "Customise your vehicle’s look with high-quality wraps that make a bold statement.",
     icon: VehicleWrappingIcon,
-    pageURL: "/",
+    pageURL: "/Vehicle-Wrapping",
   },
   {
     id: "07",
@@ -72,7 +72,7 @@ const serviceListData = [
     description:
       "Maintain confidentiality in offices by obscuring on-screen data while keeping glass walls clear.",
     icon: CloakingIcon,
-    pageURL: "/",
+    pageURL: "/Casper",
   },
 ];
 
