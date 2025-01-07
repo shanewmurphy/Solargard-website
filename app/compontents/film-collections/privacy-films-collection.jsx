@@ -151,7 +151,7 @@ const PrivacyFilmsComponent = () => {
           </div>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 lg:gap-12 md:gap-6 sm:gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 lg:gap-6 md:gap-6 sm:gap-4">
           {currentProducts.map((product) => (
             <Link
               key={product.id}

@@ -194,13 +194,10 @@ export default function PrivacyFilmsPage() {
         <div className="xxl:w-8/12 xl:w-9/12 lg:w-11/12 md:w-11/12 sm:w-11/12 mx-auto lg:py-40">
           <div className="flex lg:flex-row sm:flex-col gap-16">
             <div className="basis-4/12">
-              <h3 className="lg:text-5xl md:text-3xl sm:text-3xl font-bold mt-[20%]">
+              <h3 className="lg:text-4xl md:text-3xl sm:text-3xl font-bold mt-[20%]">
                 Solar Films Vs Frosted Films
               </h3>
-              <h4 className="lg:text-5xl md:text-3xl sm:text-3xl font-semibold text-textLightGray mt-2">
-                A Comparison
-              </h4>
-              <h5 className="font-medium text-secondary lg:text-lg mt-[5%]">
+              <h5 className="font-medium text-textGray text-base mt-[5%]">
                 We’re dedicated to providing high-quality privacy solutions
                 tailored to your needs. Whether you want a sleek, modern look
                 with solar films or timeless elegance with frosted films, we’ve
@@ -214,7 +211,7 @@ export default function PrivacyFilmsPage() {
                     className="bg-white rounded-lg p-8 antialiased"
                     key={comparison.id}
                   >
-                    <h3 className="lg:text-base md:text-4xl sm:text-3xl font-bold text-secondary">
+                    <h3 className="lg:text-3xl md:text-4xl sm:text-3xl font-bold text-secondary">
                       {comparison.Type}
                     </h3>
                     <div className="border-b-1 border-gray-300 pb-3 mt-4">
