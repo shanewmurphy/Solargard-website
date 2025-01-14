@@ -217,7 +217,6 @@ export default function CoverstylePage() {
           </div>
         ))}
       </div>
-
       <section>
         <CoverStylFAQs />
       </section>
