@@ -102,13 +102,13 @@ export default function CasperPage() {
               </p>
             </div>
           </div>
-          <div className="bg-secondary lg:h-[18vh] md:h-[20vh] sm:h-[12vh] mt-[25%] relative overflow-visible rounded-lg">
+          <div className="bg-secondary lg:h-[18vh] md:h-[15vh] sm:h-[12vh] xs:h-[18vh] mt-[25%] relative overflow-visible rounded-lg">
             <div className="flex flex-row h-full">
               <div className="basis-3/5 lg:p-8 md:p-6 sm:p-2 lg:pl-16 md:pl-12 sm:pl-4">
                 <h5 className="text-white font-semibold lg:text-4xl md:text-2xl sm:text-base">
                   Call us Today for Free Samples
                 </h5>
-                <h6 className="text-white font-semibold lg:mt-2 lg:text-3xl">
+                <h6 className="text-white font-semibold lg:mt-2 lg:text-3xl md:text-2xl sm:text-lg">
                   021 454 5606
                 </h6>
               </div>

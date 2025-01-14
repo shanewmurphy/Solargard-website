@@ -30,3 +30,8 @@ b {
   padding-top: 10%;
   padding-bottom: 15%;
 }
+@media screen and (max-width: 600px) {
+  .swiper-slide {
+    width: 90% !important;
+  }
+}
