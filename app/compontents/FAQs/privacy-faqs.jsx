@@ -29,7 +29,7 @@ const PrivacyFAQ = [
 
   {
     id: "05",
-    question: "Can I customize the look of frosted films?",
+    question: "Can I customise the look of frosted films?",
     anwser:
       "Yes, frosted films can be customized with patterns, designs, or logos to add a decorative or branded touch to your space.",
   },

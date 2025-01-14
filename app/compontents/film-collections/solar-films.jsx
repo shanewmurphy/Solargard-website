@@ -166,10 +166,12 @@ const SolarFilmsData = () => {
               <div key={product.id}>
                 <div className="rounded-2xl lg:py-12 md:py-12 sm:py-6 bg-white">
                   <div className="mx-auto">
-                    <img
+                    <Image
+                      width={200}
+                      height={200}
                       src={product.image}
                       alt={product.name}
-                      className="lg:w-36 lg:h-36 md:w-28 md:h-28 sm:w-28 sm:h-28 mx-auto rounded-full bg-center bg-cover"
+                      className="lg:w-44 lg:h-44 md:w-28 md:h-28 sm:w-28 sm:h-28 mx-auto rounded-full bg-center bg-cover"
                     />
                   </div>
                   <h3 className="font-semibold text-secondary text-center lg:text-2xl mt-2">

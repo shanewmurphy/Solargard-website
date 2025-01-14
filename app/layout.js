@@ -27,7 +27,7 @@ const geistMono = localFont({
 
 export const metadata = {
   title:
-    "Solar Gard Solutions, Ireland | Glass Film Solutions, Car Tinting, CoverStyl' Surface Wrapping, Printed Graphics & Vehicle Wrapping",
+    "Solar Gard Solutions, Ireland | Glass Film Solutions, Anti-glare window films, heat reduction window films, Privacy window films, Car Tinting, CoverStyl' Surface Wrapping, Printed Graphics & Vehicle Wrapping",
   description:
     "Solar Gard Solutions, Ireland. Offers premium glass film solutions, including Solar window films, Anti-Glare window films, Heat reductions window films, Privacy window Films, and Safety window films, Cloaking films, as well as car tinting, vehicle wrapping, and CoverStyl' for stylish surface transformations. Contact us for innovative solutions today!",
   keywords:
@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <meta
         name="subject"
-        content="Glass Solar Film Solutions, Car Tinting, Vehicle Wrapping, and Coverstyl' Surface Transformations in Ireland"
+        content="Glass Solar Film Solutions, Car Tinting, Vehicle Wrapping, Anti-Glare window film, Heat reduction window film, Privacy window film, Safety window films, Cloaking films, and Coverstyl' Surface Transformations in Ireland"
       ></meta>
       <meta name="Classification" content="Business"></meta>
       <meta name="coverage" content="Ireland"></meta>

@@ -385,7 +385,9 @@ export default function SolarFilmPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img
+                    <Image
+                      width={20}
+                      height={20}
                       src={product.ReflectiveTintedDoublePane}
                       alt="mark icon"
                     />
@@ -408,7 +410,9 @@ export default function SolarFilmPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img
+                    <Image
+                      width={20}
+                      height={20}
                       src={product.StadipExtClearDoublePane}
                       alt="mark icon"
                     />
@@ -421,7 +425,9 @@ export default function SolarFilmPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img
+                    <Image
+                      width={20}
+                      height={20}
                       src={product.StadipIntClearDoublePane}
                       alt="mark icon"
                     />

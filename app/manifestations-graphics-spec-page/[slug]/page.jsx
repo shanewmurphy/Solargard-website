@@ -405,7 +405,9 @@ export default function ManifestationGraphicSpecPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img
+                    <Image
+                      width={20}
+                      height={20}
                       src={product.ReflectiveTintedDoublePane}
                       alt="mark icon"
                     />
@@ -418,7 +420,12 @@ export default function ManifestationGraphicSpecPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img src={product.GasFilledDoublePane} alt="mark icon" />
+                    <Image
+                      width={20}
+                      height={20}
+                      src={product.GasFilledDoublePane}
+                      alt="mark icon"
+                    />
                   </span>
                 </div>
               </div>
@@ -428,7 +435,9 @@ export default function ManifestationGraphicSpecPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img
+                    <Image
+                      width={20}
+                      height={20}
                       src={product.StadipExtClearDoublePane}
                       alt="mark icon"
                     />
@@ -441,7 +450,9 @@ export default function ManifestationGraphicSpecPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img
+                    <Image
+                      width={20}
+                      height={20}
                       src={product.StadipIntClearDoublePane}
                       alt="mark icon"
                     />

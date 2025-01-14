@@ -351,7 +351,12 @@ export default function SafetyFilmSpecPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img src={product.ClearSinglePane} alt="mark icon" />
+                    <Image
+                      width={20}
+                      height={20}
+                      src={product.ClearSinglePane}
+                      alt="mark icon"
+                    />
                   </span>
                 </div>
               </div>
@@ -361,7 +366,12 @@ export default function SafetyFilmSpecPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img src={product.TintedSinglePane} alt="mark icon" />
+                    <Image
+                      width={20}
+                      height={20}
+                      src={product.TintedSinglePane}
+                      alt="mark icon"
+                    />
                   </span>
                 </div>
               </div>
@@ -371,7 +381,9 @@ export default function SafetyFilmSpecPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img
+                    <Image
+                      width={20}
+                      height={20}
                       src={product.ReflectiveTintedSinglePane}
                       alt="mark icon"
                     />
@@ -384,7 +396,12 @@ export default function SafetyFilmSpecPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img src={product.ClearDoublePane} alt="mark icon" />
+                    <Image
+                      width={20}
+                      height={20}
+                      src={product.ClearDoublePane}
+                      alt="mark icon"
+                    />
                   </span>
                 </div>
               </div>
@@ -394,7 +411,12 @@ export default function SafetyFilmSpecPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img src={product.TintedDoublePane} alt="mark icon" />
+                    <Image
+                      width={20}
+                      height={20}
+                      src={product.TintedDoublePane}
+                      alt="mark icon"
+                    />
                   </span>
                 </div>
               </div>
@@ -404,7 +426,9 @@ export default function SafetyFilmSpecPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img
+                    <Image
+                      width={20}
+                      height={20}
                       src={product.ReflectiveTintedDoublePane}
                       alt="mark icon"
                     />
@@ -417,7 +441,12 @@ export default function SafetyFilmSpecPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img src={product.GasFilledDoublePane} alt="mark icon" />
+                    <Image
+                      width={20}
+                      height={20}
+                      src={product.GasFilledDoublePane}
+                      alt="mark icon"
+                    />
                   </span>
                 </div>
               </div>
@@ -427,7 +456,9 @@ export default function SafetyFilmSpecPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img
+                    <Image
+                      width={20}
+                      height={20}
                       src={product.StadipExtClearDoublePane}
                       alt="mark icon"
                     />
@@ -440,7 +471,9 @@ export default function SafetyFilmSpecPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img
+                    <Image
+                      width={20}
+                      height={20}
                       src={product.StadipIntClearDoublePane}
                       alt="mark icon"
                     />

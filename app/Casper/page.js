@@ -5,6 +5,7 @@ import EnvelopeImg from "/public/images/casper-imgs/EnvelopeB.png";
 import ContactUs from "../compontents/shared-compontents/Contact-Us";
 import OurServiceCarousel from "../compontents/shared-compontents/our-services-carousel";
 import Footer from "../compontents/shared-compontents/Footer";
+
 export default function CasperPage() {
   return (
     <div>
@@ -52,10 +53,10 @@ export default function CasperPage() {
             playsInline
           ></video>
           <h3 className="text-secondary font-bold xxl:text-3xl xl:text-2xl lg:text-xl md:text-xl sm:text-base mt-4 antialiased">
-            Casper Cloaking Film selectively blocks LED and LCD light emitted
-            from screens, making the display invisible from outside the glass.
-            This allows passersby to see a clear, open space while completely
-            obscuring any digital information.
+            Casper&#8482; Cloaking Film selectively blocks LED and LCD light
+            emitted from screens, making the display invisible from outside the
+            glass. This allows passersby to see a clear, open space while
+            completely obscuring any digital information.
           </h3>
           <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 lg:gap-16 md:gap-8 sm:gap-4 lg:mt-16 md:mt-8 sm:mt-6">
             <div className="border-b-1 border-slate-400 pb-6">

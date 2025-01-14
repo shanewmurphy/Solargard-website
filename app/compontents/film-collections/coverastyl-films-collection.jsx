@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import { Pagination } from "@nextui-org/pagination";
@@ -125,7 +125,9 @@ export default function CoverstylFilmComponent() {
                   md:w-[calc(33.333%-12px)] xl:w-[calc(25%-12px)]"
             >
               <div className="lg:h-52 lg:w-52 md:h-36 md:w-36 sm:h-24 sm:w-24 mx-auto mb-4">
-                <img
+                <Image
+                  width={200}
+                  height={200}
                   src={product.productImage}
                   alt={product.productName}
                   className="rounded-full lg:h-52 lg:w-52 md:h-36 md:w-36 sm:h-24 sm:w-24"

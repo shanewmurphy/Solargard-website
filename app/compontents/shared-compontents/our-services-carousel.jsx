@@ -112,7 +112,7 @@ export default function OurServiceCarousel() {
               <div className="mt-2">
                 <div className="flex justify-between items-center">
                   <div>
-                    <h3 className="font-bold text-secondary xxl:text-2xl xl:text-xl lg:text-base md:text-base sm:text-base">
+                    <h3 className="font-semibold text-secondary xxl:text-2xl xl:text-xl lg:text-base md:text-base sm:text-base">
                       {service.title}
                     </h3>
                   </div>

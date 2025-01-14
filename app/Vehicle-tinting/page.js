@@ -351,6 +351,7 @@ export default function VehicleTinting() {
                     <Image
                       src={specsData.profileImg}
                       className="h-64 w-64 rounded-full"
+                      alt="Solar Gard Vehicle Tinting Films"
                       style={{
                         width: "100%",
                         objectFit: "auto",

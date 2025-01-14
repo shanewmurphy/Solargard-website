@@ -156,7 +156,7 @@ export default function SolarFilms() {
           </div>
         </div>
       </div>
-      <div className="bg-grey w-full xxl:px-0 lg:px-24 md:px-16 sm:px-2 xxl:py-44 xl:py-36 lg:py-24 md:py-16 sm:py-12">
+      <div className="bg-grey w-full xxl:px-0 xxl:py-44 xl:py-36 lg:py-24 md:py-16 sm:py-12">
         <div className="xxl:w-8/12 xl:w-10/12 lg:w-10/12 md:w-11/12 sm:w-11/12 mx-auto">
           <div className="flex text-secondary lg:flex-row md:flex-col sm:flex-col lg:gap-16">
             <div className="basis-2/5">
