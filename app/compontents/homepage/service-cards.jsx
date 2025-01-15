@@ -10,7 +10,8 @@ const CardData = [
     alt: "Solar Gard Solutions, Ireland, Solar Films",
     tags: "Anti-Glare, Privacy, Heat Reduction",
     imageUrl: "/images/card-service-imgs/Solar-film-card-img.jpg",
-    pageUrl: "",
+    pageUrl:
+      "Solar Gard Solutions, Ireland  Solar window Films, Anti-Glare window Films, Heat Reduction window Films, Privacy window Films",
   },
   {
     id: "02",

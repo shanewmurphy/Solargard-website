@@ -200,9 +200,9 @@ export default function VehicleTinting() {
             className="h-[70vh] object-top"
           />
           <div className="absolute inset-0 flex flex-col items-center justify-center space-y-2">
-            <h2 className="text-white text-center xxl:text-8xl xl:text-8xl lg:text-7xl md:text-3xl sm:text-5xl font-bold">
+            {/* <h2 className="text-white text-center xxl:text-8xl xl:text-8xl lg:text-7xl md:text-3xl sm:text-5xl font-bold">
               Vehicle Tinting
-            </h2>
+            </h2> */}
             {/* <h3 className="text-white text-center font-semibold xxl:text-5xl xl:text-4xl lg:text-4xl md:text-3xl sm:text-xl">
               Security - Shatter Resistance
             </h3> */}
@@ -273,45 +273,45 @@ export default function VehicleTinting() {
                     <div className="font-semibold">{tier.warranty}</div>
                   </div>
                   <div className="mt-4 border-b-2 pb-4">
-                    <h3 className="text-base font-semibold mb-1">Hatchback</h3>
-                    <div className="flex justify-between font-semibold">
+                    <h3 className="text-lg font-semibold mb-1">Hatchback</h3>
+                    <div className="flex justify-between font-medium">
                       <div>{tier.Hatchback.full}</div>
                       <div>€{tier.Hatchback.fullprice}</div>
                     </div>
-                    <div className="flex justify-between font-semibold">
+                    <div className="flex justify-between font-medium">
                       <div>{tier.Hatchback.half}</div>
                       <div>€{tier.Hatchback.halfprice}</div>
                     </div>
                   </div>
                   <div className="mt-4 border-b-2 pb-4">
-                    <h3 className="text-base font-semibold mb-1">MPV/Van</h3>
-                    <div className="flex justify-between font-semibold">
+                    <h3 className="text-lg font-semibold mb-1">MPV/Van</h3>
+                    <div className="flex justify-between font-medium">
                       <div>{tier.MPV.full}</div>
                       <div>€{tier.MPV.fullprice}</div>
                     </div>
-                    <div className="flex justify-between font-semibold">
+                    <div className="flex justify-between font-medium">
                       <div>{tier.MPV.half}</div>
                       <div>€{tier.MPV.halfprice}</div>
                     </div>
                   </div>
                   <div className="mt-4 border-b-2 pb-4">
-                    <h3 className="text-base font-semibold">Estate/SUV/Jeep</h3>
-                    <div className="flex justify-between font-semibold">
+                    <h3 className="text-lg font-semibold">Estate/SUV/Jeep</h3>
+                    <div className="flex justify-between font-medium">
                       <div>{tier.SUV.full}</div>
                       <div>€{tier.SUV.fullprice}</div>
                     </div>
-                    <div className="flex justify-between font-semibold">
+                    <div className="flex justify-between font-medium">
                       <div>{tier.SUV.half}</div>
                       <div>€{tier.SUV.halfprice}</div>
                     </div>
                   </div>
                   <div className="mt-4">
-                    <h3 className="text-base font-semibold">Coupe</h3>
-                    <div className="flex justify-between font-semibold">
+                    <h3 className="text-lg font-semibold">Coupe</h3>
+                    <div className="flex justify-between font-medium">
                       <div>{tier.coupe.full}</div>
                       <div>€{tier.coupe.fullprice}</div>
                     </div>
-                    <div className="flex justify-between font-semibold">
+                    <div className="flex justify-between font-medium">
                       <div>{tier.coupe.half}</div>
                       <div>€{tier.coupe.halfprice}</div>
                     </div>
@@ -319,15 +319,20 @@ export default function VehicleTinting() {
                 </div>
               ))}
             </div>
-            <div className="lg:w-8/12 mx-auto mt-8">
+            <div className="lg:w-8/12 md:w-7/12 sm:w-10/12 mx-auto mt-8">
               <h4 className="font-medium text-center text-secondary lg:text-2xl">
                 Simply call us to book. Provide us with your vehicle&apos;s make
                 and model, and let us know which package you&apos;re interested
                 in.
               </h4>
-              <h5 className="text-center mt-4 font-semibold lg:text-3xl md:text-2xl sm:text-3xl">
-                021 4545606
-              </h5>
+              <div className="flex items-center  bg-black lg:w-72 md:w-64 sm:w-60 py-2 px-2 rounded-xl mx-auto mt-6 antialiased">
+                <span className="rounded-full lg:w-11 lg:h-11 md:w-11 md:h-11 sm:w-9 sm:h-9 flex justify-center items-center bg-white">
+                  <PhoneIcon />
+                </span>
+                <h6 className="text-white font-semibold lg:text-3xl md:text-2xl sm:text-xl pl-4 antialiased">
+                  021 454 5606
+                </h6>
+              </div>
             </div>
           </div>
           <div className="mt-48">
@@ -459,5 +464,22 @@ export default function VehicleTinting() {
         <Footer />
       </div>
     </div>
+  );
+}
+
+function PhoneIcon() {
+  return (
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 30 29"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M14.0023 0C6.28121 0 0 5.83061 0 12.9978C0 16.739 1.73862 20.3015 4.77013 22.7722C5.01284 22.9683 5.3804 22.9455 5.59393 22.7224C5.8063 22.4971 5.78296 22.1559 5.54026 21.9577C2.76079 19.6928 1.16569 16.4271 1.16569 12.9978C1.16569 6.42959 6.92415 1.08315 14.0012 1.08315C21.077 1.08315 26.8366 6.42959 26.8366 12.9978C26.8366 19.5672 21.077 24.9125 14.0012 24.9125C12.2637 24.9125 11.1575 24.619 10.8063 24.0612C10.3594 23.3549 11.0572 22.0941 11.6091 21.1681L11.9253 21.298C12.245 21.4291 12.5823 21.4962 12.93 21.4962C13.916 21.4962 14.8098 20.9558 15.2089 20.1196L15.7211 19.0397C16.2765 17.8753 15.7048 16.5083 14.4504 15.9917L12.7071 15.2768C12.5228 15.202 12.3419 14.8294 12.3489 14.1676C12.3582 13.4019 12.6173 12.4303 13.0595 11.5009C14.0502 9.42018 15.3769 8.53633 15.8308 8.7183L17.5741 9.43209C18.8028 9.93359 20.3197 9.38335 20.8565 8.25254L21.3699 7.17264C21.6371 6.60831 21.6546 5.98009 21.4131 5.40385C21.1739 4.82869 20.7071 4.37377 20.098 4.12465L18.3571 3.40868C18.0035 3.26462 17.6208 3.19205 17.2159 3.19205C14.7106 3.19205 11.6044 6.03641 9.66511 10.1091C7.3734 14.9248 7.5986 19.5271 10.1785 20.5864L10.5356 20.7326C9.83197 21.9143 9.04201 23.4178 9.7958 24.6136C10.3851 25.5462 11.7596 26 13.9977 26C21.7188 26 28 20.1683 28 13.0022C28.0047 5.83061 21.7235 0 14.0023 0Z"
+        fill="#282828"
+      />
+    </svg>
   );
 }

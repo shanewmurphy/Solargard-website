@@ -332,7 +332,12 @@ export default function SolarFilmPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img src={product.ClearSinglePane} alt="mark icon" />
+                    <Image
+                      width={20}
+                      height={20}
+                      src={product.ClearSinglePane}
+                      alt="mark icon"
+                    />
                   </span>
                 </div>
               </div>
@@ -342,7 +347,12 @@ export default function SolarFilmPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img src={product.TintedSinglePane} alt="mark icon" />
+                    <Image
+                      width={20}
+                      height={20}
+                      src={product.TintedSinglePane}
+                      alt="mark icon"
+                    />
                   </span>
                 </div>
               </div>
@@ -352,7 +362,9 @@ export default function SolarFilmPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img
+                    <Image
+                      width={20}
+                      height={20}
                       src={product.ReflectiveTintedSinglePane}
                       alt="mark icon"
                     />
@@ -365,7 +377,12 @@ export default function SolarFilmPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img src={product.ClearDoublePane} alt="mark icon" />
+                    <Image
+                      width={20}
+                      height={20}
+                      src={product.ClearDoublePane}
+                      alt="mark icon"
+                    />
                   </span>
                 </div>
               </div>
@@ -375,7 +392,12 @@ export default function SolarFilmPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img src={product.TintedDoublePane} alt="mark icon" />
+                    <Image
+                      width={20}
+                      height={20}
+                      src={product.TintedDoublePane}
+                      alt="mark icon"
+                    />
                   </span>
                 </div>
               </div>
@@ -400,7 +422,12 @@ export default function SolarFilmPage({ params }) {
                 </div>
                 <div>
                   <span>
-                    <img src={product.GasFilledDoublePane} alt="mark icon" />
+                    <Image
+                      width={20}
+                      height={20}
+                      src={product.GasFilledDoublePane}
+                      alt="mark icon"
+                    />
                   </span>
                 </div>
               </div>
