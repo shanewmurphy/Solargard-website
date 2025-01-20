@@ -58,7 +58,7 @@ export default function SwitchableGlassPage() {
                 liquid crystal technology. When powered on, the glass becomes
                 transparent, and when powered off, it becomes frosted. This
                 simple yet effective mechanism gives you complete control over
-                your space's privacy and ambiance.
+                your space&apos;s privacy and ambiance.
               </p>
             </div>
             <div className="bg-white h-[50vh]"></div>

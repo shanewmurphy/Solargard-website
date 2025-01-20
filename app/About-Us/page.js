@@ -85,7 +85,7 @@ export default function AboutUs() {
             with innovative and sustainable solutions. Specialising in advanced
             glass and surface treatments, we provide cutting-edge products
             designed to enhance functionality, comfort, and aesthetics. From
-            solar films to privacy films, safety films, CoverStyl', vehicle
+            solar films to privacy films, safety films, CoverStyl&apos;, vehicle
             tinting, wrapping, and manifestations & graphics, our wide range of
             services caters to residential, commercial, industrial, and
             automotive needs.
@@ -96,7 +96,6 @@ export default function AboutUs() {
         <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 py-12 mx-auto">
           <div className="relative">
             <Image
-              className=""
               src={AboutUsImg}
               alt="Solar Gard Solutions Ireland"
               style={{
