@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 
 import HeroImg from "/public/images/safety-film-imgs/hero-safety-films-spec-page-min.jpg";
-import ContactUs from "@/app/compontents/shared-compontents/Contact-Us";
+import ContactUs from "@/app/components/shared-compontents/Contact-Us";
 
 export default function SafetyFilmSpecPage({ params }) {
   // Decode the URL-encoded slug

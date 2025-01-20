@@ -157,8 +157,8 @@ export default function ServiceCardGrid() {
   }, []);
 
   return (
-    <div className="w-full bg-grey lg:pt-[15%] md:pt-[20%] sm:pt-[40%] pb-[15%]">
-      <div className="xxl:w-8/12 xl:w-9/12 lg:w-10/12 md:w-11/12 sm:w-11/12 mx-auto antialiased">
+    <div className="w-full bg-grey">
+      <div>
         <div>
           <h2 className="mb-4 text-4xl font-bold text-secondary">
             Our Services
@@ -191,7 +191,7 @@ export default function ServiceCardGrid() {
                   <ArrowIcon />
                 </div>
               </div>
-              <div className="">
+              <div className="antialiased">
                 <div className="mt-2 lg:text-xl md:text-lg sm:text-base font-semibold">
                   {data.title}
                 </div>
@@ -199,6 +199,7 @@ export default function ServiceCardGrid() {
                   {data.tags}
                 </div>
               </div>
+              <div></div>
             </div>
           ))}
         </div>

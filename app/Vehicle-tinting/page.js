@@ -3,10 +3,10 @@ import { useEffect } from "react";
 import Image from "next/image";
 
 import { Link } from "react-scroll";
-import CarTintingFAQs from "../compontents/FAQs/car-tinting-faqs";
-import OurServiceCarousel from "../compontents/shared-compontents/our-services-carousel";
-import ContactUs from "../compontents/shared-compontents/Contact-Us";
-import Footer from "../compontents/shared-compontents/Footer";
+import CarTintingFAQs from "../components/FAQs/car-tinting-faqs";
+import OurServiceCarousel from "../components/shared-compontents/our-services-carousel";
+import ContactUs from "../components/shared-compontents/Contact-Us";
+import Footer from "../components/shared-compontents/Footer";
 
 import HeroImg from "/public/images/car-tinting-imgs/Hero-car-tinting-img-min.jpg";
 import CarTierOne from "/public/images/car-tinting-imgs/Car-imgs-pricing-A.png";
@@ -16,7 +16,7 @@ import GlueDyed from "/public/images/car-tinting-imgs/Glue-Dyed-profile-img.jpg"
 import HPMetallized from "/public/images/car-tinting-imgs/HP-Metallized-profile-img.jpg";
 import NanoCeramic from "/public/images/car-tinting-imgs/Nano-Ceramic-profile-img.jpg";
 
-import TintingFilmDataComponent from "../compontents/film-collections/tinting-films.collection";
+import TintingFilmDataComponent from "../components/film-collections/tinting-films.collection";
 
 const vehicletintingData = [
   {
@@ -311,7 +311,10 @@ export default function VehicleTinting() {
                       <div>{tier.coupe.full}</div>
                       <div>€{tier.coupe.fullprice}</div>
                     </div>
-                    <div className="flex justify-between font-medium">
+                    <div
+                      className="flex justify-between font-medium7232876b
+                    "
+                    >
                       <div>{tier.coupe.half}</div>
                       <div>€{tier.coupe.halfprice}</div>
                     </div>

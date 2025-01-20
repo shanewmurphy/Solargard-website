@@ -1,14 +1,14 @@
 "use client";
 import { useEffect } from "react";
 
-import SolarFilmsData from "../compontents/film-collections/solar-films";
+import SolarFilmsData from "../components/film-collections/solar-films";
 import Image from "next/image";
 import SolarFilmHeroImg from "/public/images/hero-imgs/Hero-solar-film-img-min.jpg";
 import EnvironmentalImg from "/public/images/solar-films-imgs/Environmental-min.jpg";
-import OurServiceCarousel from "../compontents/shared-compontents/our-services-carousel";
-import SolarFilmsFAQs from "../compontents/FAQs/solar-film-faqs";
-import ContactUs from "../compontents/shared-compontents/Contact-Us";
-import Footer from "../compontents/shared-compontents/Footer";
+import OurServiceCarousel from "../components/shared-compontents/our-services-carousel";
+import SolarFilmsFAQs from "../components/FAQs/solar-film-faqs";
+import ContactUs from "../components/shared-compontents/Contact-Us";
+import Footer from "../components/shared-compontents/Footer";
 
 const BenefitsCardData = [
   {

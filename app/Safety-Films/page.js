@@ -2,11 +2,11 @@
 import { useEffect } from "react";
 import Image from "next/image";
 
-import SafetyFilmsComponent from "../compontents/film-collections/safety-films-collection";
-import ContactUs from "../compontents/shared-compontents/Contact-Us";
-import OurServiceCarousel from "../compontents/shared-compontents/our-services-carousel";
-import SafetyFAQs from "../compontents/FAQs/safety-flims-faqs";
-import Footer from "../compontents/shared-compontents/Footer";
+import SafetyFilmsComponent from "../components/film-collections/safety-films-collection";
+import ContactUs from "../components/shared-compontents/Contact-Us";
+import OurServiceCarousel from "../components/shared-compontents/our-services-carousel";
+import SafetyFAQs from "../components/FAQs/safety-flims-faqs";
+import Footer from "../components/shared-compontents/Footer";
 
 import SafetyHeroImg from "/public/images/safety-film-imgs/safety-hero-min.jpg";
 import StoreFrontImg from "/public/images/safety-film-imgs/storefront-min.jpg";

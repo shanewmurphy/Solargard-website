@@ -1,15 +1,15 @@
 "use client";
 import { useEffect } from "react";
 
-import HomeHero from "./compontents/heros/home-hero";
-import HomeIntroText from "./compontents/Intro-texts/home-intro";
-import OurServices from "./compontents/our-services-cards/card-services-animation";
+import HomeHero from "./components/heros/home-hero";
+import HomeIntroText from "./components/Intro-texts/home-intro";
+import OurServices from "./components/our-services-cards/card-services-animation";
 
-import CompanyProfile from "./compontents/homepage/company-profile";
-import GeneralFaqs from "./compontents/FAQs/general-faq";
-import Testimonials from "./compontents/shared-compontents/testimonials";
-import ContactUs from "./compontents/shared-compontents/Contact-Us";
-import Footer from "./compontents/shared-compontents/Footer";
+import CompanyProfile from "./components/homepage/company-profile";
+import GeneralFaqs from "./components/FAQs/general-faq";
+import Testimonials from "./components/shared-compontents/testimonials";
+import ContactUs from "./components/shared-compontents/Contact-Us";
+import Footer from "./components/shared-compontents/Footer";
 export default function Home() {
   useEffect(() => {
     (async () => {

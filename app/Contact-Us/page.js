@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Footer from "../compontents/shared-compontents/Footer";
+import Footer from "../components/shared-compontents/Footer";
 
 import HeroImg from "/public/images/hero-imgs/Blended_Hero-img-B-min.jpg";
 

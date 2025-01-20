@@ -4,8 +4,8 @@ import { Progress } from "@nextui-org/progress";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import HeroSolarFilmImg from "/public/images/solar-films-imgs/hero-solar-film-min.jpg";
-import ContactUs from "@/app/compontents/shared-compontents/Contact-Us";
-import Footer from "@/app/compontents/shared-compontents/Footer";
+import ContactUs from "@/app/components/shared-compontents/Contact-Us";
+import Footer from "@/app/components/shared-compontents/Footer";
 
 export default function SolarFilmPage({ params }) {
   // Decode the URL-encoded slug

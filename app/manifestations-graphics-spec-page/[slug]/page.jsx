@@ -7,8 +7,8 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 
 import ManifestGraphicsHero from "/public/images/manif-graphics-imgs/manif-graphics-hero.jpg";
-import ContactUs from "@/app/compontents/shared-compontents/Contact-Us";
-import Footer from "@/app/compontents/shared-compontents/Footer";
+import ContactUs from "@/app/components/shared-compontents/Contact-Us";
+import Footer from "@/app/components/shared-compontents/Footer";
 
 export default function ManifestationGraphicSpecPage({ params }) {
   // Decode the URL-encoded slug

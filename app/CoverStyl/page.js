@@ -1,11 +1,11 @@
 "use client";
 import { useEffect } from "react";
 import Image from "next/image";
-import CoverstylFilmComponent from "../compontents/film-collections/coverastyl-films-collection";
-import CoverStylFAQs from "../compontents/FAQs/coverstyl-faqs";
-import OurServiceCarousel from "../compontents/shared-compontents/our-services-carousel";
-import ContactUs from "../compontents/shared-compontents/Contact-Us";
-import Footer from "../compontents/shared-compontents/Footer";
+import CoverstylFilmComponent from "../components/film-collections/coverastyl-films-collection";
+import CoverStylFAQs from "../components/FAQs/coverstyl-faqs";
+import OurServiceCarousel from "../components/shared-compontents/our-services-carousel";
+import ContactUs from "../components/shared-compontents/Contact-Us";
+import Footer from "../components/shared-compontents/Footer";
 
 import CostEffective from "/public/images/coverstyl/Cost-Effective.jpg";
 import VersatileDurable from "/public/images/coverstyl/Versatile-Durable.jpg";

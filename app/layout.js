@@ -1,8 +1,8 @@
 import localFont from "next/font/local";
 import { Inter, Poppins } from "@next/font/google";
 import "./globals.css";
-import NavDesktop from "./compontents/shared-compontents/nav-desktop";
-import MobileNav from "./compontents/shared-compontents/mobile-nav";
+import NavDesktop from "./components/shared-compontents/nav-desktop";
+import MobileNav from "./components/shared-compontents/mobile-nav";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -43,6 +43,7 @@ export default function RootLayout({ children }) {
       ></meta>
       <meta name="Classification" content="Business"></meta>
       <meta name="coverage" content="Ireland"></meta>
+      <link rel="icon" href="favicon.ico?v=2"></link>
       <body className={inter.className}>
         <div>{children}</div>
         <div>

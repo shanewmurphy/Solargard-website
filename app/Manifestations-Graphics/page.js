@@ -2,11 +2,11 @@
 import { useEffect } from "react";
 import Image from "next/image";
 
-import ManifGraphicsData from "../compontents/film-collections/manifestion-graphics-collection";
-import OurServiceCarousel from "../compontents/shared-compontents/our-services-carousel";
-import GraphicsManifestationsFAQs from "../compontents/FAQs/manifestations-graphics-faq";
-import ContactUs from "../compontents/shared-compontents/Contact-Us";
-import Footer from "../compontents/shared-compontents/Footer";
+import ManifGraphicsData from "../components/film-collections/manifestion-graphics-collection";
+import OurServiceCarousel from "../components/shared-compontents/our-services-carousel";
+import GraphicsManifestationsFAQs from "../components/FAQs/manifestations-graphics-faq";
+import ContactUs from "../components/shared-compontents/Contact-Us";
+import Footer from "../components/shared-compontents/Footer";
 
 import HeroImgTwo from "/public/images/manif-graphics-imgs/manif-graphics-hero-img-B.png";
 import KeyPointOne from "/public/images/manif-graphics-imgs/manifKeyPoint_01.jpg";

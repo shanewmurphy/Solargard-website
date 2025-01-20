@@ -1,4 +1,4 @@
-import ServiceCardGrid from "../compontents/homepage/service-cards";
+import ServiceCardGrid from "../components/homepage/service-cards";
 
 export default function TestingPage() {
   return (

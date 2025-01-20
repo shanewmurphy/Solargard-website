@@ -1,10 +1,10 @@
 import Image from "next/image";
-import CloakingFAQS from "../compontents/FAQs/cloaking-faqs";
+import CloakingFAQS from "../components/FAQs/cloaking-faqs";
 import CasperHeroImg from "/public/images/casper-imgs/Casper-hero-img-min.jpg";
 import EnvelopeImg from "/public/images/casper-imgs/EnvelopeB.png";
-import ContactUs from "../compontents/shared-compontents/Contact-Us";
-import OurServiceCarousel from "../compontents/shared-compontents/our-services-carousel";
-import Footer from "../compontents/shared-compontents/Footer";
+import ContactUs from "../components/shared-compontents/Contact-Us";
+import OurServiceCarousel from "../components/shared-compontents/our-services-carousel";
+import Footer from "../components/shared-compontents/Footer";
 
 export default function CasperPage() {
   return (

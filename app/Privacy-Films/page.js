@@ -2,11 +2,11 @@
 import { useEffect } from "react";
 import Image from "next/image";
 
-import PrivacyFilmsComponent from "../compontents/film-collections/privacy-films-collection";
-import ContactUs from "../compontents/shared-compontents/Contact-Us";
-import PrivacyFAQs from "../compontents/FAQs/privacy-faqs";
-import Footer from "../compontents/shared-compontents/Footer";
-import OurServiceCarousel from "../compontents/shared-compontents/our-services-carousel";
+import PrivacyFilmsComponent from "../components/film-collections/privacy-films-collection";
+import ContactUs from "../components/shared-compontents/Contact-Us";
+import PrivacyFAQs from "../components/FAQs/privacy-faqs";
+import Footer from "../components/shared-compontents/Footer";
+import OurServiceCarousel from "../components/shared-compontents/our-services-carousel";
 
 import PrivacyHeroImg from "/public/images/Privacy-Films-imgs/privacy-hero-img-min.jpg";
 import FrostedImg from "/public/images/Privacy-Films-imgs/Frosted-qualities-img.jpg";
